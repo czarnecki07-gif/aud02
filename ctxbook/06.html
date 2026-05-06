@@ -1,0 +1,408 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>CYFROWY ZAPIS OBRAZU</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  background: #f6f2ea;
+  color: #171411;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  min-height: 100vh;
+}
+
+main {
+  padding: 54px 64px 90px;
+  max-width: 860px;
+}
+
+h1 {
+  margin: 0 0 10px;
+  font-size: 54px;
+  line-height: 1.02;
+  letter-spacing: -0.04em;
+  font-weight: 800;
+}
+
+h2 {
+  margin: 46px 0 18px;
+  font-size: 30px;
+  line-height: 1.18;
+  font-weight: 800;
+}
+
+.reader-subtitle {
+  margin: 0 0 42px;
+  color: #6f675d;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.reader-paragraph {
+  font-size: 20px;
+  line-height: 1.78;
+  margin: 0 0 28px;
+  white-space: pre-wrap;
+}
+
+.reader-hero-image,
+.reader-section-image {
+  margin: 24px 0 34px;
+}
+
+.reader-hero-image img,
+.reader-section-image img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: contain;
+  border-radius: 18px;
+  background: #f0ece3;
+  box-shadow: 0 14px 34px rgba(30, 25, 18, 0.08);
+}
+
+.reader-section-image img {
+  max-height: 320px;
+}
+
+.reader-hero-image figcaption,
+.reader-section-image figcaption {
+  margin-top: 8px;
+  color: #8a8277;
+  font-size: 12px;
+  line-height: 1.4;
+}
+aside {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+  border-left: 1px solid #ddd4c5;
+  background: #faf7ef;
+  padding: 38px 28px;
+}
+
+aside::before {
+  content: "Wyjaśnienia";
+  display: block;
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+
+.term {
+  background: #fff1b8;
+  border-bottom: 2px solid #d8b429;
+  border-radius: 4px;
+  padding: 0 2px;
+  cursor: pointer;
+}
+
+.term:hover {
+  background: #ffe680;
+}
+
+.term-box {
+  border: 1px solid #ddd4c5;
+  border-radius: 18px;
+  padding: 18px;
+  background: #fffdf8;
+  box-shadow: 0 14px 34px rgba(30, 25, 18, 0.07);
+}
+
+.term-box h3 {
+  margin: 0 0 14px;
+  font-size: 25px;
+  line-height: 1.18;
+  font-weight: 800;
+}
+
+.term-box p {
+  font-size: 18px;
+  line-height: 1.58;
+  margin: 0 0 14px;
+}
+
+.term-box img {
+  width: 100%;
+  max-height: 260px;
+  object-fit: contain;
+  border-radius: 14px;
+  background: #f0ece3;
+  margin: 8px 0 12px;
+  cursor: zoom-in;
+}
+
+.img-meta {
+  margin: -4px 0 12px;
+  font-size: 12px;
+  color: #8a8277;
+  line-height: 1.35;
+}
+
+.brand {
+  grid-column: 1 / 2;
+  margin: 0 64px 34px;
+  padding: 22px 28px;
+  border: 1px solid #ddd4c5;
+  border-radius: 22px;
+  background: #fffdf8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  box-shadow: 0 14px 36px rgba(30, 25, 18, 0.06);
+  position: relative;
+  z-index: 2;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-word {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.brand-name {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 46px;
+  font-weight: 900;
+  letter-spacing: -0.085em;
+  color: #171717;
+}
+
+.brand-format {
+  margin-top: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  color: #6157ff;
+}
+
+.brand-meta {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  white-space: nowrap;
+}
+
+.brand-link {
+  color: #6157ff;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  body {
+    display: block;
+  }
+
+  main {
+    padding: 32px 24px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  aside {
+    position: static;
+    height: auto;
+    border-left: 0;
+    border-top: 1px solid #ddd4c5;
+  }
+
+  .brand {
+  margin: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  grid-column: auto;
+}
+
+.brand-name {
+  font-size: 36px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<main>
+<h1>CYFROWY ZAPIS OBRAZU</h1>
+<div class="reader-subtitle">CTXBOOK – text easy to understand</div>
+
+
+    <figure class="reader-hero-image">
+      <img src="https://pixabay.com/get/gb88c5e0207b36c73e114c4c1dd3f3b2a6d64e70a0a54f9f69c698271b752ab106f8ce0c26ec2010a437217155c0f4040_640.jpg" alt="camera, macro, lens, camera lens, digital camera, dslr, camera equipment, photography, device, optic, zoom, camera, camera, camera, camera, camera, camera lens">
+      <figcaption>Pixabay · PublicDomainPictures</figcaption>
+    </figure>
+  
+
+
+  <section>
+    
+    <h2>Matryca światłoczuła</h2>
+    <p class="reader-paragraph">CYFROWY ZAPIS OBRAZU</p>
+    
+  </section>
+
+  <section>
+    
+    <h2>Wielkość matrycy</h2>
+    <p class="reader-paragraph"><span class="term" data-term="matryca_swiatloczula">Matryca światłoczuła</span>
+Matryca to element aparatu cyfrowego, który zamienia światło na sygnał elektryczny.
+Rodzaje <span class="term" data-term="matryca_swiatloczula">matryc</span>:
+• <span class="term" data-term="ccd">CCD</span>
+• lepsza jakość obrazu
+• mniejsze szumy
+• większe zużycie energii
+• <span class="term" data-term="cmos">CMOS</span>
+• najczęściej stosowana
+• niskie zużycie energii
+• szybki odczyt
+• większe szumy przy wysokim ISO (ale nowoczesne <span class="term" data-term="cmos">CMOS</span> są bardzo dobre)
+<span class="term" data-term="wielkosc_matrycy">Wielkość matrycy</span>
+Wpływa na:
+• jakość obrazu,
+• ilość szumów,
+• głębię ostrości,
+• kąt widzenia.
+Typowe rozmiary:
+• Full Frame (36×24 mm)
+• APS-C (ok. 24×16 mm)
+• Micro 4/3 (17×13 mm)
+• 1&quot;
+• smartfon – najmniejsza matryca
+Im <span class="term" data-term="wielkosc_matrycy">większa matryca</span> → tym lepsza jakość i mniejsze szumy.
+<span class="term" data-term="piksel">Piksel</span>
+Najmniejszy element obrazu cyfrowego.
+Parametry:
+• <span class="term" data-term="rozdzielczosc_obrazu">rozdzielczość</span> – <span class="term" data-term="liczba_pikseli">liczba pikseli</span> (np. 6000×4000)
+• gęstość pikseli (PPI) – piksele na cal
+• wielkość piksela – większy <span class="term" data-term="piksel">piksel</span> = mniej szumów
+<span class="term" data-term="rozdzielczosc_obrazu"><span class="term" data-term="liczba_pikseli"><span class="term" data-term="rozdzielczosc_obrazu">Rozdzielczość</span> obrazu</span></span>
+Podawana jako:
+• <span class="term" data-term="liczba_pikseli">liczba pikseli</span> (np. 24 Mpix),
+• rozmiar w pikselach (np. 6000×4000),
+• PPI przy druku.
+Format zapisu zdjęć
+<span class="term" data-term="format_raw">RAW</span>
+• surowy zapis z matrycy
+• największa jakość
+• duży plik
+• wymaga obróbki
+• zapisuje pełną informację o kolorze i świetle
+<span class="term" data-term="format_jpg">JPG</span>
+• skompresowany
+• mniejsza jakość
+• gotowy do użycia
+• mniejszy plik
+• kompresja stratna
+<span class="term" data-term="glebia_bitowa">Głębia bitowa</span> (<span class="term" data-term="glebia_bitowa">bit depth</span>)
+Określa ilość informacji o kolorze.
+• 8 bitów – 256 poziomów
+• 12 bitów – 4096 poziomów
+• 14 bitów – 16384 poziomów
+Im więcej bitów → tym lepsze przejścia tonalne.
+<span class="term" data-term="szumy_cyfrowe">Szumy cyfrowe</span>
+Powstają przy:
+• wysokim ISO,
+• długich czasach naświetlania,
+• małej matrycy.
+Rodzaje szumów:
+• luminancji (jasności),
+• chrominancji (koloru).
+<span class="term" data-term="histogram">Histogram</span>
+Wykres pokazujący rozkład jasności zdjęcia:
+• lewa strona → cienie
+• środek → półtony
+• prawa strona → światła
+<span class="term" data-term="histogram">Histogram</span> pomaga ocenić ekspozycję.</p>
+    
+  </section>
+
+</main>
+
+<aside id="sidePanel">
+  <div class="term-box">
+    <h3>Wyjaśnienia</h3>
+    <p>Kliknij podkreślone pojęcie w tekście.</p>
+  </div>
+</aside>
+
+<div class="brand">
+  <div class="brand-logo">
+    <span class="brand-word">
+      <span class="brand-name">contextero</span>
+      <span class="brand-format">CTXBOOK FORMAT</span>
+    </span>
+  </div>
+
+  <div class="brand-meta">
+    Powered by <a class="brand-link" href="https://contextero.com" target="_blank">contextero.com</a>
+  </div>
+</div>
+<script>
+const TERMS = {"matryca_swiatloczula":{"title":"Matryca światłoczuła","aliases":["matryca światłoczuła","matryc"],"explanation":"Matryca światłoczuła to element aparatu cyfrowego, który przetwarza światło na sygnał elektryczny, umożliwiając cyfrowe rejestrowanie obrazu.","why":"Jest fundamentem zapisu cyfrowego obrazu, a różne typy matryc wpływają na jakość zdjęcia i parametry jak szumy czy zużycie energii.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/%D0%9F%D0%B8%D0%BA%D1%81%D0%B5%D0%BB%D0%B8_%D0%BC%D0%B0%D1%82%D1%80%D0%B8%D1%86%D1%8B_%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE%D1%80%D0%B5%D0%B3%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%B0.jpg/1280px-%D0%9F%D0%B8%D0%BA%D1%81%D0%B5%D0%BB%D0%B8_%D0%BC%D0%B0%D1%82%D1%80%D0%B8%D1%86%D1%8B_%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE%D1%80%D0%B5%D0%B3%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/c/cb/%D0%9F%D0%B8%D0%BA%D1%81%D0%B5%D0%BB%D0%B8_%D0%BC%D0%B0%D1%82%D1%80%D0%B8%D1%86%D1%8B_%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE%D1%80%D0%B5%D0%B3%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"The pixels of the DVR sensor matrix under the microscope","source":"Wikimedia Commons · CC BY 4.0 · Gribkov · AI-ranked: The image titled 'Пиксели матрицы видеорегистратора.jpg' shows the pixels of a sensor matrix under a microscope, providing a detailed, close-up view of the actual light-sensitive elements. This aligns well with the educational context explaining how a light-sensitive matrix functions by converting light into electrical signals. It is a real, technical image suitable for illustrating the fundamental operation of a light-sensitive matrix, unlike other candidate photos that mostly depict entire sensors or camera bodies without detailed explanatory value.","fileTitle":"Пиксели матрицы видеорегистратора.jpg","query":"Matryca światłoczuła"}},"ccd":{"title":"Matryca CCD","aliases":["CCD"],"explanation":"Charge-Coupled Device (CCD) to rodzaj matrycy charakteryzujący się lepszą jakością obrazu i mniejszymi szumami, ale większym poborem energii.","why":"Dzięki lepszej jakości obrazu jest często stosowana w wymagających zastosowaniach fotograficznych.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/5/5d/Ccd-sensor.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/5/5d/Ccd-sensor.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"CCD Sensor used inside a consumer-digicam","source":"Wikimedia Commons · CC BY-SA 3.0 · C-M · AI-ranked: Obraz 'Ccd-sensor.jpg' przedstawia rzeczywistą matrycę CCD używaną w aparacie cyfrowym, co jest idealne dla edukacyjnego kontekstu opisu matrycy CCD. Jest to zdjęcie rzeczywistego obiektu (matrycy) a nie schemat lub abstrakcyjna ilustracja, dzięki czemu najlepiej obrazuje temat.","fileTitle":"Ccd-sensor.jpg","query":"Matryca CCD"}},"cmos":{"title":"Matryca CMOS","aliases":["CMOS"],"explanation":"Complementary Metal-Oxide-Semiconductor (CMOS) to najczęściej stosowany typ matrycy, cechujący się niskim zużyciem energii oraz szybkim odczytem danych, choć generujący większe szumy przy wysokim ISO.","why":"Dzięki niskim wymaganiom energetycznym i szybkiemu działaniu jest popularnym wyborem w większości aparatów i smartfonów.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/6/6b/Active_pixel_sensor_prototype.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/6/6b/Active_pixel_sensor_prototype.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"One of the first active pixel sensors (aka. CMOS sensor)","source":"Wikimedia Commons · Public domain · Uploaded by Michael Schmid · AI-ranked: Zdjęcie prototypu aktywnego czujnika pikseli CMOS jest autentycznym, realnym obiektem, które dobrze ilustruje budowę i wygląd rzeczywistego sensora CMOS, co jest wartościowe edukacyjnie. Pozostałe obrazy to głównie schematy, ilustracje lub zdjęcia opakowań i chipów bez wyraźnego pokazania samej budowy matrycy CMOS.","fileTitle":"Active pixel sensor prototype.jpg","query":"Matryca CMOS"}},"wielkosc_matrycy":{"title":"Wielkość matrycy","aliases":["Wielkość matrycy","większa matryca"],"explanation":"Fizyczny rozmiar matrycy, mający wpływ na jakość obrazu, ilość szumów, głębię ostrości oraz kąt widzenia.","why":"Większa matryca daje lepszą jakość obrazu i mniejsze szumy, co jest istotne dla profesjonalnych zdjęć.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/7/7e/A_full-frame_sensor_compared_with_35_mm_film.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/7/7e/A_full-frame_sensor_compared_with_35_mm_film.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"A full-frame sensor compared with 35 mm film. Collage made from two photos.","source":"A full-frame sensor compared with 35 mm film. Collage made from two photos.\nWikimedia Commons · CC BY-SA 4.0 · Collage by W.carter Photos by Airport 1975 at English Wikipedia and 根川孝太郎 · AI-ranked: The image titled 'A full-frame sensor compared with 35 mm film.jpg' provides a clear visual comparison between a full-frame sensor and a 35 mm film, directly illustrating the physical size aspect of the sensor which is central to the term 'Wielkość matrycy'. It is a real photographic collage and relevant to the context of sensor size and quality, making it highly suitable for educational use in the given context.","fileTitle":"A full-frame sensor compared with 35 mm film.jpg","query":"Full Frame cmos","caption":"A full-frame sensor compared with 35 mm film. Collage made from two photos.\nWikimedia Commons · CC BY-SA 4.0 · Collage by W.carter Photos by Airport 1975 at English Wikipedia and 根川孝太郎 · AI-ranked: The image titled 'A full-frame sensor compared with 35 mm film.jpg' provides a clear visual comparison between a full-frame sensor and a 35 mm film, directly illustrating the physical size aspect of the sensor which is central to the term 'Wielkość matrycy'. It is a real photographic collage and relevant to the context of sensor size and quality, making it highly suitable for educational use in the given context."}},"piksel":{"title":"Piksel","aliases":["piksel"],"explanation":"Najmniejszy element obrazu cyfrowego odpowiedzialny za odwzorowanie informacji świetlnej i kolorystycznej.","why":"Parametry piksela, takie jak rozmiar i gęstość, decydują o szczegółowości i jakości obrazu.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/7/78/CS_0100_Understanding_How_a_Computer_Works_1_key33.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/7/78/CS_0100_Understanding_How_a_Computer_Works_1_key33.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"A picture that we see is actually comprised of tiny squares of color. These “squares” represent one pixel. A pixel holds just one color of information.","source":"A picture that we see is actually comprised of tiny squares of color. These “squares” represent one pixel. A pixel holds just one color of information.\nWikimedia Commons · CC BY-SA 4.0 · https://knowthecode.io/labs/basics-of-digitizing-data/episode-14 · AI-ranked: This image clearly illustrates the concept of a pixel as a tiny colored square that makes up an image, matching the educational context about pixels being the smallest elements of digital images. Its description and clarity make it highly suitable for explaining the term 'piksel'.","fileTitle":"CS 0100 Understanding How a Computer Works 1 key33.png","query":"Piksel","caption":"A picture that we see is actually comprised of tiny squares of color. These “squares” represent one pixel. A pixel holds just one color of information.\nWikimedia Commons · CC BY-SA 4.0 · https://knowthecode.io/labs/basics-of-digitizing-data/episode-14 · AI-ranked: This image clearly illustrates the concept of a pixel as a tiny colored square that makes up an image, matching the educational context about pixels being the smallest elements of digital images. Its description and clarity make it highly suitable for explaining the term 'piksel'."}},"rozdzielczosc_obrazu":{"title":"Rozdzielczość obrazu","aliases":["rozdzielczość","rozdzielczość obrazu"],"explanation":"Liczba pikseli w obrazie wyrażana jako całkowita liczba pikseli lub w wymiarach (np. 6000×4000), istotna dla szczegółowości obrazu.","why":"Większa rozdzielczość pozwala na bardziej szczegółowe zdjęcia i lepsze wydruki.","image":{"url":"https://pixabay.com/get/g944ef2a6caa26949908ae328f9c815f544f259d8f83df146bd6d40f961daf889512eb322a9dafe69cc36979ac823fead13badee1058fbd04ba3fc9915ea2074c_640.jpg","originalUrl":"https://pixabay.com/photos/pool-life-aqua-blue-4942724/","label":"pool, life, aqua, blue, blue background, blue water, h2o, swimming pool, pool, pool, pool, pool, pool, swimming pool, swimming pool, swimming pool, swimming pool","source":"Pixabay · sahinsezerdincer"}},"format_raw":{"title":"Format RAW","aliases":["RAW"],"explanation":"Surowy format zapisu obrazu z matrycy aparatu, zawierający pełną informację o kolorze i świetle.","why":"Umożliwia największą jakość i późniejszą obróbkę zdjęcia, jednak wiąże się z dużym rozmiarem pliku.","image":{"url":"https://images.pexels.com/photos/19804400/pexels-photo-19804400.jpeg?auto=compress&cs=tinysrgb&h=650&w=940","originalUrl":"https://www.pexels.com/photo/touch-screen-of-a-digital-camera-19804400/","label":"Close-up of a DSLR camera screen showing various photo settings and options.","source":"Close-up of a DSLR camera screen showing various photo settings and options.\nPexels · Wolfgang Weiser","caption":"Close-up of a DSLR camera screen showing various photo settings and options.\nPexels · Wolfgang Weiser"}},"format_jpg":{"title":"Format JPG","aliases":["JPG"],"explanation":"Popularny skompresowany format zapisu zdjęć o mniejszym rozmiarze pliku, lecz ze stratą jakości.","why":"Jest wygodny do gotowego użytku i szybkiego udostępniania, ale nie nadaje się do zaawansowanej obróbki.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/A_JPEG_file_dissection_%28Ange_Albertini%29.png/1280px-A_JPEG_file_dissection_%28Ange_Albertini%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/5/51/A_JPEG_file_dissection_%28Ange_Albertini%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"Dissection of a JPEG file","source":"Dissection of a JPEG file\nWikimedia Commons · CC BY 4.0 · Ange Albertini · AI-ranked: Image 0 is a detailed and informative dissection of a JPEG file, directly related to the 'Format JPG' topic. It is a technical illustration helping to understand the structure of JPG files, fitting well with the educational context about digital image formats. Other images are less relevant, showing unrelated content or official documents, whereas this one clearly illustrates the JPEG format concept.","fileTitle":"A JPEG file dissection (Ange Albertini).png","query":"Format JPG","caption":"Dissection of a JPEG file\nWikimedia Commons · CC BY 4.0 · Ange Albertini · AI-ranked: Image 0 is a detailed and informative dissection of a JPEG file, directly related to the 'Format JPG' topic. It is a technical illustration helping to understand the structure of JPG files, fitting well with the educational context about digital image formats. Other images are less relevant, showing unrelated content or official documents, whereas this one clearly illustrates the JPEG format concept."}},"glebia_bitowa":{"title":"Głębia bitowa (bit depth)","aliases":["Głębia bitowa","bit depth"],"explanation":"Wartość określająca ilość możliwych poziomów tonalnych i kolorów w obrazie, im większa, tym bardziej płynne przejścia.","why":"Większa głębia bitowa poprawia jakość tonalną zdjęć i odwzorowanie kolorów.","image":{"url":"https://pixabay.com/get/gb0d0d34ff324dfbed0fcf589995a98ced4cf768fc42d82557b5a72c6a6e4af996cf0f5472cac68d7a68734ccbd81aa484ab6acd9cf6e90af6ac7f8ac41ac4af4_640.jpg","originalUrl":"https://pixabay.com/photos/mountains-autumn-7543535/","label":"mountains, autumn, northern alps hinterland, landscape, alpine belt, chubu mountain national park, nature, japan","source":"Pixabay · Kanenori"}},"szumy_cyfrowe":{"title":"Szumy cyfrowe","aliases":["szumy cyfrowe"],"explanation":"Zakłócenia w obrazie cyfrowym pojawiające się przy wysokim ISO, długich czasach naświetlania oraz małej matrycy, dzielące się na luminancji i chrominancji.","why":"Szumy obniżają jakość zdjęć, dlatego ważna jest ich kontrola w procesie fotografowania.","image":{"url":"https://images.pexels.com/photos/10622365/pexels-photo-10622365.jpeg?auto=compress&cs=tinysrgb&h=650&w=940","originalUrl":"https://www.pexels.com/photo/footbridge-in-park-at-night-10622365/","label":"Night view of an illuminated footbridge in Podgorica surrounded by trees and city lights.","source":"Night view of an illuminated footbridge in Podgorica surrounded by trees and city lights.\nPexels · Alexander Nadrilyanski","caption":"Night view of an illuminated footbridge in Podgorica surrounded by trees and city lights.\nPexels · Alexander Nadrilyanski"}},"histogram":{"title":"Histogram","aliases":["histogram"],"explanation":"Graficzny wykres rozkładu jasności zdjęcia, gdzie lewa strona pokazuje cienie, środek półtony, a prawa światła.","why":"Histogram pomaga ocenić poprawność ekspozycji zdjęcia i uniknąć prześwietleń lub niedoświetleń.","image":{"url":"https://images.pexels.com/photos/12971075/pexels-photo-12971075.jpeg?auto=compress&cs=tinysrgb&h=650&w=940","originalUrl":"https://www.pexels.com/photo/black-dslr-camera-on-person-s-hand-12971075/","label":"Close-up of a photographer holding a DSLR camera outdoors, capturing a sunset scene through the viewfinder.","source":"Close-up of a photographer holding a DSLR camera outdoors, capturing a sunset scene through the viewfinder.\nPexels · Maurice Engelen","caption":"Close-up of a photographer holding a DSLR camera outdoors, capturing a sunset scene through the viewfinder.\nPexels · Maurice Engelen"}},"liczba_pikseli":{"title":"Liczba pikseli","aliases":["Liczba pikseli","rozdzielczość obrazu","ilość pikseli","liczba punktów obrazu"],"explanation":"Liczba pikseli to całkowita ilość pojedynczych punktów (pikseli), z których składa się obraz cyfrowy. Określa rozdzielczość zdjęcia, np. 6000×4000 pikseli, co wpływa na szczegółowość i jakość obrazu.","why":"Ważna jest w kontekście cyfrowego zapisu obrazu, ponieważ im większa liczba pikseli, tym wyższa rozdzielczość zdjęcia, co pozwala na dokładniejsze odwzorowanie detali oraz lepszą jakość obrazu. Liczba pikseli wpływa również na rozmiar pliku i możliwości powiększania zdjęć bez utraty jakości.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/5/5b/CCD_SONY_ICX493AQA_sensor_side.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/5/5b/CCD_SONY_ICX493AQA_sensor_side.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"CCD image sensor SONY ICX493AQA 10,14 (Gross 10,75) M pixels APS-C 1.8\" 28.328mm (23.4 x 15.6 mm) from module IS-026 from digital camera SONY DSLR-A200 or DSLR-A300 sensor side","source":"CCD image sensor SONY ICX493AQA 10,14 (Gross 10,75) M pixels APS-C 1.8\" 28.328mm (23.4 x 15.6 mm) from module IS-026 from digital camera SONY DSLR-A200 or DSLR-A300 sensor side\nWikimedia Commons · CC BY 4.0 · User:Andrzej_w_k_2 · AI-ranked: Obraz przedstawia matrycę CCD SONY ICX493AQA o rozdzielczości 10,14 megapiksela (APS-C), co doskonale ilustruje pojęcie liczby pikseli aparatu i ich wpływu na jakość cyfrowego obrazu. Jest to realny i techniczny obiekt fotograficzny powiązany z tematem, spełniający wymogi edukacyjnego kontekstu o cyfrowym zapisie obrazu.","fileTitle":"CCD SONY ICX493AQA sensor side.jpg","query":"Liczba pikseli aparatu","caption":"CCD image sensor SONY ICX493AQA 10,14 (Gross 10,75) M pixels APS-C 1.8\" 28.328mm (23.4 x 15.6 mm) from module IS-026 from digital camera SONY DSLR-A200 or DSLR-A300 sensor side\nWikimedia Commons · CC BY 4.0 · User:Andrzej_w_k_2 · AI-ranked: Obraz przedstawia matrycę CCD SONY ICX493AQA o rozdzielczości 10,14 megapiksela (APS-C), co doskonale ilustruje pojęcie liczby pikseli aparatu i ich wpływu na jakość cyfrowego obrazu. Jest to realny i techniczny obiekt fotograficzny powiązany z tematem, spełniający wymogi edukacyjnego kontekstu o cyfrowym zapisie obrazu."}}};
+
+document.querySelectorAll('.term').forEach(el => {
+  el.addEventListener('click', () => {
+    const key = el.dataset.term;
+    const term = TERMS[key];
+
+    if (!term) return;
+
+    document.getElementById("sidePanel").innerHTML =
+      '<div class="term-box">' +
+      '<h3>' + term.title + '</h3>' +
+    (term.image && term.image.url
+  ? '<div>' +
+      '<img src="' + term.image.url + '">' +
+      '<div class="img-meta">' + (term.image.source || '') + '</div>' +
+    '</div>'
+  : '') +
+      '<p>' + term.explanation + '</p>' +
+      '<p><em>' + (term.why || '') + '</em></p>' +
+      '</div>';
+  });
+});
+
+document.addEventListener('click', (event) => {
+  const img = event.target.closest('.term-box img');
+  if (!img) return;
+
+  const overlay = document.createElement('div');
+  overlay.style.position = 'fixed';
+  overlay.style.inset = '0';
+  overlay.style.background = 'rgba(0,0,0,.82)';
+  overlay.style.display = 'grid';
+  overlay.style.placeItems = 'center';
+  overlay.style.zIndex = '9999';
+  overlay.style.cursor = 'zoom-out';
+
+  const big = document.createElement('img');
+  big.src = img.src;
+  big.style.maxWidth = '92vw';
+  big.style.maxHeight = '92vh';
+  big.style.objectFit = 'contain';
+  big.style.borderRadius = '14px';
+  big.style.background = '#fff';
+
+  overlay.appendChild(big);
+  overlay.addEventListener('click', () => overlay.remove());
+  document.body.appendChild(overlay);
+});
+</script>
+
+</body>
+</html>
