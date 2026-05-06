@@ -1,0 +1,376 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Ostrość i głębia ostrości</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  background: #f6f2ea;
+  color: #171411;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  min-height: 100vh;
+}
+
+main {
+  padding: 54px 64px 90px;
+  max-width: 860px;
+}
+
+h1 {
+  margin: 0 0 10px;
+  font-size: 54px;
+  line-height: 1.02;
+  letter-spacing: -0.04em;
+  font-weight: 800;
+}
+
+h2 {
+  margin: 46px 0 18px;
+  font-size: 30px;
+  line-height: 1.18;
+  font-weight: 800;
+}
+
+.reader-subtitle {
+  margin: 0 0 42px;
+  color: #6f675d;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.reader-paragraph {
+  font-size: 20px;
+  line-height: 1.78;
+  margin: 0 0 28px;
+  white-space: pre-wrap;
+}
+
+.reader-hero-image,
+.reader-section-image {
+  margin: 24px 0 34px;
+}
+
+.reader-hero-image img,
+.reader-section-image img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: contain;
+  border-radius: 18px;
+  background: #f0ece3;
+  box-shadow: 0 14px 34px rgba(30, 25, 18, 0.08);
+}
+
+.reader-section-image img {
+  max-height: 320px;
+}
+
+.reader-hero-image figcaption,
+.reader-section-image figcaption {
+  margin-top: 8px;
+  color: #8a8277;
+  font-size: 12px;
+  line-height: 1.4;
+}
+aside {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+  border-left: 1px solid #ddd4c5;
+  background: #faf7ef;
+  padding: 38px 28px;
+}
+
+aside::before {
+  content: "Wyjaśnienia";
+  display: block;
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+
+.term {
+  background: #fff1b8;
+  border-bottom: 2px solid #d8b429;
+  border-radius: 4px;
+  padding: 0 2px;
+  cursor: pointer;
+}
+
+.term:hover {
+  background: #ffe680;
+}
+
+.term-box {
+  border: 1px solid #ddd4c5;
+  border-radius: 18px;
+  padding: 18px;
+  background: #fffdf8;
+  box-shadow: 0 14px 34px rgba(30, 25, 18, 0.07);
+}
+
+.term-box h3 {
+  margin: 0 0 14px;
+  font-size: 25px;
+  line-height: 1.18;
+  font-weight: 800;
+}
+
+.term-box p {
+  font-size: 18px;
+  line-height: 1.58;
+  margin: 0 0 14px;
+}
+
+.term-box img {
+  width: 100%;
+  max-height: 260px;
+  object-fit: contain;
+  border-radius: 14px;
+  background: #f0ece3;
+  margin: 8px 0 12px;
+  cursor: zoom-in;
+}
+
+.img-meta {
+  margin: -4px 0 12px;
+  font-size: 12px;
+  color: #8a8277;
+  line-height: 1.35;
+}
+
+.brand {
+  grid-column: 1 / 2;
+  margin: 0 64px 34px;
+  padding: 22px 28px;
+  border: 1px solid #ddd4c5;
+  border-radius: 22px;
+  background: #fffdf8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  box-shadow: 0 14px 36px rgba(30, 25, 18, 0.06);
+  position: relative;
+  z-index: 2;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-word {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.brand-name {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 46px;
+  font-weight: 900;
+  letter-spacing: -0.085em;
+  color: #171717;
+}
+
+.brand-format {
+  margin-top: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  color: #6157ff;
+}
+
+.brand-meta {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  white-space: nowrap;
+}
+
+.brand-link {
+  color: #6157ff;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  body {
+    display: block;
+  }
+
+  main {
+    padding: 32px 24px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  aside {
+    position: static;
+    height: auto;
+    border-left: 0;
+    border-top: 1px solid #ddd4c5;
+  }
+
+  .brand {
+  margin: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  grid-column: auto;
+}
+
+.brand-name {
+  font-size: 36px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<main>
+<h1>Ostrość i głębia ostrości</h1>
+<div class="reader-subtitle">CTXBOOK – text easy to understand</div>
+
+
+    <figure class="reader-hero-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Scrub_wren_female_Vocalising444.jpg/1280px-Scrub_wren_female_Vocalising444.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="A White-browed Scrubwren female (Sericornis frontalis) vocalising, taken in South-eastern Australia.">
+      <figcaption>A White-browed Scrubwren female (Sericornis frontalis) vocalising, taken in South-eastern Australia.
+Wikimedia Commons · CC BY-SA 3.0 · Benjamint444 · AI-ranked: The image of the White-browed Scrubwren female vocalising demonstrates clear subject focus with a softly blurred background, which visually exemplifies the concept of depth of field (głębia ostrości) effectively, making it an ideal educational hero image for the context of focus and depth of field in photography.</figcaption>
+    </figure>
+  
+
+
+  <section>
+    
+    <h2>Ustawianie ostrości w fotografii</h2>
+    <p class="reader-paragraph"><span class="term" data-term="ostrosc">OSTROŚĆ</span> I <span class="term" data-term="glebia_ostrosci">GŁĘBIA OSTROŚCI</span></p>
+    
+  </section>
+
+  <section>
+    
+    <h2>Głębia ostrości (GO)</h2>
+    <p class="reader-paragraph">Ustawianie ostrości
+<span class="term" data-term="autofocus">AF</span> – <span class="term" data-term="autofocus">Autofocus</span> (<span class="term" data-term="autofocus">autofocus</span>&quot;&gt;<span class="term" data-term="autofocus">autofocus</span>&quot;&gt;<span class="term" data-term="autofocus">autofocus</span>&quot;&gt;<span class="term" data-term="autofocus">autofocus</span>&quot;&gt;<span class="term" data-term="autofocus">autofocus</span>&quot;&gt;<span class="term" data-term="<span class="term" data-term="autofocus">autofocus</span>">automatyczne ustawianie ostrości</span>)
+• aparat sam ustawia <span class="term" data-term="ostrosc">ostrość</span>
+• tryby <span class="term" data-term="autofocus">AF</span>:
+• <span class="term" data-term="af_s_one_shot"><span class="term" data-term="autofocus">AF</span>-S</span> / <span class="term" data-term="af_s_one_shot">One Shot</span> – <span class="term" data-term="af_s_one_shot">pojedynczy <span class="term" data-term="autofocus">AF</span></span> (do nieruchomych obiektów)
+• <span class="term" data-term="af_c_ai_servo"><span class="term" data-term="autofocus">AF</span>-C</span> / <span class="term" data-term="af_c_ai_servo">AI Servo</span> – <span class="term" data-term="af_c_ai_servo">ciągły <span class="term" data-term="autofocus">AF</span></span> (do ruchu)
+• <span class="term" data-term="autofocus">AF</span>-A / AI Focus – automatyczny wybór
+<span class="term" data-term="manual_focus">MF</span> – <span class="term" data-term="manual_focus">Manual Focus</span> (<span class="term" data-term="manual_focus">ręczne ustawianie ostrości</span>)
+• fotograf ustawia <span class="term" data-term="ostrosc">ostrość</span> pierścieniem na obiektywie
+• użycie: makro, ciemne warunki, precyzyjna praca
+<span class="term" data-term="punkty_ostrosci">Punkty ostrości</span>
+• aparat wybiera punkt, w którym ustawia <span class="term" data-term="ostrosc">ostrość</span>
+• można wybrać:
+• centralny punkt (najpewniejszy)
+• punkty boczne
+• śledzenie obiektu
+<span class="term" data-term="glebia_ostrosci">Głębia ostrości</span> (<span class="term" data-term="glebia_ostrosci">GO</span>)
+To zakres, który jest ostry na zdjęciu.
+<span class="term" data-term="glebia_ostrosci">Głębia ostrości</span> zależy od:
+1. Przysłony (<span class="term" data-term="przyslona">f/</span>)
+• mała liczba f (np. f/1.8) → mała <span class="term" data-term="glebia_ostrosci">GO</span> (rozmyte tło)
+• duża liczba f (np. f/16) → duża <span class="term" data-term="glebia_ostrosci">GO</span> (wszystko ostre)
+2. Ogniskowej
+• krótka <span class="term" data-term="ogniskowa">ogniskowa</span> (np. 18 mm) → duża <span class="term" data-term="glebia_ostrosci">GO</span> (<span class="term" data-term="glebia_ostrosci">głębia ostrości</span>)
+• długa <span class="term" data-term="ogniskowa">ogniskowa</span> (np. 200 mm) → mała <span class="term" data-term="glebia_ostrosci">GO</span> (<span class="term" data-term="glebia_ostrosci">głębia ostrości</span>)
+3. Odległości od obiektu
+• im bliżej obiektu → tym mniejsza <span class="term" data-term="glebia_ostrosci">GO</span>
+• im dalej → tym większa <span class="term" data-term="glebia_ostrosci">GO</span>
+<span class="term" data-term="bokeh">Bokeh</span> – <span class="term" data-term="<span class="term" data-term="bokeh">bokeh</span>">efekt rozmycia tła</span>
+zależy od:
+• przysłony
+• konstrukcji obiektywu
+• ogniskowej
+<span class="term" data-term="hiperfokalna">Hiperfokalna</span>
+• ustawienie ostrości tak, aby maksymalnie zwiększyć głębię ostrości
+• używane w krajobrazie</p>
+    
+  </section>
+
+</main>
+
+<aside id="sidePanel">
+  <div class="term-box">
+    <h3>Wyjaśnienia</h3>
+    <p>Kliknij podkreślone pojęcie w tekście.</p>
+  </div>
+</aside>
+
+<div class="brand">
+  <div class="brand-logo">
+    <span class="brand-word">
+      <span class="brand-name">contextero</span>
+      <span class="brand-format">CTXBOOK FORMAT</span>
+    </span>
+  </div>
+
+  <div class="brand-meta">
+    Powered by <a class="brand-link" href="https://contextero.com" target="_blank">contextero.com</a>
+  </div>
+</div>
+<script>
+const TERMS = {"autofocus":{"title":"Autofocus (AF)","aliases":["AF","Autofocus","automatyczne ustawianie ostrości"],"explanation":"System w aparacie fotograficznym, który automatycznie ustawia ostrość na fotografowany obiekt.","why":"Ułatwia szybkie i precyzyjne ustawienie ostrości, szczególnie przy dynamicznych scenach lub gdy fotograf nie może ręcznie ustawić ostrości.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Chinon_CP_9_AF_BW_1.JPG/1280px-Chinon_CP_9_AF_BW_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/b/be/Chinon_CP_9_AF_BW_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"Chinon CP-9 AF mit seltenem 35-135mm Autofocusobjektiv","source":"Wikimedia Commons · Public domain · Berthold Werner · AI-ranked: The image 'Chinon CP-9 AF mit seltenem 35-135mm Autofocusobjektiv' shows a real autofocus camera with a lens, fitting the context of an 'Aparat w trybie autofocus' well. It is a real object photograph and directly illustrates a camera equipped with an autofocus system, making it ideal for the educational context.","fileTitle":"Chinon CP 9 AF BW 1.JPG","query":"Autofocus (AF)"}},"af_s_one_shot":{"title":"AF-S / One Shot","aliases":["AF-S","One Shot","pojedynczy AF"],"explanation":"Tryb pojedynczego automatycznego ustawiania ostrości, stosowany do nieruchomych obiektów.","why":"Zapewnia precyzyjną ostrość przy zdjęciach obiektów statycznych.","image":{"url":"https://images.pexels.com/photos/22431166/pexels-photo-22431166.jpeg?auto=compress&cs=tinysrgb&h=650&w=940","originalUrl":"https://www.pexels.com/photo/close-up-of-a-staring-cats-head-22431166/","label":"Close-up black and white portrait of an alert tabby cat indoors.","source":"Close-up black and white portrait of an alert tabby cat indoors.\nPexels · Laura Chouette","caption":"Close-up black and white portrait of an alert tabby cat indoors.\nPexels · Laura Chouette"}},"af_c_ai_servo":{"title":"AF-C / AI Servo","aliases":["AF-C","AI Servo","ciągły AF"],"explanation":"Tryb ciągłego autofokusa, który śledzi i utrzymuje ostrość na poruszającym się obiekcie.","why":"Pozwala na ostre zdjęcia obiektów w ruchu, np. sportowców czy dzikich zwierząt.","image":{"url":"https://images.pexels.com/photos/12065728/pexels-photo-12065728.jpeg?auto=compress&cs=tinysrgb&h=650&w=940","originalUrl":"https://www.pexels.com/photo/grayscale-photo-of-man-in-black-jacket-and-pants-standing-on-window-12065728/","label":"Graceful dancer captured midair in front of an ornate historic building facade.","source":"Graceful dancer captured midair in front of an ornate historic building facade.\nPexels · ἐμμανυελ  ","caption":"Graceful dancer captured midair in front of an ornate historic building facade.\nPexels · ἐμμανυελ  "}},"manual_focus":{"title":"Manual Focus (MF)","aliases":["MF","Manual Focus","ręczne ustawianie ostrości"],"explanation":"Ręczne ustawianie ostrości przez fotografa za pomocą pierścienia na obiektywie.","why":"Daje pełną kontrolę nad ostrością, szczególnie w trudnych warunkach lub przy precyzyjnej pracy, jak makrofotografia.","image":{"url":"https://pixabay.com/get/g342c55eb217e513575645512777b84469c5bf33530da38ed2af607f1b4a00f43566e3e438d1f2f6e8266c095bf68f5b3_640.jpg","originalUrl":"https://pixabay.com/photos/objective-manual-focus-scale-325685/","label":"objective, manual focus, scale","source":"Pixabay · charlemagne"}},"punkty_ostrosci":{"title":"Punkty ostrości","aliases":["punkty ostrości"],"explanation":"Miejsca na matrycy aparatu służące do ustawiania ostrości przez system AF.","why":"Pozwalają na wybór lub śledzenie obiektu, zwiększając precyzję i kreatywność w fotografii.","image":{"url":"https://images.pexels.com/photos/18695444/pexels-photo-18695444.jpeg?auto=compress&cs=tinysrgb&h=650&w=940","originalUrl":"https://www.pexels.com/photo/man-hand-holding-camera-and-taking-pictures-of-legs-18695444/","label":"Innovative camera perspective capturing shoes on pavement, reflecting art in photography.","source":"Pexels · Mario Köhler","caption":"Pexels · Mario Köhler"}},"glebia_ostrosci":{"title":"Głębia ostrości (GO)","aliases":["głębia ostrości","GO"],"explanation":"Zakres odległości na zdjęciu, który jest ostry i wyraźny.","why":"Pozwala kontrolować, która część zdjęcia jest wyraźna, a która rozmyta, co ma wpływ na odbiór zdjęcia.","image":{"url":"https://pixabay.com/get/g8c9d8bc11cf750e3879ee441d59c4841d03d804f147a38b15b0eb784eda86186763dc6c3c6ab1b26010d47103b203fdcee872ba6117c4b84ede004561c1727d1_640.jpg","originalUrl":"https://pixabay.com/photos/leaf-closeup-shallow-depth-of-field-3813096/","label":"leaf, closeup, shallow depth of field, blurred background, nature, plant, green","source":"Pixabay · bellergy"}},"przyslona":{"title":"Przysłona (f/)","aliases":["przysłona","f/"],"explanation":"Element aparatu kontrolujący ilość światła wpadającego do obiektywu przez zmianę wielkości otworu (liczba f określa wielkość przysłony).","why":"Wpływa na ekspozycję zdjęcia oraz głębię ostrości.","image":{"url":"https://pixabay.com/get/gab05fe968bbc6c5eafa5d6df863ff2874964569b9d1ada8e0f4480867ba53ed02197ff0e291ea0951cf6b1b078527ecb110225db3417c8747033492b9cf35a12_640.jpg","originalUrl":"https://pixabay.com/photos/sports-car-racing-car-auto-corvette-4815234/","label":"sports car, racing car, auto, corvette, corvette z06, z06, zr1, automotive, racing, supercar, speed, highway, travel, racing car, racing car, auto, auto, auto, auto, corvette, corvette, corvette, corvette, corvette, racing, racing, supercar, supercar, supercar, supercar, speed, highway","source":"Pixabay · DRIVAR"}},"ogniskowa":{"title":"Ogniskowa","aliases":["ogniskowa"],"explanation":"Odległość między środkiem optycznym obiektywu a płaszczyzną matrycy, określająca kąt widzenia i powiększenie obrazu.","why":"Determinując kąt widzenia i głębię ostrości, ma duży wpływ na charakter zdjęcia.","image":{"url":"https://pixabay.com/get/g3ac30580a282486768b4fb03de3bcf29036924f0b0c09859f443f11885a9dc5272a5542d61ca004fd31725e49dd6dd6ff517dc6aeb064226e2d9a05c6fe46059_640.png","originalUrl":"https://pixabay.com/photos/lens-telephoto-lens-camera-3206098/","label":"lens, telephoto lens, camera, photography, camera lens, focal length, equipment, zoom lens, photo accessories, isolated, transparent, telephoto lens, telephoto lens, camera, camera, camera, camera, camera, camera lens, camera lens, camera lens, zoom lens","source":"Pixabay · ThomasWolter","caption":"Pixabay · ThomasWolter"}},"bokeh":{"title":"Bokeh","aliases":["bokeh","efekt rozmycia tła"],"explanation":"Artystyczny efekt rozmycia tła na zdjęciu, który nadaje mu estetykę i głębię.","why":"Pomaga wyróżnić główny obiekt zdjęcia poprzez atrakcyjne rozmycie tła.","image":{"url":"https://pixabay.com/get/g5700a36978349cc8da0853103f6999f26cec3f274b8f7714ff260dbf53e2efa0b178d7e711feb76af4a39e5ce23d63719ee38773864d494d410390c8c4952c7a_640.jpg","originalUrl":"https://pixabay.com/photos/snow-field-sunlight-sunrise-dawn-1236245/","label":"snow, field, sunlight, sunrise, dawn, morning, snowy, winter, cold, outdoors, landscape, nature, bokeh, snow bokeh, snow, snow, snow, snow, snow, winter","source":"Pixabay · JillWellington"}},"hiperfokalna":{"title":"Ustawienie ostrości hiperfokalnej","aliases":["hiperfokalna","ustawienie ostrości hiperfokalnej"],"explanation":"Technika ustawiania ostrości tak, aby maksymalnie zwiększyć głębię ostrości, zapewniając ostrzy obraz od punktu bliskiego aż do nieskończoności.","why":"Stosowana głównie w fotografii krajobrazowej do uzyskania ostrości na całym planie zdjęcia.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/6/67/Hyperfocal_distance_Bulgarian.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/6/67/Hyperfocal_distance_Bulgarian.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"A tool for illustrating hyperfocal distance focusing against object and infinity focusing with caption in Bulgarian.","source":"A tool for illustrating hyperfocal distance focusing against object and infinity focusing with caption in Bulgarian.\nWikimedia Commons · CC BY-SA 3.0 · Randreev · AI-ranked: Obraz przedstawia narzędzie ilustrujące ustawienie ostrości hiperfokalnej z wyraźnym oznaczeniem odległości do obiektów i nieskończoności oraz podpisem wyjaśniającym ideę, co dobrze pasuje do edukacyjnego kontekstu techniki ustawiania ostrości hiperfokalnej.","fileTitle":"Hyperfocal distance Bulgarian.jpg","query":"odległość hiperfokalna","caption":"A tool for illustrating hyperfocal distance focusing against object and infinity focusing with caption in Bulgarian.\nWikimedia Commons · CC BY-SA 3.0 · Randreev · AI-ranked: Obraz przedstawia narzędzie ilustrujące ustawienie ostrości hiperfokalnej z wyraźnym oznaczeniem odległości do obiektów i nieskończoności oraz podpisem wyjaśniającym ideę, co dobrze pasuje do edukacyjnego kontekstu techniki ustawiania ostrości hiperfokalnej."}},"ostrosc":{"title":"Ostrość","aliases":["Ostrość","fokus","sharpness","wyostrzanie obrazu"],"explanation":"Ostrość to właściwość obrazu polegająca na wyraźnym i czytelnym odwzorowaniu szczegółów fotografowanego obiektu. W fotografii oznacza to, że elementy zdjęcia są dobrze zdefiniowane i niezamazane.","why":"Ostrość jest kluczowa, ponieważ decyduje o jakości zdjęcia i możliwości zauważenia detali. Jej odpowiednie ustawienie jest podstawą do kontrolowania głębi ostrości oraz uzyskania efektów artystycznych w fotografii.","image":{"url":"https://pixabay.com/get/gc925fe87927a577a671c25c0732732e229c0f7d828267a133282e769d974b0cc4ebf4121bef1d080359327d50e10eb120ae30a4148ecc0ee737ecdc5360a7cb8_640.jpg","originalUrl":"https://pixabay.com/photos/grecja-chania-g%C3%B3ry-pejza%C5%BC-4729488/","label":"grecja, chania, góry, pejzaż, mountains, nature, summer, chania, chania, góry, góry, góry, góry, góry","source":"Pixabay · szkolnynet","caption":"Pixabay · szkolnynet"}}};
+
+document.querySelectorAll('.term').forEach(el => {
+  el.addEventListener('click', () => {
+    const key = el.dataset.term;
+    const term = TERMS[key];
+
+    if (!term) return;
+
+    document.getElementById("sidePanel").innerHTML =
+      '<div class="term-box">' +
+      '<h3>' + term.title + '</h3>' +
+    (term.image && term.image.url
+  ? '<div>' +
+      '<img src="' + term.image.url + '">' +
+      '<div class="img-meta">' + (term.image.source || '') + '</div>' +
+    '</div>'
+  : '') +
+      '<p>' + term.explanation + '</p>' +
+      '<p><em>' + (term.why || '') + '</em></p>' +
+      '</div>';
+  });
+});
+
+document.addEventListener('click', (event) => {
+  const img = event.target.closest('.term-box img');
+  if (!img) return;
+
+  const overlay = document.createElement('div');
+  overlay.style.position = 'fixed';
+  overlay.style.inset = '0';
+  overlay.style.background = 'rgba(0,0,0,.82)';
+  overlay.style.display = 'grid';
+  overlay.style.placeItems = 'center';
+  overlay.style.zIndex = '9999';
+  overlay.style.cursor = 'zoom-out';
+
+  const big = document.createElement('img');
+  big.src = img.src;
+  big.style.maxWidth = '92vw';
+  big.style.maxHeight = '92vh';
+  big.style.objectFit = 'contain';
+  big.style.borderRadius = '14px';
+  big.style.background = '#fff';
+
+  overlay.appendChild(big);
+  overlay.addEventListener('click', () => overlay.remove());
+  document.body.appendChild(overlay);
+});
+</script>
+
+</body>
+</html>
