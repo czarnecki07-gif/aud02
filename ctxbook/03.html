@@ -1,0 +1,388 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>OBIEKTYWY I PERSPEKTYWA</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  background: #f6f2ea;
+  color: #171411;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  min-height: 100vh;
+}
+
+main {
+  padding: 54px 64px 90px;
+  max-width: 860px;
+}
+
+h1 {
+  margin: 0 0 10px;
+  font-size: 54px;
+  line-height: 1.02;
+  letter-spacing: -0.04em;
+  font-weight: 800;
+}
+
+h2 {
+  margin: 46px 0 18px;
+  font-size: 30px;
+  line-height: 1.18;
+  font-weight: 800;
+}
+
+.reader-subtitle {
+  margin: 0 0 42px;
+  color: #6f675d;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.reader-paragraph {
+  font-size: 20px;
+  line-height: 1.78;
+  margin: 0 0 28px;
+  white-space: pre-wrap;
+}
+
+.reader-hero-image,
+.reader-section-image {
+  margin: 24px 0 34px;
+}
+
+.reader-hero-image img,
+.reader-section-image img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: contain;
+  border-radius: 18px;
+  background: #f0ece3;
+  box-shadow: 0 14px 34px rgba(30, 25, 18, 0.08);
+}
+
+.reader-section-image img {
+  max-height: 320px;
+}
+
+.reader-hero-image figcaption,
+.reader-section-image figcaption {
+  margin-top: 8px;
+  color: #8a8277;
+  font-size: 12px;
+  line-height: 1.4;
+}
+aside {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+  border-left: 1px solid #ddd4c5;
+  background: #faf7ef;
+  padding: 38px 28px;
+}
+
+aside::before {
+  content: "Wyjaśnienia";
+  display: block;
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+
+.term {
+  background: #fff1b8;
+  border-bottom: 2px solid #d8b429;
+  border-radius: 4px;
+  padding: 0 2px;
+  cursor: pointer;
+}
+
+.term:hover {
+  background: #ffe680;
+}
+
+.term-box {
+  border: 1px solid #ddd4c5;
+  border-radius: 18px;
+  padding: 18px;
+  background: #fffdf8;
+  box-shadow: 0 14px 34px rgba(30, 25, 18, 0.07);
+}
+
+.term-box h3 {
+  margin: 0 0 14px;
+  font-size: 25px;
+  line-height: 1.18;
+  font-weight: 800;
+}
+
+.term-box p {
+  font-size: 18px;
+  line-height: 1.58;
+  margin: 0 0 14px;
+}
+
+.term-box img {
+  width: 100%;
+  max-height: 260px;
+  object-fit: contain;
+  border-radius: 14px;
+  background: #f0ece3;
+  margin: 8px 0 12px;
+  cursor: zoom-in;
+}
+
+.img-meta {
+  margin: -4px 0 12px;
+  font-size: 12px;
+  color: #8a8277;
+  line-height: 1.35;
+}
+
+.brand {
+  grid-column: 1 / 2;
+  margin: 0 64px 34px;
+  padding: 22px 28px;
+  border: 1px solid #ddd4c5;
+  border-radius: 22px;
+  background: #fffdf8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  box-shadow: 0 14px 36px rgba(30, 25, 18, 0.06);
+  position: relative;
+  z-index: 2;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-word {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.brand-name {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 46px;
+  font-weight: 900;
+  letter-spacing: -0.085em;
+  color: #171717;
+}
+
+.brand-format {
+  margin-top: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  color: #6157ff;
+}
+
+.brand-meta {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  white-space: nowrap;
+}
+
+.brand-link {
+  color: #6157ff;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  body {
+    display: block;
+  }
+
+  main {
+    padding: 32px 24px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  aside {
+    position: static;
+    height: auto;
+    border-left: 0;
+    border-top: 1px solid #ddd4c5;
+  }
+
+  .brand {
+  margin: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  grid-column: auto;
+}
+
+.brand-name {
+  font-size: 36px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<main>
+<h1>OBIEKTYWY I PERSPEKTYWA</h1>
+<div class="reader-subtitle">CTXBOOK – text easy to understand</div>
+
+
+    <figure class="reader-hero-image">
+      <img src="https://pixabay.com/get/g28d1fe02190701d0db3d31b494bdc18bc1926551066c329bb65d0314cfe2ccfa5848c7b3db4559464a7e03c6f17a9626_640.jpg" alt="camera lenses, objective, lenses, photography, macro, telephoto lens, camera lens, photo accessories, camera lenses, camera lenses, camera lenses, camera lenses, camera lenses">
+      <figcaption>Pixabay · TBIT</figcaption>
+    </figure>
+  
+
+
+  <section>
+    
+    <h2>Charakterystyka najważniejszych typów obiektywów fotograficznych</h2>
+    <p class="reader-paragraph">OBIEKTYWY I PERSPEKTYWA</p>
+    
+  </section>
+
+  <section>
+    
+    <h2>Wpływ ogniskowej i światłosiły obiektywu na obraz</h2>
+    <p class="reader-paragraph">Rodzaje obiektywów
+1. <span class="term" data-term="szerokokatny_obiektyw">Szerokokątny (10–35 mm)</span>
+• szeroki kadr
+• duża głębia ostrości
+• zniekształcenia na brzegach
+• zastosowanie: krajobraz, architektura, wnętrza
+2. <span class="term" data-term="standardowy_obiektyw">Standardowy (35–70 mm)</span>
+• <span class="term" data-term="standardowy_obiektyw">naturalna perspektywa</span>
+• brak zniekształceń
+• zastosowanie: portret, reportaż, codzienne zdjęcia
+3. Teleobiektyw (70–300 mm i więcej)
+• wąski kadr
+• <span class="term" data-term="teleobiektyw"><span class="term" data-term="kompresja_perspektywy">kompresja perspektywy</span></span> (obiekty wydają się bliżej siebie)
+• mała głębia ostrości
+• zastosowanie: sport, przyroda, portret z daleka
+4. <span class="term" data-term="makro">Makro</span>
+• <span class="term" data-term="makro">makro</span>&quot;&gt;<span class="term" data-term="<span class="term" data-term="makro">makro</span>">ostre zdjęcia z bardzo bliska</span>
+• odwzorowanie 1:1
+• zastosowanie: owady, detale, tekstury
+5. <span class="term" data-term="fisheye">Fisheye</span> (<span class="term" data-term="fisheye">fisheye</span>&quot;&gt;<span class="term" data-term="<span class="term" data-term="fisheye">fisheye</span>">rybie oko</span>)
+• ekstremalnie <span class="term" data-term="szerokokatny_obiektyw">szeroki kąt</span>
+• mocne zniekształcenia
+• zastosowanie: kreatywne ujęcia, sport, wnętrza
+6. <span class="term" data-term="tilt_shift">Tilt-shift</span> (<span class="term" data-term="tilt_shift">TS</span>)
+Obiektyw specjalistyczny do kontroli perspektywy i płaszczyzny ostrości.
+Funkcje:
+• Shift (przesunięcie)
+– koryguje zbieżność linii (np. piony budynków)
+– używany w architekturze
+• Tilt (pochylenie)
+– zmienia kąt płaszczyzny ostrości
+– pozwala uzyskać efekt miniatury
+Zastosowania:
+• architektura
+• wnętrza
+• produkt
+• efekt miniatury
+<span class="term" data-term="ogniskowa">Ogniskowa</span> a perspektywa
+• <span class="term" data-term="ogniskowa">ogniskowa</span>&quot;&gt;<span class="term" data-term="<span class="term" data-term="ogniskowa">ogniskowa</span>">krótka <span class="term" data-term="ogniskowa">ogniskowa</span></span> (np. 18 mm) → szeroko, dużo w kadrze, zniekształcenia
+• <span class="term" data-term="ogniskowa">ogniskowa</span>&quot;&gt;<span class="term" data-term="<span class="term" data-term="ogniskowa">ogniskowa</span>">długa <span class="term" data-term="ogniskowa">ogniskowa</span></span> (np. 200 mm) → wąsko, <span class="term" data-term="teleobiektyw"><span class="term" data-term="kompresja_perspektywy">kompresja perspektywy</span></span>, mała głębia
+<span class="term" data-term="swiatlosila">Światłosiła</span> obiektywu
+• mała <span class="term" data-term="swiatlosila">liczba f</span> (np. f/1.8) → jasny obiektyw, mała głębia ostrości
+• duża <span class="term" data-term="swiatlosila">liczba f</span> (np. f/5.6) → ciemniejszy obiektyw, większa głębia ostrości
+Zastosowania obiektywów
+• krajobraz → <span class="term" data-term="szerokokatny_obiektyw">szeroki kąt</span>
+• portret → 50–85 mm
+• sport → teleobiektyw
+• <span class="term" data-term="makro">makro</span> → obiektyw <span class="term" data-term="makro">makro</span>
+• architektura → <span class="term" data-term="szerokokatny_obiektyw">szeroki kąt</span>, <span class="term" data-term="tilt_shift">tilt-shift</span></p>
+    
+  </section>
+
+</main>
+
+<aside id="sidePanel">
+  <div class="term-box">
+    <h3>Wyjaśnienia</h3>
+    <p>Kliknij podkreślone pojęcie w tekście.</p>
+  </div>
+</aside>
+
+<div class="brand">
+  <div class="brand-logo">
+    <span class="brand-word">
+      <span class="brand-name">contextero</span>
+      <span class="brand-format">CTXBOOK FORMAT</span>
+    </span>
+  </div>
+
+  <div class="brand-meta">
+    Powered by <a class="brand-link" href="https://contextero.com" target="_blank">contextero.com</a>
+  </div>
+</div>
+<script>
+const TERMS = {"szerokokatny_obiektyw":{"title":"Szerokokątny obiektyw","aliases":["Szerokokątny (10–35 mm)","szeroki kąt"],"explanation":"Obiektyw o krótkiej ogniskowej (10–35 mm) umożliwiający szeroki kadr i dużą głębię ostrości, charakteryzuje się zniekształceniami na brzegach kadru.","why":"Szerokokątny obiektyw pozwala objąć na zdjęciu szeroki obszar, dzięki czemu jest idealny do fotografii krajobrazowej, architektury i wnętrz, gdzie ważne jest uchwycenie dużej przestrzeni.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Preobrazhenskoye_District_Moscow_Electric_Lamp_Plant_2023-07_1689624864.jpg/1280px-Preobrazhenskoye_District_Moscow_Electric_Lamp_Plant_2023-07_1689624864.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/d/df/Preobrazhenskoye_District_Moscow_Electric_Lamp_Plant_2023-07_1689624864.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"enterprise, factory, landmark, landmark Moscow Electric Lamp Plant","source":"Wikimedia Commons · CC BY-SA 4.0 · Artyom Svetlov · AI-ranked: Among the candidates, only index 5 features a real photographic landscape image consistent with being taken by a wide-angle lens, showing a broad scene (the Moscow Electric Lamp Plant area). The other images are close-ups of lenses or cameras, which do not match the context request for a landscape photo taken with a wide-angle lens.","fileTitle":"Preobrazhenskoye District Moscow Electric Lamp Plant 2023-07 1689624864.jpg","query":"Szerokokątny obiektyw"}},"standardowy_obiektyw":{"title":"Standardowy obiektyw","aliases":["Standardowy (35–70 mm)","naturalna perspektywa"],"explanation":"Obiektyw o ogniskowej średniej (35–70 mm) zapewniający naturalną perspektywę i brak zniekształceń obrazu.","why":"Jest to najczęściej używany obiektyw do fotografii portretowej, reportażowej oraz codziennej, ponieważ tworzy obraz zbliżony do ludzkiego widzenia.","image":{"url":"https://images.pexels.com/photos/1132157/pexels-photo-1132157.jpeg?auto=compress&cs=tinysrgb&h=650&w=940","originalUrl":"https://www.pexels.com/photo/close-up-photography-of-camera-lens-1132157/","label":"A Canon 50mm lens on a dark surface with blurred bokeh effect in the background.","source":"A Canon 50mm lens on a dark surface with blurred bokeh effect in the background.\nPexels · Hasan Albari","caption":"A Canon 50mm lens on a dark surface with blurred bokeh effect in the background.\nPexels · Hasan Albari"}},"teleobiektyw":{"title":"Teleobiektyw","aliases":["Teleobiektyw (70–300 mm)","kompresja perspektywy"],"explanation":"Obiektyw o długiej ogniskowej (70–300 mm i więcej), dający wąski kadr oraz efekt kompresji perspektywy, gdzie obiekty wydają się bliżej siebie.","why":"Idealny do fotografii sportowej, przyrody i portretów z daleka, gdzie wymagana jest duża odległość od fotografowanego obiektu i selektywna głębia ostrości.","image":{"url":"https://images.pexels.com/photos/29502823/pexels-photo-29502823.jpeg?auto=compress&cs=tinysrgb&h=650&w=940","originalUrl":"https://www.pexels.com/photo/urban-cityscape-of-high-rise-apartment-buildings-29502823/","label":"Aerial view of modern high-rise apartment buildings amidst greenery in an urban setting, captured during the day.","source":"Pexels · Roman Biernacki","caption":"Pexels · Roman Biernacki"}},"makro":{"title":"Obiektyw makro","aliases":["Makro","ostre zdjęcia z bardzo bliska"],"explanation":"Obiektyw pozwalający na wykonywanie zdjęć z bardzo bliskiej odległości z odwzorowaniem 1:1, co oznacza, że rozmiar zdjętego obiektu jest taki sam jak w rzeczywistości.","why":"Umożliwia uchwycenie szczegółów owadów, detali i tekstur, co jest niemożliwe do osiągnięcia typowymi obiektywami.","image":{"url":"https://pixabay.com/get/ge135176689f5e8f103439423a1e96d02114b2516c4294ed81daeaf99bdc8dae3154eb3dfea8bbea97025b08aa08e64a18d9d12bdef04808dd18905fbf8d198df_640.jpg","originalUrl":"https://pixabay.com/photos/butterfly-insects-nature-animal-5131967/","label":"butterfly, insects, nature, animal, wing, macro, photo, camera, affix, photo, photo, photo, photo, photo, camera","source":"Pixabay · iemlee"}},"fisheye":{"title":"Obiektyw Fisheye (rybie oko)","aliases":["Fisheye","rybie oko"],"explanation":"Obiektyw o ekstremalnie szerokim kącie widzenia z mocnymi zniekształceniami, tworzący charakterystyczny wypukły obraz.","why":"Stosowany do kreatywnych ujęć, zdjęć sportowych i fotografii wnętrz, gdzie chcemy uzyskać unikalny efekt wizualny.","image":{"url":"https://images.pexels.com/photos/16033846/pexels-photo-16033846.jpeg?auto=compress&cs=tinysrgb&h=650&w=940","originalUrl":"https://www.pexels.com/photo/residential-area-with-fisheye-effect-16033846/","label":"Fisheye lens captures urban high-rise buildings amidst bare winter trees and snow.","source":"Fisheye lens captures urban high-rise buildings amidst bare winter trees and snow.\nPexels · Антон Злобин","caption":"Fisheye lens captures urban high-rise buildings amidst bare winter trees and snow.\nPexels · Антон Злобин"}},"tilt_shift":{"title":"Obiektyw tilt-shift (TS)","aliases":["Tilt-shift","TS","kontrola perspektywy i płaszczyzny ostrości"],"explanation":"Specjalistyczny obiektyw pozwalający na przesunięcie (shift) oraz pochylanie (tilt), co umożliwia korekcję perspektywy i zmianę płaszczyzny ostrości.","why":"Dzięki funkcjom shift i tilt stosowany jest w architekturze do eliminacji zbieżności linii oraz w fotografii kreatywnej do uzyskania efektu miniatury.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Samyang_T-S_24_mm_f3.5.jpg/1280px-Samyang_T-S_24_mm_f3.5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/e/e3/Samyang_T-S_24_mm_f3.5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"This photo was taken with Sony SLT-A77 camera, thanks to cooperation with Sony Poland.You can see all photographs in category Taken with Sony SLT-A77.","source":"This photo was taken with Sony SLT-A77 camera, thanks to cooperation with Sony Poland.You can see all photographs in category Taken with Sony SLT-A77.\nWikimedia Commons · CC BY-SA 3.0 · When reusing, please credit me as author: Adam Kliczek, http://memoriesstay.com (CC-BY-SA- · AI-ranked: The image depicts a Samyang T-S 24 mm f3.5 tilt-shift lens, which is a real photographic object directly related to the term 'Obiektyw tilt-shift'. It is a clear, professional photo suitable for educational content, showing the actual specialized lens used for perspective correction and creative photography, perfectly matching the context.","fileTitle":"Samyang T-S 24 mm f3.5.jpg","query":"Obiektyw tilt-shift","caption":"This photo was taken with Sony SLT-A77 camera, thanks to cooperation with Sony Poland.You can see all photographs in category Taken with Sony SLT-A77.\nWikimedia Commons · CC BY-SA 3.0 · When reusing, please credit me as author: Adam Kliczek, http://memoriesstay.com (CC-BY-SA- · AI-ranked: The image depicts a Samyang T-S 24 mm f3.5 tilt-shift lens, which is a real photographic object directly related to the term 'Obiektyw tilt-shift'. It is a clear, professional photo suitable for educational content, showing the actual specialized lens used for perspective correction and creative photography, perfectly matching the context."}},"ogniskowa":{"title":"Ogniskowa obiektywu","aliases":["Ogniskowa","krótka ogniskowa","długa ogniskowa"],"explanation":"Odległość pomiędzy środkiem optycznym obiektywu a matrycą lub filmem, wpływająca na kąt widzenia i kompozycję kadru.","why":"Ogniskowa decyduje o tym, ile zobaczymy na zdjęciu i jak perspektywa będzie oddana – krótkie ogniskowe dają szeroki kadr, długie – wąski i kompresję perspektywy.","image":{"url":"https://pixabay.com/get/ga650e60d62c17b6535905d080a5df3e8f706912e05a1c1f90768c1d65414e6093b250349fb985e5e47d7af035f2c7b1462a7f639931d23960b59b03295691559_640.jpg","originalUrl":"https://pixabay.com/photos/lens-camera-taking-photos-3046269/","label":"lens, camera, taking photos, photography, focus, aperture, canon, hand, glass, focal length, dslr, optics, outdoor, equipment, technology, camera, camera, photography, focus, focus, focus, focus, focus","source":"Pixabay · jonas-svidras","caption":"Pixabay · jonas-svidras"}},"swiatlosila":{"title":"Światłosiła obiektywu","aliases":["światłosiła","liczba f"],"explanation":"Parametr określający jasność obiektywu, wyrażany jako liczba f (np. f/1.8, f/5.6). Mniejsza liczba oznacza jaśniejszy obiektyw.","why":"Światłosiła wpływa na możliwość fotografowania w słabych warunkach oświetleniowych oraz na głębię ostrości, co jest kluczowe w artystycznym kreowaniu zdjęć.","image":{"url":"https://images.pexels.com/photos/816622/pexels-photo-816622.jpeg?auto=compress&cs=tinysrgb&h=650&w=940","originalUrl":"https://www.pexels.com/photo/photo-of-black-camera-lens-816622/","label":"Detailed close-up of a camera lens showcasing reflective glass coating and sleek design.","source":"Pexels · Alex Andrews","caption":"Pexels · Alex Andrews"}},"kompresja_perspektywy":{"title":"Kompresja perspektywy","aliases":["kompresja perspektywy"],"explanation":"Efekt optyczny polegający na wizualnym zbliżeniu obiektów na zdjęciu, uzyskiwany za pomocą teleobiektywu o długiej ogniskowej.","why":"Kompresja perspektywy jest często wykorzystywana w fotografii portretowej i sportowej, aby uzyskać bardziej zwarty i estetyczny obraz.","image":{"url":"https://pixabay.com/get/g749cf905a8ebb224582ea4407e29d732e6eea56a97d605164c6d01e6833bef99f3fc5c79469f3680f2fd210d8098c0bb6b97a5d15cb17e9b2fc1629962df9d26_640.jpg","originalUrl":"https://pixabay.com/photos/hamburg-alster-heaven-water-sunset-5286863/","label":"hamburg, alster, heaven, water, nature, sunset, evening atmosphere, atmospheric, architecture, waters, inner alster, binnenalster, city, tele michel","source":"Pixabay · martinklass"}}};
+
+document.querySelectorAll('.term').forEach(el => {
+  el.addEventListener('click', () => {
+    const key = el.dataset.term;
+    const term = TERMS[key];
+
+    if (!term) return;
+
+    document.getElementById("sidePanel").innerHTML =
+      '<div class="term-box">' +
+      '<h3>' + term.title + '</h3>' +
+    (term.image && term.image.url
+  ? '<div>' +
+      '<img src="' + term.image.url + '">' +
+      '<div class="img-meta">' + (term.image.source || '') + '</div>' +
+    '</div>'
+  : '') +
+      '<p>' + term.explanation + '</p>' +
+      '<p><em>' + (term.why || '') + '</em></p>' +
+      '</div>';
+  });
+});
+
+document.addEventListener('click', (event) => {
+  const img = event.target.closest('.term-box img');
+  if (!img) return;
+
+  const overlay = document.createElement('div');
+  overlay.style.position = 'fixed';
+  overlay.style.inset = '0';
+  overlay.style.background = 'rgba(0,0,0,.82)';
+  overlay.style.display = 'grid';
+  overlay.style.placeItems = 'center';
+  overlay.style.zIndex = '9999';
+  overlay.style.cursor = 'zoom-out';
+
+  const big = document.createElement('img');
+  big.src = img.src;
+  big.style.maxWidth = '92vw';
+  big.style.maxHeight = '92vh';
+  big.style.objectFit = 'contain';
+  big.style.borderRadius = '14px';
+  big.style.background = '#fff';
+
+  overlay.appendChild(big);
+  overlay.addEventListener('click', () => overlay.remove());
+  document.body.appendChild(overlay);
+});
+</script>
+
+</body>
+</html>
