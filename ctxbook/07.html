@@ -1,0 +1,423 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>OŚWIETLENIE W FOTOGRAFII</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  background: #f6f2ea;
+  color: #171411;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  min-height: 100vh;
+}
+
+main {
+  padding: 54px 64px 90px;
+  max-width: 860px;
+}
+
+h1 {
+  margin: 0 0 10px;
+  font-size: 54px;
+  line-height: 1.02;
+  letter-spacing: -0.04em;
+  font-weight: 800;
+}
+
+h2 {
+  margin: 46px 0 18px;
+  font-size: 30px;
+  line-height: 1.18;
+  font-weight: 800;
+}
+
+.reader-subtitle {
+  margin: 0 0 42px;
+  color: #6f675d;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.reader-paragraph {
+  font-size: 20px;
+  line-height: 1.78;
+  margin: 0 0 28px;
+  white-space: pre-wrap;
+}
+
+.reader-hero-image,
+.reader-section-image {
+  margin: 24px 0 34px;
+}
+
+.reader-hero-image img,
+.reader-section-image img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: contain;
+  border-radius: 18px;
+  background: #f0ece3;
+  box-shadow: 0 14px 34px rgba(30, 25, 18, 0.08);
+}
+
+.reader-section-image img {
+  max-height: 320px;
+}
+
+.reader-hero-image figcaption,
+.reader-section-image figcaption {
+  margin-top: 8px;
+  color: #8a8277;
+  font-size: 12px;
+  line-height: 1.4;
+}
+aside {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+  border-left: 1px solid #ddd4c5;
+  background: #faf7ef;
+  padding: 38px 28px;
+}
+
+aside::before {
+  content: "Wyjaśnienia";
+  display: block;
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+
+.term {
+  background: #fff1b8;
+  border-bottom: 2px solid #d8b429;
+  border-radius: 4px;
+  padding: 0 2px;
+  cursor: pointer;
+}
+
+.term:hover {
+  background: #ffe680;
+}
+
+.term-box {
+  border: 1px solid #ddd4c5;
+  border-radius: 18px;
+  padding: 18px;
+  background: #fffdf8;
+  box-shadow: 0 14px 34px rgba(30, 25, 18, 0.07);
+}
+
+.term-box h3 {
+  margin: 0 0 14px;
+  font-size: 25px;
+  line-height: 1.18;
+  font-weight: 800;
+}
+
+.term-box p {
+  font-size: 18px;
+  line-height: 1.58;
+  margin: 0 0 14px;
+}
+
+.term-box img {
+  width: 100%;
+  max-height: 260px;
+  object-fit: contain;
+  border-radius: 14px;
+  background: #f0ece3;
+  margin: 8px 0 12px;
+  cursor: zoom-in;
+}
+
+.img-meta {
+  margin: -4px 0 12px;
+  font-size: 12px;
+  color: #8a8277;
+  line-height: 1.35;
+}
+
+.brand {
+  grid-column: 1 / 2;
+  margin: 0 64px 34px;
+  padding: 22px 28px;
+  border: 1px solid #ddd4c5;
+  border-radius: 22px;
+  background: #fffdf8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  box-shadow: 0 14px 36px rgba(30, 25, 18, 0.06);
+  position: relative;
+  z-index: 2;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-word {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.brand-name {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 46px;
+  font-weight: 900;
+  letter-spacing: -0.085em;
+  color: #171717;
+}
+
+.brand-format {
+  margin-top: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  color: #6157ff;
+}
+
+.brand-meta {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  white-space: nowrap;
+}
+
+.brand-link {
+  color: #6157ff;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  body {
+    display: block;
+  }
+
+  main {
+    padding: 32px 24px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  aside {
+    position: static;
+    height: auto;
+    border-left: 0;
+    border-top: 1px solid #ddd4c5;
+  }
+
+  .brand {
+  margin: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  grid-column: auto;
+}
+
+.brand-name {
+  font-size: 36px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<main>
+<h1>OŚWIETLENIE W FOTOGRAFII</h1>
+<div class="reader-subtitle">CTXBOOK – text easy to understand</div>
+
+
+    <figure class="reader-hero-image">
+      <img src="https://pixabay.com/get/g402395dd5a070cbfc7dcbc7c2adab93ec3dee349f78a542b098f1c85106447342f47786a32f5a3858b3c2fe219f77fdebe9f4f675e3c583a3b6a76044b105226_640.jpg" alt="iceland, landscape, water, heaven, waters, sea, nature, waves, rock, stone, black-and-white, b w, silhouette, vik, offering a view">
+      <figcaption>Pixabay · nicos_fotowelt</figcaption>
+    </figure>
+  
+
+
+  <section>
+    
+    <h2>Światło naturalne i sztuczne</h2>
+    <p class="reader-paragraph"><span class="term" data-term="oswietlenie_w_fotografii">OŚWIETLENIE W FOTOGRAFII</span></p>
+    
+  </section>
+
+  <section>
+    
+    <h2>Światło miękkie i twarde</h2>
+    <p class="reader-paragraph">Rodzaje światła
+1. <span class="term" data-term="swiatlo_naturalne">Światło naturalne</span>
+• słońce, niebo, odbicia
+• zmienne, zależne od pogody i pory dnia
+• miękkie w cieniu, twarde w pełnym słońcu
+2. <span class="term" data-term="swiatlo_sztuczne">Światło sztuczne</span>
+• lampy studyjne
+• lampy LED
+• świetlówki
+• żarówki wolframowe
+• <span class="term" data-term="lampy_blys_kowe">lampa błyskowa</span>
+Charakter światła
+<span class="term" data-term="swiatlo_miekie">Światło miękkie</span>
+• duże źródło światła
+• małe cienie
+• delikatne przejścia tonalne
+• powstaje w cieniu, przy chmurach, z softboxa
+<span class="term" data-term="swiatlo_twarde">Światło twarde</span>
+• małe źródło światła
+• ostre cienie
+• duży kontrast
+• powstaje w pełnym słońcu, z gołej lampy błyskowej
+Kierunki światła
+<span class="term" data-term="kierunki_swiatla">Światło przednie</span>
+• oświetla twarz równomiernie
+• mało cieni
+• mało plastyczne
+<span class="term" data-term="kierunki_swiatla">Światło boczne</span>
+• mocna plastyka
+• podkreśla faktury
+• pół twarzy w cieniu
+<span class="term" data-term="kierunki_swiatla">Światło tylne</span> (kontrowe)
+• świeci zza obiektu
+• tworzy obrys (rim light)
+• wymaga doświetlenia przodu
+<span class="term" data-term="kierunki_swiatla">Światło górne</span>
+• mocne cienie pod oczami
+• efekt dramatyczny
+<span class="term" data-term="kierunki_swiatla">Światło dolne</span>
+• nienaturalne, teatralne
+• często niekorzystne w portrecie
+<span class="term" data-term="temperatura_barwowa">Temperatura barwowa</span> (Kelwiny)
+• 3200 K – światło żarowe (ciepłe)
+• 5600 K – światło dzienne (neutralne)
+• 7000 K+ – cień, niebo (zimne)
+<span class="term" data-term="balans_bieli">Balans bieli</span>
+• dopasowuje kolor światła do sceny
+• tryby: auto, światło dzienne, cień, żarówka, świetlówka, <span class="term" data-term="lampy_blys_kowe">lampa błyskowa</span>
+Modyfikatory światła
+<span class="term" data-term="softbox">Softbox</span>
+• zmiękcza światło
+• równomierne oświetlenie
+Parasolka biała
+• miękkie, rozproszone światło
+Parasolka srebrna
+• mocniejsze, bardziej kontrastowe światło
+<span class="term" data-term="beauty_dish">Beauty dish</span>
+• portret, kontrast + miękkość
+• charakterystyczne światło na twarzy
+<span class="term" data-term="grid">Grid</span> (<span class="term" data-term="<span class="term" data-term="grid">grid</span>">plaster miodu</span>)
+• zawęża strumień światła
+• kontrola kierunku
+<span class="term" data-term="blenda">Blenda</span>
+• odbija światło
+• kolory: biała, srebrna, złota, czarna
+Dyfuzor
+• rozprasza światło
+• zmniejsza kontrast
+<span class="term" data-term="lampy_blys_kowe">Lampa błyskowa</span>
+• bardzo krótki czas błysku
+• zamraża ruch
+• może być:
+• wbudowana w aparat
+• systemowa (speedlight), mocowana do aparatu
+• studyjna, dużej mocy, wykorzystywana w studio
+<span class="term" data-term="oswietlenie_cia_gle">Oświetlenie ciągłe</span> vs błyskowe
+Ciągłe
+• widać efekt na żywo
+• łatwe w użyciu
+• mniejsza moc
+Błyskowe
+• duża moc
+• zamraża ruch
+• wymaga ustawień i synchronizacji</p>
+    
+  </section>
+
+</main>
+
+<aside id="sidePanel">
+  <div class="term-box">
+    <h3>Wyjaśnienia</h3>
+    <p>Kliknij podkreślone pojęcie w tekście.</p>
+  </div>
+</aside>
+
+<div class="brand">
+  <div class="brand-logo">
+    <span class="brand-word">
+      <span class="brand-name">contextero</span>
+      <span class="brand-format">CTXBOOK FORMAT</span>
+    </span>
+  </div>
+
+  <div class="brand-meta">
+    Powered by <a class="brand-link" href="https://contextero.com" target="_blank">contextero.com</a>
+  </div>
+</div>
+<script>
+const TERMS = {"swiatlo_naturalne":{"title":"Światło naturalne","aliases":["światło naturalne"],"explanation":"Światło pochodzące z naturalnych źródeł, takich jak słońce, niebo oraz odbicia światła naturalnego, zmienne w zależności od pogody i pory dnia.","why":"Jest podstawowym źródłem światła dla fotografii plenerowej i wpływa na atmosferę zdjęć.","image":{"url":"https://images.pexels.com/photos/20036258/pexels-photo-20036258.jpeg?auto=compress&cs=tinysrgb&h=650&w=940","originalUrl":"https://www.pexels.com/photo/a-room-with-a-window-and-chairs-in-front-of-it-20036258/","label":"Sunlit modern office lounge with a city view, featuring elegant furniture and large windows in Berlin.","source":"Sunlit modern office lounge with a city view, featuring elegant furniture and large windows in Berlin.\nPexels · Ömer Gülen","caption":"Sunlit modern office lounge with a city view, featuring elegant furniture and large windows in Berlin.\nPexels · Ömer Gülen"}},"swiatlo_sztuczne":{"title":"Światło sztuczne","aliases":["światło sztuczne"],"explanation":"Światło generowane przez urządzenia takie jak lampy studyjne, lampy LED, świetlówki, żarówki wolframowe oraz lampy błyskowe.","why":"Umożliwia pełną kontrolę nad oświetleniem niezależnie od warunków naturalnych, co jest kluczowe w fotografii studyjnej.","image":{"url":"https://images.pexels.com/photos/163790/at-night-under-a-lantern-guy-night-city-163790.jpeg?auto=compress&cs=tinysrgb&h=650&w=940","originalUrl":"https://www.pexels.com/photo/man-standing-in-front-of-street-light-turned-on-163790/","label":"Silhouetted man under a bright streetlight at night, urban scene.","source":"Silhouetted man under a bright streetlight at night, urban scene.\nPexels · Pixabay","caption":"Silhouetted man under a bright streetlight at night, urban scene.\nPexels · Pixabay"}},"softbox":{"title":"Softbox","aliases":["softbox"],"explanation":"Modyfikator światła, który zmiękcza światło oraz zapewnia równomierne oświetlenie fotografowanego obiektu.","why":"Pozwala uzyskać miękkie cienie i naturalne przejścia tonalne, co jest ważne w portrecie i fotografii produktowej.","image":{"url":"https://images.pexels.com/photos/8752411/pexels-photo-8752411.jpeg?auto=compress&cs=tinysrgb&h=650&w=940","originalUrl":"https://www.pexels.com/photo/a-vase-with-colorful-flowers-on-a-table-between-softboxes-8752411/","label":"Studio shot featuring professional lighting equipment and a vibrant floral arrangement in Chennai.","source":"Studio shot featuring professional lighting equipment and a vibrant floral arrangement in Chennai.\nPexels · VARAN NM","caption":"Studio shot featuring professional lighting equipment and a vibrant floral arrangement in Chennai.\nPexels · VARAN NM"}},"lampy_blys_kowe":{"title":"Lampa błyskowa","aliases":["lampa błyskowa","goła lampa błyskowa","lampy błyskowe"],"explanation":"Urządzenie emitujące krótki impuls światła, który pozwala zamrozić ruch oraz doświetlić scenę.","why":"Pomaga fotografować w słabych warunkach oświetleniowych i kontrolować ekspozycję.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Nikon_SpeedLight_SB-700.jpg/1280px-Nikon_SpeedLight_SB-700.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/8/86/Nikon_SpeedLight_SB-700.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"Nikon Flash Model SB 700","source":"Nikon Flash Model SB 700\nWikimedia Commons · CC BY-SA 4.0 · Carlos Valenzuela · AI-ranked: The image 'Nikon SpeedLight SB-700.","fileTitle":"Nikon SpeedLight SB-700.jpg","query":"Lampa błyskowa","caption":"Nikon Flash Model SB 700\nWikimedia Commons · CC BY-SA 4.0 · Carlos Valenzuela · AI-ranked: The image 'Nikon SpeedLight SB-700."}},"temperatura_barwowa":{"title":"Temperatura barwowa","aliases":["temperatura barwowa"],"explanation":"Miara barwy światła wyrażona w Kelwinach, określająca czy światło jest ciepłe, neutralne czy zimne.","why":"Ma wpływ na oddanie realistycznych kolorów i nastrój zdjęcia.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/7/7e/Incand-3500-5500-color-temp-comparison.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/7/7e/Incand-3500-5500-color-temp-comparison.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"Comparison of a standard 60 watt (W) frosted incandescent lamp with a color temperature of approximately 2700 kelvin (K), a 13 W 3500 K compact fluorescent lamp, and a 13 W 5500 K compact fluorescent lamp. These lamps are all similar in lumen output, only the color temperature is different.","source":"Comparison of a standard 60 watt (W) frosted incandescent lamp with a color temperature of approximately 2700 kelvin (K), a 13 W 3500 K compact fluorescent lamp, and a 13 W 5500 K compact fluorescent lamp. These lamps are all similar in lumen output, only the color temperature is different.\nWikimedia Commons · Public domain · Yerocus · AI-ranked: The image 'Incand-3500-5500-color-temp-comparison.png' clearly visualizes the concept of color temperature by comparing different standard lamps with distinct temperatures in Kelvins, directly illustrating the term 'temperatura barwowa' in the context of photographic lighting. It is a straightforward, real object comparison relevant to the educational context, avoiding overly technical diagrams and unrelated subjects.","fileTitle":"Incand-3500-5500-color-temp-comparison.png","query":"Temperatura barwowa","caption":"Comparison of a standard 60 watt (W) frosted incandescent lamp with a color temperature of approximately 2700 kelvin (K), a 13 W 3500 K compact fluorescent lamp, and a 13 W 5500 K compact fluorescent lamp. These lamps are all similar in lumen output, only the color temperature is different.\nWikimedia Commons · Public domain · Yerocus · AI-ranked: The image 'Incand-3500-5500-color-temp-comparison.png' clearly visualizes the concept of color temperature by comparing different standard lamps with distinct temperatures in Kelvins, directly illustrating the term 'temperatura barwowa' in the context of photographic lighting. It is a straightforward, real object comparison relevant to the educational context, avoiding overly technical diagrams and unrelated subjects."}},"balans_bieli":{"title":"Balans bieli","aliases":["balans bieli"],"explanation":"Funkcja aparatu lub postprodukcji dopasowująca kolory światła do sceny, aby uzyskać naturalne barwy.","why":"Zapewnia wierne odwzorowanie kolorów mimo różnorodności źródeł światła.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Metrostation-Sofia-University-white-balance-collage.jpg/1280px-Metrostation-Sofia-University-white-balance-collage.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/a/a5/Metrostation-Sofia-University-white-balance-collage.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"Collage of 4 images of Metro station \"Sofia University\", Sofia. The image illustrates the differences in the white balance setting. Up left: auto WB, up right: sun, down left: flash, down right: wolfram bulb","source":"Collage of 4 images of Metro station \"Sofia University\", Sofia. The image illustrates the differences in the white balance setting. Up left: auto WB, up right: sun, down left: flash, down right: wolfram bulb\nWikimedia Commons · CC BY-SA 3.0 · Vassia Atanassova - Spiritia · AI-ranked: Obraz przedstawia kolaż czterech zdjęć tej samej sceny (stacja metra \"Sofia University\"), ukazujący różnice w ustawieniach balansu bieli: auto, słońce, lampka błyskowa i żarówka wolframowa. To idealnie ilustruje pojęcie balansu bieli i jego wpływ na kolory w fotografii, co odpowiada wyjaśnieniu i kontekstowi edukacyjnemu dotyczącym funkcji balansu bieli.","fileTitle":"Metrostation-Sofia-University-white-balance-collage.jpg","query":"Balans bieli","caption":"Collage of 4 images of Metro station \"Sofia University\", Sofia. The image illustrates the differences in the white balance setting. Up left: auto WB, up right: sun, down left: flash, down right: wolfram bulb\nWikimedia Commons · CC BY-SA 3.0 · Vassia Atanassova - Spiritia · AI-ranked: Obraz przedstawia kolaż czterech zdjęć tej samej sceny (stacja metra \"Sofia University\"), ukazujący różnice w ustawieniach balansu bieli: auto, słońce, lampka błyskowa i żarówka wolframowa. To idealnie ilustruje pojęcie balansu bieli i jego wpływ na kolory w fotografii, co odpowiada wyjaśnieniu i kontekstowi edukacyjnemu dotyczącym funkcji balansu bieli."}},"swiatlo_miekie":{"title":"Światło miękkie","aliases":["światło miękkie"],"explanation":"Światło o dużym źródle, dające małe cienie i delikatne przejścia tonalne, np. światło w cieniu lub z softboxa.","why":"Pomaga tworzyć subtelne i naturalne portrety oraz zdjęcia produktów.","image":{"url":"https://pixabay.com/get/gaaa7986b82a4d68d0465849a3a26d032c1c9e0c82e9ec6e253b43a7935bcd63a76e34b84d008f7b2eb6b9f221bbfa9ac_640.jpg","originalUrl":"https://pixabay.com/photos/meisje-vrouw-portret-398665/","label":"meisje, vrouw, portret","source":"Pixabay · bernard1820"}},"swiatlo_twarde":{"title":"Światło twarde","aliases":["światło twarde"],"explanation":"Światło z małego źródła, tworzące ostre cienie i duży kontrast, np. pełne słońce lub goła lampa błyskowa.","why":"Podkreśla faktury i dramatyczne efekty na zdjęciach.","image":{"url":"https://pixabay.com/get/g964a02d53886f926e3276b55bf833539d3ff51a6a44bbb792ee4714820bd382f255af61ce01a733d63747206cac17e00dcd0de1dc8ed1d89eb27b07168782f51_640.jpg","originalUrl":"https://pixabay.com/photos/sunset-sunlight-golden-light-sun-6645036/","label":"sunset, sunlight, golden light, sun, outdoors, meadow, dusk, grass, nature, landscape, sunset, sunlight, sun, sun, sun, sun, sun","source":"Pixabay · andalusian","caption":"Pixabay · andalusian"}},"kierunki_swiatla":{"title":"Kierunki światła","aliases":["światło przednie","światło boczne","światło tylne","kontrowe światło","światło górne","światło dolne"],"explanation":"Różne kierunki padania światła na obiekt, wpływające na jego wygląd i plastyczność.","why":"Właściwe wykorzystanie kierunków światła pozwala modelować kształty i atmosferę zdjęć.","image":{"url":"https://images.pexels.com/photos/12308958/pexels-photo-12308958.jpeg?auto=compress&cs=tinysrgb&h=650&w=940","originalUrl":"https://www.pexels.com/photo/woman-photographing-sitting-model-12308958/","label":"Artistic black and white photo capturing a female photographer shooting a seated subject in a studio.","source":"Pexels · Vika Kirillova","caption":"Pexels · Vika Kirillova"}},"blenda":{"title":"Blenda","aliases":["blenda"],"explanation":"Narzędzie odbijające światło o różnych kolorach (biała, srebrna, złota, czarna) stosowane do doświetlenia i kontroli kontrastu.","why":"Wzmacnia lub modyfikuje światło, poprawiając oświetlenie sceny.","image":{"url":"https://images.pexels.com/photos/9834138/pexels-photo-9834138.jpeg?auto=compress&cs=tinysrgb&h=650&w=940","originalUrl":"https://www.pexels.com/photo/men-engaged-in-professional-photograpy-9834138/","label":"Photographers setting up equipment on rocky lakeside for an outdoor shoot.","source":"Photographers setting up equipment on rocky lakeside for an outdoor shoot.\nPexels · cottonbro studio","caption":"Photographers setting up equipment on rocky lakeside for an outdoor shoot.\nPexels · cottonbro studio"}},"beauty_dish":{"title":"Beauty dish","aliases":["beauty dish"],"explanation":"Specjalny modyfikator światła stosowany głównie w portrecie, który łączy kontrast z miękkością światła, nadając charakterystyczne efekty na twarzy.","why":"Umożliwia uzyskanie atrakcyjnego, modelującego oświetlenia portretowego.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Elinchrom_beauty_dish.jpg/1280px-Elinchrom_beauty_dish.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/8/8f/Elinchrom_beauty_dish.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"Elinchrom beauty dish, 44 cm diameter, white","source":"Elinchrom beauty dish, 44 cm diameter, white\nWikimedia Commons · CC BY-SA 3.0 · Gürkan Sengün · AI-ranked: Obraz 'Elinchrom beauty dish.jpg' przedstawia rzeczywisty i rozpoznawalny modyfikator światła typu beauty dish, pasujący do kontekstu oświetlenia w fotografii portretowej. Jest to fotografia produktu, który ilustruje omawiany termin, co idealnie odpowiada edukacyjnemu celowi ctxbooka.","fileTitle":"Elinchrom beauty dish.jpg","query":"Beauty dish","caption":"Elinchrom beauty dish, 44 cm diameter, white\nWikimedia Commons · CC BY-SA 3.0 · Gürkan Sengün · AI-ranked: Obraz 'Elinchrom beauty dish.jpg' przedstawia rzeczywisty i rozpoznawalny modyfikator światła typu beauty dish, pasujący do kontekstu oświetlenia w fotografii portretowej. Jest to fotografia produktu, który ilustruje omawiany termin, co idealnie odpowiada edukacyjnemu celowi ctxbooka."}},"grid":{"title":"Grid (plaster miodu)","aliases":["grid","plaster miodu"],"explanation":"Modyfikator światła, który zawęża strumień i pozwala na precyzyjne kontrolowanie kierunku oświetlenia.","why":"Pomaga izolować światło na wybranych fragmentach sceny, zwiększając kontrolę artystyczną.","image":{"url":"https://images.pexels.com/photos/12549441/pexels-photo-12549441.jpeg?auto=compress&cs=tinysrgb&h=650&w=940","originalUrl":"https://www.pexels.com/photo/low-angle-shot-of-iron-cast-12549441/","label":"Dynamic abstract composition featuring iron grid structure with vivid colors, capturing architectural creativity.","source":"Dynamic abstract composition featuring iron grid structure with vivid colors, capturing architectural creativity.\nPexels · Yunus Emre Ilıca","caption":"Dynamic abstract composition featuring iron grid structure with vivid colors, capturing architectural creativity.\nPexels · Yunus Emre Ilıca"}},"oswietlenie_cia_gle":{"title":"Oświetlenie ciągłe","aliases":["oświetlenie ciągłe"],"explanation":"Źródła światła emitujące światło nieprzerwanie, pozwalające widzieć efekt oświetlenia na żywo.","why":"Łatwe w użyciu, ale mają mniejszą moc niż lampy błyskowe.","image":{"url":"https://images.pexels.com/photos/14582250/pexels-photo-14582250.jpeg?auto=compress&cs=tinysrgb&h=650&w=940","originalUrl":"https://www.pexels.com/photo/illuminated-photography-lighting-14582250/","label":"Close-up of studio spotlight in a modern setting, highlighting professional lighting equipment.","source":"Close-up of studio spotlight in a modern setting, highlighting professional lighting equipment.\nPexels · I'm Zion","caption":"Close-up of studio spotlight in a modern setting, highlighting professional lighting equipment.\nPexels · I'm Zion"}},"oswietlenie_blyskowe":{"title":"Oświetlenie błyskowe","aliases":["oświetlenie błyskowe"],"explanation":"Źródła światła emitujące intensywny impuls światła na krótki czas, co pomaga zamrozić ruch i efektywnie doświetlić scenę.","why":"Wymaga synchronizacji z aparatem, ale oferuje dużą moc i kreatywne możliwości.","image":{"url":"https://pixabay.com/get/gcd7d52e71ebd199e8be3376b36e655be836f69451326139a176603024f20d88cde471956b93b3653c97c6355ead9e49193905deb52fb8e6c3b246c6ac043d24d_640.jpg","originalUrl":"https://pixabay.com/photos/iceland-landscape-water-heaven-5104376/","label":"iceland, landscape, water, heaven, waters, sea, nature, waves, rock, stone, black-and-white, b w, silhouette, vik, offering a view","source":"Pixabay · nicos_fotowelt"}},"oswietlenie_w_fotografii":{"title":"Oświetlenie w fotografii","aliases":["Oświetlenie w fotografii","światło fotograficzne","doświetlenie zdjęć","warunki oświetleniowe w fotografii"],"explanation":"Oświetlenie w fotografii to sposób, w jaki światło jest używane do tworzenia zdjęć. Obejmuje źródła naturalne (słońce) i sztuczne (lampy, lampy błyskowe), które wpływają na wygląd i nastrój fotografii.","why":"Oświetlenie jest kluczowe w fotografii, ponieważ decyduje o wyrazistości, kontrastach, kolorach i atmosferze zdjęcia. Odpowiednie światło pozwala uzyskać pożądany efekt artystyczny lub techniczny.","image":{"url":"https://pixabay.com/get/g05c3231edf968269e06e4f839108be2c6e5b55acb0d2aded934f66bcf0715ae937f129476622dbd4a240bc4d26c7bd685cd55e7052ed7ec752cbccb041f891b4_640.jpg","originalUrl":"https://pixabay.com/photos/mercedes-benz-w-196-supercars-2327286/","label":"mercedes-benz w 196, supercars, sports car","source":"mercedes-benz w 196, supercars, sports car\nPixabay · Karmafutzi","caption":"mercedes-benz w 196, supercars, sports car\nPixabay · Karmafutzi"}}};
+
+document.querySelectorAll('.term').forEach(el => {
+  el.addEventListener('click', () => {
+    const key = el.dataset.term;
+    const term = TERMS[key];
+
+    if (!term) return;
+
+    document.getElementById("sidePanel").innerHTML =
+      '<div class="term-box">' +
+      '<h3>' + term.title + '</h3>' +
+    (term.image && term.image.url
+  ? '<div>' +
+      '<img src="' + term.image.url + '">' +
+      '<div class="img-meta">' + (term.image.source || '') + '</div>' +
+    '</div>'
+  : '') +
+      '<p>' + term.explanation + '</p>' +
+      '<p><em>' + (term.why || '') + '</em></p>' +
+      '</div>';
+  });
+});
+
+document.addEventListener('click', (event) => {
+  const img = event.target.closest('.term-box img');
+  if (!img) return;
+
+  const overlay = document.createElement('div');
+  overlay.style.position = 'fixed';
+  overlay.style.inset = '0';
+  overlay.style.background = 'rgba(0,0,0,.82)';
+  overlay.style.display = 'grid';
+  overlay.style.placeItems = 'center';
+  overlay.style.zIndex = '9999';
+  overlay.style.cursor = 'zoom-out';
+
+  const big = document.createElement('img');
+  big.src = img.src;
+  big.style.maxWidth = '92vw';
+  big.style.maxHeight = '92vh';
+  big.style.objectFit = 'contain';
+  big.style.borderRadius = '14px';
+  big.style.background = '#fff';
+
+  overlay.appendChild(big);
+  overlay.addEventListener('click', () => overlay.remove());
+  document.body.appendChild(overlay);
+});
+</script>
+
+</body>
+</html>
