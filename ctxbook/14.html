@@ -1,0 +1,448 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>PODSTAWY FILMOWANIA</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  background: #f6f2ea;
+  color: #171411;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  min-height: 100vh;
+}
+
+main {
+  padding: 54px 64px 90px;
+  max-width: 860px;
+}
+
+h1 {
+  margin: 0 0 10px;
+  font-size: 54px;
+  line-height: 1.02;
+  letter-spacing: -0.04em;
+  font-weight: 800;
+}
+
+h2 {
+  margin: 46px 0 18px;
+  font-size: 30px;
+  line-height: 1.18;
+  font-weight: 800;
+}
+
+.reader-subtitle {
+  margin: 0 0 42px;
+  color: #6f675d;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.reader-paragraph {
+  font-size: 20px;
+  line-height: 1.78;
+  margin: 0 0 28px;
+  white-space: pre-wrap;
+}
+
+.reader-hero-image,
+.reader-section-image {
+  margin: 24px 0 34px;
+}
+
+.reader-hero-image img,
+.reader-section-image img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: contain;
+  border-radius: 18px;
+  background: #f0ece3;
+  box-shadow: 0 14px 34px rgba(30, 25, 18, 0.08);
+}
+
+.reader-section-image img {
+  max-height: 320px;
+}
+
+.reader-hero-image figcaption,
+.reader-section-image figcaption {
+  margin-top: 8px;
+  color: #8a8277;
+  font-size: 12px;
+  line-height: 1.4;
+}
+aside {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+  border-left: 1px solid #ddd4c5;
+  background: #faf7ef;
+  padding: 38px 28px;
+}
+
+aside::before {
+  content: "Wyjaśnienia";
+  display: block;
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+
+.term {
+  background: #fff1b8;
+  border-bottom: 2px solid #d8b429;
+  border-radius: 4px;
+  padding: 0 2px;
+  cursor: pointer;
+}
+
+.term:hover {
+  background: #ffe680;
+}
+
+.term-box {
+  border: 1px solid #ddd4c5;
+  border-radius: 18px;
+  padding: 18px;
+  background: #fffdf8;
+  box-shadow: 0 14px 34px rgba(30, 25, 18, 0.07);
+}
+
+.term-box h3 {
+  margin: 0 0 14px;
+  font-size: 25px;
+  line-height: 1.18;
+  font-weight: 800;
+}
+
+.term-box p {
+  font-size: 18px;
+  line-height: 1.58;
+  margin: 0 0 14px;
+}
+
+.term-box img {
+  width: 100%;
+  max-height: 260px;
+  object-fit: contain;
+  border-radius: 14px;
+  background: #f0ece3;
+  margin: 8px 0 12px;
+  cursor: zoom-in;
+}
+
+.img-meta {
+  margin: -4px 0 12px;
+  font-size: 12px;
+  color: #8a8277;
+  line-height: 1.35;
+}
+
+.brand {
+  grid-column: 1 / 2;
+  margin: 0 64px 34px;
+  padding: 22px 28px;
+  border: 1px solid #ddd4c5;
+  border-radius: 22px;
+  background: #fffdf8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  box-shadow: 0 14px 36px rgba(30, 25, 18, 0.06);
+  position: relative;
+  z-index: 2;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-word {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.brand-name {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 46px;
+  font-weight: 900;
+  letter-spacing: -0.085em;
+  color: #171717;
+}
+
+.brand-format {
+  margin-top: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  color: #6157ff;
+}
+
+.brand-meta {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  white-space: nowrap;
+}
+
+.brand-link {
+  color: #6157ff;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  body {
+    display: block;
+  }
+
+  main {
+    padding: 32px 24px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  aside {
+    position: static;
+    height: auto;
+    border-left: 0;
+    border-top: 1px solid #ddd4c5;
+  }
+
+  .brand {
+  margin: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  grid-column: auto;
+}
+
+.brand-name {
+  font-size: 36px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<main>
+<h1>PODSTAWY FILMOWANIA</h1>
+<div class="reader-subtitle">CTXBOOK – text easy to understand</div>
+
+
+    <figure class="reader-hero-image">
+      <img src="https://pixabay.com/get/g27d487e255185a21e4a46c7249b14a529804ec556f8d2b1b20d25a0508a12f7109ccfbbd1df71393878a0eb0708ff2806e73325744b544445f4052a5132376d7_640.jpg" alt="camera, recording, video, technology, video camera, professional video camera, videography, equipment, camera equipment, professional, entertainment, videography, videography, videography, videography, videography">
+      <figcaption>camera, recording, video, technology, video camera, professional video camera, videography, equipment, camera equipment, professional, entertainment, videography, videography, videography, videography, videography
+Pixabay · TheArkow</figcaption>
+    </figure>
+  
+
+
+  <section>
+    
+    <h2>Klatkaż (FPS) i czas migawki w filmie</h2>
+    <p class="reader-paragraph">PODSTAWY FILMOWANIA</p><p class="reader-paragraph">KLATKAŻ (<span class="term" data-term="klatkaz">FPS</span>)
+<span class="term" data-term="klatkaz">FPS</span> = <span class="term" data-term="klatkaz">liczba klatek na sekundę</span>.
+• 24 <span class="term" data-term="klatkaz">fps</span> – „filmowy look”, naturalny ruch, kino.
+• 25 <span class="term" data-term="klatkaz">fps</span> – standard europejski (PAL), telewizja.
+• 30 <span class="term" data-term="klatkaz">fps</span> – internet, vlogi, dynamiczne ujęcia.
+• 50/60 <span class="term" data-term="klatkaz">fps</span> – płynny ruch, sport, slow motion.
+• 120 <span class="term" data-term="klatkaz">fps</span> i więcej – bardzo płynny ruch, ekstremalne slow motion.
+Im więcej <span class="term" data-term="klatkaz">FPS</span>, tym płynniejszy ruch.
+Im mniej <span class="term" data-term="klatkaz">FPS</span>, tym bardziej „filmowy” charakter.</p><p class="reader-paragraph"><span class="term" data-term="czas_migawki_w_filmie"><span class="term" data-term="czas_migawki">CZAS MIGAWKI</span> W FILMIE</span>
+W filmowaniu obowiązuje <span class="term" data-term="czas_migawki"><span class="term" data-term="zasada_180">zasada 180°</span></span>:
+<span class="term" data-term="czas_migawki">Czas migawki</span> ≈ 1 / (2 × <span class="term" data-term="klatkaz">FPS</span>)
+Przykłady:
+• 25 <span class="term" data-term="klatkaz">fps</span> → 1/50 s
+• 50 <span class="term" data-term="klatkaz">fps</span> → 1/100 s
+• 100 <span class="term" data-term="klatkaz">fps</span> → 1/200 s
+Dlaczego?
+Bo daje naturalne rozmycie ruchu (motion blur).
+Zbyt krótka migawka → obraz „szarpany”.
+Zbyt długa → obraz „maźnięty”.</p><p class="reader-paragraph"><span class="term" data-term="ekspozycja">EKSPOZYCJA W FILMIE</span>
+Ekspozycję kontrolują:
+1. <span class="term" data-term="iso">ISO</span>
+• im wyższe, tym jaśniej
+• ale więcej szumów
+2. <span class="term" data-term="przyslona">Przysłona</span> (<span class="term" data-term="przyslona">f/</span>)
+• kontroluje ilość światła
+• wpływa na głębię ostrości
+• małe <span class="term" data-term="przyslona">f/</span> → mała głębia (rozmyte tło)
+3. <span class="term" data-term="czas_migawki">Czas migawki</span>
+• w filmie prawie stały (<span class="term" data-term="czas_migawki"><span class="term" data-term="zasada_180">zasada 180°</span></span>)
+• dlatego ekspozycję reguluje się głównie ND i przysłoną
+4. <span class="term" data-term="filtr_nd">Filtry ND</span>
+• obowiązkowe w filmowaniu
+• pozwalają zachować prawidłowy <span class="term" data-term="czas_migawki">czas migawki</span> w jasnym świetle</p>
+    
+  </section>
+
+  <section>
+    
+    <h2>Ekspozycja w filmie</h2>
+    <p class="reader-paragraph">STABILIZACJA OBRAZU
+1. <span class="term" data-term="stabilizacja_obrazua">Stabilizacja optyczna</span> (<span class="term" data-term="stabilizacja_obrazua">OIS</span>)
+• w obiektywie
+• przesuwa soczewki, aby kompensować drgania
+2. <span class="term" data-term="stabilizacja_obrazua">Stabilizacja matrycy</span> (<span class="term" data-term="stabilizacja_obrazua">IBIS</span>)
+• matryca porusza się, aby stabilizować obraz
+• bardzo skuteczna w aparatach bezlusterkowych
+3. <span class="term" data-term="stabilizacja_obrazua">Stabilizacja elektroniczna</span> (<span class="term" data-term="stabilizacja_obrazua">EIS</span>)
+• cyfrowa, kadrowanie + korekcja
+• działa, ale zmniejsza pole widzenia
+4. Sprzęt stabilizujący
+• statyw
+• monopod
+• <span class="term" data-term="gimbal">gimbal</span>
+• <span class="term" data-term="ruchy_kamery">slider</span>
+• steadicam</p><p class="reader-paragraph"><span class="term" data-term="plany_filmowe">PODSTAWOWE UJĘCIA FILMOWE</span>
+(<span class="term" data-term="plany_filmowe">PLANY</span>)
+<span class="term" data-term="plan_totalny">Plan totalny</span>
+• pokazuje całe otoczenie
+• wprowadza widza w miejsce akcji
+<span class="term" data-term="plan_ogolny">Plan ogólny</span>
+• postać + otoczenie
+• mniej szczegółów niż totalny
+<span class="term" data-term="plan_pelny">Plan pełny</span>
+• cała postać od stóp do głów
+<span class="term" data-term="plan_amerykanski">Plan amerykański</span>
+• od kolan w górę
+• klasyczny dla dialogów
+<span class="term" data-term="plan_sredni">Plan średni</span>
+• od pasa w górę
+• wywiady, rozmowy
+<span class="term" data-term="polzblizenie">Półzbliżenie</span>
+• od klatki piersiowej w górę
+• emocje + kontekst
+<span class="term" data-term="zblizenie">Zbliżenie</span>
+• twarz, emocje
+<span class="term" data-term="detal">Detal</span>
+• oko, dłoń, przedmiot
+• podkreśla <span class="term" data-term="<span class="term" data-term="detal">detal</span>">szczegół</span></p><p class="reader-paragraph">RUCHY KAMERY
+<span class="term" data-term="ruchy_kamery">Panorama</span> (<span class="term" data-term="ruchy_kamery">pan</span>)
+• ruch w poziomie
+• pokazuje przestrzeń
+<span class="term" data-term="ruchy_kamery">Tilt</span>
+• ruch w pionie
+• odkrywa obiekty od góry lub dołu
+<span class="term" data-term="ruchy_kamery">Najazd</span> / <span class="term" data-term="ruchy_kamery">odjazd</span>
+• kamera jedzie do przodu / do tyłu
+• <span class="term" data-term="zblizenie">zbliżenie</span> lub oddalenie bez zmiany ogniskowej
+<span class="term" data-term="ruchy_kamery">Tracking shot</span>
+• kamera jedzie obok postaci
+• podąża za ruchem
+<span class="term" data-term="ruchy_kamery">Slider</span>
+• płynny ruch w bok
+• filmowe przejścia
+<span class="term" data-term="gimbal">Gimbal</span>
+• stabilny ruch w każdą stronę
+• dynamiczne ujęcia
+<span class="term" data-term="ruchy_kamery">Dron</span>
+• ruch w przestrzeni 3D
+• ujęcia z powietrza</p><p class="reader-paragraph">ZASADY NARRACJI FILMOWEJ
+1. <span class="term" data-term="czas_migawki"><span class="term" data-term="zasada_180">Zasada 180°</span></span>
+• kamera nie powinna przekraczać osi między bohaterami
+• inaczej widz gubi orientację
+2. Ciągłość ruchu
+• jeśli ktoś idzie w prawo, w kolejnym ujęciu też powinien iść w prawo
+3. Ciągłość spojrzeń
+• jeśli bohater patrzy w lewo, drugi powinien patrzeć w prawo
+• wygląda, jakby patrzyli na siebie
+4. Zasada 30°
+• zmiana kąta kamery min. o 30°
+• inaczej powstaje „skok montażowy”
+5. <span class="term" data-term="establishing_shot">Establishing shot</span>
+• pierwsze ujęcie pokazuje miejsce akcji
+6. <span class="term" data-term="match_cut">Match cut</span>
+• łączenie dwóch ujęć podobnym ruchem lub kształtem
+• płynna narracja</p>
+    
+  </section>
+
+</main>
+
+<aside id="sidePanel">
+  <div class="term-box">
+    <h3>Wyjaśnienia</h3>
+    <p>Kliknij podkreślone pojęcie w tekście.</p>
+  </div>
+</aside>
+
+<div class="brand">
+  <div class="brand-logo">
+    <span class="brand-word">
+      <span class="brand-name">contextero</span>
+      <span class="brand-format">CTXBOOK FORMAT</span>
+    </span>
+  </div>
+
+  <div class="brand-meta">
+    Powered by <a class="brand-link" href="https://contextero.com" target="_blank">contextero.com</a>
+  </div>
+</div>
+<script>
+const TERMS = {"klatkaz":{"title":"Klatkaż (FPS)","aliases":["FPS","liczba klatek na sekundę"],"explanation":"Klatkaż to liczba klatek wyświetlanych na sekundę w filmie. Wpływa na płynność ruchu i charakter wizualny ujęcia.","why":"Znajomość FPS pozwala kontrolować styl ruchu - od naturalnego 'filmowego looku' (24 fps) do ekstremalnego slow motion (>120 fps).","image":{"originalUrl":"https://pixabay.com/photos/tracks-in-the-sand-heart-shape-love-1776504/","label":"tracks in the sand, heart shape, love, romantic, heart, i love you, romance, ich liebe dich, sweetheart, love heart","source":"Pixabay · west0"}},"czas_migawki":{"title":"Czas migawki","aliases":["czas migawki","zasada 180°"],"explanation":"Czas migawki to czas otwarcia migawki kamery dla pojedynczej klatki, który reguluje ilość zarejestrowanego światła i efekt rozmycia ruchu.","why":"Dobór czasu migawki zgodnie z zasadą 180° daje naturalne rozmycie ruchu, zapobiegając szarpanym lub rozmazanym obrazom.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/3/39/Kos-20050719.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/3/39/Kos-20050719.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"Kos-20050719.jpg","source":"Wikimedia Commons · CC BY-SA 2.5 · AI-ranked: Among the candidates, only image 0 (Kos-20050719.jpg) depicts a photographic subject likely related to shutter speed and motion capture, which closely aligns with the principle of 180° shutter angle and its relation to FPS. The other images are either unrelated photographs, book scans, or technical sensor images which do not illustrate the schematic or explanatory concept of shutter speed and frame rate. Although no candidate perfectly matches a schematic diagram, image 0 is the best fit from available options for demonstrating shutter speed contextually.","fileTitle":"Kos-20050719.jpg","query":"Czas migawki"}},"ekspozycja":{"title":"Ekspozycja","aliases":["Ekspozycja w filmie","kontrola ekspozycji"],"explanation":"Ekspozycja to ilość światła, jaka pada na matrycę aparatu/kamery, regulowana przez ISO, przysłonę, czas migawki i filtry ND.","why":"Właściwa ekspozycja jest kluczowa dla uzyskania dobrze naświetlonych i estetycznych ujęć filmowych.","image":{"url":"https://pixabay.com/get/ga2b77ae782d5cabd0849d79e523e1dd258369d9cce6c469cc6f21d5af764606c2eaf5c8b697ee0850c9ee62ff5a6b7d7817b00ec0702496ea48665417a0e55f7_640.jpg","originalUrl":"https://pixabay.com/photos/lemon-tree-fruit-drops-water-dew-5435158/","label":"lemon, nature, tree, fruit, drops, water, dew, green, citrus fruits, leaves, nikon, d750, aperture 9, iso 900, 105mm, 125th of a second","source":"Pixabay · webentwicklerin"}},"iso":{"title":"ISO","aliases":["ISO"],"explanation":"ISO określa czułość matrycy na światło, wyższe wartości zwiększają jasność, ale też szumy na obrazie.","why":"Dostosowanie ISO pozwala filmowcowi kontrolować jasność ujęcia bez zmiany innych parametrów.","image":{"originalUrl":"https://pixabay.com/photos/lemon-tree-fruit-drops-water-dew-5435158/","label":"lemon, nature, tree, fruit, drops, water, dew, green, citrus fruits, leaves, nikon, d750, aperture 9, iso 900, 105mm, 125th of a second","source":"Pixabay · webentwicklerin"}},"przyslona":{"title":"Przysłona (f/)","aliases":["przysłona","f/"],"explanation":"Przysłona to otwór w obiektywie regulujący ilość światła wpadającego do kamery oraz wpływający na głębię ostrości.","why":"Zmiana przysłony pozwala kontrolować jasność ujęcia i efekt rozmycia tła.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Aperture_in_Canon_50mm_f1.8_II_lens.jpg/1280px-Aperture_in_Canon_50mm_f1.8_II_lens.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/8/8a/Aperture_in_Canon_50mm_f1.8_II_lens.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"Aperture in Canon 50mm f/1.8 II lens","source":"Aperture in Canon 50mm f/1.8 II lens\nWikimedia Commons · CC BY-SA 4.0 · Gophi · AI-ranked: The image titled 'Aperture in Canon 50mm f1.8 II lens.jpg' clearly shows the aperture blades inside a camera lens, which directly illustrates the concept of camera aperture (przysłona) as an adjustable opening regulating light and depth of field. It is a real photographic object relevant to the subject and context of 'Przysłona (f/)' in film-making basics.","fileTitle":"Aperture in Canon 50mm f1.8 II lens.jpg","query":"Przysłona (f/)","caption":"Aperture in Canon 50mm f/1.8 II lens\nWikimedia Commons · CC BY-SA 4.0 · Gophi · AI-ranked: The image titled 'Aperture in Canon 50mm f1.8 II lens.jpg' clearly shows the aperture blades inside a camera lens, which directly illustrates the concept of camera aperture (przysłona) as an adjustable opening regulating light and depth of field. It is a real photographic object relevant to the subject and context of 'Przysłona (f/)' in film-making basics."}},"filtr_nd":{"title":"Filtry ND","aliases":["Filtry ND"],"explanation":"Filtry neutralnej gęstości (ND) ograniczają ilość światła padającego na matrycę, pozwalając na stosowanie dłuższego czasu migawki lub większej przysłony w jasnym świetle.","why":"Umożliwiają zachowanie prawidłowej ekspozycji i czasu migawki w silnym oświetleniu bez nadmiernego prześwietlenia.","image":{"originalUrl":"https://pixabay.com/photos/barley-field-wheat-agriculture-plow-1684052/","label":"barley field, wheat, agriculture, plow, tillage, farm, harvest, sunrise, morning, landscape, nature, ne young na-young, jeju travel, jeju island, agriculture, agriculture, farm, sunrise, sunrise, sunrise, morning, morning, nature, nature, nature, nature, nature","source":"Pixabay · kangbch"}},"stabilizacja_obrazua":{"title":"Stabilizacja obrazu","aliases":["stabilizacja optyczna","OIS","stabilizacja matrycy","IBIS","stabilizacja elektroniczna","EIS"],"explanation":"Metody stabilizacji służą do kompensowania drgań kamery dla uzyskania płynnego obrazu: optyczna przesuwa soczewki, matrycowa porusza matrycę, elektroniczna korektuje obraz cyfrowo.","why":"Zapobiegają rozmazaniu i drganiom, co poprawia jakość wizualną filmu.","image":{"originalUrl":"https://pixabay.com/photos/camera-iphone-macbook-pro-macbook-1284459/","label":"camera, iphone, macbook pro, macbook, mockup, lifestyle, workspace, things, mobile, objects, miscellaneous, flat lay, camera, camera, camera, iphone, iphone, iphone, lifestyle, lifestyle, lifestyle, things, things, things, things, things, mobile, objects, miscellaneous","source":"Pixabay · Pexels"}},"gimbal":{"title":"Gimbal","aliases":["gimbal"],"explanation":"Gimbal to specjalistyczny sprzęt stabilizujący umożliwiający płynny ruch kamery w wielu osiach oraz dynamiczne ujęcia bez drgań.","why":"Pozwala operatorowi na stabilne prowadzenie kamery podczas ruchu, zwiększając profesjonalizm ujęć.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Gimbal_8jo_WATANABEhachijo.jpg/1280px-Gimbal_8jo_WATANABEhachijo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/3/3a/Gimbal_8jo_WATANABEhachijo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"He uses Osmo Mobile SE","source":"He uses Osmo Mobile SE\nWikimedia Commons · CC BY-SA 4.0 · 8joKeaton · AI-ranked: Image index 4 shows a person using the Osmo Mobile SE, which is a popular hand-held gimbal stabilizer for cameras and smartphones. This real-life usage photo perfectly illustrates the term 'gimbal' as a specialist stabilizing equipment that enables smooth camera movement, directly fitting the educational context of film stabilization.","fileTitle":"Gimbal 8jo WATANABEhachijo.jpg","query":"Gimbal","caption":"He uses Osmo Mobile SE\nWikimedia Commons · CC BY-SA 4.0 · 8joKeaton · AI-ranked: Image index 4 shows a person using the Osmo Mobile SE, which is a popular hand-held gimbal stabilizer for cameras and smartphones. This real-life usage photo perfectly illustrates the term 'gimbal' as a specialist stabilizing equipment that enables smooth camera movement, directly fitting the educational context of film stabilization."}},"plany_filmowe":{"title":"Plany filmowe","aliases":["podstawowe ujęcia filmowe","plany"],"explanation":"Różne typy ujęć (plany) filmowych określają zakres widoczności sceny lub postaci, wpływając na narrację i emocje.","why":"Dobór planów umożliwia operatorowi i reżyserowi kreowanie odpowiedniego klimatu i przyciąganie uwagi widza.","image":{"url":"https://pixabay.com/get/ge5d2b5f0dc184200a043b3b7a440a7751d69a7ed59c309dded2f13bd397653a0e2a3eae451fcb1a679dd0e1e8c14112021b07f0ab154e55070e79e502e08fff6_640.jpg","originalUrl":"https://pixabay.com/photos/sports-car-racing-car-auto-corvette-4815234/","label":"sports car, racing car, auto, corvette, corvette z06, z06, zr1, automotive, racing, supercar, speed, highway, travel, racing car, racing car, auto, auto, auto, auto, corvette, corvette, corvette, corvette, corvette, racing, racing, supercar, supercar, supercar, supercar, speed, highway","source":"Pixabay · DRIVAR"}},"ruchy_kamery":{"title":"Ruchy kamery","aliases":["panorama","pan","tilt","najazd","odjazd","tracking shot","slider","dron"],"explanation":"Różne techniki ruchu kamery (np. panorama, tilt, tracking) pozwalają na dynamiczne ujęcia i przedstawienie przestrzeni lub akcji.","why":"Ruch kamery jest narzędziem narracji i wpływa na odbiór sceny przez widza.","image":{"originalUrl":"https://pixabay.com/photos/cat-yawns-yawning-sleepy-to-yawn-4542301/","label":"cat, yawns, yawning, sleepy, animal, pet, to yawn, i love it","source":"Pixabay · andriish22"}},"zasada_180":{"title":"Zasada 180°","aliases":["zasada 180°"],"explanation":"Reguła mówiąca, że kamera nie powinna przekraczać wyobrażonej osi między bohaterami w scenie, by utrzymać orientację przestrzenną widza.","why":"Zapobiega dezorientacji i utracie ciągłości przestrzennej filmu.","image":{"url":"https://pixabay.com/get/g6a10b3c3c52115126916104dd669f43786dcdf99c8e8bd7aece475cfc723de75a47b2a654f39fc2fb32e0c8edcb2457e48d7ca4129eb03d79c7747535ede42d3_640.jpg","originalUrl":"https://pixabay.com/photos/schl%C3%B6gen-sch%C3%B6gener-loop-danube-4795383/","label":"schlögen, schögener loop, danube, outlook, flow, curve, 180 °, 180 degrees, blue, electricity, the danube monarchy, austria, tourism, nature, natural wonders, loop, wonder, schlögen, schlögen, schlögen, schlögen, schlögen, nature, wonder","source":"Pixabay · Leonhard_Niederwimmer"}},"establishing_shot":{"title":"Establishing shot","aliases":["Establishing shot"],"explanation":"Pierwsze ujęcie w scenie lub filmie, ukazujące miejsce akcji i wprowadzające widza w kontekst.","why":"Pomaga tworzyć przestrzeń narracyjną i orientację widza.","image":{"url":"https://pixabay.com/get/g76eace1c601da37eeb3f35abc6a9b8e151c25712550daea9804d4cee3a882499ea0194e0d410e683b277fc038bee7a90127e8328d053e6ce65fbcc31ecd28ec1_640.jpg","originalUrl":"https://pixabay.com/photos/coffee-shot-glass-espresso-blend-5567269/","label":"coffee, mac wallpaper, shot, 4k wallpaper, full hd wallpaper, hd wallpaper, beautiful nature, free wallpaper, glass, espresso, desktop backgrounds, blend, cool backgrounds, 4k wallpaper 1920x1080, nature background, laptop wallpaper, windows wallpaper, wallpaper 4k, balcony, view, free background, pond, nature wallpaper, wallpaper hd, rocks, wallpaper, relax, beautiful wallpaper, nature","source":"Pixabay · Danganhfoto"}},"match_cut":{"title":"Match cut","aliases":["Match cut"],"explanation":"Technika montażu polegająca na płynnym łączeniu dwóch ujęć poprzez podobieństwo ruchów lub kształtów.","why":"Tworzy płynną narrację i estetyczne przejścia w filmie.","image":{"url":"https://pixabay.com/get/ge4f93db07d2e532b58c9398b9746c84d5fde809d0df13ae3738ea5e30e1b622219288f28af5376ede07dd5ba44d2bc7fcd63e016ac436b3c3963856d9ac27b31_640.jpg","originalUrl":"https://pixabay.com/photos/sport-golf-sports-game-people-4690630/","label":"sport, golf, sports, game, people, turkey, nikon, hobby, match, lawn, golf, golf, golf, golf, golf","source":"Pixabay · Alpcem"}},"czas_migawki_w_filmie":{"title":"Czas migawki w filmie","aliases":["Czas migawki w filmie","czas otwarcia migawki","shutter speed w filmie","czas ekspozycji klatki"],"explanation":"Czas migawki w filmie to długość czasu, przez jaki migawka kamery pozostaje otwarta, rejestrując światło dla każdej klatki. Ma kluczowe znaczenie dla uzyskania naturalnego rozmycia ruchu (motion blur) i wpływa na płynność oraz ostrość obrazu w ruchu.","why":"Zasada 180° (czas migawki około połowy czasu jednej klatki) pozwala uzyskać naturalny wygląd ruchu. Jeśli czas migawki jest zbyt krótki, obraz będzie szarpany i nienaturalny, natomiast zbyt długi czas migawki powoduje rozmycie, które wygląda na „maźnięte”. Dlatego dobranie odpowiedniego czasu migawki do klatkażu jest ważne dla jakości filmu.","image":{"label":"kamera filmowa czas migawki","source":"Obraz do uzupełnienia"}},"plan_totalny":{"title":"Plan totalny","aliases":["Plan totalny","plan szeroki","ujęcie totalne"],"explanation":"Plan totalny to ujęcie filmowe pokazujące całe otoczenie, które wprowadza widza w miejsce akcji i daje pełen obraz sytuacji.","why":"Plan totalny jest ważny, ponieważ pozwala widzowi zorientować się w przestrzeni, w której rozgrywa się akcja filmu, co pomaga lepiej zrozumieć kontekst wydarzeń.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/9/9f/Cordillera_Central_Batad.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/9/9f/Cordillera_Central_Batad.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"Luzon.","source":"Luzon.\nWikimedia Commons · CC BY 2.0 · Kok Leng, Maurice Yeo from Singapore, Singapore · AI-ranked: Obraz 'Cordillera Central Batad.jpg' przedstawia szeroki plan krajobrazowy, co jest najlepszym wizualnym przykładem planu totalnego, pokazującego całe otoczenie i wprowadzającego widza w miejsce akcji, zgodnie z definicją terminu 'plan totalny' w filmowaniu.","fileTitle":"Cordillera Central Batad.jpg","query":"Plan totalny","caption":"Luzon.\nWikimedia Commons · CC BY 2.0 · Kok Leng, Maurice Yeo from Singapore, Singapore · AI-ranked: Obraz 'Cordillera Central Batad.jpg' przedstawia szeroki plan krajobrazowy, co jest najlepszym wizualnym przykładem planu totalnego, pokazującego całe otoczenie i wprowadzającego widza w miejsce akcji, zgodnie z definicją terminu 'plan totalny' w filmowaniu."}},"plan_ogolny":{"title":"Plan ogólny","aliases":["Plan ogólny","średni plan","plan szeroki"],"explanation":"Plan ogólny to ujęcie filmowe, które pokazuje postać wraz z jej otoczeniem, ale zawiera mniej szczegółów niż plan totalny. Pozwala zobaczyć bohatera w kontekście miejsca akcji, zachowując równowagę między postacią a tłem.","why":"Plan ogólny jest ważny, ponieważ pozwala widzowi zorientować się, gdzie znajduje się postać i jaki wpływ ma otoczenie na akcję, co pomaga w budowaniu narracji i atmosfery filmu.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Trz%C4%99sacz%2C_plan_og%C3%B3lny_dworu.jpg/1280px-Trz%C4%99sacz%2C_plan_og%C3%B3lny_dworu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/7/76/Trz%C4%99sacz%2C_plan_og%C3%B3lny_dworu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"Trzęsacz - zespół dworski: dwór, 2 poł. XIX w., ok. 1900; park, XIX/XX w.","source":"Trzęsacz - zespół dworski: dwór, 2 poł. XIX w., ok. 1900; park, XIX/XX w.\nWikimedia Commons · CC BY-SA 3.0 pl · Michał Gerszewski · AI-ranked: Obraz przedstawia plan ogólny zespołu dworskiego z otoczeniem, co jest zgodne z kontekstem filmowego planu ogólnego pokazującego postać z otoczeniem. Zdjęcie realistyczne, przedstawia architekturę i przestrzeń, co pomaga zwizualizować pojęcie planu ogólnego jako ujęcia zrównoważonego między postacią a tłem.","fileTitle":"Trzęsacz, plan ogólny dworu.jpg","query":"plan ogólny","caption":"Trzęsacz - zespół dworski: dwór, 2 poł. XIX w., ok. 1900; park, XIX/XX w.\nWikimedia Commons · CC BY-SA 3.0 pl · Michał Gerszewski · AI-ranked: Obraz przedstawia plan ogólny zespołu dworskiego z otoczeniem, co jest zgodne z kontekstem filmowego planu ogólnego pokazującego postać z otoczeniem. Zdjęcie realistyczne, przedstawia architekturę i przestrzeń, co pomaga zwizualizować pojęcie planu ogólnego jako ujęcia zrównoważonego między postacią a tłem."}},"plan_pelny":{"title":"Plan pełny","aliases":["Plan pełny","pełny plan","ujęcie pełnej postaci"],"explanation":"Plan pełny to ujęcie filmowe, które pokazuje całą postać od stóp do głów. Pozwala na pełne zobaczenie sylwetki aktora i jego stroju w danym otoczeniu.","why":"Plan pełny jest ważny, ponieważ umożliwia widzowi poznanie postaci w całej jej fizycznej formie, co pomaga w lepszym zrozumieniu jej roli i relacji z otoczeniem.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Albin_Ha%C5%82as_%2822-38%29.jpg/1280px-Albin_Ha%C5%82as_%2822-38%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/8/8f/Albin_Ha%C5%82as_%2822-38%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"Albin Hałas, komendant podkomendy Izbica w miejscowej komendzie 11 Polskiej Organizacji Wojskowej - fotografia pozowana (cała sylwetka).","source":"Albin Hałas, komendant podkomendy Izbica w miejscowej komendzie 11 Polskiej Organizacji Wojskowej - fotografia pozowana (cała sylwetka).\nWikimedia Commons · Public domain · Unknown photographer · AI-ranked: Obraz przedstawia pozowaną fotografię całej sylwetki mężczyzny, co idealnie odpowiada definicji plany pełnego, czyli ujęcia pokazującego postać od stóp do głów. Fotografia jest realnym, historycznym zdjęciem, co pasuje do edukacyjnego kontekstu oraz tematu planu pełnego w filmowaniu.","fileTitle":"Albin Hałas (22-38).jpg","query":"cała sylwetka","caption":"Albin Hałas, komendant podkomendy Izbica w miejscowej komendzie 11 Polskiej Organizacji Wojskowej - fotografia pozowana (cała sylwetka).\nWikimedia Commons · Public domain · Unknown photographer · AI-ranked: Obraz przedstawia pozowaną fotografię całej sylwetki mężczyzny, co idealnie odpowiada definicji plany pełnego, czyli ujęcia pokazującego postać od stóp do głów. Fotografia jest realnym, historycznym zdjęciem, co pasuje do edukacyjnego kontekstu oraz tematu planu pełnego w filmowaniu."}},"plan_amerykanski":{"title":"Plan amerykański","aliases":["Plan amerykański","Ujęcie amerykańskie","Amerykański plan filmowy"],"explanation":"Plan amerykański to rodzaj ujęcia filmowego, w którym postać jest pokazana od kolan w górę. Często używany jest do scen dialogowych, gdyż pozwala pokazać gesty i mimikę aktorów jednocześnie zachowując kontekst przestrzenny.","why":"Plan amerykański jest ważny, ponieważ umożliwia widzowi skupienie uwagi na postaciach podczas rozmowy, jednocześnie zachowując pewien kontekst otoczenia, co zwiększa zaangażowanie i zrozumienie sceny.","image":{"url":"https://images.pexels.com/photos/7009868/pexels-photo-7009868.jpeg?auto=compress&cs=tinysrgb&h=650&w=940","originalUrl":"https://www.pexels.com/photo/a-young-man-and-woman-holding-an-american-flag-7009868/","label":"African American and Caucasian friends holding the USA flag in joyful celebration.","source":"African American and Caucasian friends holding the USA flag in joyful celebration.\nPexels · Tima Miroshnichenko","caption":"African American and Caucasian friends holding the USA flag in joyful celebration.\nPexels · Tima Miroshnichenko"}},"plan_sredni":{"title":"Plan średni","aliases":["Plan średni","ujęcie średnie","plan półpełny"],"explanation":"Plan średni to ujęcie filmowe, w którym postać widoczna jest od pasa w górę. Jest często stosowany w wywiadach i rozmowach, ponieważ dobrze pokazuje mimikę i gesty, jednocześnie zachowując pewien kontekst otoczenia.","why":"Plan średni jest ważny, ponieważ umożliwia widzowi skupienie się na postaci i jej emocjach, jednocześnie nie odcinając jej zupełnie od tła i sytuacji, co jest kluczowe przy dialogach i wywiadach.","image":{"url":"https://images.pexels.com/photos/6615046/pexels-photo-6615046.jpeg?auto=compress&cs=tinysrgb&h=650&w=940","originalUrl":"https://www.pexels.com/photo/person-people-creative-building-6615046/","label":"Young man wearing glasses and earbuds concentrating on a project indoors.","source":"Young man wearing glasses and earbuds concentrating on a project indoors.\nPexels · Tima Miroshnichenko","caption":"Young man wearing glasses and earbuds concentrating on a project indoors.\nPexels · Tima Miroshnichenko"}},"polzblizenie":{"title":"Półzbliżenie","aliases":["Półzbliżenie","Ujęcie półzbliżone","Plan półzbliżeniowy"],"explanation":"Półzbliżenie to rodzaj ujęcia filmowego pokazujący postać od klatki piersiowej w górę. Pozwala ukazać emocje bohatera, zachowując jednocześnie część tła i kontekst sceny.","why":"Półzbliżenie jest ważne, ponieważ łączy ekspresję emocjonalną aktora z otoczeniem, co ułatwia widzowi lepsze zrozumienie sytuacji i nastroju w filmie.","image":{"url":"https://pixabay.com/get/gb20af3598f3d53653a31b297f4d0337bc156d5da1a21c4cd6983fb54cf859658ad413ef05c9a0baf84ad0dfa3b54382da5136063f613383daa5214dd6df62537_640.jpg","originalUrl":"https://pixabay.com/photos/aachen-dom-treasury-gold-2693288/","label":"aachen, dom, treasury, gold, bust of karl, head, the emperor karl, aachen, aachen, aachen, aachen, aachen","source":"aachen, dom, treasury, gold, bust of karl, head, the emperor karl, aachen, aachen, aachen, aachen, aachen\nPixabay · ThomasWolter","caption":"aachen, dom, treasury, gold, bust of karl, head, the emperor karl, aachen, aachen, aachen, aachen, aachen\nPixabay · ThomasWolter"}},"zblizenie":{"title":"Zbliżenie","aliases":["Zbliżenie","Close-up","Ujęcie zbliżeniowe"],"explanation":"Zbliżenie to ujęcie filmowe, które pokazuje twarz lub inny szczegół postaci, eksponując emocje i reakcje. Pozwala widzowi lepiej zrozumieć uczucia bohatera i buduje intymność sceny.","why":"Zbliżenie jest ważne, bo umożliwia ukazanie emocji postaci oraz podkreśla ważne szczegóły, co zwiększa zaangażowanie widza i wpływa na odbiór filmu.","image":{"url":"https://pixabay.com/get/gc7ccadf93b1ac7810ab2b7d6c165c70f2532ac01280456d5c1a3d760bc4b59e9d913c85e1995f2a77f2d564fb1972f21f92e7cfa1a8eff8c238328afa731dbc8_640.jpg","originalUrl":"https://pixabay.com/photos/woman-beauty-portrait-face-girl-6771278/","label":"woman, beauty, portrait, face, girl, fashion, style, hat, model, braids, hairstyle, closeup, woman, portrait, face, face, face, face, fashion, hat, hat, hat, hat, hat, model, braids","source":"woman, beauty, portrait, face, girl, fashion, style, hat, model, braids, hairstyle, closeup, woman, portrait, face, face, face, face, fashion, hat, hat, hat, hat, hat, model, braids\nPixabay · Elijahkenny","caption":"woman, beauty, portrait, face, girl, fashion, style, hat, model, braids, hairstyle, closeup, woman, portrait, face, face, face, face, fashion, hat, hat, hat, hat, hat, model, braids\nPixabay · Elijahkenny"}},"detal":{"title":"Detal","aliases":["Detal","Zbliżenie makro","Szczegół"],"explanation":"Detal to ujęcie filmowe skupiające się na drobnym fragmencie, takim jak oko, dłoń lub konkretny przedmiot, aby podkreślić istotny szczegół.","why":"Detal jest ważny, ponieważ pozwala zwrócić uwagę widza na ważne elementy, wzmacniając emocje lub znaczenie sceny poprzez ukazanie detali, które mogłyby umknąć w szerszych planach.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Eye_Central_Heterochromia_crop_and_lighter.jpg/1280px-Eye_Central_Heterochromia_crop_and_lighter.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/c/c3/Eye_Central_Heterochromia_crop_and_lighter.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"Central heterochromia of the iris; a blue/grey eye with a hazel centre. Self-portrait, I am a 31 year old man. This is my right eye, there is a slight reflection of my nose on the right side of the picture; however, holding up a dark cloth over it just made my fingers holding the cloth be reflected instead, so I gave up and accepted said reflection. =)","source":"Central heterochromia of the iris; a blue/grey eye with a hazel centre. Self-portrait, I am a 31 year old man. This is my right eye, there is a slight reflection of my nose on the right side of the picture; however, holding up a dark cloth over it just made my fingers holding the cloth be reflected instead, so I gave up and accepted said reflection. =)\nWikimedia Commons · CC BY 3.0 · Adam Cuerden, modified by Greg A L · AI-ranked: The image 'Eye Central Heterochromia crop and lighter.jpg' is a close-up photo of a human eye showing detailed iris structure and subtle reflections, perfectly illustrating the concept of 'Detal' as a film shot focusing on an important small detail such as the eye, aligning well with the educational context on film close-ups and detail shots.","fileTitle":"Eye Central Heterochromia crop and lighter.jpg","query":"eye","caption":"Central heterochromia of the iris; a blue/grey eye with a hazel centre. Self-portrait, I am a 31 year old man. This is my right eye, there is a slight reflection of my nose on the right side of the picture; however, holding up a dark cloth over it just made my fingers holding the cloth be reflected instead, so I gave up and accepted said reflection. =)\nWikimedia Commons · CC BY 3.0 · Adam Cuerden, modified by Greg A L · AI-ranked: The image 'Eye Central Heterochromia crop and lighter.jpg' is a close-up photo of a human eye showing detailed iris structure and subtle reflections, perfectly illustrating the concept of 'Detal' as a film shot focusing on an important small detail such as the eye, aligning well with the educational context on film close-ups and detail shots."}}};
+
+document.querySelectorAll('.term').forEach(el => {
+  el.addEventListener('click', () => {
+    const key = el.dataset.term;
+    const term = TERMS[key];
+
+    if (!term) return;
+
+    document.getElementById("sidePanel").innerHTML =
+      '<div class="term-box">' +
+      '<h3>' + term.title + '</h3>' +
+    (term.image && term.image.url
+  ? '<div>' +
+      '<img src="' + term.image.url + '">' +
+      '<div class="img-meta">' + (term.image.source || '') + '</div>' +
+    '</div>'
+  : '') +
+      '<p>' + term.explanation + '</p>' +
+      '<p><em>' + (term.why || '') + '</em></p>' +
+      '</div>';
+  });
+});
+
+document.addEventListener('click', (event) => {
+  const img = event.target.closest('.term-box img');
+  if (!img) return;
+
+  const overlay = document.createElement('div');
+  overlay.style.position = 'fixed';
+  overlay.style.inset = '0';
+  overlay.style.background = 'rgba(0,0,0,.82)';
+  overlay.style.display = 'grid';
+  overlay.style.placeItems = 'center';
+  overlay.style.zIndex = '9999';
+  overlay.style.cursor = 'zoom-out';
+
+  const big = document.createElement('img');
+  big.src = img.src;
+  big.style.maxWidth = '92vw';
+  big.style.maxHeight = '92vh';
+  big.style.objectFit = 'contain';
+  big.style.borderRadius = '14px';
+  big.style.background = '#fff';
+
+  overlay.appendChild(big);
+  overlay.addEventListener('click', () => overlay.remove());
+  document.body.appendChild(overlay);
+});
+</script>
+
+</body>
+</html>
