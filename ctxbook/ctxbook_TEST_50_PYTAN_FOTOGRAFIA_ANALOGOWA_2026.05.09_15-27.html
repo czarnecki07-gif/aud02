@@ -1,0 +1,393 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>TEST 50 PYTAŃ — FOTOGRAFIA ANALOGOWA</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  background: #f6f2ea;
+  color: #171411;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  min-height: 100vh;
+}
+
+main {
+  padding: 54px 64px 90px;
+  max-width: 860px;
+}
+
+h1 {
+  margin: 0 0 10px;
+  font-size: 54px;
+  line-height: 1.02;
+  letter-spacing: -0.04em;
+  font-weight: 800;
+}
+
+h2 {
+  margin: 46px 0 18px;
+  font-size: 30px;
+  line-height: 1.18;
+  font-weight: 800;
+}
+
+.reader-subtitle {
+  margin: 0 0 42px;
+  color: #6f675d;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.reader-paragraph {
+  font-size: 20px;
+  line-height: 1.78;
+  margin: 0 0 28px;
+  white-space: pre-wrap;
+}
+
+.reader-hero-image,
+.reader-section-image {
+  margin: 24px 0 34px;
+}
+
+.reader-hero-image img,
+.reader-section-image img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: contain;
+  border-radius: 18px;
+  background: #f0ece3;
+  box-shadow: 0 14px 34px rgba(30, 25, 18, 0.08);
+}
+
+.reader-section-image img {
+  max-height: 320px;
+}
+
+.reader-hero-image figcaption,
+.reader-section-image figcaption {
+  margin-top: 8px;
+  color: #8a8277;
+  font-size: 12px;
+  line-height: 1.4;
+}
+aside {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+  border-left: 1px solid #ddd4c5;
+  background: #faf7ef;
+  padding: 38px 28px;
+}
+
+aside::before {
+  content: "Wyjaśnienia";
+  display: block;
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+
+.term {
+  background: #fff1b8;
+  border-bottom: 2px solid #d8b429;
+  border-radius: 4px;
+  padding: 0 2px;
+  cursor: pointer;
+}
+
+.term:hover {
+  background: #ffe680;
+}
+
+.term-box {
+  border: 1px solid #ddd4c5;
+  border-radius: 18px;
+  padding: 18px;
+  background: #fffdf8;
+  box-shadow: 0 14px 34px rgba(30, 25, 18, 0.07);
+}
+
+.term-box h3 {
+  margin: 0 0 14px;
+  font-size: 25px;
+  line-height: 1.18;
+  font-weight: 800;
+}
+
+.term-box p {
+  font-size: 18px;
+  line-height: 1.58;
+  margin: 0 0 14px;
+}
+
+.term-box img {
+  width: 100%;
+  max-height: 260px;
+  object-fit: contain;
+  border-radius: 14px;
+  background: #f0ece3;
+  margin: 8px 0 12px;
+  cursor: zoom-in;
+}
+
+.img-meta {
+  margin: -4px 0 12px;
+  font-size: 12px;
+  color: #8a8277;
+  line-height: 1.35;
+}
+
+.brand {
+  grid-column: 1 / 2;
+  margin: 0 64px 34px;
+  padding: 22px 28px;
+  border: 1px solid #ddd4c5;
+  border-radius: 22px;
+  background: #fffdf8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  box-shadow: 0 14px 36px rgba(30, 25, 18, 0.06);
+  position: relative;
+  z-index: 2;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-word {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.brand-name {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 46px;
+  font-weight: 900;
+  letter-spacing: -0.085em;
+  color: #171717;
+}
+
+.brand-format {
+  margin-top: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  color: #6157ff;
+}
+
+.brand-meta {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  white-space: nowrap;
+}
+
+.brand-link {
+  color: #6157ff;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  body {
+    display: block;
+  }
+
+  main {
+    padding: 32px 24px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  aside {
+    position: static;
+    height: auto;
+    border-left: 0;
+    border-top: 1px solid #ddd4c5;
+  }
+
+  .brand {
+  margin: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  grid-column: auto;
+}
+
+.brand-name {
+  font-size: 36px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<main>
+<h1>TEST 50 PYTAŃ — FOTOGRAFIA ANALOGOWA</h1>
+<div class="reader-subtitle">CTXBOOK – text easy to understand</div>
+
+
+    <figure class="reader-hero-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Photographic_darkroom%2C_probably_Geoff_Charles%27s_darkroom%2C_Bangor_%281532104%29.jpg/1280px-Photographic_darkroom%2C_probably_Geoff_Charles%27s_darkroom%2C_Bangor_%281532104%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="Photographic darkroom, probably Geoff Charles's darkroom, Bangor">
+      <figcaption>Photographic darkroom, probably Geoff Charles's darkroom, Bangor
+Wikimedia Commons · CC BY-SA 4.0 · Geoff Charles · AI-ranked: Obraz przedstawia realistyczną i dobrze widoczną ciemnię fotograficzną z tradycyjnym wyposażeniem, co idealnie pasuje do kontekstu edukacyjnego dotyczącego fotografii analogowej oraz procesu wywoływania filmów.</figcaption>
+    </figure>
+  
+
+
+  <section>
+    
+    <h2>1–10: Podstawy formatów i aparatów</h2>
+    <p class="reader-paragraph">1–10: Aparaty i formaty</p><p class="reader-paragraph">1. Co to jest <span class="term" data-term="film_135"><span class="term" data-term="format_24_36_mm">film 135</span></span>?
+2. Ile klatek ma <span class="term" data-term="film_135"><span class="term" data-term="format_24_36_mm">film 135</span></span>?
+3. Ile klatek daje <span class="term" data-term="format_6_6">format 6×6</span>?
+4. Ile klatek daje <span class="term" data-term="format_6_7">format 6×7</span>?
+5. Ile klatek daje <span class="term" data-term="format_6_9">format 6×9</span>?
+6. Co to jest <span class="term" data-term="film_120">film 120</span>?
+7. Co to jest <span class="term" data-term="aparat_srednioformatowy">aparat średnioformatowy</span>?
+8. Co to jest <span class="term" data-term="aparat_wielkoformatowy">aparat wielkoformatowy</span>?
+9. Co to jest <span class="term" data-term="aparat_natychmiastowy">aparat natychmiastowy</span>?
+10.Co to jest <span class="term" data-term="format_24_36_mm">format 24×36 mm</span>?</p><p class="reader-paragraph">11–20: Typy i właściwości filmów</p><p class="reader-paragraph">11.Co to jest <span class="term" data-term="negatyw_kolorowy">negatyw kolorowy</span>?
+12.Co to jest <span class="term" data-term="negatyw_czarno_bialy">negatyw czarno-biały</span>?
+13.Co to jest <span class="term" data-term="film_odwracalny">film odwracalny</span>?
+14.Co to jest <span class="term" data-term="proces_c_41"><span class="term" data-term="temperatura_procesu_c_41">proces C-41</span></span>?
+15.Co to jest <span class="term" data-term="proces_e_6">proces E-6</span>?
+16.Co to jest <span class="term" data-term="film_ir">film IR</span>?
+17.Co oznacza <span class="term" data-term="iso_filmu">ISO filmu</span>?
+18.Co daje <span class="term" data-term="co_daje_iso_100">ISO 100</span>?
+19.Co daje <span class="term" data-term="iso_800">ISO 800</span>?</p>
+    
+  </section>
+
+  <section>
+    
+    <h2></h2>
+    <p class="reader-paragraph">20.Co to jest ziarno?</p><p class="reader-paragraph">21–30: Chemia i procesy
+21.Co robi <span class="term" data-term="wywolywacz">wywoływacz</span>?
+22.Co robi <span class="term" data-term="przerywacz">przerywacz</span>?
+23.Co robi <span class="term" data-term="utrwalacz">utrwalacz</span>?
+24.<span class="term" data-term="jaka_jest_kolejnosc_roztworow_2">Jaka jest kolejność roztworów</span>?
+25.<span class="term" data-term="jaka_jest_temperatura_wywolywania_czarno">Jaka jest <span class="term" data-term="jaka_jest_temperatura_wywolywania_czarno"><span class="term" data-term="jaka_jest_temperatura_wywolywania_czarno">temperatura wywoływania</span> czarno-białego filmu</span></span>?
+26.Jaka jest <span class="term" data-term="temperatura_procesu_c_41">temperatura procesu C-41</span>?
+27.<span class="term" data-term="co_oznacza_proporcja_1_4">Co oznacza <span class="term" data-term="co_oznacza_proporcja_1_4">proporcja 1+4</span></span>?
+28.<span class="term" data-term="co_oznacza_proporcja_1_9">Co oznacza <span class="term" data-term="co_oznacza_proporcja_1_9">proporcja 1+9</span></span>?
+29.<span class="term" data-term="dlaczego_nie_wolno_wlewac_wody_do_koncen">Dlaczego nie wolno wlewać wody do koncentratu</span>?
+30.<span class="term" data-term="co_sie_stanie_przy_za_krotkim_utrwalaniu">Co się stanie przy za krótkim utrwalaniu</span>?</p><p class="reader-paragraph">31–40: Ciemnia i bezpieczeństwo</p><p class="reader-paragraph">31.Co to jest <span class="term" data-term="swiatlo_bezpieczne">światło bezpieczne</span>?
+32.<span class="term" data-term="dlaczego_nie_wolno_wlaczac_bialego_swiat">Dlaczego nie wolno włączać białego światła</span>?
+33.<span class="term" data-term="dlaczego_potrzebna_jest_wentylacja">Dlaczego potrzebna jest wentylacja</span>?
+34.<span class="term" data-term="dlaczego_uzywa_sie_rekawic">Dlaczego używa się rękawic</span>?
+35.<span class="term" data-term="dlaczego_uzywa_sie_osobnych_szczypiec">Dlaczego używa się osobnych szczypiec</span>?
+36.Co to jest <span class="term" data-term="powiekszalnik">powiększalnik</span>?
+37.<span class="term" data-term="co_to_jest_test_paskowy">Co to jest <span class="term" data-term="co_to_jest_test_paskowy">test paskowy</span></span>?
+38.<span class="term" data-term="co_to_jest_baryt">Co to jest <span class="term" data-term="co_to_jest_baryt">baryt</span></span>?
+39.Co to jest <span class="term" data-term="papier_rc">papier RC</span>?
+40.<span class="term" data-term="co_to_jest_emulsja_fotograficzna">Co to jest <span class="term" data-term="co_to_jest_emulsja_fotograficzna">emulsja fotograficzna</span></span>?</p>
+    
+  </section>
+
+  <section>
+    
+    <h2></h2>
+    <p class="reader-paragraph">41–50: Błędy i praktyka</p><p class="reader-paragraph">41.Co powoduje <span class="term" data-term="bledy_fotograficzne">mleczne plamy na filmie</span>?
+42.Co powoduje <span class="term" data-term="bledy_fotograficzne">zbyt długie wywoływanie</span>?
+43.Co powoduje <span class="term" data-term="bledy_fotograficzne">zbyt krótkie wywoływanie</span>?
+44.Co powoduje różne temperatury roztworów?
+45.<span class="term" data-term="co_powoduje_brak_przerywacza">Co powoduje brak przerywacza</span>?
+46.<span class="term" data-term="co_powoduje_przeterminowany_wywolywacz">Co powoduje <span class="term" data-term="co_powoduje_przeterminowany_wywolywacz">przeterminowany <span class="term" data-term="wywolywacz">wywoływacz</span></span></span>?
+47.<span class="term" data-term="co_powoduje_zarysowania_filmu">Co powoduje <span class="term" data-term="co_powoduje_zarysowania_filmu">zarysowania filmu</span></span>?
+48.<span class="term" data-term="co_powoduje_podwojne_naswietlenie">Co powoduje „<span class="term" data-term="bledy_fotograficzne"><span class="term" data-term="co_powoduje_podwojne_naswietlenie">podwójne naświetlenie</span></span></span>”?
+49.<span class="term" data-term="co_powoduje_nieszczelnosc_kasety">Co powoduje <span class="term" data-term="co_powoduje_nieszczelnosc_kasety">nieszczelność kasety</span></span>?
+50.<span class="term" data-term="co_powoduje_wlaczenie_bialego_swiatla_w_">Co powoduje <span class="term" data-term="co_powoduje_wlaczenie_bialego_swiatla_w_">włączenie białego światła w ciemni</span></span>?</p>
+    
+  </section>
+
+</main>
+
+<aside id="sidePanel">
+  <div class="term-box">
+    <h3>Wyjaśnienia</h3>
+    <p>Kliknij podkreślone pojęcie w tekście.</p>
+  </div>
+</aside>
+
+<div class="brand">
+  <div class="brand-logo">
+    <span class="brand-word">
+      <span class="brand-name">contextero</span>
+      <span class="brand-format">CTXBOOK FORMAT</span>
+    </span>
+  </div>
+
+  <div class="brand-meta">
+    Powered by <a class="brand-link" href="https://contextero.com" target="_blank">contextero.com</a>
+  </div>
+</div>
+<script>
+const TERMS = {"film_135":{"title":"Film 135","aliases":["film 135"],"explanation":"Film 135 to standardowy film fotograficzny o formacie 24×36 mm, używany w aparatach małoobrazkowych, popularny od lat 30. XX wieku.","why":"Zrozumienie filmu 135 pozwala na świadome posługiwanie się najpopularniejszym formatem filmu w fotografii analogowej.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Kodak_Tmax_P3200_135_film_cartridge_01.jpg/1280px-Kodak_Tmax_P3200_135_film_cartridge_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/4/4f/Kodak_Tmax_P3200_135_film_cartridge_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"A roll of Kodak Tmax P3200 Black and White film, expiring in August 2019, DX cartridge barcode: 010814.","source":"Wikimedia Commons · CC BY-SA 4.0 · El Grafo · AI-ranked: Zdjęcie rolki filmu 135 Kodak Tmax P3200 pokazuje rzeczywisty, konkretny film 135, z wyraźnym nadrukiem na rolce, w tym przypadku kultowy czarno-biały film Kodak, co dobrze ilustruje kontekst filmu 135 i jest zbliżone do zapytania o Kodak Tri-X 400 – również film czarno-biały marki Kodak. Pozostałe obrazy przedstawiają inne marki filmów lub mniej czytelne rolki.","fileTitle":"Kodak Tmax P3200 135 film cartridge 01.jpg","query":"Film 135"}},"film_120":{"title":"Film 120","aliases":["film 120"],"explanation":"Film 120 to średnioformatowy film w rolce, popularny w fotografii profesjonalnej dla lepszej rozdzielczości i jakości obrazu.","why":"Poznanie filmu 120 umożliwia pracę z aparatami średnioformatowymi, co znacząco wpływa na estetykę fotografii.","image":{"url":"https://images.pexels.com/photos/9983056/pexels-photo-9983056.jpeg?auto=compress&cs=tinysrgb&h=650&w=940","originalUrl":"https://www.pexels.com/photo/ilford-delta-film-cartridges-on-orange-surface-9983056/","label":"Close-up shot of Ilford film cartridges on a textured orange surface, highlighting film photography aesthetics.","source":"Close-up shot of Ilford film cartridges on a textured orange surface, highlighting film photography aesthetics.\nPexels · Alexey Demidov","caption":"Close-up shot of Ilford film cartridges on a textured orange surface, highlighting film photography aesthetics.\nPexels · Alexey Demidov"}},"negatyw_kolorowy":{"title":"Negatyw kolorowy","aliases":["negatyw kolorowy"],"explanation":"Film, który po wywołaniu zawiera odwrotność kolorów sceny i służy do produkcji odbitek kolorowych.","why":"Rozróżnienie negatywu kolorowego jest kluczowe dla właściwego wywoływania i obróbki zdjęć kolorowych.","image":{"url":"https://images.pexels.com/photos/30918864/pexels-photo-30918864.jpeg?auto=compress&cs=tinysrgb&h=650&w=940","originalUrl":"https://www.pexels.com/photo/hands-holding-film-roll-outdoors-in-vietnam-30918864/","label":"A pair of hands gently holding a curled film roll, captured outdoors in Ho Chi Minh City, Vietnam.","source":"A pair of hands gently holding a curled film roll, captured outdoors in Ho Chi Minh City, Vietnam.\nPexels · Hom Nay Chup Gi","caption":"A pair of hands gently holding a curled film roll, captured outdoors in Ho Chi Minh City, Vietnam.\nPexels · Hom Nay Chup Gi"}},"proces_c_41":{"title":"Proces C-41","aliases":["proces C-41"],"explanation":"Standardowy proces chemiczny wywoływania negatywów kolorowych, oparty na określonych kąpielach chemicznych i temperaturze.","why":"Znajomość procesu C-41 jest ważna dla poprawnego wywołania i jakości fotografii kolorowej.","image":{"label":"czytaj opis 1.png","source":"Obraz własny: czytaj opis 1.png","caption":"Obraz własny: czytaj opis 1.png"}},"proces_e_6":{"title":"Proces E-6","aliases":["proces E-6"],"explanation":"Proces chemiczny do wywoływania filmów odwracalnych (slajdów), który pozwala uzyskać pozytywne obrazy.","why":"Proces E-6 umożliwia pracę ze slajdami, które mają inne cechy wizualne niż negatywy.","image":{"label":"czytaj opis 1.png","source":"Obraz własny: czytaj opis 1.png","caption":"Obraz własny: czytaj opis 1.png"}},"iso_filmu":{"title":"ISO filmu","aliases":["ISO filmu"],"explanation":"Parametr oznaczający czułość filmu na światło, wpływa na ilość światła potrzebną do poprawnego naświetlenia.","why":"Zrozumienie ISO pozwala dobierać odpowiednie filmy i parametry ekspozycji do warunków fotograficznych.","image":{"url":"https://images.pexels.com/photos/17077863/pexels-photo-17077863.jpeg?auto=compress&cs=tinysrgb&h=650&w=940","originalUrl":"https://www.pexels.com/photo/various-camera-films-17077863/","label":"Collection of multi-colored vintage camera film rolls on a white cloth surface.","source":"Collection of multi-colored vintage camera film rolls on a white cloth surface.\nPexels · Beyzaa Yurtkuran","caption":"Collection of multi-colored vintage camera film rolls on a white cloth surface.\nPexels · Beyzaa Yurtkuran"}},"wywolywacz":{"title":"Wywoływacz","aliases":["wywoływacz"],"explanation":"Chemiczna substancja redukująca naświetlone srebro halogenkowe do metalicznego srebra, tworząc widoczny obraz.","why":"To podstawowa substancja w procesie uzyskania obrazu z filmu światłoczułego.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Photographic_darkroom%2C_probably_Geoff_Charles%27s_darkroom%2C_Bangor_%281532104%29.jpg/1280px-Photographic_darkroom%2C_probably_Geoff_Charles%27s_darkroom%2C_Bangor_%281532104%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/a/a1/Photographic_darkroom%2C_probably_Geoff_Charles%27s_darkroom%2C_Bangor_%281532104%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"Photographic darkroom, probably Geoff Charles's darkroom, Bangor","source":"Photographic darkroom, probably Geoff Charles's darkroom, Bangor\nWikimedia Commons · CC BY-SA 4.0 · Geoff Charles · AI-ranked: The image titled 'Photographic darkroom, probably Geoff Charles's darkroom, Bangor' clearly shows a real, historical photographic darkroom, relevant to the query 'ciemnia foto' (photo darkroom). It fits the educational context about photographic developing processes much better than images solely of chemical bottles or unrelated objects. It is an authentic, real place connected to analog photography, making it appropriate to illustrate the concept of a photo darkroom.","fileTitle":"Photographic darkroom, probably Geoff Charles's darkroom, Bangor (1532104).jpg","query":"ciemnia foto","caption":"Photographic darkroom, probably Geoff Charles's darkroom, Bangor\nWikimedia Commons · CC BY-SA 4.0 · Geoff Charles · AI-ranked: The image titled 'Photographic darkroom, probably Geoff Charles's darkroom, Bangor' clearly shows a real, historical photographic darkroom, relevant to the query 'ciemnia foto' (photo darkroom). It fits the educational context about photographic developing processes much better than images solely of chemical bottles or unrelated objects. It is an authentic, real place connected to analog photography, making it appropriate to illustrate the concept of a photo darkroom."}},"przerywacz":{"title":"Przerywacz (kąpiel zatrzymująca)","aliases":["przerywacz"],"explanation":"Roztwór chemiczny, który natychmiast przerywa reakcję wywoływania na filmie, zapobiegając dalszemu rozwojowi obrazu.","why":"Zatrzymanie wywoływania w odpowiednim momencie jest kluczowe dla zachowania jakości zdjęcia.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Photographic_darkroom%2C_probably_Geoff_Charles%27s_darkroom%2C_Bangor_%281532104%29.jpg/1280px-Photographic_darkroom%2C_probably_Geoff_Charles%27s_darkroom%2C_Bangor_%281532104%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/a/a1/Photographic_darkroom%2C_probably_Geoff_Charles%27s_darkroom%2C_Bangor_%281532104%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"Photographic darkroom, probably Geoff Charles's darkroom, Bangor","source":"Photographic darkroom, probably Geoff Charles's darkroom, Bangor\nWikimedia Commons · CC BY-SA 4.0 · Geoff Charles · AI-ranked: This image clearly shows a photographic darkroom, fitting the query 'ciemnia foto' and providing a real historical photographic environment. It is an authentic, informative visual that matches the educational context about analog photography processes, supporting the term 'Przerywacz' as part of darkroom chemical treatments.","fileTitle":"Photographic darkroom, probably Geoff Charles's darkroom, Bangor (1532104).jpg","query":"ciemnia foto","caption":"Photographic darkroom, probably Geoff Charles's darkroom, Bangor\nWikimedia Commons · CC BY-SA 4.0 · Geoff Charles · AI-ranked: This image clearly shows a photographic darkroom, fitting the query 'ciemnia foto' and providing a real historical photographic environment. It is an authentic, informative visual that matches the educational context about analog photography processes, supporting the term 'Przerywacz' as part of darkroom chemical treatments."}},"utrwalacz":{"title":"Utrwalacz","aliases":["utrwalacz"],"explanation":"Roztwór, który usuwa niewywołane sole srebra, stabilizując obraz i zapobiegając dalszemu naświetlaniu.","why":"Bez utrwalenia zdjęcie byłoby nietrwałe i ulegało zniszczeniu pod wpływem światła.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Photographic_darkroom%2C_probably_Geoff_Charles%27s_darkroom%2C_Bangor_%281532104%29.jpg/1280px-Photographic_darkroom%2C_probably_Geoff_Charles%27s_darkroom%2C_Bangor_%281532104%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/a/a1/Photographic_darkroom%2C_probably_Geoff_Charles%27s_darkroom%2C_Bangor_%281532104%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"Photographic darkroom, probably Geoff Charles's darkroom, Bangor","source":"Photographic darkroom, probably Geoff Charles's darkroom, Bangor\nWikimedia Commons · CC BY-SA 4.0 · Geoff Charles · AI-ranked: Zdjęcie przedstawia prawdopodobnie ciemnię fotograficzną Geoff Charlesa, co jest bezpośrednio powiązane z kontekstem utrwalacza w fotografii analogowej. To realna fotografia historyczna pokazująca atmosferę i wyposażenie ciemni, co dobrze ilustruje proces utrwalania zdjęcia. Inne obrazy dotyczą raczej budynków lub osób niezwiązanych z fotografią analogową.","fileTitle":"Photographic darkroom, probably Geoff Charles's darkroom, Bangor (1532104).jpg","query":"ciemnia foto","caption":"Photographic darkroom, probably Geoff Charles's darkroom, Bangor\nWikimedia Commons · CC BY-SA 4.0 · Geoff Charles · AI-ranked: Zdjęcie przedstawia prawdopodobnie ciemnię fotograficzną Geoff Charlesa, co jest bezpośrednio powiązane z kontekstem utrwalacza w fotografii analogowej. To realna fotografia historyczna pokazująca atmosferę i wyposażenie ciemni, co dobrze ilustruje proces utrwalania zdjęcia. Inne obrazy dotyczą raczej budynków lub osób niezwiązanych z fotografią analogową."}},"swiatlo_bezpieczne":{"title":"Światło bezpieczne","aliases":["światło bezpieczne"],"explanation":"Specjalne światło o określonym spektrum i natężeniu, które nie wpływa na materiały światłoczułe podczas prac w ciemni.","why":"Umożliwia bezpieczne operowanie filmami i papierami w ciemni bez ryzyka naświetlenia.","image":{"originalUrl":"https://pixabay.com/photos/mercedes-mercedes-w123-retro-autumn-8342911/","label":"mercedes, mercedes w123, retro, autumn, road, nature, landscape, ukraine, peace, silence, calmness, car wallpapers, car, vintage, old, natural","source":"Pixabay · Igor2008"}},"powiekszalnik":{"title":"Powiększalnik","aliases":["powiększalnik"],"explanation":"Urządzenie do tworzenia powiększonych odbitek z negatywów przez naświetlanie papieru fotograficznego.","why":"Bez powiększalnika niemożliwe jest wykonanie drukowanych zdjęć o różnych rozmiarach z filmów.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/6/6d/Durst_F60_Enlarger-a-RJP.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/6/6d/Durst_F60_Enlarger-a-RJP.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"A Durst F60 photographic enlarger. Made in Italy.","source":"A Durst F60 photographic enlarger. Made in Italy.\nWikimedia Commons · CC BY-SA 3.0 · Rickjpelleg · AI-ranked: The image titled 'Durst F60 Enlarger-a-RJP.jpg' clearly depicts a photographic enlarger (powiększalnik) used in darkroom printing. It is a real device, photographed professionally, matching the term's definition perfectly. It is preferable over diagrams, maps, or unrelated images.","fileTitle":"Durst F60 Enlarger-a-RJP.jpg","query":"Powiększalnik","caption":"A Durst F60 photographic enlarger. Made in Italy.\nWikimedia Commons · CC BY-SA 3.0 · Rickjpelleg · AI-ranked: The image titled 'Durst F60 Enlarger-a-RJP.jpg' clearly depicts a photographic enlarger (powiększalnik) used in darkroom printing. It is a real device, photographed professionally, matching the term's definition perfectly. It is preferable over diagrams, maps, or unrelated images."}},"papier_rc":{"title":"Papier RC (resin-coated)","aliases":["papier RC"],"explanation":"Papier fotograficzny z obu stron pokryty cienką warstwą żywicy zabezpieczającą przed wilgocią i przyspieszającą suszenie.","why":"Papier RC jest wygodniejszy i szybszy w użyciu niż tradycyjny papier barytowy.","image":{"originalUrl":"https://pixabay.com/photos/sailboat-sailing-ship-ship-3399011/","label":"sailboat, sailing ship, ship, modelling, rc model, remotely controlled, model boat, remote controlled sailboat, toy, sailboat, sailboat, sailboat, sailboat, sailboat, ship, ship, ship, ship","source":"Pixabay · NoName_13"}},"bledy_fotograficzne":{"title":"Błędy w fotografii analogowej","aliases":["mleczne plamy na filmie","zbyt długie wywoływanie","zbyt krótkie wywoływanie","podwójne naświetlenie"],"explanation":"Do najczęstszych błędów należą: plamy z powodu nieprawidłowego wywołania, zbyt długie czy krótkie wywoływanie skutkujące utratą kontrastu i szczegółów, a także podwójne naświetlenie powodujące nałożenie obrazów.","why":"Poznanie błędów pomaga ich uniknąć, co podnosi jakość i trwałość zdjęć analogowych.","image":{"originalUrl":"https://pixabay.com/photos/children-moc-chau-moc-chau-life-2099536/","label":"children moc chau, moc chau life, i waved son la, moc chau, ta xua, north yen","source":"Pixabay · ToanNguyen"}},"format_6_6":{"title":"format 6×6","aliases":["format 6×6","średni format 6x6","kwadratowy format 6x6"],"explanation":"Format 6×6 to standardowy rozmiar klatki filmu średnioformatowego, o wymiarach 6 cm na 6 cm, co daje obraz w kształcie kwadratu. Jest popularny w aparatach średnioformatowych i pozwala na zrobienie około 12 klatek z jednego filmu 120.","why":"Znajomość formatu 6×6 jest ważna w fotografii analogowej, ponieważ wpływa na liczbę dostępnych klatek na filmie oraz na kompozycję zdjęć, zwłaszcza że format ten daje kwadratowy obraz, inny niż standardowy format 35 mm.","image":{"url":"https://images.pexels.com/photos/15994864/pexels-photo-15994864.jpeg?auto=compress&cs=tinysrgb&h=650&w=940","originalUrl":"https://www.pexels.com/photo/twin-lens-camera-15994864/","label":"Classic twin-lens reflex camera with black body and textured finish on white background.","source":"Classic twin-lens reflex camera with black body and textured finish on white background.\nPexels · Vitaly Gorbachev","caption":"Classic twin-lens reflex camera with black body and textured finish on white background.\nPexels · Vitaly Gorbachev"}},"format_6_7":{"title":"Format 6×7","aliases":["Format 6×7","średni format 6x7","film 6x7","format średnioformatowy 6x7"],"explanation":"Format 6×7 to rozmiar obrazu fotograficznego na filmie średnioformatowym, gdzie zdjęcie ma wymiary około 6 cm na 7 cm. Ten format daje większą jakość obrazu niż popularny format 35 mm, dzięki większej powierzchni filmowej.","why":"Format 6×7 jest ważny w kontekście fotografii analogowej, ponieważ określa ile klatek można uzyskać z rolki filmu 120 oraz jakie są rozmiary zdjęć, co wpływa na jakość i zastosowanie zdjęć.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Mamiya_RB67_Pro-S_Medium_Format_6%C3%977_Camera.jpg/1280px-Mamiya_RB67_Pro-S_Medium_Format_6%C3%977_Camera.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/5/58/Mamiya_RB67_Pro-S_Medium_Format_6%C3%977_Camera.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"still in use but ..... Leider wird es immer schwieriger und teurer, sich mit Analogmaterial wie frischem Fotopapier verschiedener Gradationen, Chemikalien, Filmmaterial etc.. zu versorgen. Ist ja auch verständlich bei einem Umsatzeinbruch bei der Analogfotografie von 99% innerhalb von 10 Jahren (siehe Kodak, traurige Geschichte). Deshalb werde ich aus meiner Dunkelkammer eine Sauna machen und in Kühlschrank und Eisschrank wird wieder mehr Platz sein. Das Linhof Stativ aus massivem Aluminium (Baujahr 1966) mit Kugelkopf wird weiterhin benutzt und wird auch in den nächsten 50 Jahren problemlos den Zweck erfüllen. Meine Manfrottos haben dagegen keine Chance. Der Kugelkopf bewegt sich geschmeidig wie am ersten Tag. Es macht einfach Spaß, mit diesem Teil zu arbeiten, präzise, ohne Spiel, einfach perfekt. Für damalige Verhältnisse sehr leicht, ca 1900g bei 190cm Höhe und 3-teiligem Auszug, ohne Kugelkopf.","source":"still in use but ..... Leider wird es immer schwieriger und teurer, sich mit Analogmaterial wie frischem Fotopapier verschiedener Gradationen, Chemikalien, Filmmaterial etc.. zu versorgen. Ist ja auch verständlich bei einem Umsatzeinbruch bei der Analogfotografie von 99% innerhalb von 10 Jahren (siehe Kodak, traurige Geschichte). Deshalb werde ich aus meiner Dunkelkammer eine Sauna machen und in Kühlschrank und Eisschrank wird wieder mehr Platz sein. Das Linhof Stativ aus massivem Aluminium (Baujahr 1966) mit Kugelkopf wird weiterhin benutzt und wird auch in den nächsten 50 Jahren problemlos den Zweck erfüllen. Meine Manfrottos haben dagegen keine Chance. Der Kugelkopf bewegt sich geschmeidig wie am ersten Tag. Es macht einfach Spaß, mit diesem Teil zu arbeiten, präzise, ohne Spiel, einfach perfekt. Für damalige Verhältnisse sehr leicht, ca 1900g bei 190cm Höhe und 3-teiligem Auszug, ohne Kugelkopf.\nWikimedia Commons · CC BY 2.0 · Thomas Depenbusch · AI-ranked: Obraz 'Mamiya RB67 Pro-S Medium Format 6×7 Camera.jpg' przedstawia rzeczywisty aparat średnioformatowy formatu 6x7, co idealnie pasuje do kontekstu edukacyjnego dotyczącego formatu 6×7 i aparatów analogowych. To zdjęcie obrazuje konkretny, rozpoznawalny model aparatu, co jest najbardziej wartościowe dla czytelnika w kontekście fotografii analogowej i omawianego formatu.","fileTitle":"Mamiya RB67 Pro-S Medium Format 6×7 Camera.jpg","query":"Format 6×7","caption":"still in use but ..... Leider wird es immer schwieriger und teurer, sich mit Analogmaterial wie frischem Fotopapier verschiedener Gradationen, Chemikalien, Filmmaterial etc.. zu versorgen. Ist ja auch verständlich bei einem Umsatzeinbruch bei der Analogfotografie von 99% innerhalb von 10 Jahren (siehe Kodak, traurige Geschichte). Deshalb werde ich aus meiner Dunkelkammer eine Sauna machen und in Kühlschrank und Eisschrank wird wieder mehr Platz sein. Das Linhof Stativ aus massivem Aluminium (Baujahr 1966) mit Kugelkopf wird weiterhin benutzt und wird auch in den nächsten 50 Jahren problemlos den Zweck erfüllen. Meine Manfrottos haben dagegen keine Chance. Der Kugelkopf bewegt sich geschmeidig wie am ersten Tag. Es macht einfach Spaß, mit diesem Teil zu arbeiten, präzise, ohne Spiel, einfach perfekt. Für damalige Verhältnisse sehr leicht, ca 1900g bei 190cm Höhe und 3-teiligem Auszug, ohne Kugelkopf.\nWikimedia Commons · CC BY 2.0 · Thomas Depenbusch · AI-ranked: Obraz 'Mamiya RB67 Pro-S Medium Format 6×7 Camera.jpg' przedstawia rzeczywisty aparat średnioformatowy formatu 6x7, co idealnie pasuje do kontekstu edukacyjnego dotyczącego formatu 6×7 i aparatów analogowych. To zdjęcie obrazuje konkretny, rozpoznawalny model aparatu, co jest najbardziej wartościowe dla czytelnika w kontekście fotografii analogowej i omawianego formatu."}},"format_6_9":{"title":"Format 6×9","aliases":["Format 6×9","format 6x9","6x9 cm","format sześć na dziewięć"],"explanation":"Format 6×9 to rozmiar klatki filmu średnioformatowego, gdzie zdjęcie ma wymiary 6 cm szerokości i 9 cm wysokości. Umożliwia wykonanie mniejszej liczby zdjęć na filmie, ale oferuje wysoką jakość i szczegółowość obrazu.","why":"W tekście o fotografii analogowej format 6×9 jest ważny, ponieważ określa specyfikę rozmiaru klatki filmu, co wpływa na ilość zdjęć, jakość obrazu i zastosowanie aparatu średnioformatowego.","image":{"url":"https://images.pexels.com/photos/13178000/pexels-photo-13178000.jpeg?auto=compress&cs=tinysrgb&h=650&w=940","originalUrl":"https://www.pexels.com/photo/vintage-camera-equipment-13178000/","label":"A classic vintage camera captures the essence of nostalgia in an outdoor setting.","source":"A classic vintage camera captures the essence of nostalgia in an outdoor setting.\nPexels · Денис Нагайцев","caption":"A classic vintage camera captures the essence of nostalgia in an outdoor setting.\nPexels · Денис Нагайцев"}},"aparat_srednioformatowy":{"title":"aparat średnioformatowy","aliases":["aparat średnioformatowy","średnioformatowy aparat fotograficzny","średni format"],"explanation":"Aparat średnioformatowy to aparat fotograficzny, który używa filmu lub matrycy o większym rozmiarze niż standardowy film 35 mm, zwykle o formacie około 6x4,5 cm, 6x6 cm lub 6x7 cm. Dzięki większemu rozmiarowi filmu daje wyższą jakość zdjęć i większą szczegółowość.","why":"Pojęcie 'aparat średnioformatowy' jest ważne w tym tekście, ponieważ odnosi się do różnych formatów filmów i aparatów w analogowej fotografii, pomagając zrozumieć różnice w jakości i zastosowaniu sprzętu fotograficznego.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Mamiya_RB67_de_face.jpg/1280px-Mamiya_RB67_de_face.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/8/8b/Mamiya_RB67_de_face.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"A Mamiya RB67 medium format SLR camera, seen from front.","source":"A Mamiya RB67 medium format SLR camera, seen from front.\nWikimedia Commons · CC BY 3.0 · Eusebius · AI-ranked: Zdjęcie Mamiya RB67 to klasyczny, dobrze rozpoznawalny aparat średnioformatowy SLR, doskonale ilustrujący temat aparatu średnioformatowego. Jest to realny, szczegółowy aparat fotograficzny, spełniający kryteria edukacyjnego obrazu, pomagający zrozumieć wygląd tego typu sprzętu.","fileTitle":"Mamiya RB67 de face.jpg","query":"aparat średnioformatowy","caption":"A Mamiya RB67 medium format SLR camera, seen from front.\nWikimedia Commons · CC BY 3.0 · Eusebius · AI-ranked: Zdjęcie Mamiya RB67 to klasyczny, dobrze rozpoznawalny aparat średnioformatowy SLR, doskonale ilustrujący temat aparatu średnioformatowego. Jest to realny, szczegółowy aparat fotograficzny, spełniający kryteria edukacyjnego obrazu, pomagający zrozumieć wygląd tego typu sprzętu."}},"aparat_wielkoformatowy":{"title":"Aparat wielkoformatowy","aliases":["Aparat wielkoformatowy","kamera wielkoformatowa","fotografia wielkoformatowa"],"explanation":"Aparat wielkoformatowy to rodzaj aparatu fotograficznego używający dużych arkuszy filmu, zwykle o rozmiarach od 4×5 cala wzwyż. Pozwala na wyjątkowo wysoką jakość obrazu oraz dużą kontrolę nad ostrością i perspektywą dzięki możliwości regulacji pozycji filmu i obiektywu.","why":"W tekście dotyczącym fotografii analogowej aparat wielkoformatowy jest ważny, ponieważ oferuje specyficzne możliwości i jakość zdjęć, różniące się od mniejszych formatów. Zrozumienie tej różnicy jest kluczowe dla nauki o różnych typach aparatów i formatów filmu.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Globica_Large_format_camera.jpg/1280px-Globica_Large_format_camera.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/f/f7/Globica_Large_format_camera.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"Aparat wielkoformatowy Globica.","source":"Aparat wielkoformatowy Globica.\nWikimedia Commons · CC BY 2.0 · Mariusz Chilmon from Pogórze, Poland · AI-ranked: Obraz przedstawia pełny aparat wielkoformatowy o nazwie Globica, co idealnie odpowiada wyszukiwanej frazie 'Aparat wielkoformatowy'. To realny obiekt fotograficzny, a zdjęcie ukazuje cały aparat, co wzbogaca edukacyjny kontekst tekstu o tym typie aparatów. Pozostałe opcje to części obiektywu lub podobne aparaty, ale obraz 8 jest najbardziej kompletny i najbardziej informatywny dla uczących się.","fileTitle":"Globica Large format camera.jpg","query":"Aparat wielkoformatowy photo","caption":"Aparat wielkoformatowy Globica.\nWikimedia Commons · CC BY 2.0 · Mariusz Chilmon from Pogórze, Poland · AI-ranked: Obraz przedstawia pełny aparat wielkoformatowy o nazwie Globica, co idealnie odpowiada wyszukiwanej frazie 'Aparat wielkoformatowy'. To realny obiekt fotograficzny, a zdjęcie ukazuje cały aparat, co wzbogaca edukacyjny kontekst tekstu o tym typie aparatów. Pozostałe opcje to części obiektywu lub podobne aparaty, ale obraz 8 jest najbardziej kompletny i najbardziej informatywny dla uczących się."}},"aparat_natychmiastowy":{"title":"aparat natychmiastowy","aliases":["aparat natychmiastowy","kamera natychmiastowa","instamatic","polaroid"],"explanation":"Aparat natychmiastowy to rodzaj aparatu fotograficznego, który pozwala na szybkie uzyskanie wydruku zdjęcia zaraz po jego zrobieniu, bez konieczności wywoływania filmu w ciemni.","why":"Pojęcie aparatu natychmiastowego jest ważne w kontekście fotografii analogowej, ponieważ reprezentuje specyficzny sposób tworzenia zdjęć i otrzymywania ich od razu, co odróżnia go od tradycyjnych aparatów wymagających wywoływania filmu.","image":{"url":"https://images.pexels.com/photos/2780553/pexels-photo-2780553.jpeg?auto=compress&cs=tinysrgb&h=650&w=940","originalUrl":"https://www.pexels.com/photo/the-polaroid-book-2780553/","label":"Collection of vintage Polaroid photos with an instant film camera on a wooden surface.","source":"Collection of vintage Polaroid photos with an instant film camera on a wooden surface.\nPexels · Lisa from Pexels","caption":"Collection of vintage Polaroid photos with an instant film camera on a wooden surface.\nPexels · Lisa from Pexels"}},"format_24_36_mm":{"title":"format 24×36 mm","aliases":["format 24×36 mm","klatka 24x36","pełna klatka","film 135"],"explanation":"Format 24×36 mm to rozmiar pojedynczej klatki filmu fotograficznego używanego w aparatach analogowych typu film 135. Oznacza on kadr o szerokości 24 mm i wysokości 36 mm, co jest standardowym formatem dla wielu aparatów analogowych.","why":"Znajomość formatu 24×36 mm jest ważna, ponieważ pozwala zrozumieć podstawy rozmiarów obrazów w fotografii analogowej oraz specyficzne właściwości aparatu i filmu 135, które dominowały przez wiele lat w fotografii.","image":{"url":"https://images.pexels.com/photos/32594517/pexels-photo-32594517.png?auto=compress&cs=tinysrgb&h=650&w=940","originalUrl":"https://www.pexels.com/photo/vintage-olympus-trip-35-camera-with-film-rolls-32594517/","label":"Classic Olympus Trip 35 film camera with Kodak film rolls, evoking photographic nostalgia.","source":"Classic Olympus Trip 35 film camera with Kodak film rolls, evoking photographic nostalgia.\nPexels · Daigoro Folz","caption":"Classic Olympus Trip 35 film camera with Kodak film rolls, evoking photographic nostalgia.\nPexels · Daigoro Folz"}},"negatyw_czarno_bialy":{"title":"negatyw czarno-biały","aliases":["negatyw czarno-biały","film negatywowy czarno-biały","czarno-biały negatyw fotograficzny"],"explanation":"Negatyw czarno-biały to obraz fotograficzny na filmie lub papierze, na którym jasne miejsca sceny są przedstawione jako ciemne, a ciemne jako jasne, w odcieniach szarości. Służy do wywoływania pozytywnych odbitek czarno-białych fotografii analogowych.","why":"Negatyw czarno-biały jest podstawą w fotografii analogowej, ponieważ umożliwia przeniesienie i zachowanie obrazu zarejestrowanego na filmie do czytelnej formy zdjęcia. Znajomość tego pojęcia jest kluczowa dla zrozumienia procesu tworzenia tradycyjnych zdjęć.","image":{"url":"https://images.pexels.com/photos/10276049/pexels-photo-10276049.jpeg?auto=compress&cs=tinysrgb&h=650&w=940","originalUrl":"https://www.pexels.com/photo/woman-working-in-darkroom-10276049/","label":"A woman works in a darkroom developing analog film prints.","source":"A woman works in a darkroom developing analog film prints.\nPexels · Ron Lach","caption":"A woman works in a darkroom developing analog film prints.\nPexels · Ron Lach"}},"film_odwracalny":{"title":"film odwracalny","aliases":["film odwracalny","film pozytywowy","film diapoztywowy"],"explanation":"Film odwracalny to rodzaj filmu fotograficznego, który po wywołaniu daje bezpośrednio pozytywowy obraz, czyli taki sam jak scena fotografowana, a nie negatyw. Umożliwia to tworzenie zdjęć w formie diapoztywów do bezpośredniego oglądania lub projekcji.","why":"Znajomość filmu odwracalnego jest ważna, ponieważ jest to podstawowy rodzaj filmu używany w fotografii analogowej do uzyskiwania obrazów pozytywowych, co różni go od filmów negatywowych i wpływa na sposób obróbki i zastosowanie zdjęć.","image":{"url":"https://images.pexels.com/photos/4201333/pexels-photo-4201333.jpeg?auto=compress&cs=tinysrgb&h=650&w=940","originalUrl":"https://www.pexels.com/photo/person-holding-film-strip-4201333/","label":"Close-up of a hand holding a vintage film strip with a blurred camera in the background, evoking nostalgia.","source":"Close-up of a hand holding a vintage film strip with a blurred camera in the background, evoking nostalgia.\nPexels · Markus Spiske","caption":"Close-up of a hand holding a vintage film strip with a blurred camera in the background, evoking nostalgia.\nPexels · Markus Spiske"}},"film_ir":{"title":"Film IR","aliases":["Film IR","film podczerwony","film infraczerwony"],"explanation":"Film IR to specjalny rodzaj filmu fotograficznego czułego na promieniowanie podczerwone, które jest niewidoczne dla ludzkiego oka. Umożliwia rejestrowanie obrazów z wykorzystaniem światła podczerwonego, co daje charakterystyczne efekty wizualne, takie jak jasne liście i ciemne niebo.","why":"Film IR jest ważny w analogowej fotografii, ponieważ pozwala na uzyskanie niezwykłych efektów artystycznych i naukowych, które nie są możliwe do osiągnięcia na zwykłym filmie, co stanowi ważną część wiedzy o różnych typach filmów fotograficznych.","image":{"url":"https://images.pexels.com/photos/17281406/pexels-photo-17281406.jpeg?auto=compress&cs=tinysrgb&h=650&w=940","originalUrl":"https://www.pexels.com/photo/tree-in-countryside-17281406/","label":"Artistic black and white infrared photo of a tree in São Pedro de Alcântara, Brazil.","source":"Artistic black and white infrared photo of a tree in São Pedro de Alcântara, Brazil.\nPexels · Dennis Ariel","caption":"Artistic black and white infrared photo of a tree in São Pedro de Alcântara, Brazil.\nPexels · Dennis Ariel"}},"co_daje_iso_100":{"title":"ISO 100","aliases":["ISO 100",".Co daje ISO 100","czułość ISO 100","film ISO 100","wartość ISO 100"],"explanation":"ISO 100 to niska czułość filmu fotograficznego, oznaczająca, że film jest mniej wrażliwy na światło. Zapewnia to zdjęcia o wysokiej jakości, z małym ziarnem i dużą ostrością, ale wymaga więcej światła do poprawnego naświetlenia.","why":"W fotografii analogowej wartość ISO filmu wpływa na jakość zdjęcia i warunki, w których można fotografować. ISO 100 jest ważne, gdy chcemy uzyskać obraz o wysokiej jakości i niskim ziarnie, szczególnie przy dobrym oświetleniu.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Ilford_Delta_100_Professional_135_film_cartridge_01.jpg/1280px-Ilford_Delta_100_Professional_135_film_cartridge_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/7/75/Ilford_Delta_100_Professional_135_film_cartridge_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"A roll of Ilford Delta 100 Professional Black and White film, expiring in June 2021, DX cartridge barcode: 017594.","source":"A roll of Ilford Delta 100 Professional Black and White film, expiring in June 2021, DX cartridge barcode: 017594.\nWikimedia Commons · CC BY-SA 4.0 · El Grafo · AI-ranked: The image shows a roll of Ilford Delta 100 Professional Black and White film, which directly illustrates an example of ISO 100 film. It is a real photographic object relevant to analog photography and closely matches the context about ISO 100 film sensitivity and its qualities.","fileTitle":"Ilford Delta 100 Professional 135 film cartridge 01.jpg","query":"ISO 100","caption":"A roll of Ilford Delta 100 Professional Black and White film, expiring in June 2021, DX cartridge barcode: 017594.\nWikimedia Commons · CC BY-SA 4.0 · El Grafo · AI-ranked: The image shows a roll of Ilford Delta 100 Professional Black and White film, which directly illustrates an example of ISO 100 film. It is a real photographic object relevant to analog photography and closely matches the context about ISO 100 film sensitivity and its qualities."}},"iso_800":{"title":"ISO 800","aliases":["ISO 800","czułość filmu ISO 800","film o ISO 800"],"explanation":"ISO 800 to wysoka czułość filmu fotograficznego, która pozwala na robienie zdjęć w słabszym świetle lub z krótszym czasem naświetlania.","why":"Znajomość ISO 800 jest ważna w fotografii analogowej, ponieważ pomaga dobrać odpowiedni film do warunków oświetleniowych, co wpływa na jakość i ostrość zdjęć oraz efekt ziarna na negatywie.","image":{"url":"https://images.pexels.com/photos/13771816/pexels-photo-13771816.jpeg?auto=compress&cs=tinysrgb&h=650&w=940","originalUrl":"https://www.pexels.com/photo/camera-film-lying-on-white-back-13771816/","label":"Detailed image of a 35mm color print film roll with yellow Kodak label.","source":"Detailed image of a 35mm color print film roll with yellow Kodak label.\nPexels · Arturo Añez.","caption":"Detailed image of a 35mm color print film roll with yellow Kodak label.\nPexels · Arturo Añez."}},"temperatura_procesu_c_41":{"title":"Temperatura procesu C-41","aliases":["Temperatura procesu C-41","Proces C-41","Wywoływanie kolorowego negatywu","Temperatura wywoływania C-41"],"explanation":"Temperatura procesu C-41 to standardowa temperatura, w jakiej wywołuje się kolorowe filmy negatywowe, wynosząca około 37 stopni Celsjusza. Utrzymanie tej temperatury jest kluczowe dla prawidłowego przebiegu chemicznego i uzyskania właściwych kolorów i kontrastu.","why":"Temperatura procesu C-41 jest ważna, ponieważ zbyt wysoka lub zbyt niska temperatura może spowodować nierównomierne wywołanie filmu, zmieniając kolory lub wprowadzając błędy w obrazie. W testach z fotografii analogowej jest to podstawowa wiedza dla poprawnej obróbki filmów kolorowych.","image":{"label":"temperatura procesu C-41 wywoływanie filmu kolorowego","source":"Obraz do uzupełnienia"}},"co_oznacza_proporcja_1_4":{"title":"Proporcja 1+4","aliases":["Proporcja 1+4","Co oznacza proporcja 1+4","roztwór 1+4","mieszanka chemiczna 1+4"],"explanation":"Proporcja 1+4 oznacza, że do jednej części koncentratu chemicznego dodaje się cztery części wody, aby uzyskać gotowy do użycia roztwór.","why":"W fotografii analogowej dokładne rozcieńczenie chemikaliów jest kluczowe dla prawidłowego wywoływania filmu, dlatego znajomość proporcji 1+4 pozwala przygotować odpowiedni roztwór do procesu wywoływania.","image":{"label":"proporcja 1 do 4 chemia fotografia analogowa","source":"Obraz do uzupełnienia"}},"co_oznacza_proporcja_1_9":{"title":"Proporcja 1+9","aliases":["Proporcja 1+9","Co oznacza proporcja 1+9","roztwór 1 do 9","mieszanka 1+9","rozcieńczenie 1 na 9"],"explanation":"Proporcja 1+9 oznacza rozcieńczenie koncentratu w stosunku jeden do dziewięciu, czyli jedną część koncentratu miesza się z dziewięcioma częściami wody, tworząc roztwór gotowy do użycia.","why":"Znajomość proporcji 1+9 jest ważna w fotografii analogowej, gdyż poprawne rozcieńczenie wywoływacza lub innych chemikaliów zapewnia właściwy proces wywoływania filmu, co ma wpływ na jakość obrazu i trwałość negatywu.","image":{"label":"chemia fotograficzna rozcieńczanie 1+9","source":"Obraz do uzupełnienia"}},"dlaczego_nie_wolno_wlewac_wody_do_koncen":{"title":"Dlaczego nie wolno wlewać wody do koncentratu","aliases":["Dlaczego nie wolno wlewać wody do koncentratu","rozcieńczanie koncentratu","mieszanie roztworów chemicznych"],"explanation":"Nie wolno wlewać wody bezpośrednio do koncentratu, ponieważ może to prowadzić do niekontrolowanej reakcji chemicznej, która powoduje wytrącanie się osadu lub nieprawidłowe rozmieszanie roztworu. Prawidłową metodą jest nalewanie koncentratu do wody, co zapewnia stopniowe rozcieńczenie i homogeniczne wymieszanie.","why":"W fotografii analogowej precyzyjne przygotowanie roztworów chemicznych jest kluczowe dla prawidłowego wywoływania filmu. Nieprawidłowe rozcieńczenie koncentratu może skutkować wadliwym wywołaniem, uszkodzeniem filmu lub nierównomiernym efektem końcowym.","image":{"label":"rozcieńczanie chemikaliów w laboratorium fotografia analogowa","source":"Obraz do uzupełnienia"}},"co_sie_stanie_przy_za_krotkim_utrwalaniu":{"title":"Za krótkie utrwalanie","aliases":["Za krótkie utrwalanie","Co się stanie przy za krótkim utrwalaniu","niedostateczne utrwalanie","zbyt krótki czas utrwalania","za krótka kąpiel w utrwalaczu"],"explanation":"Przy za krótkim utrwalaniu na filmie mogą pozostać nierozpuszczone halogenki srebra, które z czasem powodują jego ciemnienie i degradację obrazu.","why":"W procesie wywoływania filmu analogowego utrwalanie jest kluczowe dla usunięcia światłoczułych związków i zabezpieczenia zdjęć przed dalszym naświetlaniem. Niewystarczający czas utrwalania grozi trwałym uszkodzeniem filmu i utratą jakości zdjęć.","image":{"label":"film fotograficzny w kąpieli utrwalacza","source":"Obraz do uzupełnienia"}},"jaka_jest_temperatura_wywolywania_czarno":{"title":"Temperatura wywoływania czarno-białego filmu","aliases":["Temperatura wywoływania czarno-białego filmu","Jaka jest temperatura wywoływania czarno-białego filmu","temperatura wywoływania","temperatura obróbki filmu","temperatura procesu wywoływania"],"explanation":"Temperatura wywoływania czarno-białego filmu to zazwyczaj około 20°C. Jest to optymalna temperatura, przy której chemikalia wywoływacza działają prawidłowo, zapewniając odpowiednią kontrastowość i jakość negatywu.","why":"Kontrola temperatury podczas wywoływania filmu jest kluczowa, ponieważ zbyt wysoka lub zbyt niska temperatura może prowadzić do niedoświetlenia lub prześwietlenia negatywu, a także zmienić czas wywoływania i jakość obrazu.","image":{"label":"laboratoryjny proces wywoływania czarno-białego filmu w temperaturze 20 stopni Celsjusza","source":"Obraz do uzupełnienia"}},"jaka_jest_kolejnosc_roztworow":{"title":"Kolejność roztworów w fotografii analogowej","aliases":["Kolejność roztworów w fotografii analogowej",".Jaka jest kolejność roztworów","kolejność kąpieli","etapy wywoływania filmu","proces chemiczny filmu"],"explanation":"Kolejność roztworów to sekwencja używanych chemikaliów podczas wywoływania filmu fotograficznego, która zwykle obejmuje: najpierw wywoływacz, następnie przerywacz (płukanie), a na końcu utrwalacz. Każdy etap ma swoje zadanie i musi być wykonany w odpowiedniej kolejności, aby uzyskać prawidłowo przetworzony obraz.","why":"Zachowanie prawidłowej kolejności roztworów jest kluczowe dla skutecznego wywołania filmu i uzyskania dobrej jakości zdjęć bez uszkodzeń i zanieczyszczeń zdjęcia.","image":{"label":"kolejność roztworów wywoływanie filmu fotografia analogowa","source":"Obraz do uzupełnienia"}},"jaka_jest_kolejnosc_roztworow_2":{"title":"Kolejność roztworów w wywoływaniu filmu fotograficznego","aliases":["Kolejność roztworów w wywoływaniu filmu fotograficznego","Jaka jest kolejność roztworów","kolejność kąpieli","etapy wywoływania filmu","proces chemiczny filmu"],"explanation":"Kolejność roztworów to sekwencja, w jakiej używa się chemikaliów podczas wywoływania filmu fotograficznego. Najpierw stosuje się wywoływacz, który ujawnia obraz na filmie, następnie przerywacz, który zatrzymuje działanie wywoływacza, a na końcu utrwalacz, który utrwala obraz i zabezpiecza go przed światłem.","why":"Znajomość prawidłowej kolejności roztworów jest kluczowa, ponieważ użycie ich w niewłaściwej kolejności lub pominięcie któregoś z nich może prowadzić do uszkodzenia filmu lub niewłaściwego wywołania zdjęć. To podstawowa wiedza pozwalająca osiągnąć dobrej jakości odbitki z filmu analogowego.","image":{"label":"proces wywoływania filmu kolejność roztworów chemia fotografia analogowa","source":"Obraz do uzupełnienia"}},"dlaczego_nie_wolno_wlaczac_bialego_swiat":{"title":"Dlaczego nie wolno włączać białego światła","aliases":["Dlaczego nie wolno włączać białego światła","zakaz używania białego światła","światło białe i fotografia analogowa"],"explanation":"W ciemni fotograficznej podczas wywoływania filmów i papierów światłoczułych nie wolno włączać białego światła, ponieważ może ono naświetlić i zniszczyć materiał światłoczuły, co skutkuje utratą zdjęć.","why":"Zastosowanie białego światła spowoduje przedwczesne i niekontrolowane naświetlenie filmów lub papierów fotograficznych, co prowadzi do ich uszkodzenia i braku możliwości prawidłowego wywołania obrazu.","image":{"label":"ciemnia fotograficzna zakaz białego światła","source":"Obraz do uzupełnienia"}},"dlaczego_potrzebna_jest_wentylacja":{"title":"Dlaczego potrzebna jest wentylacja","aliases":["Dlaczego potrzebna jest wentylacja","wentylacja w ciemni","odprowadzanie oparów chemicznych","bezpieczeństwo w ciemni"],"explanation":"Wentylacja jest potrzebna, aby usuwać szkodliwe opary chemiczne powstające podczas wywoływania zdjęć w ciemni fotograficznej. Zapewnia to bezpieczeństwo i komfort pracy fotografa oraz zapobiega gromadzeniu się niebezpiecznych substancji w pomieszczeniu.","why":"Wentylacja jest niezbędna, ponieważ procesy chemiczne w fotografii analogowej wykorzystują związki, które mogą szkodzić zdrowiu. Bez odpowiedniej wentylacji istnieje ryzyko podrażnień dróg oddechowych lub zatrucia, co może wpłynąć na bezpieczeństwo pracy.","image":{"label":"wentylacja ciemnia fotografia analogowa","source":"Obraz do uzupełnienia"}},"co_to_jest_test_paskowy":{"title":"Test paskowy","aliases":["Test paskowy","Co to jest test paskowy","test krokowy","test stopniowy"],"explanation":"Test paskowy to specjalny wzorzec fotograficzny z różnymi poziomami gęstości, używany do sprawdzania czasu naświetlania i wywoływania filmu lub papieru fotograficznego.","why":"Test paskowy jest ważny, ponieważ pozwala precyzyjnie dobrać czas ekspozycji oraz parametry wywoływania, co gwarantuje prawidłową jakość zdjęć w fotografii analogowej.","image":{"label":"test paskowy fotografia analogowa wzorzec naświetlania","source":"Obraz do uzupełnienia"}},"co_to_jest_baryt":{"title":"Baryt","aliases":["Baryt","Co to jest baryt","papier barytowy","papier fotograficzny barytowy"],"explanation":"Baryt to rodzaj papieru fotograficznego używanego w fotografii analogowej, na którym znajduje się warstwa barwna zawierająca siarczan baru. Daje on zdjęciom wysoką jakość, głębokie czernie i szeroki zakres tonów szarości.","why":"Baryt jest ważny w fotografii analogowej, ponieważ pozwala uzyskać zdjęcia o wysokiej jakości i trwałości, co jest szczególnie istotne przy wywoływaniu odbitek w ciemni fotograficznej.","image":{"label":"papier barytowy fotografia analogowa","source":"Obraz do uzupełnienia"}},"co_to_jest_emulsja_fotograficzna":{"title":"Emulsja fotograficzna","aliases":["Emulsja fotograficzna","Co to jest emulsja fotograficzna","warstwa światłoczuła","warstwa emulsji","powłoka emulsyjna"],"explanation":"Emulsja fotograficzna to cienka warstwa na powierzchni filmu lub papieru fotograficznego, zawierająca kryształki halogenków srebra, które są światłoczułe i reagują na światło, tworząc obraz podczas wywoływania.","why":"Znajomość emulsji fotograficznej jest kluczowa w fotografii analogowej, ponieważ to ona rejestruje obraz i decyduje o jakości oraz właściwościach zdjęcia, dlatego trzeba ją odpowiednio chronić i obchodzić się z nią podczas wywoływania.","image":{"label":"emulsja fotograficzna warstwa kryształki halogenków srebra makro fotografia analogowa","source":"Obraz do uzupełnienia"}},"co_powoduje_brak_przerywacza":{"title":"Brak przerywacza w wywoływaniu filmu","aliases":["Brak przerywacza w wywoływaniu filmu","Co powoduje brak przerywacza","brak stoprozerwiacza","pominięcie przerywacza"],"explanation":"Brak przerywacza podczas wywoływania filmu powoduje, że proces wywoływania nie zostaje przerwany, co prowadzi do dalszego działania wywoływacza i nadmiernego naświetlenia lub zaciemnienia obrazu na filmie.","why":"Znajomość skutków braku przerywacza jest ważna, ponieważ pomaga uniknąć błędów w wywoływaniu filmu, które mogą zrujnować zdjęcia, co jest kluczowe w fotografii analogowej.","image":{"label":"wywoływanie filmu analogowego w ciemni z przerywaczem","source":"Obraz do uzupełnienia"}},"co_powoduje_przeterminowany_wywolywacz":{"title":"Przeterminowany wywoływacz","aliases":["Przeterminowany wywoływacz","Co powoduje przeterminowany wywoływacz","stary wywoływacz","zużyty wywoływacz"],"explanation":"Przeterminowany wywoływacz to chemiczny roztwór do wywoływania filmu, który stracił swoje właściwości przez upływ czasu lub nieprawidłowe przechowywanie. Powoduje to niedostateczne lub nierównomierne wywołanie klatek, co skutkuje obniżoną jakością obrazu, zmniejszonym kontrastem i występowaniem plam.","why":"Znajomość skutków stosowania przeterminowanego wywoływacza jest ważna w fotografii analogowej, aby uniknąć błędów podczas wywoływania filmu i uzyskać przewidywalne, wysokiej jakości zdjęcia.","image":{"label":"przeterminowany wywoływacz do filmu fotografia analogowa","source":"Obraz do uzupełnienia"}},"co_powoduje_zarysowania_filmu":{"title":"Zarysowania filmu","aliases":["Zarysowania filmu","Co powoduje zarysowania filmu","uszkodzenia mechaniczne filmu","ryski na filmie"],"explanation":"Zarysowania filmu pojawiają się na skutek mechanicznego uszkodzenia powierzchni filmu podczas jego wyjmowania, nawijania lub obróbki chemicznej. Mogą być spowodowane niewłaściwym obchodzeniem się z filmem, zanieczyszczeniami lub uszkodzeniami sprzętu.","why":"Zrozumienie przyczyn powstawania zarysowań jest ważne, aby uniknąć uszkodzeń filmu, które negatywnie wpływają na jakość zdjęć i mogą prowadzić do całkowitej utraty obrazu.","image":{"label":"film ze zarysowaniami","source":"Obraz do uzupełnienia"}},"co_powoduje_podwojne_naswietlenie":{"title":"Podwójne naświetlenie","aliases":["Podwójne naświetlenie","Co powoduje „podwójne naświetlenie","podwójne ekspozycja","double exposure"],"explanation":"Podwójne naświetlenie to sytuacja, gdy ten sam fragment filmu zostaje naświetlony dwukrotnie. Powoduje to na zdjęciu nałożenie się dwóch obrazów, co może prowadzić do zlewania się detali i powstania efektu nakładania się scen.","why":"W fotografii analogowej uniknięcie podwójnego naświetlenia jest ważne, ponieważ wpływa na jakość zdjęć i poprawne odwzorowanie sceny. Podwójna ekspozycja może być niezamierzonym błędem albo kreatywnym zabiegiem, dlatego zrozumienie tego pojęcia pomaga kontrolować proces fotografowania i wywoływania filmu.","image":{"label":"podwójne naświetlenie na filmie fotografia analogowa","source":"Obraz do uzupełnienia"}},"co_powoduje_nieszczelnosc_kasety":{"title":"Nieszczelność kasety","aliases":["Nieszczelność kasety","Co powoduje nieszczelność kasety","wycieki światła w kasecie","uszkodzona kaseta na film","przecieki światła na filmie"],"explanation":"Nieszczelność kasety oznacza, że światło przedostaje się do filmu przez uszkodzone lub źle zamknięte opakowanie na film. Powoduje to naświetlenie filmu, co skutkuje niechcianymi plamami lub smugami na zdjęciach.","why":"W fotografii analogowej kaseta musi być szczelna, aby chronić film przed światłem przed jego naświetleniem podczas fotografowania i wywoływania. Nieszczelność kasety powoduje uszkodzenie zdjęć, co jest kluczową kwestią w kontekście wywoływania filmu.","image":{"label":"kaseta filmowa nieszczelność światło plamy na filmie","source":"Obraz do uzupełnienia"}},"co_powoduje_wlaczenie_bialego_swiatla_w_":{"title":"Włączenie białego światła w ciemni","aliases":["Włączenie białego światła w ciemni","Co powoduje włączenie białego światła w ciemni","światło białe w ciemni","białe światło podczas wywoływania","świetlne zanieczyszczenie ciemni"],"explanation":"Włączenie białego światła w ciemni powoduje naświetlenie filmu lub papieru fotograficznego światłem widzialnym, co skutkuje całkowitym zniszczeniem obrazu lub jego części poprzez pojawienie się jasnych plam lub całkowite przegorzenie materiału światłoczułego.","why":"Zrozumienie tego zjawiska jest kluczowe podczas wywoływania tradycyjnych materiałów światłoczułych, ponieważ ciemnia musi być pozbawiona białego światła, by nie uszkodzić negatywów lub odbitek i zachować ich jakość.","image":{"label":"ciemnia fotograficzna z wyłączonym białym światłem, ciemnia fotograficzna oświetlona białym światłem, zepsuty film przez światło białe","source":"Obraz do uzupełnienia"}},"dlaczego_uzywa_sie_osobnych_szczypiec":{"title":"Dlaczego używa się osobnych szczypiec","aliases":["Dlaczego używa się osobnych szczypiec","Osobne szczypce w ciemni","Użycie szczypiec w fotografii analogowej"],"explanation":"Osobne szczypce używa się do przenoszenia różnych materiałów światłoczułych w ciemni, aby uniknąć ich wzajemnego zanieczyszczenia i uszkodzenia przez chemikalia.","why":"Używanie osobnych szczypiec jest ważne dla zachowania czystości i precyzji podczas obróbki materiałów fotograficznych, co wpływa na jakość końcowego obrazu.","image":{"label":"osobne szczypce do fotografii analogowej, ciemnia fotograficzna","source":"Obraz do uzupełnienia"}},"dlaczego_uzywa_sie_rekawic":{"title":"Dlaczego używa się rękawic","aliases":["Dlaczego używa się rękawic","stosowanie rękawic w ciemni","rękawice w fotografii analogowej"],"explanation":"Rękawice używa się w fotografii analogowej, aby chronić negatywy i papier fotograficzny przed zabrudzeniami, tłuszczem i odciskami palców, które mogą uszkodzić lub pogorszyć jakość zdjęć.","why":"Użycie rękawic jest ważne, ponieważ zanieczyszczenia mogą wpłynąć na jakość odbitek i negatywów, powodując plamy lub inne defekty, co znacząco utrudnia uzyskanie dobrego efektu końcowego.","image":{"label":"rękawice do ciemni fotograficznej","source":"Obraz do uzupełnienia"}}};
+
+document.querySelectorAll('.term').forEach(el => {
+  el.addEventListener('click', () => {
+    const key = el.dataset.term;
+    const term = TERMS[key];
+
+    if (!term) return;
+
+    document.getElementById("sidePanel").innerHTML =
+      '<div class="term-box">' +
+      '<h3>' + term.title + '</h3>' +
+    (term.image && term.image.url
+  ? '<div>' +
+      '<img src="' + term.image.url + '">' +
+      '<div class="img-meta">' + (term.image.source || '') + '</div>' +
+    '</div>'
+  : '') +
+      '<p>' + term.explanation + '</p>' +
+      '<p><em>' + (term.why || '') + '</em></p>' +
+      '</div>';
+  });
+});
+
+document.addEventListener('click', (event) => {
+  const img = event.target.closest('.term-box img');
+  if (!img) return;
+
+  const overlay = document.createElement('div');
+  overlay.style.position = 'fixed';
+  overlay.style.inset = '0';
+  overlay.style.background = 'rgba(0,0,0,.82)';
+  overlay.style.display = 'grid';
+  overlay.style.placeItems = 'center';
+  overlay.style.zIndex = '9999';
+  overlay.style.cursor = 'zoom-out';
+
+  const big = document.createElement('img');
+  big.src = img.src;
+  big.style.maxWidth = '92vw';
+  big.style.maxHeight = '92vh';
+  big.style.objectFit = 'contain';
+  big.style.borderRadius = '14px';
+  big.style.background = '#fff';
+
+  overlay.appendChild(big);
+  overlay.addEventListener('click', () => overlay.remove());
+  document.body.appendChild(overlay);
+});
+</script>
+
+</body>
+</html>
