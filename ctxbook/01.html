@@ -1,0 +1,354 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Budowa Aparatu oraz Tryby Pracy</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  background: #f6f2ea;
+  color: #171411;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  min-height: 100vh;
+}
+
+main {
+  padding: 54px 64px 90px;
+  max-width: 860px;
+}
+
+h1 {
+  margin: 0 0 10px;
+  font-size: 54px;
+  line-height: 1.02;
+  letter-spacing: -0.04em;
+  font-weight: 800;
+}
+
+h2 {
+  margin: 46px 0 18px;
+  font-size: 30px;
+  line-height: 1.18;
+  font-weight: 800;
+}
+
+.reader-subtitle {
+  margin: 0 0 42px;
+  color: #6f675d;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.reader-paragraph {
+  font-size: 20px;
+  line-height: 1.78;
+  margin: 0 0 28px;
+  white-space: pre-wrap;
+}
+
+.reader-hero-image,
+.reader-section-image {
+  margin: 24px 0 34px;
+}
+
+.reader-hero-image img,
+.reader-section-image img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: contain;
+  border-radius: 18px;
+  background: #f0ece3;
+  box-shadow: 0 14px 34px rgba(30, 25, 18, 0.08);
+}
+
+.reader-section-image img {
+  max-height: 320px;
+}
+
+.reader-hero-image figcaption,
+.reader-section-image figcaption {
+  margin-top: 8px;
+  color: #8a8277;
+  font-size: 12px;
+  line-height: 1.4;
+}
+aside {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+  border-left: 1px solid #ddd4c5;
+  background: #faf7ef;
+  padding: 38px 28px;
+}
+
+aside::before {
+  content: "Wyjaśnienia";
+  display: block;
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+
+.term {
+  background: #fff1b8;
+  border-bottom: 2px solid #d8b429;
+  border-radius: 4px;
+  padding: 0 2px;
+  cursor: pointer;
+}
+
+.term:hover {
+  background: #ffe680;
+}
+
+.term-box {
+  border: 1px solid #ddd4c5;
+  border-radius: 18px;
+  padding: 18px;
+  background: #fffdf8;
+  box-shadow: 0 14px 34px rgba(30, 25, 18, 0.07);
+}
+
+.term-box h3 {
+  margin: 0 0 14px;
+  font-size: 25px;
+  line-height: 1.18;
+  font-weight: 800;
+}
+
+.term-box p {
+  font-size: 18px;
+  line-height: 1.58;
+  margin: 0 0 14px;
+}
+
+.term-box img {
+  width: 100%;
+  max-height: 260px;
+  object-fit: contain;
+  border-radius: 14px;
+  background: #f0ece3;
+  margin: 8px 0 12px;
+  cursor: zoom-in;
+}
+
+.img-meta {
+  margin: -4px 0 12px;
+  font-size: 12px;
+  color: #8a8277;
+  line-height: 1.35;
+}
+
+.brand {
+  grid-column: 1 / 2;
+  margin: 0 64px 34px;
+  padding: 22px 28px;
+  border: 1px solid #ddd4c5;
+  border-radius: 22px;
+  background: #fffdf8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  box-shadow: 0 14px 36px rgba(30, 25, 18, 0.06);
+  position: relative;
+  z-index: 2;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-word {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.brand-name {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 46px;
+  font-weight: 900;
+  letter-spacing: -0.085em;
+  color: #171717;
+}
+
+.brand-format {
+  margin-top: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  color: #6157ff;
+}
+
+.brand-meta {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  white-space: nowrap;
+}
+
+.brand-link {
+  color: #6157ff;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  body {
+    display: block;
+  }
+
+  main {
+    padding: 32px 24px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  aside {
+    position: static;
+    height: auto;
+    border-left: 0;
+    border-top: 1px solid #ddd4c5;
+  }
+
+  .brand {
+  margin: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  grid-column: auto;
+}
+
+.brand-name {
+  font-size: 36px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<main>
+<h1>Budowa Aparatu oraz Tryby Pracy</h1>
+<div class="reader-subtitle">CTXBOOK – text easy to understand</div>
+
+
+    <figure class="reader-hero-image">
+      <img src="https://pixabay.com/get/g1e1c10373d739051d6b6e9624c4e78230ec89288197e32369563f15f8dd307af7ae616397a2a8871509597163291fc9cee1f153ac2af7ca71784123f740d9eac_640.jpg" alt="camera, photo, aparat, digital, lens, photography, professional, film, media, optical, picture, face, camera lens, photographer, digital camera, zenit, packshot, produkt, aparat, aparat, aparat, aparat, aparat, zenit, packshot, packshot, packshot, packshot">
+      <figcaption>Pixabay · WEBIMED</figcaption>
+    </figure>
+  
+
+
+  <section>
+    
+    <h2>Najważniejsze elementy aparatu fotograficznego</h2>
+    <p class="reader-paragraph"><span class="term" data-term="obiektyw">Obiektyw</span> to część aparatu, która wpuszcza światło i decyduje o kącie widzenia zdjęcia.</p><p class="reader-paragraph"><span class="term" data-term="przyslona_2">Przysłona</span>, oznaczana jako f/, reguluje ilość światła wpadającego do aparatu oraz wpływa na głębię ostrości, czyli jak duża część zdjęcia jest ostra.</p><p class="reader-paragraph"><span class="term" data-term="migawka_2">Migawka</span> określa czas, przez jaki światło dostaje się do aparatu podczas robienia zdjęcia.</p><p class="reader-paragraph"><span class="term" data-term="iso">ISO</span> oznacza czułość matrycy lub filmu na światło – wyższe wartości pozwalają fotografować przy słabszym świetle, ale mogą zwiększać szumy.</p><p class="reader-paragraph"><span class="term" data-term="matryca">Matryca</span> to element w aparacie cyfrowym, gdzie obraz jest zapisywany.</p><p class="reader-paragraph"><span class="term" data-term="korpus">Korpus</span> to obudowa aparatu, zawierająca elektronikę i mechanizmy.</p><p class="reader-paragraph"><span class="term" data-term="wizjer">Wizjer</span> lub <span class="term" data-term="wizjer">ekran</span> służą do podglądu kadru przed wykonaniem zdjęcia.</p><p class="reader-paragraph"><span class="term" data-term="przycisk_spustu_migawki">Przycisk spustu migawki</span> pozwala na wykonanie zdjęcia.</p>
+    
+  </section>
+
+  <section>
+    
+    <h2>Rodzaje aparatów fotograficznych</h2>
+    <p class="reader-paragraph"><span class="term" data-term="typy_aparatow"><span class="term" data-term="smartfon_t">Smartfon</span></span> to aparat z małą matrycą i automatycznymi ustawieniami.</p><p class="reader-paragraph"><span class="term" data-term="kompakt_to_prosty_i_maly_aparat"><span class="term" data-term="typy_aparatow"><span class="term" data-term="kompakt_to_prosty_i_maly_aparat">Kompakt</span></span> to prosty i mały aparat</span>, łatwy w użyciu.</p><p class="reader-paragraph"><span class="term" data-term="lustrzanka_dslr_posiada_wymienne_obiekty"><span class="term" data-term="typy_aparatow"><span class="term" data-term="lustrzanka_dslr_posiada_wymienne_obiekty">Lustrzanka (<span class="term" data-term="lustrzanka_dslr_posiada_wymienne_obiekty">DSLR</span>)</span></span> posiada wymienne obiektywy i lustro</span>, które kieruje obraz do wizjera.</p><p class="reader-paragraph"><span class="term" data-term="bezlusterkowiec_ma_wymienne_obiektywy"><span class="term" data-term="typy_aparatow">Bezlusterkowiec</span> ma wymienne obiektywy</span>, ale nie posiada lustra, co czyni go mniejszym i lżejszym.</p><p class="reader-paragraph"><span class="term" data-term="aparat_analogowy_zapisuje_obraz_na_filmi"><span class="term" data-term="typy_aparatow"><span class="term" data-term="aparat_analogowy_zapisuje_obraz_na_filmi">Aparat analogowy</span></span> zapisuje obraz na filmie,</span> a nie cyfrowo.</p>
+    
+  </section>
+
+  <section>
+    
+    <h2>Podstawowe pojęcia w fotografii</h2>
+    <p class="reader-paragraph"><span class="term" data-term="ogniskowa">Ogniskowa</span> obiektywu, wyrażana w milimetrach (np. 18 mm lub 200 mm), określa szerokość kadru – mniejsza <span class="term" data-term="ogniskowa">ogniskowa</span> oznacza szerszy obraz, a większa węższy.</p><p class="reader-paragraph"><span class="term" data-term="swiatlosila">Światłosiła</span> (np. f/1.8) oznacza jasność obiektywu i wpływa na ilość światła wpadającego do aparatu.</p><p class="reader-paragraph"><span class="term" data-term="glebia_ostrosci">Głębia ostrości</span> to zakres obszaru na zdjęciu, który jest ostry.</p><p class="reader-paragraph"><span class="term" data-term="balans_bieli">Balans bieli</span> odpowiada za poprawne odwzorowanie kolorów w zależności od rodzaju światła.</p><p class="reader-paragraph"><span class="term" data-term="formaty_zapisu">RAW</span> i <span class="term" data-term="formaty_zapisu">JPG</span> to popularne formaty zapisu zdjęć – <span class="term" data-term="formaty_zapisu">RAW</span> zachowuje więcej informacji, a <span class="term" data-term="formaty_zapisu">JPG</span> jest bardziej skompresowany.</p>
+    
+  </section>
+
+  <section>
+    
+    <h2>Tryby pracy aparatu fotograficznego</h2>
+    <p class="reader-paragraph">Tryb <span class="term" data-term="tryby_pracy">Auto</span> pozwala aparatowi ustawić wszystkie parametry samodzielnie.</p><p class="reader-paragraph">Tryb P (Program) dobiera czas naświetlania i przysłonę, pozostawiając inną kontrolę użytkownikowi.</p><p class="reader-paragraph">Tryb A lub Av (Priorytet przysłony) umożliwia wybór przysłony, a aparat ustawia czas migawki.</p><p class="reader-paragraph">Tryb S lub Tv (Priorytet czasu) pozwala użytkownikowi ustawić czas otwarcia migawki, podczas gdy aparat dobiera przysłonę.</p><p class="reader-paragraph">Tryb M (Manual) daje pełną kontrolę nad czasem i przysłoną.</p><p class="reader-paragraph">Tryby <span class="term" data-term="tryby_pracy">SCN</span> (sceniczne) oferują gotowe ustawienia dopasowane do konkretnych sytuacji, takich jak sport, portret czy noc.</p><p class="reader-paragraph">Tryb B (Bulb) pozwala na otwarcie migawki tak długo, jak przytrzymujemy <span class="term" data-term="przycisk_spustu_migawki">przycisk spustu migawki</span>.</p>
+    
+  </section>
+
+</main>
+
+<aside id="sidePanel">
+  <div class="term-box">
+    <h3>Wyjaśnienia</h3>
+    <p>Kliknij podkreślone pojęcie w tekście.</p>
+  </div>
+</aside>
+
+<div class="brand">
+  <div class="brand-logo">
+    <span class="brand-word">
+      <span class="brand-name">contextero</span>
+      <span class="brand-format">CTXBOOK FORMAT</span>
+    </span>
+  </div>
+
+  <div class="brand-meta">
+    Powered by <a class="brand-link" href="https://contextero.com" target="_blank">contextero.com</a>
+  </div>
+</div>
+<script>
+const TERMS = {"obiektyw":{"title":"Obiektyw","aliases":["Obiektyw"],"explanation":"Obiektyw to część aparatu, która wpuszcza światło i decyduje o kącie widzenia zdjęcia.","why":"Kluczowy element definiujący, ile światła wpada i jak szeroki jest kadr zdjęcia.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/7/77/Sony_16-80mm_f3.5-4.5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/7/77/Sony_16-80mm_f3.5-4.5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"Sony Vario-Sonnar T* DT 16-80mm f/3.5-4.5 ZA lens","source":"Wikimedia Commons · CC BY 2.0 · Rafał S. · AI-ranked: Obraz Sony Vario-Sonnar T* DT 16-80mm f/3.5-4.5 ZA przedstawia realistyczny, wyraźny obiektyw aparatu z widoczną soczewką. Zdjęcie jest wysokiej jakości, dobrze pokazuje elementy obiektywu, co idealnie pasuje do edukacyjnego kontekstu wyjaśniającego, czym jest obiektyw.","fileTitle":"Sony 16-80mm f3.5-4.5.jpg","query":"Obiektyw"}},"przyslona":{"title":"Przysłona (f/)","aliases":["Przysłona (f/)"],"explanation":"Przysłona reguluje ilość światła wpadającego do aparatu oraz wpływa na głębię ostrości.","why":"Pozwala kontrolować jasność zdjęcia i ile ostrości jest na fotografii.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Aperture_in_Canon_50mm_f1.8_II_lens.jpg/1280px-Aperture_in_Canon_50mm_f1.8_II_lens.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/8/8a/Aperture_in_Canon_50mm_f1.8_II_lens.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"Aperture in Canon 50mm f/1.8 II lens","source":"Wikimedia Commons · CC BY-SA 4.0 · Gophi · AI-ranked: Zdjęcie przedstawia przekrój obiektywu z widoczną przysłoną, co doskonale pasuje do kontekstu wyjaśniającego działanie przysłony i jej oznaczenie. Jest to realny, edukacyjny obraz techniczny pokazujący element praktyczny aparatu fotograficznego.","fileTitle":"Aperture in Canon 50mm f1.8 II lens.jpg","query":"Przysłona (f/)"}},"migawka":{"title":"Migawka (czas)","aliases":["Migawka (czas)"],"explanation":"Migawka określa, jak długo światło pada na matrycę lub film podczas robienia zdjęcia.","why":"Kontrola czasu naświetlania decyduje o ostrości ruchu i jasności zdjęcia.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Walka_o_%C5%9Bwiat%C5%82o_i_uk%C5%82adanie_%C5%9Bwiat%C5%82a.pdf/page1-1280px-Walka_o_%C5%9Bwiat%C5%82o_i_uk%C5%82adanie_%C5%9Bwiat%C5%82a.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/7/7c/Walka_o_%C5%9Bwiat%C5%82o_i_uk%C5%82adanie_%C5%9Bwiat%C5%82a.pdf?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"Prezentacja ze Wzlotu 2025 dotycząca fotografowania - technika i kadrowanie","source":"Wikimedia Commons · CC BY 4.0 · Wojciech Pędzich · AI-ranked: The first candidate is a presentation related directly to photography technique and framing, which is relevant to the shutter mechanism in cameras. It is more likely to contain useful diagrams or illustrations about the shutter mechanism. The second candidate is an official journal publication unrelated to the photographic context and unsuitable for illustrating the shutter mechanism.","fileTitle":"Walka o światło i układanie światła.pdf","query":"Migawka (czas)"}},"iso":{"title":"ISO","aliases":["ISO"],"explanation":"ISO to czułość matrycy lub filmu na światło, wpływająca na jakość zdjęcia.","why":"Umożliwia fotografowanie w różnych warunkach oświetleniowych, ale może powodować szumy.","image":{"url":"https://pixabay.com/get/ge916a3aafa26e16e8b69ec5ff446100e62c0cadfba3336a94de1437a523c76ac2084d223ab7f5df25a03d60f3b268d905a1860a94a337d638d3b8dd48b35e999_640.jpg","originalUrl":"https://pixabay.com/photos/lemon-tree-fruit-drops-water-dew-5435158/","label":"lemon, nature, tree, fruit, drops, water, dew, green, citrus fruits, leaves, nikon, d750, aperture 9, iso 900, 105mm, 125th of a second","source":"Pixabay · webentwicklerin"}},"matryca":{"title":"Matryca","aliases":["Matryca"],"explanation":"Matryca to miejsce zapisu obrazu w aparacie cyfrowym.","why":"To dzięki niej aparat tworzy cyfrowe zdjęcie.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/%D0%9F%D0%B8%D0%BA%D1%81%D0%B5%D0%BB%D0%B8_%D0%BC%D0%B0%D1%82%D1%80%D0%B8%D1%86%D1%8B_%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE%D1%80%D0%B5%D0%B3%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%B0.jpg/1280px-%D0%9F%D0%B8%D0%BA%D1%81%D0%B5%D0%BB%D0%B8_%D0%BC%D0%B0%D1%82%D1%80%D0%B8%D1%86%D1%8B_%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE%D1%80%D0%B5%D0%B3%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/c/cb/%D0%9F%D0%B8%D0%BA%D1%81%D0%B5%D0%BB%D0%B8_%D0%BC%D0%B0%D1%82%D1%80%D0%B8%D1%86%D1%8B_%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE%D1%80%D0%B5%D0%B3%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"The pixels of the DVR sensor matrix under the microscope","source":"The pixels of the DVR sensor matrix under the microscope\nWikimedia Commons · CC BY 4.0 · Gribkov ·","fileTitle":"Пиксели матрицы видеорегистратора.jpg","query":"Matryca","caption":"The pixels of the DVR sensor matrix under the microscope\nWikimedia Commons · CC BY 4.0 · Gribkov ·"}},"korpus":{"title":"Korpus","aliases":["Korpus"],"explanation":"Korpus to obudowa aparatu, zawierająca elektronikę i mechanizmy.","why":"Chroni i pozwala na wygodne korzystanie z aparatu.","image":{"url":"https://images.pexels.com/photos/19969466/pexels-photo-19969466.jpeg?auto=compress&cs=tinysrgb&h=650&w=940","originalUrl":"https://www.pexels.com/photo/old-fashioned-sony-camera-19969466/","label":"Detailed view of a mirrorless camera with a focus on texture and design.","source":"Detailed view of a mirrorless camera with a focus on texture and design.\nPexels · Masood Aslami","caption":"Detailed view of a mirrorless camera with a focus on texture and design.\nPexels · Masood Aslami"}},"wizjer":{"title":"Wizjer / ekran","aliases":["Wizjer","ekran"],"explanation":"Wizjer lub ekran służą do podglądu kadru przed wykonaniem zdjęcia.","why":"Pozwalają zobaczyć, co aparatem zobaczy zdjęcie.","image":{"url":"https://images.pexels.com/photos/19517110/pexels-photo-19517110.jpeg?auto=compress&cs=tinysrgb&h=650&w=940","originalUrl":"https://www.pexels.com/photo/photographer-taking-pictures-of-man-19517110/","label":"Back view of photographer taking a portrait shot in black and white.","source":"Pexels · cami","caption":"Pexels · cami"}},"przycisk_spustu_migawki":{"title":"Przycisk spustu migawki","aliases":["Przycisk spustu migawki"],"explanation":"Przycisk ten służy do wykonania zdjęcia przez otwarcie migawki.","why":"To podstawowy przycisk, który pozwala zarejestrować zdjęcie.","image":{"url":"https://images.pexels.com/photos/116697/pexels-photo-116697.jpeg?auto=compress&cs=tinysrgb&h=650&w=940","originalUrl":"https://www.pexels.com/photo/black-electric-device-116697/","label":"Macro shot of camera mode and control dials with various settings.","source":"Pexels · Mike Bird","caption":"Pexels · Mike Bird"}},"typy_aparatow":{"title":"Rodzaje aparatów","aliases":["Smartfon","Kompakt","Lustrzanka (DSLR)","Bezlusterkowiec","Aparat analogowy"],"explanation":"Istnieją różne typy aparatów, od prostych kompaktów po zaawansowane lustrzanki i aparaty analogowe.","why":"Każdy typ aparatu ma inne cechy i zastosowanie.","image":{"url":"https://pixabay.com/get/g7a6f04b77f3f0e7a59562d52234ea019eb6c4b97bf9526c06765c7079d4b6489219ea1ac78f6d9e9c286b405a6407275e7b10a3da0295fcbcf39324d9ca39440_640.jpg","originalUrl":"https://pixabay.com/photos/girl-hands-portrait-model-modeling-3033718/","label":"girl, hands, portrait, model, modeling, pose, posing, makeup, cosmetics, skin, woman, nails, young woman, female, female portrait, female model","source":"Pixabay · JerzyGórecki"}},"ogniskowa":{"title":"Ogniskowa (mm)","aliases":["Ogniskowa"],"explanation":"Ogniskowa obiektywu określa szerokość kadru – od szerokiego do wąskiego pola widzenia.","why":"Wpływa na to, co i jak szeroko jest widoczne na zdjęciu.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/MIR_1W_2%2C8_-_37mm.jpg/1280px-MIR_1W_2%2C8_-_37mm.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/1/12/MIR_1W_2%2C8_-_37mm.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"MIR 1W fixed lens made in Russia, the brightness of 2.8 focal length 37mm with thread M42. Designed for analog 35mm SLR mount screw as well as for digital SLR after using the adapter bracket.","source":"MIR 1W fixed lens made in Russia, the brightness of 2.8 focal length 37mm with thread M42. Designed for analog 35mm SLR mount screw as well as for digital SLR after using the adapter bracket.\nWikimedia Commons · CC BY 3.0 · Wuhazet - Henryk Żychowski · AI-ranked: The image shows a MIR 1W fixed lens with specified focal length 37mm, which directly relates to the concept of focal length (ogniskowa) in photographic lenses. It is a real object (camera lens) and fits educational context about lens construction and focal length values.","fileTitle":"MIR 1W 2,8 - 37mm.jpg","query":"obiektyw ogniskowa","caption":"MIR 1W fixed lens made in Russia, the brightness of 2.8 focal length 37mm with thread M42. Designed for analog 35mm SLR mount screw as well as for digital SLR after using the adapter bracket.\nWikimedia Commons · CC BY 3.0 · Wuhazet - Henryk Żychowski · AI-ranked: The image shows a MIR 1W fixed lens with specified focal length 37mm, which directly relates to the concept of focal length (ogniskowa) in photographic lenses. It is a real object (camera lens) and fits educational context about lens construction and focal length values."}},"swiatlosila":{"title":"Światłosiła (f/)","aliases":["Światłosiła"],"explanation":"Światłosiła oznacza jasność obiektywu i decyduje o ilości światła wpadającego przez obiektyw.","why":"Ma wpływ na zdjęcia robione w słabym świetle i efekt głębi ostrości.","image":{"label":"Schemat przysłony f/1.8 i jej wpływ na światło","source":"https://example.com/images/swiatlosila.jpg · można dodać obraz własny albo wygenerować AI"}},"glebia_ostrosci":{"title":"Głębia ostrości","aliases":["Głębia ostrości"],"explanation":"Głębia ostrości to zakres ostrego obszaru na zdjęciu, który widać jako wyraźny.","why":"Pozwala na kontrolę, które elementy zdjęcia są wyraźne, a które rozmyte.","image":{"url":"https://pixabay.com/get/gae9f773659baa26f64306a2931a7e3bed304e76a0e2e610d5f15b740cc5524c1ee839e048b2d66baa14aa29530b781537cd748aa244a480a0f9786d8592f347e_640.jpg","originalUrl":"https://pixabay.com/photos/archive-boxes-shelf-folders-1850170/","label":"archive, boxes, shelf, folders, documents, data, storage, rack, row, stock, business, warehouse, depth of field, archive, data, storage, warehouse, warehouse, warehouse, warehouse, warehouse","source":"Pixabay · Pexels"}},"balans_bieli":{"title":"Balans bieli","aliases":["Balans bieli"],"explanation":"Balans bieli odpowiada za prawidłowe odwzorowanie kolorów w zależności od rodzaju światła.","why":"Zapobiega niepożądanym zafarbom kolorów na zdjęciu.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Metrostation-Sofia-University-white-balance-collage.jpg/1280px-Metrostation-Sofia-University-white-balance-collage.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/a/a5/Metrostation-Sofia-University-white-balance-collage.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"Collage of 4 images of Metro station \"Sofia University\", Sofia. The image illustrates the differences in the white balance setting. Up left: auto WB, up right: sun, down left: flash, down right: wolfram bulb","source":"Collage of 4 images of Metro station \"Sofia University\", Sofia. The image illustrates the differences in the white balance setting. Up left: auto WB, up right: sun, down left: flash, down right: wolfram bulb\nWikimedia Commons · CC BY-SA 3.0 · Vassia Atanassova - Spiritia · AI-ranked: Obraz przedstawia kolaż 4 zdjęć z tej samej scenerii przy różnych ustawieniach balansu bieli, co idealnie ilustruje działanie i wpływ balansu bieli na odwzorowanie kolorów. Jest to zdjęcie rzeczywistej architektury, dobrze nadające się do edukacyjnego kontekstu fotografii i balansu bieli.","fileTitle":"Metrostation-Sofia-University-white-balance-collage.jpg","query":"Balans bieli","caption":"Collage of 4 images of Metro station \"Sofia University\", Sofia. The image illustrates the differences in the white balance setting. Up left: auto WB, up right: sun, down left: flash, down right: wolfram bulb\nWikimedia Commons · CC BY-SA 3.0 · Vassia Atanassova - Spiritia · AI-ranked: Obraz przedstawia kolaż 4 zdjęć z tej samej scenerii przy różnych ustawieniach balansu bieli, co idealnie ilustruje działanie i wpływ balansu bieli na odwzorowanie kolorów. Jest to zdjęcie rzeczywistej architektury, dobrze nadające się do edukacyjnego kontekstu fotografii i balansu bieli."}},"formaty_zapisu":{"title":"Formaty zapisu zdjęć (RAW / JPG)","aliases":["RAW","JPG"],"explanation":"RAW i JPG to formaty zapisu zdjęć – RAW zachowuje więcej informacji, JPG jest skompresowany dla mniejszych plików.","why":"Pozwala wybrać między jakością a wygodą przechowywania zdjęć.","image":{"originalUrl":"https://pixabay.com/photos/camera-raw-retoch-stock-hotgirl-2380133/","label":"camera raw, retoch, stock, hotgirl, hotgirl, hotgirl, hotgirl, hotgirl, hotgirl","source":"Pixabay · loidinh"}},"tryby_pracy":{"title":"Tryby pracy aparatu","aliases":["Auto","P","A / Av","S / Tv","M","SCN","B"],"explanation":"Różne tryby pracy aparatu pozwalają na automatyczne lub manualne ustawianie parametrów, takich jak czas migawki i przysłona.","why":"Dają kontrolę nad ekspozycją i kreatywność w fotografii.","image":{"url":"https://images.pexels.com/photos/8737366/pexels-photo-8737366.jpeg?auto=compress&cs=tinysrgb&h=650&w=940","originalUrl":"https://www.pexels.com/photo/black-and-silver-round-analog-watch-8737366/","label":"Close-up view of a DSLR camera mode dial with selective focus.","source":"Close-up view of a DSLR camera mode dial with selective focus.\nPexels · Wallace Chuck","caption":"Close-up view of a DSLR camera mode dial with selective focus.\nPexels · Wallace Chuck"}},"przyslona_2":{"title":"Przysłona","aliases":["Przysłona","Apertura","Blenda"],"explanation":"Przysłona to część aparatu fotograficznego, która kontroluje ilość światła wpadającego do obiektywu. Jest oznaczana jako f/ i wpływa również na głębię ostrości zdjęcia, czyli zakres ostrości na zdjęciu.","why":"Przysłona jest ważna, ponieważ umożliwia fotografowi kontrolę nad ekspozycją oraz decyduje o tym, ile elementów na zdjęciu będzie ostro widocznych, co wpływa na estetykę i wyrazistość fotografii.","image":{"url":"https://images.pexels.com/photos/11418940/pexels-photo-11418940.jpeg?auto=compress&cs=tinysrgb&h=650&w=940","originalUrl":"https://www.pexels.com/photo/grayscale-photo-of-a-camera-lens-11418940/","label":"Detailed monochrome close-up of a camera lens displaying the aperture blades.","source":"Detailed monochrome close-up of a camera lens displaying the aperture blades.\nPexels · Alexey Demidov","caption":"Detailed monochrome close-up of a camera lens displaying the aperture blades.\nPexels · Alexey Demidov"}},"migawka_2":{"title":"Migawka","aliases":["Migawka","zawór świetlny","mechanizm migawki"],"explanation":"Migawka to element aparatu fotograficznego, który kontroluje czas naświetlania filmu lub matrycy, umożliwiając określenie, jak długo światło dociera do wnętrza aparatu podczas robienia zdjęcia.","why":"Migawka jest kluczowa w aparacie, ponieważ pozwala regulować ilość światła, co wpływa na jasność i ostrość zdjęcia oraz umożliwia zapisywanie ruchu lub jego zatrzymanie.","image":{"url":"https://pixabay.com/get/g26af18a300e79c9177bac21ddb5d1c5d0a4da001e5c5048ac6b364d68cdf9a34ceca953efcc662a36a053a362aeb735afcb93cbb27271aef3a45905cb273157c_640.jpg","originalUrl":"https://pixabay.com/photos/camera-shutter-speed-digital-camera-7271284/","label":"camera, shutter speed, digital camera, dslr, camera, camera, camera, camera, shutter speed, shutter speed, shutter speed, shutter speed, shutter speed","source":"Pixabay · cskkkk","caption":"Pixabay · cskkkk"}},"smartfon_t":{"title":"Smartfon","aliases":["Smartfon","Smartfon t","Telefon komórkowy z aparatem","Telefon z kamerą"],"explanation":"Smartfon to nowoczesne urządzenie mobilne, które łączy funkcje telefonu i aparatu fotograficznego. Posiada małą matrycę fotograficzną oraz automatyczne ustawienia, co pozwala na szybkie i łatwe robienie zdjęć bez konieczności ręcznej regulacji parametrów.","why":"W kontekście budowy aparatu i trybów pracy, smartfon jest ważny, ponieważ reprezentuje popularny typ aparatu, który różni się od tradycyjnych aparatów fotograficznych m.in. wielkością matrycy i sposobem obsługi. Zrozumienie budowy i działania smartfonów pomaga lepiej poznać różnorodność urządzeń do fotografii.","image":{"url":"https://pixabay.com/get/g73f6ba74baeb9dad13258b6c3ac55f6ec740afe2c1936039e9b77479f3f1681d828130c6617a2f084813aa47b7a6cf0ec7d4123b24e42ced7392e235a43c9a4a_640.jpg","originalUrl":"https://pixabay.com/photos/smartfone-black-new-button-camera-1185740/","label":"smartfone, black, new, button, camera, ccd, clock, computer, control, digital, engineering, horizontal, interface, lever, megapixel, multi-selector, ok, photograph, picture, rotary, scrolling, selector, shoot, shooting, silver, steel, symbol, technology, smartfone, smartfone, smartfone, smartfone, smartfone, scrolling, scrolling","source":"Pixabay · epicioci","caption":"Pixabay · epicioci"}},"kompakt_to_prosty_i_maly_aparat":{"title":"Kompakt","aliases":["Kompakt","Kompakt to prosty i mały aparat","aparat kompaktowy","aparat małoformatowy","aparat prosty"],"explanation":"Kompakt to niewielki i prosty aparat fotograficzny, który łatwo się obsługuje i jest poręczny do codziennego użytku.","why":"W tekście o budowie aparatów i ich trybach pracy, zrozumienie, czym jest aparat kompaktowy, pomaga odróżnić go od bardziej zaawansowanych urządzeń, co ułatwia naukę o różnych typach aparatów.","image":{"url":"https://images.pexels.com/photos/27872017/pexels-photo-27872017.jpeg?auto=compress&cs=tinysrgb&h=650&w=940","originalUrl":"https://www.pexels.com/photo/hikaye-1-27872017/","label":"A vintage camera, maps, and newspaper on a wooden table create a nostalgic travel vibe.","source":"Pexels · seymasungr","caption":"Pexels · seymasungr"}},"lustrzanka_dslr_posiada_wymienne_obiekty":{"title":"Lustrzanka (DSLR)","aliases":["Lustrzanka (DSLR)","Lustrzanka (DSLR) posiada wymienne obiektywy i lustro","aparat lustrzany","DSLR","digital single-lens reflex camera"],"explanation":"Lustrzanka cyfrowa (DSLR) to rodzaj aparatu fotograficznego, który ma wewnątrz lustro odbijające obraz do optycznego wizjera oraz umożliwia wymianę obiektywów, co daje większą kontrolę nad zdjęciami.","why":"Lustrzanka jest ważna, ponieważ dzięki wymiennym obiektywom i lustru umożliwia precyzyjne kadrowanie obrazu przez wizjer, co odróżnia ją od innych typów aparatów i pozwala na większą kreatywność i jakość zdjęć.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Reflex_camera_%28description%29.svg/1280px-Reflex_camera_%28description%29.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/e/ef/Reflex_camera_%28description%29.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"Cross-section of a single-lens reflex camera","source":"Cross-section of a single-lens reflex camera\nWikimedia Commons · CC BY-SA 3.0 · Anuskafm ·","fileTitle":"Reflex camera (description).svg","query":"lustrzanka DSLR","caption":"Cross-section of a single-lens reflex camera\nWikimedia Commons · CC BY-SA 3.0 · Anuskafm ·"}},"bezlusterkowiec_ma_wymienne_obiektywy":{"title":"Bezlusterkowiec z wymiennymi obiektywami","aliases":["Bezlusterkowiec z wymiennymi obiektywami","Bezlusterkowiec ma wymienne obiektywy","aparat bezlusterkowy","kamera bez lustra","bezlusterkowy aparat fotograficzny"],"explanation":"Bezlusterkowiec to rodzaj aparatu fotograficznego, który nie posiada lustra wbudowanego w korpus, jak w klasycznych lustrzankach. Ma natomiast możliwość wymiany obiektywów, co pozwala na dostosowanie sprzętu do różnych warunków i potrzeb fotograficznych.","why":"W tekście o budowie aparatu i trybach pracy ważne jest zrozumienie, że bezlusterkowiec oferuje elastyczność dzięki wymiennym obiektywom, a jednocześnie jest lżejszy i mniejszy dzięki braku lustra. To pozwala lepiej poznać różnice między typami aparatów i ich zastosowania.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Panasonic_Lumix_DMC-G80.jpg/1280px-Panasonic_Lumix_DMC-G80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/6/69/Panasonic_Lumix_DMC-G80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"Panasonic Lumix DMC-G85/G80. Stacked shot.","source":"Panasonic Lumix DMC-G85/G80. Stacked shot.\nWikimedia Commons · CC BY-SA 4.0 · Petar Milošević ·","fileTitle":"Panasonic Lumix DMC-G80.jpg","query":"Bezlusterkowiec","caption":"Panasonic Lumix DMC-G85/G80. Stacked shot.\nWikimedia Commons · CC BY-SA 4.0 · Petar Milošević ·"}},"aparat_analogowy_zapisuje_obraz_na_filmi":{"title":"Aparat analogowy","aliases":["Aparat analogowy","Aparat analogowy zapisuje obraz na filmie,","aparat na film","aparat tradycyjny","aparat fotograficzny analogowy"],"explanation":"Aparat analogowy to rodzaj aparatu fotograficznego, który rejestruje obraz na specjalnej błonie filmowej, zamiast zapisywać go w formie cyfrowej. Film musi być później wywołany, aby otrzymać zdjęcia.","why":"W tekście jest ważny, ponieważ wyjaśnia różnicę między tradycyjnym sposobem fotografowania za pomocą filmu a nowoczesnymi aparatami cyfrowymi, co pomaga zrozumieć budowę i działanie różnych typów aparatów.","image":{"url":"https://images.pexels.com/photos/27098868/pexels-photo-27098868.jpeg?auto=compress&cs=tinysrgb&h=650&w=940","originalUrl":"https://www.pexels.com/photo/black-and-white-photo-of-a-camera-27098868/","label":"A classic Canon film camera captured in a stylish black and white close-up.","source":"A classic Canon film camera captured in a stylish black and white close-up.\nPexels · Hədiye Sarıbaş","caption":"A classic Canon film camera captured in a stylish black and white close-up.\nPexels · Hədiye Sarıbaş"}}};
+
+document.querySelectorAll('.term').forEach(el => {
+  el.addEventListener('click', () => {
+    const key = el.dataset.term;
+    const term = TERMS[key];
+
+    if (!term) return;
+
+    document.getElementById("sidePanel").innerHTML =
+      '<div class="term-box">' +
+      '<h3>' + term.title + '</h3>' +
+    (term.image && term.image.url
+  ? '<div>' +
+      '<img src="' + term.image.url + '">' +
+      '<div class="img-meta">' + (term.image.source || '') + '</div>' +
+    '</div>'
+  : '') +
+      '<p>' + term.explanation + '</p>' +
+      '<p><em>' + (term.why || '') + '</em></p>' +
+      '</div>';
+  });
+});
+
+document.addEventListener('click', (event) => {
+  const img = event.target.closest('.term-box img');
+  if (!img) return;
+
+  const overlay = document.createElement('div');
+  overlay.style.position = 'fixed';
+  overlay.style.inset = '0';
+  overlay.style.background = 'rgba(0,0,0,.82)';
+  overlay.style.display = 'grid';
+  overlay.style.placeItems = 'center';
+  overlay.style.zIndex = '9999';
+  overlay.style.cursor = 'zoom-out';
+
+  const big = document.createElement('img');
+  big.src = img.src;
+  big.style.maxWidth = '92vw';
+  big.style.maxHeight = '92vh';
+  big.style.objectFit = 'contain';
+  big.style.borderRadius = '14px';
+  big.style.background = '#fff';
+
+  overlay.appendChild(big);
+  overlay.addEventListener('click', () => overlay.remove());
+  document.body.appendChild(overlay);
+});
+</script>
+
+</body>
+</html>
