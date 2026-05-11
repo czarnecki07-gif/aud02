@@ -1,0 +1,369 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Lekcja 2.3: Teoria barwy, percepcja koloru i przestrzenie barwne</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  background: #f6f2ea;
+  color: #171411;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  min-height: 100vh;
+}
+
+main {
+  padding: 54px 64px 90px;
+  max-width: 860px;
+}
+
+h1 {
+  margin: 0 0 10px;
+  font-size: 54px;
+  line-height: 1.02;
+  letter-spacing: -0.04em;
+  font-weight: 800;
+}
+
+h2 {
+  margin: 46px 0 18px;
+  font-size: 30px;
+  line-height: 1.18;
+  font-weight: 800;
+}
+
+.reader-subtitle {
+  margin: 0 0 42px;
+  color: #6f675d;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.reader-paragraph {
+  font-size: 20px;
+  line-height: 1.78;
+  margin: 0 0 28px;
+  white-space: pre-wrap;
+}
+
+.reader-hero-image,
+.reader-section-image {
+  margin: 24px 0 34px;
+}
+
+.reader-hero-image img,
+.reader-section-image img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: contain;
+  border-radius: 18px;
+  background: #f0ece3;
+  box-shadow: 0 14px 34px rgba(30, 25, 18, 0.08);
+}
+
+.reader-section-image img {
+  max-height: 320px;
+}
+
+.reader-hero-image figcaption,
+.reader-section-image figcaption {
+  margin-top: 8px;
+  color: #8a8277;
+  font-size: 12px;
+  line-height: 1.4;
+}
+aside {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+  border-left: 1px solid #ddd4c5;
+  background: #faf7ef;
+  padding: 38px 28px;
+}
+
+aside::before {
+  content: "Wyjaśnienia";
+  display: block;
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+
+.term {
+  background: #fff1b8;
+  border-bottom: 2px solid #d8b429;
+  border-radius: 4px;
+  padding: 0 2px;
+  cursor: pointer;
+}
+
+.term:hover {
+  background: #ffe680;
+}
+
+.term-box {
+  border: 1px solid #ddd4c5;
+  border-radius: 18px;
+  padding: 18px;
+  background: #fffdf8;
+  box-shadow: 0 14px 34px rgba(30, 25, 18, 0.07);
+}
+
+.term-box h3 {
+  margin: 0 0 14px;
+  font-size: 25px;
+  line-height: 1.18;
+  font-weight: 800;
+}
+
+.term-box p {
+  font-size: 18px;
+  line-height: 1.58;
+  margin: 0 0 14px;
+}
+
+.term-box img {
+  width: 100%;
+  max-height: 260px;
+  object-fit: contain;
+  border-radius: 14px;
+  background: #f0ece3;
+  margin: 8px 0 12px;
+  cursor: zoom-in;
+}
+
+.img-meta {
+  margin: -4px 0 12px;
+  font-size: 12px;
+  color: #8a8277;
+  line-height: 1.35;
+}
+
+.brand {
+  grid-column: 1 / 2;
+  margin: 0 64px 34px;
+  padding: 22px 28px;
+  border: 1px solid #ddd4c5;
+  border-radius: 22px;
+  background: #fffdf8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  box-shadow: 0 14px 36px rgba(30, 25, 18, 0.06);
+  position: relative;
+  z-index: 2;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-word {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.brand-name {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 46px;
+  font-weight: 900;
+  letter-spacing: -0.085em;
+  color: #171717;
+}
+
+.brand-format {
+  margin-top: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  color: #6157ff;
+}
+
+.brand-meta {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  white-space: nowrap;
+}
+
+.brand-link {
+  color: #6157ff;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  body {
+    display: block;
+  }
+
+  main {
+    padding: 32px 24px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  aside {
+    position: static;
+    height: auto;
+    border-left: 0;
+    border-top: 1px solid #ddd4c5;
+  }
+
+  .brand {
+  margin: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  grid-column: auto;
+}
+
+.brand-name {
+  font-size: 36px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<main>
+<h1>Lekcja 2.3: Teoria barwy, percepcja koloru i przestrzenie barwne</h1>
+<div class="reader-subtitle">CTXBOOK – text easy to understand</div>
+
+
+    <figure class="reader-hero-image">
+      <img src="https://pixabay.com/get/g0288ecb87a409d1003671d5fd49cd647485d8c8c04fa088559d2baef9548ebb4a8eb153907cb74c6e10f75f8941d3a8041d7198023667aad498a6d3bf15e7358_640.jpg" alt="autumn, the colors, nature, colour, october">
+      <figcaption>autumn, the colors, nature, colour, october
+Pixabay · _Alicja_</figcaption>
+    </figure>
+  
+
+
+  <section>
+    
+    <h2>Wprowadzenie do teorii barwy i percepcji koloru</h2>
+    <p class="reader-paragraph">Celem lekcji jest rozróżnianie modeli i przestrzeni barwnych, rozumienie percepcji koloru oraz dobieranie ustawień barwnych do obróbki i publikacji obrazu.</p>
+    
+  </section>
+
+  <section>
+    
+    <h2>Kolor jako element budujący nastrój i profesjonalizm</h2>
+    <p class="reader-paragraph">Kolor w fotografii nie jest tylko cechą techniczną. Buduje nastrój, porządkuje obraz i wpływa na to, czy fotografia wygląda naturalnie, atrakcyjnie albo profesjonalnie przygotowana do publikacji.</p>
+    
+  </section>
+
+  <section>
+    
+    <h2>Jak działa kolor i jak go postrzegamy</h2>
+    <p class="reader-paragraph">Kolor powstaje jako wynik działania światła, właściwości fotografowanego obiektu oraz sposobu działania ludzkiego wzroku i mózgu. Odbieramy barwy dzięki receptorom w oku reagującym na różne zakresy długości fal. W praktyce oznacza to, że kolor nie jest tylko cechą przedmiotu, ale także efektem oświetlenia i interpretacji.</p><p class="reader-paragraph">Ten sam obiekt może wyglądać inaczej w świetle dziennym, żarowym i błyskowym. Na percepcję wpływa również otoczenie, kontrast kolorystyczny, adaptacja wzroku i pamięć barwna.</p><p class="reader-paragraph">Dlatego praca z kolorem wymaga nie tylko ustawień technicznych, ale też świadomości odbioru.</p>
+    
+  </section>
+
+  <section>
+    
+    <h2>Zrozumienie modeli barwnych i ich zastosowanie</h2>
+    <p class="reader-paragraph">Model barwny to sposób opisu koloru za pomocą liczb i składowych. W fotografii najczęściej spotykasz <span class="term" data-term="model_rgb">model RGB</span>, używany przez aparaty, monitory i większość urządzeń cyfrowych. Opiera się on na mieszaniu światła czerwonego, zielonego i niebieskiego.</p><p class="reader-paragraph">W druku stosuje się <span class="term" data-term="model_cmyk">model CMYK</span>, oparty na mieszaniu farb: cyjan, magenta, żółty i czarny.</p><p class="reader-paragraph">Spotkasz też modele <span class="term" data-term="hsb">HSB</span> lub <span class="term" data-term="hsl">HSL</span>, które opisują kolor przez odcień, nasycenie i jasność, co bywa wygodne podczas edycji obrazu.</p><p class="reader-paragraph">Ważne jest, by nie mylić modelu z przestrzenią barwną, ponieważ model określa sposób zapisu, a przestrzeń jego konkretny zakres.</p>
+    
+  </section>
+
+  <section>
+    
+    <h2>Różnice między przestrzeniami barwnymi: sRGB, Adobe RGB i inne</h2>
+    <p class="reader-paragraph">Przestrzeń barwna określa, jaki zakres kolorów może zostać zapisany i odtworzony.</p><p class="reader-paragraph"><span class="term" data-term="przestrzen_barwna_srgb">sRGB</span> to najpopularniejsza przestrzeń stosowana w internecie, urządzeniach konsumenckich i wielu podstawowych workflow.</p><p class="reader-paragraph"><span class="term" data-term="przestrzen_barwna_adobe_rgb">Adobe RGB</span> ma szerszy <span class="term" data-term="gamut">gamut</span>, szczególnie w zieleniach i cyjanach, dlatego bywa używany w bardziej zaawansowanej fotografii i przygotowaniu do druku.</p><p class="reader-paragraph">Istnieją też jeszcze szersze przestrzenie, takie jak <span class="term" data-term="przestrzen_barwna_prophoto_rgb">ProPhoto RGB</span>, używane głównie w profesjonalnej obróbce.</p><p class="reader-paragraph">Wybór przestrzeni zależy od celu pracy. Jeśli przygotowujesz zdjęcia do sieci, <span class="term" data-term="przestrzen_barwna_srgb">sRGB</span> jest najbezpieczniejsze. Jeśli pracujesz nad materiałem do wysokiej jakości wydruku i masz kontrolę nad całym procesem, możesz wykorzystać szerszą przestrzeń.</p>
+    
+  </section>
+
+  <section>
+    
+    <h2>Spójność koloru w pracy fotografa</h2>
+    <p class="reader-paragraph"><span class="term" data-term="balans_bieli">Balans bieli</span> odpowiada za to, czy neutralne elementy obrazu będą wyglądały rzeczywiście neutralnie, czy zyskają niechciany zafarb.</p><p class="reader-paragraph">Aparat może ustawiać balans automatycznie, ale w trudnym świetle lepsze efekty daje wybór ręczny, preset lub praca z szarą kartą.</p><p class="reader-paragraph">Szczególnie ważne jest to przy fotografii produktowej, reprodukcyjnej i portretowej.</p><p class="reader-paragraph">Spójność koloru zależy jednak nie tylko od aparatu, lecz także od monitora, oprogramowania, profilu barwnego i urządzeń wyjściowych.</p><p class="reader-paragraph">Dlatego <span class="term" data-term="zarzadzanie_barwa">zarządzanie barwą</span> staje się ważnym elementem całego procesu od fotografowania po publikację.</p>
+    
+  </section>
+
+</main>
+
+<aside id="sidePanel">
+  <div class="term-box">
+    <h3>Wyjaśnienia</h3>
+    <p>Kliknij podkreślone pojęcie w tekście.</p>
+  </div>
+</aside>
+
+<div class="brand">
+  <div class="brand-logo">
+    <span class="brand-word">
+      <span class="brand-name">contextero</span>
+      <span class="brand-format">CTXBOOK FORMAT</span>
+    </span>
+  </div>
+
+  <div class="brand-meta">
+    Powered by <a class="brand-link" href="https://contextero.com" target="_blank">contextero.com</a>
+  </div>
+</div>
+<script>
+const TERMS = {"model_rgb":{"title":"Model RGB","aliases":["model RGB"],"explanation":"Model barwny opierający się na mieszaniu światła czerwonego, zielonego i niebieskiego, używany przez aparaty i monitory.","why":"Jest podstawą zapisu kolorów w urządzeniach cyfrowych i pozwala na tworzenie szerokiej gamy barw.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Synthese%2B.svg/1280px-Synthese%2B.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/e/e0/Synthese%2B.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"Additive color mixing with RGB colors.","source":"Wikimedia Commons · CC BY-SA 3.0 · Quark67 · AI-ranked: Obraz 'Synthese+.svg' przedstawia klarowny i estetyczny schemat mieszania kolorów światła w modelu RGB, dokładnie ilustrując additive color mixing, co idealnie pasuje do edukacyjnego kontekstu opisu modelu RGB oraz mieszania światła czerwonego, zielonego i niebieskiego.","fileTitle":"Synthese+.svg","query":"Model RGB"}},"model_cmyk":{"title":"Model CMYK","aliases":["model CMYK"],"explanation":"Model barwny stosowany w druku, oparty na mieszaniu farb: cyjan, magenta, żółty i czarny.","why":"Pozwala na odwzorowanie kolorów w druku, gdzie używa się pigmentów, a nie światła.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/d/db/CMYK-color_model.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/d/db/CMYK-color_model.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"Scale of the subtractive primaries cyan, magenta, yellow (CMYK) and the effect of the overlap.","source":"Wikimedia Commons · CC0 · Jipre · AI-ranked: The image labeled 'CMYK-color model.png' visually presents the subtractive primary colors cyan, magenta, yellow, and black along with the effects of their overlap, which directly illustrates the CMYK model and printing process. It clearly explains the principle of mixing these inks, making it highly educational and suitable for demonstrating both the model and its application in print.","fileTitle":"CMYK-color model.png","query":"Model CMYK"}},"model_hsb":{"title":"Model HSB (Hue, Saturation, Brightness)","aliases":["model HSB"],"explanation":"Model opisujący kolor przez odcień (Hue), nasycenie (Saturation) i jasność (Brightness).","why":"Ułatwia edycję kolorów, umożliwiając intuicyjną zmianę podstawowych cech barwy.","image":{"url":"https://pixabay.com/get/g692e02ce5ca22c4eca966eebde68482aeb8b231a9f762e0d6b5ee6799e96cb14cced8627b3b460ad6677c82aa10dfdf158c07dd8af25614b3b7834a1bc2ebe62_640.jpg","originalUrl":"https://pixabay.com/photos/steam-locomotive-resin-5460280/","label":"steam locomotive, resin, narrow gauge railway, train, hsb, historically, ostharz","source":"Pixabay · Lilly_Lustig"}},"przestrzen_barwna_srgb":{"title":"Przestrzeń barwna sRGB","aliases":["sRGB"],"explanation":"Najpopularniejsza przestrzeń barwna używana w internecie i urządzeniach konsumenckich.","why":"Zapewnia kompatybilność i bezpieczne odwzorowanie kolorów w większości standardowych zastosowań.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/CIExy1931_sRGB.svg/1280px-CIExy1931_sRGB.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/8/8f/CIExy1931_sRGB.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"CIE 1931 xy chromaticity diagram showing the sRGB gamut and the D65 white point.","source":"CIE 1931 xy chromaticity diagram showing the sRGB gamut and the D65 white point.\nWikimedia Commons · CC BY-SA 3.0 · Vectorization: Mysid ·","fileTitle":"CIExy1931 sRGB.svg","query":"sRGB","caption":"CIE 1931 xy chromaticity diagram showing the sRGB gamut and the D65 white point.\nWikimedia Commons · CC BY-SA 3.0 · Vectorization: Mysid ·"}},"przestrzen_barwna_adobe_rgb":{"title":"Przestrzeń barwna Adobe RGB","aliases":["Adobe RGB"],"explanation":"Przestrzeń barwna o szerszym gamucie niż sRGB, zwłaszcza w zieleni i cyjanach, używana w profesjonalnej fotografii.","why":"Pozwala na bogatsze i bardziej nasycone odwzorowanie kolorów w druku i profesjonalnej edycji.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/0/0f/CIExy1931_AdobeRGB_vs_sRGB.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/0/0f/CIExy1931_AdobeRGB_vs_sRGB.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"A comparison of the Adobe RGB and sRGB color spaces within the CIE 1931 xy chromaticity diagram.","source":"A comparison of the Adobe RGB and sRGB color spaces within the CIE 1931 xy chromaticity diagram.\nWikimedia Commons · CC BY-SA 3.0 · Mbearnstein37 ·","fileTitle":"CIExy1931 AdobeRGB vs sRGB.png","query":"Adobe RGB","caption":"A comparison of the Adobe RGB and sRGB color spaces within the CIE 1931 xy chromaticity diagram.\nWikimedia Commons · CC BY-SA 3.0 · Mbearnstein37 ·"}},"przestrzen_barwna_prophoto_rgb":{"title":"Przestrzeń barwna ProPhoto RGB","aliases":["ProPhoto RGB"],"explanation":"Bardzo szeroka przestrzeń barwna stosowana w profesjonalnej obróbce zdjęć.","why":"Umożliwia zapis bardzo szerokiego zakresu kolorów, co jest ważne w zaawansowanej edycji fotografii.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/3/37/Colorspace.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/3/37/Colorspace.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"This is a map that compares how much of the color spectrum (that large oval in the far back) different color spaces cover. ProPhoto RGB covers the most of the spectrum, Adobe RGB is the second largest, and sRGB is the smallest. Also shown is the color limits of the Epson 2200 printer. From the original document: A Color Managed Raw Workflow - From Camera to Final Print (.PDF) \"This gamut map of the various color spaces shows that there are colors that can be printed on an Epson 2200 that fall outside of both the sRGB color space and the Adobe RGB color space. Cameras' capturing and printers' printing are not limited to the sRGB color space.\" Image created by Jeff Schewe","source":"This is a map that compares how much of the color spectrum (that large oval in the far back) different color spaces cover. ProPhoto RGB covers the most of the spectrum, Adobe RGB is the second largest, and sRGB is the smallest. Also shown is the color limits of the Epson 2200 printer. From the original document: A Color Managed Raw Workflow - From Camera to Final Print (.PDF) \"This gamut map of the various color spaces shows that there are colors that can be printed on an Epson 2200 that fall outside of both the sRGB color space and the Adobe RGB color space. Cameras' capturing and printers' printing are not limited to the sRGB color space.\" Image created by Jeff Schewe\nWikimedia Commons · CC BY 2.5 · The original uploader was Cpesacreta at English Wikipedia. · AI-ranked: Obraz 'Colorspace.png' przedstawia porównanie gam kolorystycznych różnych przestrzeni barwnych, w tym ProPhoto RGB, Adobe RGB i sRGB, co idealnie ilustruje szerokość gamy tej przestrzeni barwnej oraz jej zastosowanie w profesjonalnej obróbce zdjęć. Jest to czytelna i edukacyjna grafika idealnie dopasowana do kontekstu wyjaśniającego znaczenie ProPhoto RGB.","fileTitle":"Colorspace.png","query":"ProPhoto RGB","caption":"This is a map that compares how much of the color spectrum (that large oval in the far back) different color spaces cover. ProPhoto RGB covers the most of the spectrum, Adobe RGB is the second largest, and sRGB is the smallest. Also shown is the color limits of the Epson 2200 printer. From the original document: A Color Managed Raw Workflow - From Camera to Final Print (.PDF) \"This gamut map of the various color spaces shows that there are colors that can be printed on an Epson 2200 that fall outside of both the sRGB color space and the Adobe RGB color space. Cameras' capturing and printers' printing are not limited to the sRGB color space.\" Image created by Jeff Schewe\nWikimedia Commons · CC BY 2.5 · The original uploader was Cpesacreta at English Wikipedia. · AI-ranked: Obraz 'Colorspace.png' przedstawia porównanie gam kolorystycznych różnych przestrzeni barwnych, w tym ProPhoto RGB, Adobe RGB i sRGB, co idealnie ilustruje szerokość gamy tej przestrzeni barwnej oraz jej zastosowanie w profesjonalnej obróbce zdjęć. Jest to czytelna i edukacyjna grafika idealnie dopasowana do kontekstu wyjaśniającego znaczenie ProPhoto RGB."}},"balans_bieli":{"title":"Balans bieli","aliases":["balans bieli"],"explanation":"Proces ustawiania koloru bieli w obrazie tak, aby neutralne elementy wyglądały na neutralne bez zabarwień.","why":"Zapewnia poprawne odwzorowanie kolorów w różnych warunkach oświetleniowych.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Metrostation-Sofia-University-white-balance-collage.jpg/1280px-Metrostation-Sofia-University-white-balance-collage.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/a/a5/Metrostation-Sofia-University-white-balance-collage.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"Collage of 4 images of Metro station \"Sofia University\", Sofia. The image illustrates the differences in the white balance setting. Up left: auto WB, up right: sun, down left: flash, down right: wolfram bulb","source":"Collage of 4 images of Metro station \"Sofia University\", Sofia. The image illustrates the differences in the white balance setting. Up left: auto WB, up right: sun, down left: flash, down right: wolfram bulb\nWikimedia Commons · CC BY-SA 3.0 · Vassia Atanassova - Spiritia ·","fileTitle":"Metrostation-Sofia-University-white-balance-collage.jpg","query":"Balans bieli","caption":"Collage of 4 images of Metro station \"Sofia University\", Sofia. The image illustrates the differences in the white balance setting. Up left: auto WB, up right: sun, down left: flash, down right: wolfram bulb\nWikimedia Commons · CC BY-SA 3.0 · Vassia Atanassova - Spiritia ·"}},"szara_karta":{"title":"Szara karta","aliases":["szara karta"],"explanation":"Narzędzie używane do kalibracji balansu bieli, zapewnia neutralny punkt odniesienia.","why":"Pomaga uzyskać prawidłowy balans bieli w trudnych warunkach oświetleniowych.","image":{"url":"https://pixabay.com/get/g9a25f3d92e79c5ff553d1953c82c809215e765494c28755076d6adceab5039497b16afc54e5eba5657d2b34ffd48484d_640.jpg","originalUrl":"https://pixabay.com/photos/money-card-pocket-concept-idea-256281/","label":"money, card, pocket, concept, idea, pocket money, jeans pocket, denim pocket, credit card, debit card, cash, visa, mastercard, shopping, buy, money, money, money, money, money, credit card, shopping, shopping","source":"Pixabay · jarmoluk"}},"percepcja_koloru":{"title":"Percepcja koloru","aliases":["percepcja koloru"],"explanation":"Proces odbierania i interpretacji kolorów przez ludzkie oko i mózg.","why":"Wyjaśnia, dlaczego ten sam kolor może być postrzegany inaczej w różnych warunkach.","image":{"url":"https://pixabay.com/get/g849e5cf1598547500610ff09f3ced5bb5ac18c47c53632dd6cf5de7a91978cfa5ccf6062249d406079902880003476ccbebf04ad8fd741f7a8ab701b7ef28c80_640.jpg","originalUrl":"https://pixabay.com/photos/machupicchu-peru-i-ncas-1138641/","label":"machupicchu, peru i, ncas, alberto benini - doit travel, machupicchu, machupicchu, machupicchu, machupicchu, machupicchu","source":"Pixabay · doit_viaggi"}},"gamut":{"title":"Gamut (zakres barw)","aliases":["gamut"],"explanation":"Zakres kolorów, które mogą zostać zapisane lub wyświetlone przez konkretne urządzenie lub przestrzeń barwną.","why":"Decyduje o tym, jak szeroki wachlarz kolorów może być wiernie odwzorowany.","image":{"originalUrl":"https://pixabay.com/photos/trading-analysis-forex-chart-643722/","label":"trading, analysis, forex, chart, diagrams, trading, trading, forex, forex, forex, forex, forex","source":"Pixabay · PIX1861"}},"zarzadzanie_barwa":{"title":"Zarządzanie barwą","aliases":["zarządzanie barwą"],"explanation":"Proces kontrolowania i utrzymywania spójności kolorów na różnych urządzeniach i etapach pracy z obrazem.","why":"Zapewnia, że kolory będą zgodne od fotografowania aż do publikacji.","image":{"originalUrl":"https://upload.wikimedia.org/wikipedia/commons/0/05/OJ_C_369_of_2012_-_PL_Polish.pdf?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"Official Journal of the European Union - C 369 of 29 November 2012 - Polish edition","source":"Wikimedia Commons · Public domain · Publications Office of the European Union · AI-ranked: None of the candidate images are suitable for illustrating the concept of 'Schemat procesu zarządzania barwą w workflow fotograficznym' as all candidates are PDF documents of the Official Journal of the European Union in Polish, unrelated to photographic color management workflows or educational diagrams. The ideal image should be a clear, educational schematic or diagram specifically showing the workflow of color management in photography, which is not present among provided candidates.","fileTitle":"OJ C 369 of 2012 - PL Polish.pdf","query":"Zarządzanie barwą"}},"hsb":{"title":"HSB","aliases":["HSB","Hue-Saturation-Brightness","Model HSB","Przestrzeń barw HSB"],"explanation":"HSB to model koloru opisujący barwę za pomocą trzech parametrów: odcienia (Hue), nasycenia (Saturation) oraz jasności (Brightness). Odcień określa rodzaj koloru, nasycenie mówi o intensywności koloru, a jasność o jego świetlistości.","why":"Model HSB jest ważny, ponieważ pozwala łatwo intuicyjnie modyfikować kolory podczas pracy z obrazami cyfrowymi, dzięki czemu jest użyteczny w grafice komputerowej i edycji zdjęć.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/3D_Chromaticity_Diagram_HSB.svg/1280px-3D_Chromaticity_Diagram_HSB.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/0/02/3D_Chromaticity_Diagram_HSB.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"3D Chromaticity Diagram of the HSB colorspace","source":"3D Chromaticity Diagram of the HSB colorspace\nWikimedia Commons · CC BY-SA 4.0 · WalkingRadiance ·","fileTitle":"3D Chromaticity Diagram HSB.svg","query":"HSB diagram","caption":"3D Chromaticity Diagram of the HSB colorspace\nWikimedia Commons · CC BY-SA 4.0 · WalkingRadiance ·"}},"hsl":{"title":"HSL","aliases":["HSL","Model HSL","Przestrzeń barw HSL"],"explanation":"HSL to model barwny opisujący kolor przez trzy składniki: odcień (Hue), nasycenie (Saturation) i jasność (Lightness). Pozwala na intuicyjną kontrolę nad kolorem, ułatwiając edycję barw w grafice komputerowej i projektowaniu.","why":"Model HSL jest ważny, ponieważ pozwala lepiej zrozumieć i manipulować kolorami poprzez oddzielenie odcienia, nasycenia i jasności, co jest kluczowe w teorii barwy i percepcji koloru.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/HSL_color_solid_cylinder.png/1280px-HSL_color_solid_cylinder.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/3/35/HSL_color_solid_cylinder.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"The HSL color model mapped to a cylinder. POV-Ray source is available from the POV-Ray Object Collection.","source":"The HSL color model mapped to a cylinder. POV-Ray source is available from the POV-Ray Object Collection.\nWikimedia Commons · CC BY-SA 3.0 · SharkD · AI-ranked: Obraz 'HSL color solid cylinder.png' prezentuje model HSL w formie cylindra, co jest przejrzystą i czytelną ilustracją, która wyraźnie pokazuje trzy składniki modelu: odcień, nasycenie i jasność. Forma cylindra jest często stosowana w edukacji kolorów i ułatwia intuicyjne zrozumienie zależności między tymi parametrami, zgodnie z przedstawionym kontekstem teoretycznym i edukacyjnym.","fileTitle":"HSL color solid cylinder.png","query":"HSL","caption":"The HSL color model mapped to a cylinder. POV-Ray source is available from the POV-Ray Object Collection.\nWikimedia Commons · CC BY-SA 3.0 · SharkD · AI-ranked: Obraz 'HSL color solid cylinder.png' prezentuje model HSL w formie cylindra, co jest przejrzystą i czytelną ilustracją, która wyraźnie pokazuje trzy składniki modelu: odcień, nasycenie i jasność. Forma cylindra jest często stosowana w edukacji kolorów i ułatwia intuicyjne zrozumienie zależności między tymi parametrami, zgodnie z przedstawionym kontekstem teoretycznym i edukacyjnym."}}};
+
+document.querySelectorAll('.term').forEach(el => {
+  el.addEventListener('click', () => {
+    const key = el.dataset.term;
+    const term = TERMS[key];
+
+    if (!term) return;
+
+    document.getElementById("sidePanel").innerHTML =
+      '<div class="term-box">' +
+      '<h3>' + term.title + '</h3>' +
+    (term.image && term.image.url
+  ? '<div>' +
+      '<img src="' + term.image.url + '">' +
+      '<div class="img-meta">' + (term.image.source || '') + '</div>' +
+    '</div>'
+  : '') +
+      '<p>' + term.explanation + '</p>' +
+      '<p><em>' + (term.why || '') + '</em></p>' +
+      '</div>';
+  });
+});
+
+document.addEventListener('click', (event) => {
+  const img = event.target.closest('.term-box img');
+  if (!img) return;
+
+  const overlay = document.createElement('div');
+  overlay.style.position = 'fixed';
+  overlay.style.inset = '0';
+  overlay.style.background = 'rgba(0,0,0,.82)';
+  overlay.style.display = 'grid';
+  overlay.style.placeItems = 'center';
+  overlay.style.zIndex = '9999';
+  overlay.style.cursor = 'zoom-out';
+
+  const big = document.createElement('img');
+  big.src = img.src;
+  big.style.maxWidth = '92vw';
+  big.style.maxHeight = '92vh';
+  big.style.objectFit = 'contain';
+  big.style.borderRadius = '14px';
+  big.style.background = '#fff';
+
+  overlay.appendChild(big);
+  overlay.addEventListener('click', () => overlay.remove());
+  document.body.appendChild(overlay);
+});
+</script>
+
+</body>
+</html>
