@@ -1,0 +1,369 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Lekcja 1.4: Pierwsza pomoc w urazach i nagłych zdarzeniach na planie zdjęciowym</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  background: #f6f2ea;
+  color: #171411;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  min-height: 100vh;
+}
+
+main {
+  padding: 54px 64px 90px;
+  max-width: 860px;
+}
+
+h1 {
+  margin: 0 0 10px;
+  font-size: 54px;
+  line-height: 1.02;
+  letter-spacing: -0.04em;
+  font-weight: 800;
+}
+
+h2 {
+  margin: 46px 0 18px;
+  font-size: 30px;
+  line-height: 1.18;
+  font-weight: 800;
+}
+
+.reader-subtitle {
+  margin: 0 0 42px;
+  color: #6f675d;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.reader-paragraph {
+  font-size: 20px;
+  line-height: 1.78;
+  margin: 0 0 28px;
+  white-space: pre-wrap;
+}
+
+.reader-hero-image,
+.reader-section-image {
+  margin: 24px 0 34px;
+}
+
+.reader-hero-image img,
+.reader-section-image img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: contain;
+  border-radius: 18px;
+  background: #f0ece3;
+  box-shadow: 0 14px 34px rgba(30, 25, 18, 0.08);
+}
+
+.reader-section-image img {
+  max-height: 320px;
+}
+
+.reader-hero-image figcaption,
+.reader-section-image figcaption {
+  margin-top: 8px;
+  color: #8a8277;
+  font-size: 12px;
+  line-height: 1.4;
+}
+aside {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+  border-left: 1px solid #ddd4c5;
+  background: #faf7ef;
+  padding: 38px 28px;
+}
+
+aside::before {
+  content: "Wyjaśnienia";
+  display: block;
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+
+.term {
+  background: #fff1b8;
+  border-bottom: 2px solid #d8b429;
+  border-radius: 4px;
+  padding: 0 2px;
+  cursor: pointer;
+}
+
+.term:hover {
+  background: #ffe680;
+}
+
+.term-box {
+  border: 1px solid #ddd4c5;
+  border-radius: 18px;
+  padding: 18px;
+  background: #fffdf8;
+  box-shadow: 0 14px 34px rgba(30, 25, 18, 0.07);
+}
+
+.term-box h3 {
+  margin: 0 0 14px;
+  font-size: 25px;
+  line-height: 1.18;
+  font-weight: 800;
+}
+
+.term-box p {
+  font-size: 18px;
+  line-height: 1.58;
+  margin: 0 0 14px;
+}
+
+.term-box img {
+  width: 100%;
+  max-height: 260px;
+  object-fit: contain;
+  border-radius: 14px;
+  background: #f0ece3;
+  margin: 8px 0 12px;
+  cursor: zoom-in;
+}
+
+.img-meta {
+  margin: -4px 0 12px;
+  font-size: 12px;
+  color: #8a8277;
+  line-height: 1.35;
+}
+
+.brand {
+  grid-column: 1 / 2;
+  margin: 0 64px 34px;
+  padding: 22px 28px;
+  border: 1px solid #ddd4c5;
+  border-radius: 22px;
+  background: #fffdf8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  box-shadow: 0 14px 36px rgba(30, 25, 18, 0.06);
+  position: relative;
+  z-index: 2;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-word {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.brand-name {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 46px;
+  font-weight: 900;
+  letter-spacing: -0.085em;
+  color: #171717;
+}
+
+.brand-format {
+  margin-top: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  color: #6157ff;
+}
+
+.brand-meta {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  white-space: nowrap;
+}
+
+.brand-link {
+  color: #6157ff;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  body {
+    display: block;
+  }
+
+  main {
+    padding: 32px 24px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  aside {
+    position: static;
+    height: auto;
+    border-left: 0;
+    border-top: 1px solid #ddd4c5;
+  }
+
+  .brand {
+  margin: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  grid-column: auto;
+}
+
+.brand-name {
+  font-size: 36px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<main>
+<h1>Lekcja 1.4: Pierwsza pomoc w urazach i nagłych zdarzeniach na planie zdjęciowym</h1>
+<div class="reader-subtitle">CTXBOOK – text easy to understand</div>
+
+
+    <figure class="reader-hero-image">
+      <img src="https://images.pexels.com/photos/28271058/pexels-photo-28271058.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Close-up of hands performing CPR on a manikin for first aid training.">
+      <figcaption>Close-up of hands performing CPR on a manikin for first aid training.
+Pexels · SHOX ART</figcaption>
+    </figure>
+  
+
+
+  <section>
+    
+    <h2>Podstawy pierwszej pomocy na planie zdjęciowym</h2>
+    <p class="reader-paragraph">Celem lekcji jest ocena sytuacji zagrożenia, zabezpieczenie miejsca wypadku, <span class="term" data-term="wezwani_pomocy">wezwanie pomocy</span> oraz zastosowanie podstawowych procedur pierwszej pomocy, w tym postępowania przy oparzeniach, skaleczeniach, omdleniach i <span class="term" data-term="resuscytacja_krazeniowo_oddechowa">RKO</span>.</p>
+    
+  </section>
+
+  <section>
+    
+    <h2>Typowe wypadki i ich skutki</h2>
+    <p class="reader-paragraph">Na planie zdjęciowym może dojść do potknięcia o kabel, poparzenia lampą, skaleczenia szkłem, omdlenia modela albo porażenia prądem. W takiej chwili liczy się opanowanie i znajomość prostych, ale właściwych działań.</p>
+    
+  </section>
+
+  <section>
+    
+    <h2>Ocena sytuacji i zabezpieczenie miejsca zdarzenia</h2>
+    <p class="reader-paragraph">Pierwsza pomoc zaczyna się od zadbania o własne bezpieczeństwo. Jeśli miejsce zdarzenia nadal stwarza zagrożenie, na przykład przez przewody pod napięciem, rozbite szkło, ogień lub dym, nie wolno działać pochopnie.</p><p class="reader-paragraph">Najpierw trzeba ocenić sytuację, <span class="term" data-term="zabezpieczenie_miejsca_wypadku">zabezpieczyć miejsce</span>, odłączyć źródło zagrożenia, jeśli jest to możliwe bez ryzyka, i dopiero wtedy podejść do poszkodowanego.</p><p class="reader-paragraph">Następnie należy sprawdzić, <span class="term" data-term="ocena_przytomnosci">czy osoba jest przytomna</span> i <span class="term" data-term="skala_oddechu">czy oddycha</span>. Taka wstępna ocena decyduje o dalszym postępowaniu.</p>
+    
+  </section>
+
+  <section>
+    
+    <h2>Kontakt z zespołem ratunkowym i pierwsze działania</h2>
+    <p class="reader-paragraph">Jeśli stan poszkodowanego jest poważny lub budzi wątpliwości, trzeba jak najszybciej wezwać pomoc, podając miejsce zdarzenia, liczbę poszkodowanych, rodzaj urazu i swój numer telefonu.</p><p class="reader-paragraph">Gdy osoba jest nieprzytomna, ale oddycha, należy ułożyć ją w pozycji bezpiecznej i stale kontrolować oddech.</p><p class="reader-paragraph">Gdy nie oddycha prawidłowo, trzeba rozpocząć resuscytację krążeniowo-oddechową zgodnie z aktualnymi wytycznymi.</p><p class="reader-paragraph">W praktyce oznacza to szybkie rozpoznanie sytuacji i zdecydowane działanie bez zbędnej zwłoki.</p>
+    
+  </section>
+
+  <section>
+    
+    <h2>Jak radzić sobie z najczęstszymi obrażeniami</h2>
+    <p class="reader-paragraph">Do częstych zdarzeń należą skaleczenia, oparzenia, stłuczenia, skręcenia oraz urazy wynikające z upadku sprzętu.</p><p class="reader-paragraph">Przy krwawieniu należy założyć <span class="term" data-term="opatrunek">opatrunek</span> i ucisnąć ranę.</p><p class="reader-paragraph">Przy oparzeniu trzeba jak najszybciej chłodzić miejsce czystą, chłodną wodą przez odpowiedni czas i nie stosować domowych środków, które mogą pogorszyć stan skóry.</p><p class="reader-paragraph">W przypadku podejrzenia złamania lub poważnego urazu nie należy niepotrzebnie poruszać poszkodowanym.</p><p class="reader-paragraph">Jeśli doszło do porażenia prądem, najpierw odłącza się źródło zasilania lub oddziela poszkodowanego od źródła prądu w bezpieczny sposób, a dopiero potem ocenia jego stan.</p>
+    
+  </section>
+
+  <section>
+    
+    <h2>Postępowanie przy omdleniach, zawale i udarze</h2>
+    <p class="reader-paragraph"><span class="term" data-term="omdlenie">Omdlenie</span> może być skutkiem stresu, odwodnienia, zmęczenia lub wysokiej temperatury.</p><p class="reader-paragraph">W takiej sytuacji trzeba zadbać o dopływ świeżego powietrza, ułożyć poszkodowanego bezpiecznie i obserwować jego stan.</p><p class="reader-paragraph">Przy podejrzeniu zawału mogą wystąpić ból w klatce piersiowej, duszność, bladość i niepokój.</p><p class="reader-paragraph">Przy udarze typowe są nagłe zaburzenia mowy, opadanie kącika ust i osłabienie jednej strony ciała.</p><p class="reader-paragraph">W obu przypadkach konieczne jest natychmiastowe <span class="term" data-term="wezwani_pomocy">wezwanie pomocy</span> i stała obserwacja do czasu przyjazdu ratowników.</p>
+    
+  </section>
+
+</main>
+
+<aside id="sidePanel">
+  <div class="term-box">
+    <h3>Wyjaśnienia</h3>
+    <p>Kliknij podkreślone pojęcie w tekście.</p>
+  </div>
+</aside>
+
+<div class="brand">
+  <div class="brand-logo">
+    <span class="brand-word">
+      <span class="brand-name">contextero</span>
+      <span class="brand-format">CTXBOOK FORMAT</span>
+    </span>
+  </div>
+
+  <div class="brand-meta">
+    Powered by <a class="brand-link" href="https://contextero.com" target="_blank">contextero.com</a>
+  </div>
+</div>
+<script>
+const TERMS = {"resuscytacja_krazeniowo_oddechowa":{"title":"Resuscytacja krążeniowo-oddechowa (RKO)","aliases":["resuscytacja krążeniowo-oddechowa","RKO"],"explanation":"Metoda ratowania życia polegająca na sztucznym podtrzymaniu krążenia i oddechu poszkodowanego.","why":"RKO może przywrócić krążenie i oddychanie, dając czas na przyjazd pomocy medycznej.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/d/de/Cardiopulmonary_Resuscitation_Adult.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/d/de/Cardiopulmonary_Resuscitation_Adult.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"Cardiopulmonary resuscitation on Adult.","source":"Wikimedia Commons · Public domain · Illinois Waterway Visitor Center, US Army Corps of Engineers · AI-ranked: Obraz ukazuje rzeczywistą demonstrację resuscytacji krążeniowo-oddechowej na dorosłej osobie, wykonującą podstawowe czynności RKO, co bardzo dobrze odpowiada kontekstowi edukacji o RKO. Fotografia jest czytelna, realistyczna i ma walor edukacyjny, pokazując praktyczne zastosowanie techniki ratunkowej. Pozostałe obrazy są bardziej schematyczne, historyczne lub mniej bezpośrednio ukazują sam proces RKO.","fileTitle":"Cardiopulmonary Resuscitation Adult.jpg","query":"Resuscytacja krążeniowo-oddechowa (RKO)"}},"pozycja_bezpieczna":{"title":"Pozycja bezpieczna","aliases":["pozycja bezpieczna"],"explanation":"Ułożenie nieprzytomnej, ale oddychającej osoby w sposób, który zapobiega zadławieniu lub zachłyśnięciu.","why":"Zapewnia drożność dróg oddechowych i bezpieczeństwo poszkodowanego przed dalszymi urazami.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/f/fd/Recovery_position_maneuver.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/f/fd/Recovery_position_maneuver.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"Recovery position maneuver","source":"Wikimedia Commons · CC BY-SA 3.0 fr · Image created by Rama · AI-ranked: The image 'Recovery position maneuver.jpg' clearly shows the proper technique of positioning an unconscious but breathing person in the recovery position, which directly illustrates the concept of 'pozycja bezpieczna'. It's a photographic, educational, and clear depiction of the subject, suitable for an educational context.","fileTitle":"Recovery position maneuver.jpg","query":"Pozycja bezpieczna"}},"opatrunek":{"title":"Opatrunek","aliases":["opatrunek"],"explanation":"Zabezpieczenie rany w celu zatrzymania krwawienia i ochrony przed zakażeniem.","why":"Pomaga zmniejszyć utratę krwi i chroni przed infekcjami.","image":{"url":"https://images.pexels.com/photos/6519904/pexels-photo-6519904.jpeg?auto=compress&cs=tinysrgb&h=650&w=940","originalUrl":"https://www.pexels.com/photo/person-putting-bandage-on-another-person-s-hand-6519904/","label":"A detail shot showing hands applying a bandage to an injured wrist outdoors.","source":"A detail shot showing hands applying a bandage to an injured wrist outdoors.\nPexels · RDNE Stock project","caption":"A detail shot showing hands applying a bandage to an injured wrist outdoors.\nPexels · RDNE Stock project"}},"oswietlenie_planu":{"title":"Oświetlenie planu","aliases":["lampa"],"explanation":"Źródło światła używane na planie zdjęciowym, które może powodować oparzenia przy bezpośrednim kontakcie.","why":"Zabezpieczenie przed poparzeniem lampą jest ważne dla bezpieczeństwa pracowników planu.","image":{"url":"https://pixabay.com/get/g1603794325be7b56a71f42a186226670987d8ba7a6205fbe92f06c8a575e9bf8b949c970bb350912eab31d0c75e8bd7e8df2c20ac354357ef16ddb7862af5615_640.jpg","originalUrl":"https://pixabay.com/photos/barley-field-wheat-agriculture-plow-1684052/","label":"barley field, wheat, agriculture, plow, tillage, farm, harvest, sunrise, morning, landscape, nature, ne young na-young, jeju travel, jeju island, agriculture, agriculture, farm, sunrise, sunrise, sunrise, morning, morning, nature, nature, nature, nature, nature","source":"Pixabay · kangbch"}},"porazenie_pradem":{"title":"Porażenie prądem","aliases":["porażenie prądem"],"explanation":"Kontakt ciała z prądem elektrycznym, który może powodować uszkodzenia tkanek i zatrzymanie funkcji życiowych.","why":"Wymaga szybkiego odłączenia źródła prądu i oceny stanu poszkodowanego.","image":{"url":"https://pixabay.com/get/gbe83ae2d677d95d811886d59a203724bd859f8e02160f458fa2ff50070fdc819f247616827e66878e7ec1bfbd5437561220a62674659d7ccf553e65fbbc62ccd_640.jpg","originalUrl":"https://pixabay.com/photos/hands-heart-finger-symbol-love-7679387/","label":"hands, heart, finger, symbol, love, love, love, love, love, love","source":"Pixabay · congerdesign"}},"wezwani_pomocy":{"title":"Wezwanie pomocy","aliases":["wezwanie pomocy"],"explanation":"Kontakt z odpowiednimi służbami ratunkowymi w celu uzyskania profesjonalnej pomocy medycznej.","why":"Szybkie wezwanie fachowej pomocy zwiększa szanse na przeżycie i zmniejsza skutki urazów.","image":{"url":"https://images.pexels.com/photos/7540265/pexels-photo-7540265.jpeg?auto=compress&cs=tinysrgb&h=650&w=940","originalUrl":"https://www.pexels.com/photo/person-holding-beige-telephone-7540265/","label":"Person in white robe using a vintage rotary phone on a wooden nightstand, beside a lamp.","source":"Person in white robe using a vintage rotary phone on a wooden nightstand, beside a lamp.\nPexels · ROMAN ODINTSOV","caption":"Person in white robe using a vintage rotary phone on a wooden nightstand, beside a lamp.\nPexels · ROMAN ODINTSOV"}},"skala_oddechu":{"title":"Ocena oddychania","aliases":["czy oddycha"],"explanation":"Sprawdzenie, czy poszkodowany samodzielnie i prawidłowo oddycha.","why":"Decyduje o wyborze następnych kroków ratunkowych, takich jak RKO lub pozycja bezpieczna.","image":{"label":"Sprawdzanie oddechu poszkodowanego","source":"https://example.com/images/ocena_oddechu.jpg · można dodać obraz własny albo wygenerować AI"}},"omdlenie":{"title":"Omdlenie","aliases":["omdlenie"],"explanation":"Nagła, krótkotrwała utrata przytomności spowodowana zmniejszeniem dopływu krwi do mózgu.","why":"Wymaga szybkiego zabezpieczenia i obserwacji poszkodowanego z uwagi na możliwe przyczyny.","image":{"originalUrl":"https://pixabay.com/photos/arm-hand-write-planner-planning-1284248/","label":"arm, hand, write, planner, planning, writing, notebook, pen, to do, organized, organizer, journal, write, planner, planning, planning, planning, planning, writing, writing, writing, writing, writing, notebook, pen, journal, journal","source":"Pixabay · Pexels"}},"zawal_serca":{"title":"Zawał serca","aliases":["zawał"],"explanation":"Stan nagłego niedokrwienia mięśnia sercowego prowadzący do jego uszkodzenia.","why":"Objawia się bólem w klatce piersiowej i wymaga natychmiastowej pomocy medycznej.","image":{"url":"https://pixabay.com/get/gde01851ef4c86f58af766725bdbd2d0ac39e3a95de48bef5f6dd7dea05fde19d95b1e9250cd1c522c1b498e631064f710c7c0325592ef01dae82fa8406ec8d50_640.jpg","originalUrl":"https://pixabay.com/photos/mercedes-mercedes-w123-retro-autumn-8342911/","label":"mercedes, mercedes w123, retro, autumn, road, nature, landscape, ukraine, peace, silence, calmness, car wallpapers, car, vintage, old, natural","source":"Pixabay · Igor2008"}},"udar_mozgu":{"title":"Udar mózgu","aliases":["udar"],"explanation":"Nagłe zaburzenie krążenia krwi w mózgu prowadzące do uszkodzenia jego tkanek.","why":"Powoduje nagłe objawy neurologiczne i wymaga natychmiastowej interwencji.","image":{"url":"https://pixabay.com/get/ge7b39b8ded53efb20be2d032833a783cc30ea6e2e5108230aa081304cfb3e8939c73dca4d44820d9c2eea814ae0cbdc3c9f16f2146e29f65e267f72a442fad1e_640.jpg","originalUrl":"https://pixabay.com/photos/blueprints-entrepreneur-hands-1837238/","label":"blueprints, entrepreneur, hands, laptop, macbook, mobile phone, notebook, schematics, working, planning, gray computer, gray laptop, gray work, gray phone, gray mobile, gray plan, gray smartphone, gray telephone, gray planning, gray entrepreneur, blueprints, entrepreneur, entrepreneur, entrepreneur, entrepreneur, entrepreneur, laptop, working, planning, planning, planning, planning","source":"Pixabay · Pexels"}},"zabezpieczenie_miejsca_wypadku":{"title":"Zabezpieczenie miejsca wypadku","aliases":["zabezpieczyć miejsce"],"explanation":"Działania mające na celu ograniczenie zagrożeń, np. odcięcie prądu, usunięcie niebezpiecznych przedmiotów.","why":"Chroni ratownika i poszkodowanego przed dalszymi urazami lub niebezpieczeństwem.","image":{"originalUrl":"https://pixabay.com/photos/cat-yawns-yawning-sleepy-to-yawn-4542301/","label":"cat, yawns, yawning, sleepy, animal, pet, to yawn, i love it","source":"Pixabay · andriish22"}},"ocena_przytomnosci":{"title":"Ocena przytomności","aliases":["czy osoba jest przytomna"],"explanation":"Sprawdzenie reakcji poszkodowanego na bodźce zewnętrzne, np. głos, dotyk.","why":"Pomaga określić stan zdrowia i konieczność dalszych działań ratunkowych.","image":{"originalUrl":"https://pixabay.com/photos/woman-elderly-portrait-old-senior-100342/","label":"woman, elderly, portrait, old, senior, aged, grandma, grandmother, elderly, elderly, elderly, senior, senior, grandma, grandma, grandma, grandma, grandma, grandmother, grandmother, grandmother","source":"Pixabay · geralt"}}};
+
+document.querySelectorAll('.term').forEach(el => {
+  el.addEventListener('click', () => {
+    const key = el.dataset.term;
+    const term = TERMS[key];
+
+    if (!term) return;
+
+    document.getElementById("sidePanel").innerHTML =
+      '<div class="term-box">' +
+      '<h3>' + term.title + '</h3>' +
+    (term.image && term.image.url
+  ? '<div>' +
+      '<img src="' + term.image.url + '">' +
+      '<div class="img-meta">' + (term.image.source || '') + '</div>' +
+    '</div>'
+  : '') +
+      '<p>' + term.explanation + '</p>' +
+      '<p><em>' + (term.why || '') + '</em></p>' +
+      '</div>';
+  });
+});
+
+document.addEventListener('click', (event) => {
+  const img = event.target.closest('.term-box img');
+  if (!img) return;
+
+  const overlay = document.createElement('div');
+  overlay.style.position = 'fixed';
+  overlay.style.inset = '0';
+  overlay.style.background = 'rgba(0,0,0,.82)';
+  overlay.style.display = 'grid';
+  overlay.style.placeItems = 'center';
+  overlay.style.zIndex = '9999';
+  overlay.style.cursor = 'zoom-out';
+
+  const big = document.createElement('img');
+  big.src = img.src;
+  big.style.maxWidth = '92vw';
+  big.style.maxHeight = '92vh';
+  big.style.objectFit = 'contain';
+  big.style.borderRadius = '14px';
+  big.style.background = '#fff';
+
+  overlay.appendChild(big);
+  overlay.addEventListener('click', () => overlay.remove());
+  document.body.appendChild(overlay);
+});
+</script>
+
+</body>
+</html>
