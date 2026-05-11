@@ -1,0 +1,369 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Lekcja 1.2: Czynniki szkodliwe, ergonomia i środki ochrony indywidualnej</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  background: #f6f2ea;
+  color: #171411;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  min-height: 100vh;
+}
+
+main {
+  padding: 54px 64px 90px;
+  max-width: 860px;
+}
+
+h1 {
+  margin: 0 0 10px;
+  font-size: 54px;
+  line-height: 1.02;
+  letter-spacing: -0.04em;
+  font-weight: 800;
+}
+
+h2 {
+  margin: 46px 0 18px;
+  font-size: 30px;
+  line-height: 1.18;
+  font-weight: 800;
+}
+
+.reader-subtitle {
+  margin: 0 0 42px;
+  color: #6f675d;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.reader-paragraph {
+  font-size: 20px;
+  line-height: 1.78;
+  margin: 0 0 28px;
+  white-space: pre-wrap;
+}
+
+.reader-hero-image,
+.reader-section-image {
+  margin: 24px 0 34px;
+}
+
+.reader-hero-image img,
+.reader-section-image img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: contain;
+  border-radius: 18px;
+  background: #f0ece3;
+  box-shadow: 0 14px 34px rgba(30, 25, 18, 0.08);
+}
+
+.reader-section-image img {
+  max-height: 320px;
+}
+
+.reader-hero-image figcaption,
+.reader-section-image figcaption {
+  margin-top: 8px;
+  color: #8a8277;
+  font-size: 12px;
+  line-height: 1.4;
+}
+aside {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+  border-left: 1px solid #ddd4c5;
+  background: #faf7ef;
+  padding: 38px 28px;
+}
+
+aside::before {
+  content: "Wyjaśnienia";
+  display: block;
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+
+.term {
+  background: #fff1b8;
+  border-bottom: 2px solid #d8b429;
+  border-radius: 4px;
+  padding: 0 2px;
+  cursor: pointer;
+}
+
+.term:hover {
+  background: #ffe680;
+}
+
+.term-box {
+  border: 1px solid #ddd4c5;
+  border-radius: 18px;
+  padding: 18px;
+  background: #fffdf8;
+  box-shadow: 0 14px 34px rgba(30, 25, 18, 0.07);
+}
+
+.term-box h3 {
+  margin: 0 0 14px;
+  font-size: 25px;
+  line-height: 1.18;
+  font-weight: 800;
+}
+
+.term-box p {
+  font-size: 18px;
+  line-height: 1.58;
+  margin: 0 0 14px;
+}
+
+.term-box img {
+  width: 100%;
+  max-height: 260px;
+  object-fit: contain;
+  border-radius: 14px;
+  background: #f0ece3;
+  margin: 8px 0 12px;
+  cursor: zoom-in;
+}
+
+.img-meta {
+  margin: -4px 0 12px;
+  font-size: 12px;
+  color: #8a8277;
+  line-height: 1.35;
+}
+
+.brand {
+  grid-column: 1 / 2;
+  margin: 0 64px 34px;
+  padding: 22px 28px;
+  border: 1px solid #ddd4c5;
+  border-radius: 22px;
+  background: #fffdf8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  box-shadow: 0 14px 36px rgba(30, 25, 18, 0.06);
+  position: relative;
+  z-index: 2;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-word {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.brand-name {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 46px;
+  font-weight: 900;
+  letter-spacing: -0.085em;
+  color: #171717;
+}
+
+.brand-format {
+  margin-top: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  color: #6157ff;
+}
+
+.brand-meta {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  white-space: nowrap;
+}
+
+.brand-link {
+  color: #6157ff;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  body {
+    display: block;
+  }
+
+  main {
+    padding: 32px 24px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  aside {
+    position: static;
+    height: auto;
+    border-left: 0;
+    border-top: 1px solid #ddd4c5;
+  }
+
+  .brand {
+  margin: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  grid-column: auto;
+}
+
+.brand-name {
+  font-size: 36px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<main>
+<h1>Lekcja 1.2: Czynniki szkodliwe, ergonomia i środki ochrony indywidualnej</h1>
+<div class="reader-subtitle">CTXBOOK – text easy to understand</div>
+
+
+    <figure class="reader-hero-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Ergonomia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled" alt="Imagen de colocación en el puesto de trabsajo,para no sufrir lesiones.">
+      <figcaption>Imagen de colocación en el puesto de trabsajo,para no sufrir lesiones.
+Wikimedia Commons · CC BY-SA 4.0 · Sergi Mateo ·</figcaption>
+    </figure>
+  
+
+
+  <section>
+    
+    <h2>Identyfikacja zagrożeń i dobór środków ochrony</h2>
+    <p class="reader-paragraph">Celem lekcji jest identyfikowanie zagrożeń występujących w studiu, ciemni, plenerze i pracowni komputerowej oraz dobieranie ergonomicznych rozwiązań i środków ochrony do wykonywanego zadania.</p>
+    
+  </section>
+
+  <section>
+    
+    <h2>Różne warunki pracy fotografa</h2>
+    <p class="reader-paragraph">Fotograf pracuje w różnych warunkach: przy monitorze, wśród lamp studyjnych, z ciężkim sprzętem, czasem w ciemni, a czasem w deszczu lub upale. Każde z tych miejsc niesie inne zagrożenia i wymaga świadomego dbania o zdrowie.</p>
+    
+  </section>
+
+  <section>
+    
+    <h2>Rozpoznawanie czynników szkodliwych i ich skutków</h2>
+    <p class="reader-paragraph">W pracy fotografa występują <span class="term" data-term="czynniki_fizyczne">czynniki fizyczne</span>: wysoka temperatura lamp, ostre światło, hałas, <span class="term" data-term="promieniowanie_uv_ir">promieniowanie UV</span> i IR oraz ryzyko porażenia prądem.</p><p class="reader-paragraph"><span class="term" data-term="czynniki_chemiczne">Czynniki chemiczne</span> obecne są w ciemni przy użyciu wywoływaczy, utrwalaczy i innych roztworów.</p><p class="reader-paragraph">W pracowni komputerowej obciążenia dotykają wzrok, kręgosłup, nadgarstki i układ nerwowy przez długą pracę siedzącą i koncentrację.</p><p class="reader-paragraph">W plenerze zagrożenia to warunki atmosferyczne, śliskie podłoże, wiatr, wilgoć i zmęczenie transportem sprzętu.</p>
+    
+  </section>
+
+  <section>
+    
+    <h2>Jak rozpoznawać skutki zagrożeń na organizm</h2>
+    <p class="reader-paragraph">Szkodliwe warunki pracy często nie powodują urazu od razu, objawy narastają stopniowo.</p><p class="reader-paragraph">Typowe sygnały to ból pleców, karku i barków, mrowienie dłoni, zmęczenie oczu, bóle głowy, podrażnienia skóry, kaszel, duszność, zawroty głowy i obniżona koncentracja.</p><p class="reader-paragraph">Długotrwałe ignorowanie objawów prowadzi do przeciążeń mięśniowo-szkieletowych, problemów ze wzrokiem, chorób skóry i dolegliwości oddechowych.</p><p class="reader-paragraph">Ważne jest reagowanie nie tylko na wypadki, ale także na codzienne przeciążenia.</p>
+    
+  </section>
+
+  <section>
+    
+    <h2>Ergonomia pracy w studiu i przy komputerze</h2>
+    <p class="reader-paragraph"><span class="term" data-term="ergonomia">Ergonomia</span> polega na dostosowaniu stanowiska i zadań do możliwości człowieka.</p><p class="reader-paragraph">Oznacza to właściwą wysokość blatu i krzesła, odpowiednie ustawienie monitora, prawidłowe oświetlenie i wygodne rozmieszczenie urządzeń.</p><p class="reader-paragraph">Unikanie wymuszonej pozycji ciała zmniejsza zmęczenie i poprawia komfort.</p><p class="reader-paragraph">W studiu ważne jest bezpieczne rozmieszczenie lamp, statywów, kabli i akcesoriów, by nie utrudniały ruchu.</p><p class="reader-paragraph"><span class="term" data-term="ergonomia">Ergonomia</span> zmniejsza liczbę błędów i polepsza jakość pracy, zdjęć i obróbki.</p>
+    
+  </section>
+
+  <section>
+    
+    <h2>Środki ochrony indywidualnej i zbiorowej</h2>
+    <p class="reader-paragraph"><span class="term" data-term="srodki_ochrony_indywidualnej">Środki ochrony indywidualnej</span> chronią pojedynczą osobę, np. rękawice, okulary, maseczki, odzież robocza, obuwie antypoślizgowe i <span class="term" data-term="srodki_ochrony_sluchu">ochronniki słuchu</span>.</p><p class="reader-paragraph"><span class="term" data-term="srodki_ochrony_zbiorowej">Środki ochrony zbiorowej</span> chronią grupę osób: <span class="term" data-term="wentylacja">wentylacja</span>, osłony, oznakowanie stref niebezpiecznych, gaśnice, wyłączniki awaryjne, oświetlenie.</p><p class="reader-paragraph">Dobór środków ochrony zależy od zadania: przy chemii ważne są rękawice i <span class="term" data-term="wentylacja">wentylacja</span>, przy sprzęcie ciężkim obuwie i porządek na stanowisku, przy komputerze organizacja stanowiska i przerwy.</p>
+    
+  </section>
+
+</main>
+
+<aside id="sidePanel">
+  <div class="term-box">
+    <h3>Wyjaśnienia</h3>
+    <p>Kliknij podkreślone pojęcie w tekście.</p>
+  </div>
+</aside>
+
+<div class="brand">
+  <div class="brand-logo">
+    <span class="brand-word">
+      <span class="brand-name">contextero</span>
+      <span class="brand-format">CTXBOOK FORMAT</span>
+    </span>
+  </div>
+
+  <div class="brand-meta">
+    Powered by <a class="brand-link" href="https://contextero.com" target="_blank">contextero.com</a>
+  </div>
+</div>
+<script>
+const TERMS = {"czynniki_szkodliwe":{"title":"Czynniki szkodliwe","aliases":["czynniki szkodliwe"],"explanation":"Elementy środowiska pracy mogące negatywnie wpływać na zdrowie pracownika, np. chemikalia, hałas czy promieniowanie.","why":"Ważne, by znać ich rodzaje, by skutecznie zapobiegać skutkom negatywnym.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/PL_Maeterlinck_-_Zagrzebana_%C5%9Bwi%C4%85tynia.pdf/page1-500px-PL_Maeterlinck_-_Zagrzebana_%C5%9Bwi%C4%85tynia.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/0/01/PL_Maeterlinck_-_Zagrzebana_%C5%9Bwi%C4%85tynia.pdf?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"Skany książki.","source":"Wikimedia Commons · Public domain · Maurice Maeterlinck · AI-ranked: Spośród dostępnych opcji tylko plik pod indeksem 0 zawiera skany książki, które mogą zawierać ilustracje edukacyjne i historyczne ryciny dotyczące czynników szkodliwych. Pozostałe opcje to oficjalne dzienniki urzędowe, które są typowo dokumentami tekstowymi bez odpowiednich ilustracji edukacyjnych. Żaden z plików nie jest bezpośrednią ilustracją czynników szkodliwych w środowisku pracy fotografa, ale index 0 ma największe szanse zawierać wartościowe i czytelne ilustracje edukacyjne.","fileTitle":"PL Maeterlinck - Zagrzebana świątynia.pdf","query":"Czynniki szkodliwe"}},"ergonomia":{"title":"Ergonomia","aliases":["ergonomia"],"explanation":"Dostosowanie stanowiska pracy oraz zadań do możliwości i potrzeb człowieka, aby zwiększyć komfort i efektywność.","why":"Ergonomia zmniejsza zmęczenie i ryzyko urazów, poprawiając jakość pracy.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/c/c2/Ergonomia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/c/c2/Ergonomia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"Imagen de colocación en el puesto de trabsajo,para no sufrir lesiones.","source":"Wikimedia Commons · CC BY-SA 4.0 · Sergi Mateo · AI-ranked: Obraz 'Ergonomia.jpg' przedstawia zdjęcie ilustrujące ergonomiczne ustawienie stanowiska pracy, co pasuje do tematu ergonomii. Pozostałe obrazy dotyczą innych aspektów lub są mniej czytelne i mniej powiązane z ergonomią stanowiska fotograficznego.","fileTitle":"Ergonomia.jpg","query":"Ergonomia"}},"srodki_ochrony_indywidualnej":{"title":"Środki ochrony indywidualnej","aliases":["środki ochrony indywidualnej"],"explanation":"Wyposażenie chroniące jednego pracownika, np. rękawice, okulary, maseczki, obuwie i odzież robocza.","why":"Chronią zdrowie i bezpieczeństwo osoby wykonującej zadanie.","image":{"originalUrl":"https://pixabay.com/photos/cat-yawns-yawning-sleepy-to-yawn-4542301/","label":"cat, yawns, yawning, sleepy, animal, pet, to yawn, i love it","source":"Pixabay · andriish22"}},"srodki_ochrony_zbiorowej":{"title":"Środki ochrony zbiorowej","aliases":["środki ochrony zbiorowej"],"explanation":"Urządzenia i rozwiązania stosowane dla grupy pracowników, np. wentylacja, osłony, oznakowanie stref niebezpiecznych.","why":"Zmniejszają ryzyko zagrożeń dla większej liczby osób jednocześnie.","image":{"url":"https://pixabay.com/get/g41260481a49da7ca8ce0ef9784eb119606d0f6571e0231a89d0928ac4253e7c4ece4a77e265926d71f661e4a7f99ccaa3df9c823d5d8ede56454960b2b1d2b9d_640.jpg","originalUrl":"https://pixabay.com/photos/pipe-system-tube-construction-site-7768312/","label":"pipe system, tube, construction site, light, cable, industry, system, connection, flow through, embarrassed, plug-in system, round, circles, channel, industry, industry, industry, industry, industry, circles, circles","source":"Pixabay · Kranich17"}},"czynniki_fizyczne":{"title":"Czynniki fizyczne","aliases":["czynniki fizyczne"],"explanation":"Elementy środowiska takie jak hałas, temperatura, światło wpływające na komfort i zdrowie pracownika.","why":"Znajomość ich wpływu pozwala unikać przeciążeń i urazów.","image":{"originalUrl":"https://pixabay.com/photos/machupicchu-peru-i-ncas-1138641/","label":"machupicchu, peru i, ncas, alberto benini - doit travel, machupicchu, machupicchu, machupicchu, machupicchu, machupicchu","source":"Pixabay · doit_viaggi"}},"promieniowanie_uv_ir":{"title":"Promieniowanie UV i IR","aliases":["promieniowanie UV","promieniowanie IR"],"explanation":"Rodzaje promieniowania elektromagnetycznego, które mogą uszkadzać skórę i oczy.","why":"W pracy ze specjalnymi technikami fotograficznymi ważne jest ich unikanie lub ochrona przed nimi.","image":{"originalUrl":"https://pixabay.com/photos/dentist-facet-uv-light-curing-1864921/","label":"dentist, facet, uv light, curing, teeth, mouth, treatment, uv lamp, patient, clinic, dentist, dentist, dentist, dentist, dentist, teeth","source":"Pixabay · ales_kartal"}},"czynniki_chemiczne":{"title":"Czynniki chemiczne","aliases":["czynniki chemiczne"],"explanation":"Substancje chemiczne używane np. w ciemni fotograficznej jak wywoływacze i utrwalacze, które mogą być szkodliwe przy kontakcie.","why":"Podstawowa wiedza o nich jest niezbędna do bezpiecznej pracy w ciemni.","image":{"originalUrl":"https://upload.wikimedia.org/wikipedia/commons/c/c9/London_Eye_at_Night_%28long_exposure%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"London Eye at Night.","source":"Wikimedia Commons · CC BY-SA 3.0 · Martin Falbisoner · AI-ranked: Brak na liście kandydatów obrazu przedstawiającego butelki z wywoływaczami i utrwalaczami w ciemni fotograficznej. Żaden z podanych obrazów nie odpowiada poszukiwanemu kontekstowi chemikaliów używanych w ciemni. Zalecany jest dobór obrazu ze źródeł Wikimedia Commons przedstawiającego sprzęt i butelki z wywoływaczami i utrwalaczami używanymi w laboratorium fotograficznym.","fileTitle":"London Eye at Night (long exposure).JPG","query":"Czynniki chemiczne"}},"stanowisko_pracy_komputerowej":{"title":"Stanowisko pracy komputerowej","aliases":["pracownia komputerowa"],"explanation":"Miejsce pracy przy komputerze, gdzie długotrwała praca wymaga ergonomicznego ustawienia sprzętu i przerw.","why":"Minimalizuje obciążenie wzroku, kręgosłupa i układu nerwowego.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Dziennik_Dolno%C5%9Bl%C4%85ski%2C_1990%2C_nr_14_%2811_pa%C5%BAdziernika%29.djvu/page1-1280px-Dziennik_Dolno%C5%9Bl%C4%85ski%2C_1990%2C_nr_14_%2811_pa%C5%BAdziernika%29.djvu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/0/07/Dziennik_Dolno%C5%9Bl%C4%85ski%2C_1990%2C_nr_14_%2811_pa%C5%BAdziernika%29.djvu?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"Dziennik Dolnośląski nr 14 (11 października 1990)","source":"Wikimedia Commons · CC BY-SA 3.0 · red. nacz. Włodzimierz Suleja, Norpol-Press sp.z o.o. · AI-ranked: The first candidate is a publication from 1990 containing potential historical images or diagrams related to computer workstations. However, it is a newspaper page, which is unlikely to have clear, educational illustrations specifically about ergonomic computer setups. The next candidates are also documents or books, not images or diagrams suitable for illustrating ergonomic workstations. None of the candidates appear to be a direct photographic or illustrative depiction of ergonomic computer workstations. However, among them, the first candidate might be the most relevant as it is a periodical that could contain images related to computer workstations, unlike the rest which are mainly PDFs or texts unrelated to ergonomic setups. Ideally, a photograph or schematic diagram showing ergonomic arrangement would be preferred but is absent here.","fileTitle":"Dziennik Dolnośląski, 1990, nr 14 (11 października).djvu","query":"Stanowisko pracy komputerowej"}},"przeciazenia_miesniowo_szkieletowe":{"title":"Przeciążenia mięśniowo-szkieletowe","aliases":["przeciążenia mięśniowo-szkieletowe"],"explanation":"Problemy zdrowotne powstałe w wyniku długotrwałego wysiłku i nieprawidłowej postawy ciała na stanowisku pracy.","why":"Są częstym skutkiem ignorowania wczesnych objawów przeciążeń.","image":{"url":"https://pixabay.com/get/g21115a90fbe5bda2e861fa858969f009fe2d945c6c6941bdbbf291eb3f02884b62e92648a8b6edbd955eabccf0fffe7757ed00329c3791b6f00a9fb674309438_640.jpg","originalUrl":"https://pixabay.com/photos/machupicchu-peru-i-ncas-1138641/","label":"machupicchu, peru i, ncas, alberto benini - doit travel, machupicchu, machupicchu, machupicchu, machupicchu, machupicchu","source":"Pixabay · doit_viaggi"}},"srodki_ochrony_sluchu":{"title":"Środki ochrony słuchu","aliases":["ochronniki słuchu"],"explanation":"Wyposażenie chroniące uszy przed nadmiernym hałasem, np. nauszniki lub zatyczki do uszu.","why":"Zapobiegają uszkodzeniom słuchu podczas pracy w hałaśliwym środowisku.","image":{"url":"https://images.pexels.com/photos/32845665/pexels-photo-32845665.jpeg?auto=compress&cs=tinysrgb&h=650&w=940","originalUrl":"https://www.pexels.com/photo/engineer-in-control-room-with-safety-gear-32845665/","label":"Engineer wearing protective gear in a control room, emphasizing safety and technology.","source":"Engineer wearing protective gear in a control room, emphasizing safety and technology.\nPexels · Sergey Sergeev","caption":"Engineer wearing protective gear in a control room, emphasizing safety and technology.\nPexels · Sergey Sergeev"}},"wentylacja":{"title":"Wentylacja","aliases":["wentylacja"],"explanation":"System wymiany powietrza zapewniający usuwanie zanieczyszczeń i dostarczanie świeżego powietrza.","why":"Zapewnia bezpieczeństwo przy pracy z chemikaliami oraz poprawia komfort pracy.","image":{"url":"https://images.pexels.com/photos/257770/pexels-photo-257770.jpeg?auto=compress&cs=tinysrgb&h=650&w=940","originalUrl":"https://www.pexels.com/photo/close-up-of-machine-part-in-factory-257770/","label":"Close-up of shiny stainless steel pipes on an industrial building facade, showcasing modern technology.","source":"Close-up of shiny stainless steel pipes on an industrial building facade, showcasing modern technology.\nPexels · Pixabay","caption":"Close-up of shiny stainless steel pipes on an industrial building facade, showcasing modern technology.\nPexels · Pixabay"}},"bezpieczenstwo_pracy":{"title":"Bezpieczeństwo pracy","aliases":["bezpieczeństwo pracy"],"explanation":"Zasady i środki mające na celu ochronę zdrowia i życia pracowników podczas wykonywania zadań.","why":"Zapobiega wypadkom i chorobom zawodowym.","image":{"url":"https://pixabay.com/get/g83cb0bf049f3100fc1a8ab5fa2b277372561e98b8cb194700a2e0f8319a43f892394b9cabb423c2b4d006a8bd42e53fb0fdf3c6ea75901e9279e5be0c1a5518a_640.jpg","originalUrl":"https://pixabay.com/photos/woman-face-portrait-model-skin-2303361/","label":"woman, face, portrait, model, skin, makeup, young woman, close up, modeling, studio photography, monochrome, black and white, woman, woman, woman, face, face, face, face, face, portrait, skin","source":"Pixabay · Engin_Akyurt"}}};
+
+document.querySelectorAll('.term').forEach(el => {
+  el.addEventListener('click', () => {
+    const key = el.dataset.term;
+    const term = TERMS[key];
+
+    if (!term) return;
+
+    document.getElementById("sidePanel").innerHTML =
+      '<div class="term-box">' +
+      '<h3>' + term.title + '</h3>' +
+    (term.image && term.image.url
+  ? '<div>' +
+      '<img src="' + term.image.url + '">' +
+      '<div class="img-meta">' + (term.image.source || '') + '</div>' +
+    '</div>'
+  : '') +
+      '<p>' + term.explanation + '</p>' +
+      '<p><em>' + (term.why || '') + '</em></p>' +
+      '</div>';
+  });
+});
+
+document.addEventListener('click', (event) => {
+  const img = event.target.closest('.term-box img');
+  if (!img) return;
+
+  const overlay = document.createElement('div');
+  overlay.style.position = 'fixed';
+  overlay.style.inset = '0';
+  overlay.style.background = 'rgba(0,0,0,.82)';
+  overlay.style.display = 'grid';
+  overlay.style.placeItems = 'center';
+  overlay.style.zIndex = '9999';
+  overlay.style.cursor = 'zoom-out';
+
+  const big = document.createElement('img');
+  big.src = img.src;
+  big.style.maxWidth = '92vw';
+  big.style.maxHeight = '92vh';
+  big.style.objectFit = 'contain';
+  big.style.borderRadius = '14px';
+  big.style.background = '#fff';
+
+  overlay.appendChild(big);
+  overlay.addEventListener('click', () => overlay.remove());
+  document.body.appendChild(overlay);
+});
+</script>
+
+</body>
+</html>

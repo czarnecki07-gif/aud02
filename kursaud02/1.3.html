@@ -1,0 +1,362 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Lekcja 1.3: Przygotowanie bezpiecznego stanowiska w studiu, ciemni i pracowni cyfrowej</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  background: #f6f2ea;
+  color: #171411;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  min-height: 100vh;
+}
+
+main {
+  padding: 54px 64px 90px;
+  max-width: 860px;
+}
+
+h1 {
+  margin: 0 0 10px;
+  font-size: 54px;
+  line-height: 1.02;
+  letter-spacing: -0.04em;
+  font-weight: 800;
+}
+
+h2 {
+  margin: 46px 0 18px;
+  font-size: 30px;
+  line-height: 1.18;
+  font-weight: 800;
+}
+
+.reader-subtitle {
+  margin: 0 0 42px;
+  color: #6f675d;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.reader-paragraph {
+  font-size: 20px;
+  line-height: 1.78;
+  margin: 0 0 28px;
+  white-space: pre-wrap;
+}
+
+.reader-hero-image,
+.reader-section-image {
+  margin: 24px 0 34px;
+}
+
+.reader-hero-image img,
+.reader-section-image img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: contain;
+  border-radius: 18px;
+  background: #f0ece3;
+  box-shadow: 0 14px 34px rgba(30, 25, 18, 0.08);
+}
+
+.reader-section-image img {
+  max-height: 320px;
+}
+
+.reader-hero-image figcaption,
+.reader-section-image figcaption {
+  margin-top: 8px;
+  color: #8a8277;
+  font-size: 12px;
+  line-height: 1.4;
+}
+aside {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+  border-left: 1px solid #ddd4c5;
+  background: #faf7ef;
+  padding: 38px 28px;
+}
+
+aside::before {
+  content: "Wyjaśnienia";
+  display: block;
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+
+.term {
+  background: #fff1b8;
+  border-bottom: 2px solid #d8b429;
+  border-radius: 4px;
+  padding: 0 2px;
+  cursor: pointer;
+}
+
+.term:hover {
+  background: #ffe680;
+}
+
+.term-box {
+  border: 1px solid #ddd4c5;
+  border-radius: 18px;
+  padding: 18px;
+  background: #fffdf8;
+  box-shadow: 0 14px 34px rgba(30, 25, 18, 0.07);
+}
+
+.term-box h3 {
+  margin: 0 0 14px;
+  font-size: 25px;
+  line-height: 1.18;
+  font-weight: 800;
+}
+
+.term-box p {
+  font-size: 18px;
+  line-height: 1.58;
+  margin: 0 0 14px;
+}
+
+.term-box img {
+  width: 100%;
+  max-height: 260px;
+  object-fit: contain;
+  border-radius: 14px;
+  background: #f0ece3;
+  margin: 8px 0 12px;
+  cursor: zoom-in;
+}
+
+.img-meta {
+  margin: -4px 0 12px;
+  font-size: 12px;
+  color: #8a8277;
+  line-height: 1.35;
+}
+
+.brand {
+  grid-column: 1 / 2;
+  margin: 0 64px 34px;
+  padding: 22px 28px;
+  border: 1px solid #ddd4c5;
+  border-radius: 22px;
+  background: #fffdf8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  box-shadow: 0 14px 36px rgba(30, 25, 18, 0.06);
+  position: relative;
+  z-index: 2;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-word {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.brand-name {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 46px;
+  font-weight: 900;
+  letter-spacing: -0.085em;
+  color: #171717;
+}
+
+.brand-format {
+  margin-top: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  color: #6157ff;
+}
+
+.brand-meta {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  white-space: nowrap;
+}
+
+.brand-link {
+  color: #6157ff;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  body {
+    display: block;
+  }
+
+  main {
+    padding: 32px 24px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  aside {
+    position: static;
+    height: auto;
+    border-left: 0;
+    border-top: 1px solid #ddd4c5;
+  }
+
+  .brand {
+  margin: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  grid-column: auto;
+}
+
+.brand-name {
+  font-size: 36px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<main>
+<h1>Lekcja 1.3: Przygotowanie bezpiecznego stanowiska w studiu, ciemni i pracowni cyfrowej</h1>
+<div class="reader-subtitle">CTXBOOK – text easy to understand</div>
+
+
+    <figure class="reader-hero-image">
+      <img src="https://images.pexels.com/photos/8114476/pexels-photo-8114476.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Classic darkroom scene featuring an enlarger under red lighting, ideal for film photography.">
+      <figcaption>Classic darkroom scene featuring an enlarger under red lighting, ideal for film photography.
+Pexels · Annushka  Ahuja</figcaption>
+    </figure>
+  
+
+
+  <section>
+    
+    <h2>Znaczenie bezpiecznego stanowiska pracy</h2>
+    <p class="reader-paragraph">Dobrze przygotowane stanowisko pracy pozwala działać sprawnie, przewidywalnie i bezpiecznie. W fotografii jest to szczególnie ważne, ponieważ pracujesz jednocześnie z elektroniką, światłem, statywami, kablami, komputerem i czasem materiałami chemicznymi.</p><p class="reader-paragraph">Celem lekcji jest organizowanie stanowiska pracy zgodnie z <span class="term" data-term="ergonomia">zasadami ergonomii</span>, bezpieczeństwa używania sprzętu fotograficznego, oświetleniowego i komputerowego oraz wymogami przeciwpożarowymi.</p>
+    
+  </section>
+
+  <section>
+    
+    <h2>Organizacja stanowiska w studiu fotograficznym</h2>
+    <p class="reader-paragraph">Najważniejsze jest logiczne rozmieszczenie sprzętu. Aparat, <span class="term" data-term="statywy">statywy</span>, lampy, tła, przewody i akcesoria powinny tak być ustawione, by nie ograniczać ruchu fotografa, modela i innych osób na planie.</p><p class="reader-paragraph">Kable muszą być prowadzone uporządkowanie i zabezpieczone, zwłaszcza jeśli przechodzą przez ciągi komunikacyjne.</p><p class="reader-paragraph"><span class="term" data-term="statywy">Statywy</span> powinny być stabilne, a cięższe lampy odpowiednio dociążone.</p><p class="reader-paragraph">Przed pracą sprawdza się stan mocowań, wyzwalaczy, zasilaczy i żarówek oraz upewnia, że sprzęt się nie przegrzewa i nie stanowi zagrożenia dla ludzi i materiałów.</p>
+    
+  </section>
+
+  <section>
+    
+    <h2>Praca w ciemni fotograficznej</h2>
+    <p class="reader-paragraph"><span class="term" data-term="czymni">Ciemnia</span> łączy pracę w ograniczonym świetle z użyciem chemii i urządzeń elektrycznych, dlatego wymaga dyscypliny organizacyjnej.</p><p class="reader-paragraph">Pojemniki powinny być jasno oznaczone, a roztwory przygotowane zgodnie z instrukcją.</p><p class="reader-paragraph">Narzędzia i kuwety odkłada się zawsze w to samo miejsce, co ogranicza błędy.</p><p class="reader-paragraph">Podłoga musi być sucha i czysta, by uniknąć poślizgnięć.</p><p class="reader-paragraph"><span class="term" data-term="wentylacja">Wentylacja</span> i oddzielenie strefy suchej od mokrej zmniejszają ryzyko kontaktu elektryczności z cieczami.</p>
+    
+  </section>
+
+  <section>
+    
+    <h2>Organizacja stanowiska w pracowni cyfrowej</h2>
+    <p class="reader-paragraph">Pracownia powinna być uporządkowana i <span class="term" data-term="odpowiednie_oswietlenie">dobrze oświetlona</span>, ale bez odbić na ekranie.</p><p class="reader-paragraph">Monitor ustawia się prostopadle do okna lub tak, by światło nie raziło w oczy.</p><p class="reader-paragraph">Komputer, tablet graficzny, klawiatura i mysz powinny być w zasięgu wygodnego ruchu, bez skręcania tułowia.</p><p class="reader-paragraph">Ważne jest zabezpieczenie danych i porządek w nośnikach pamięci, ponieważ bałagan cyfrowy wpływa na bezpieczeństwo pracy.</p><p class="reader-paragraph">Regularna <span class="term" data-term="konserwacja_sprzetu">konserwacja sprzętu</span>, czyszczenie i kontrola kabli zasilających pomagają zapobiegać awariom i utracie materiału fotograficznego.</p>
+    
+  </section>
+
+  <section>
+    
+    <h2>Kontrola bezpieczeństwa przed rozpoczęciem pracy</h2>
+    <p class="reader-paragraph">Przed sesją lub pracą w pracowni wykonuje się przegląd stanowiska.</p><p class="reader-paragraph">Sprawdza się zasilanie, kable, gniazda, mocowania sprzętu, dostępność gaśnicy, przejścia, stan akumulatorów oraz czystość miejsca pracy.</p><p class="reader-paragraph">Obecność środków ochrony jest też ważna.</p><p class="reader-paragraph">Taka rutyna ogranicza błędy i awarie, zapewnia wygodę i bezpieczeństwo zespołu i klientów.</p>
+    
+  </section>
+
+</main>
+
+<aside id="sidePanel">
+  <div class="term-box">
+    <h3>Wyjaśnienia</h3>
+    <p>Kliknij podkreślone pojęcie w tekście.</p>
+  </div>
+</aside>
+
+<div class="brand">
+  <div class="brand-logo">
+    <span class="brand-word">
+      <span class="brand-name">contextero</span>
+      <span class="brand-format">CTXBOOK FORMAT</span>
+    </span>
+  </div>
+
+  <div class="brand-meta">
+    Powered by <a class="brand-link" href="https://contextero.com" target="_blank">contextero.com</a>
+  </div>
+</div>
+<script>
+const TERMS = {"ergonomia":{"title":"Ergonomia","aliases":["zasadami ergonomii"],"explanation":"Ergonomia to nauka o dostosowaniu stanowiska pracy do potrzeb i możliwości człowieka, aby praca była wygodna i bezpieczna.","why":"W fotografii dobra ergonomia pomaga zmniejszyć zmęczenie i ryzyko urazów podczas pracy na długie godziny.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/c/c2/Ergonomia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/c/c2/Ergonomia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"Imagen de colocación en el puesto de trabsajo,para no sufrir lesiones.","source":"Wikimedia Commons · CC BY-SA 4.0 · Sergi Mateo · AI-ranked: Obraz 'Ergonomia.jpg' przedstawia ergonomiczne ustawienie stanowiska pracy, co jest bezpośrednio powiązane z tematem ergonomii. Jest to wyraźna ilustracja odpowiedniego ułożenia elementów stanowiska, która pomaga zrozumieć, jak wygodny układ sprzętu fotografa wpływa na komfort i bezpieczeństwo pracy. Pozostałe obrazy dotyczą innych aspektów ergonomii lub są mniej czytelne i niezwiązane bezpośrednio z ergonomicznym stanowiskiem fotografa.","fileTitle":"Ergonomia.jpg","query":"Ergonomia"}},"statywy":{"title":"Statywy","aliases":["statywy"],"explanation":"Statyw to trójnóg do utrzymania aparatu lub lampy w stabilnej pozycji podczas fotografowania.","why":"Stabilność statywów zapobiega drganiom i uszkodzeniom sprzętu oraz zapewnia precyzję ujęć.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/7/78/No_cameras_on_tripods_at_the_T%C5%8Ddai-ji_%2872756441%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/7/78/No_cameras_on_tripods_at_the_T%C5%8Ddai-ji_%2872756441%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"No cameras on tripods at the Tōdai-ji, Nara, Japan.","source":"Wikimedia Commons · CC BY-SA 2.0 · Toby Oxborrow · AI-ranked: Obraz przedstawia statywy fotograficzne z zamontowanymi kamerami, jest to prawdziwa fotografia edukacyjna, dobrze ilustrująca stabilny statyw fotograficzny z kamerą, co idealnie odpowiada kontekstowi terminu 'Statyw'. Pozostałe obrazy dotyczą historycznych lub militarnych trójnogów, które nie pasują do współczesnego, fotograficznego kontekstu.","fileTitle":"No cameras on tripods at the Tōdai-ji (72756441).jpg","query":"Statywy"}},"czymni":{"title":"Ciemnia fotograficzna","aliases":["ciemnia fotograficzna","ciemnia"],"explanation":"Ciemnia to miejsce z ograniczonym światłem do obróbki klisz i papierów fotograficznych oraz pracy z chemikaliami.","why":"Specjalne warunki w ciemni wymagają zachowania ścisłych zasad bezpieczeństwa, aby uniknąć wypadków chemicznych i elektrycznych.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Photographic_darkroom%2C_probably_Geoff_Charles%27s_darkroom%2C_Bangor_%281532113%29.jpg/1280px-Photographic_darkroom%2C_probably_Geoff_Charles%27s_darkroom%2C_Bangor_%281532113%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/2/21/Photographic_darkroom%2C_probably_Geoff_Charles%27s_darkroom%2C_Bangor_%281532113%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"Photographic darkroom, probably Geoff Charles's darkroom, Bangor","source":"Wikimedia Commons · CC BY-SA 4.0 · Geoff Charles · AI-ranked: Zdjęcie nr 7 przedstawia fotografa pracującego w ciemni, z widocznymi zaciemnionymi pomieszczeniami i charakterystycznym sprzętem ciemniowym. Kompozycja jest klarowna, pokazuje realistyczną atmosferę pracy w ciemni fotograficznej, co dobrze wspiera edukacyjny kontekst opisu pojęcia 'ciemnia fotograficzna'.","fileTitle":"Photographic darkroom, probably Geoff Charles's darkroom, Bangor (1532113).jpg","query":"Ciemnia fotograficzna"}},"przetworstwo_cyfrowe":{"title":"Pracownia cyfrowa","aliases":["pracownia cyfrowa"],"explanation":"Pracownia cyfrowa to miejsce, gdzie odbywa się obróbka zdjęć na komputerze i zarządzanie plikami fotograficznymi.","why":"Porządek i dobre oświetlenie w pracowni cyfrowej ułatwiają pracę i zapobiegają uszkodzeniu sprzętu.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Pracownia_%C5%9Blusarska_H._Zielezi%C5%84skiego_%2855376%29.jpg/1280px-Pracownia_%C5%9Blusarska_H._Zielezi%C5%84skiego_%2855376%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/2/2b/Pracownia_%C5%9Blusarska_H._Zielezi%C5%84skiego_%2855376%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"Pracownia ślusarska H. Zielezińskiego","source":"Wikimedia Commons · Public domain · AI-ranked: None of the candidate images depict a modern digital workspace with a computer and graphic tablet relevant to a digital photographic studio. All images represent historical or traditional artist or scientific studios without digital equipment. Therefore, none are suitable for the given context describing a digital photographic workstation.","fileTitle":"Pracownia ślusarska H. Zielezińskiego (55376).jpg","query":"Pracownia cyfrowa"}},"ograniczenie_ryzyka":{"title":"Ograniczanie ryzyka","aliases":["ograniczać ryzyko potknięć","ograniczyć ryzyko"],"explanation":"Działania mające na celu zmniejszenie prawdopodobieństwa wypadków i awarii podczas pracy.","why":"W fotografii ryzyko potknięć, porażenia prądem czy pożaru może powodować szkody dla ludzi i sprzętu, dlatego konieczne jest jego ograniczanie.","image":{"url":"https://pixabay.com/get/g815db07b3d36afc60b44f30d485b98b2c382346e502a170aa4137b5eb39f14e1a67b546ba47778dd5aff6db9000c27a4c4606f4fe1ff35fe1345791c53f434a1_640.jpg","originalUrl":"https://pixabay.com/photos/barley-field-wheat-agriculture-plow-1684052/","label":"barley field, wheat, agriculture, plow, tillage, farm, harvest, sunrise, morning, landscape, nature, ne young na-young, jeju travel, jeju island, agriculture, agriculture, farm, sunrise, sunrise, sunrise, morning, morning, nature, nature, nature, nature, nature","source":"Pixabay · kangbch"}},"wentylacja":{"title":"Wentylacja","aliases":["wentylacja"],"explanation":"System wymiany powietrza, który pomaga usuwać szkodliwe opary i utrzymuje dobrą jakość powietrza.","why":"W ciemni wentylacja chroni przed kumulowaniem się oparów chemicznych i zwiększa bezpieczeństwo pracy.","image":{"url":"https://pixabay.com/get/g327f671ecf2656205e5e008b9472a74d0c61a7cd8b3c154a3b7e2a2a78fccf869192ea9d56c9e75cac27d02a9b43302bbe892329112c65666c0e81a8237fd0da_640.jpg","originalUrl":"https://pixabay.com/photos/air-vent-vents-building-4714592/","label":"air vent, vents, building, curtain wall, exhaust, ventilation, pipe, wall, exterior, city, grey, hyundai, rescue, air vent, ventilation, ventilation, ventilation, ventilation, ventilation","source":"Pixabay · Gray_Rhee","caption":"Pixabay · Gray_Rhee"}},"odpowiednie_oswietlenie":{"title":"Oświetlenie w pracowni","aliases":["dobrze oświetlona"],"explanation":"Właściwe światło w miejscu pracy, które nie powoduje odblasków ani cieni utrudniających pracę.","why":"W pracowni cyfrowej dobre oświetlenie chroni wzrok i pozwala dokładnie ocenić kolory i detale zdjęć.","image":{"url":"https://images.pexels.com/photos/34786452/pexels-photo-34786452.jpeg?auto=compress&cs=tinysrgb&h=650&w=940","originalUrl":"https://www.pexels.com/photo/cozy-photography-studio-with-equipment-34786452/","label":"An intimate studio space filled with photography gear and soft lighting setup.","source":"An intimate studio space filled with photography gear and soft lighting setup.\nPexels · Iryna Varanovich","caption":"An intimate studio space filled with photography gear and soft lighting setup.\nPexels · Iryna Varanovich"}},"konserwacja_sprzetu":{"title":"Konserwacja sprzętu","aliases":["konserwacja sprzętu","czyszczenie urządzeń"],"explanation":"Regularne czynności pielęgnacyjne i kontrola urządzeń fotograficznych, aby działały prawidłowo.","why":"Pomaga zapobiegać awariom i utracie ważnych materiałów fotograficznych.","image":{"url":"https://pixabay.com/get/g1cfa6d66cff54f3a16238e34fc20b2d9d87801c65444cf12770c72f2f9cac4a0ce8d8058ca00ff5b9fc9044f3cfc3a4c9e7b75c839e3d5fe4fde85c37a668242_640.jpg","originalUrl":"https://pixabay.com/photos/cat-yawns-yawning-sleepy-to-yawn-4542301/","label":"cat, yawns, yawning, sleepy, animal, pet, to yawn, i love it","source":"Pixabay · andriish22"}},"kontrola_bezpieczenstwa":{"title":"Kontrola bezpieczeństwa","aliases":["kontrola bezpieczeństwa przed rozpoczęciem pracy"],"explanation":"Sprawdzanie wszystkich istotnych elementów stanowiska pracy przed rozpoczęciem zajęć.","why":"Redukuje liczbę błędów, awarii i zapewnia bezpieczne środowisko pracy dla wszystkich osób na planie.","image":{"url":"https://pixabay.com/get/g975629bf3be9cff70967598c8331df423520c51ded70ae9a3924b4a830d76684206b774fc2dca4f63cc591ad2c5a9cdcf0ea6b91d61180caa27e5dd79bc10ad6_640.jpg","originalUrl":"https://pixabay.com/photos/bird-heron-great-egret-moor-3772889/","label":"bird, heron, great egret, moor, boardwalk, photographer, nature photographer, nature, landscape, nature reserve, fall, quiet, photographer, photographer, photographer, photographer, photographer","source":"Pixabay · nidan"}}};
+
+document.querySelectorAll('.term').forEach(el => {
+  el.addEventListener('click', () => {
+    const key = el.dataset.term;
+    const term = TERMS[key];
+
+    if (!term) return;
+
+    document.getElementById("sidePanel").innerHTML =
+      '<div class="term-box">' +
+      '<h3>' + term.title + '</h3>' +
+    (term.image && term.image.url
+  ? '<div>' +
+      '<img src="' + term.image.url + '">' +
+      '<div class="img-meta">' + (term.image.source || '') + '</div>' +
+    '</div>'
+  : '') +
+      '<p>' + term.explanation + '</p>' +
+      '<p><em>' + (term.why || '') + '</em></p>' +
+      '</div>';
+  });
+});
+
+document.addEventListener('click', (event) => {
+  const img = event.target.closest('.term-box img');
+  if (!img) return;
+
+  const overlay = document.createElement('div');
+  overlay.style.position = 'fixed';
+  overlay.style.inset = '0';
+  overlay.style.background = 'rgba(0,0,0,.82)';
+  overlay.style.display = 'grid';
+  overlay.style.placeItems = 'center';
+  overlay.style.zIndex = '9999';
+  overlay.style.cursor = 'zoom-out';
+
+  const big = document.createElement('img');
+  big.src = img.src;
+  big.style.maxWidth = '92vw';
+  big.style.maxHeight = '92vh';
+  big.style.objectFit = 'contain';
+  big.style.borderRadius = '14px';
+  big.style.background = '#fff';
+
+  overlay.appendChild(big);
+  overlay.addEventListener('click', () => overlay.remove());
+  document.body.appendChild(overlay);
+});
+</script>
+
+</body>
+</html>
