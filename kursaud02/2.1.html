@@ -1,0 +1,376 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Lekcja 2.1: Terminologia fotografii, kompozycji i analizy obrazu</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  background: #f6f2ea;
+  color: #171411;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  min-height: 100vh;
+}
+
+main {
+  padding: 54px 64px 90px;
+  max-width: 860px;
+}
+
+h1 {
+  margin: 0 0 10px;
+  font-size: 54px;
+  line-height: 1.02;
+  letter-spacing: -0.04em;
+  font-weight: 800;
+}
+
+h2 {
+  margin: 46px 0 18px;
+  font-size: 30px;
+  line-height: 1.18;
+  font-weight: 800;
+}
+
+.reader-subtitle {
+  margin: 0 0 42px;
+  color: #6f675d;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.reader-paragraph {
+  font-size: 20px;
+  line-height: 1.78;
+  margin: 0 0 28px;
+  white-space: pre-wrap;
+}
+
+.reader-hero-image,
+.reader-section-image {
+  margin: 24px 0 34px;
+}
+
+.reader-hero-image img,
+.reader-section-image img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: contain;
+  border-radius: 18px;
+  background: #f0ece3;
+  box-shadow: 0 14px 34px rgba(30, 25, 18, 0.08);
+}
+
+.reader-section-image img {
+  max-height: 320px;
+}
+
+.reader-hero-image figcaption,
+.reader-section-image figcaption {
+  margin-top: 8px;
+  color: #8a8277;
+  font-size: 12px;
+  line-height: 1.4;
+}
+aside {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+  border-left: 1px solid #ddd4c5;
+  background: #faf7ef;
+  padding: 38px 28px;
+}
+
+aside::before {
+  content: "Wyjaśnienia";
+  display: block;
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+
+.term {
+  background: #fff1b8;
+  border-bottom: 2px solid #d8b429;
+  border-radius: 4px;
+  padding: 0 2px;
+  cursor: pointer;
+}
+
+.term:hover {
+  background: #ffe680;
+}
+
+.term-box {
+  border: 1px solid #ddd4c5;
+  border-radius: 18px;
+  padding: 18px;
+  background: #fffdf8;
+  box-shadow: 0 14px 34px rgba(30, 25, 18, 0.07);
+}
+
+.term-box h3 {
+  margin: 0 0 14px;
+  font-size: 25px;
+  line-height: 1.18;
+  font-weight: 800;
+}
+
+.term-box p {
+  font-size: 18px;
+  line-height: 1.58;
+  margin: 0 0 14px;
+}
+
+.term-box img {
+  width: 100%;
+  max-height: 260px;
+  object-fit: contain;
+  border-radius: 14px;
+  background: #f0ece3;
+  margin: 8px 0 12px;
+  cursor: zoom-in;
+}
+
+.img-meta {
+  margin: -4px 0 12px;
+  font-size: 12px;
+  color: #8a8277;
+  line-height: 1.35;
+}
+
+.brand {
+  grid-column: 1 / 2;
+  margin: 0 64px 34px;
+  padding: 22px 28px;
+  border: 1px solid #ddd4c5;
+  border-radius: 22px;
+  background: #fffdf8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  box-shadow: 0 14px 36px rgba(30, 25, 18, 0.06);
+  position: relative;
+  z-index: 2;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-word {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.brand-name {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 46px;
+  font-weight: 900;
+  letter-spacing: -0.085em;
+  color: #171717;
+}
+
+.brand-format {
+  margin-top: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  color: #6157ff;
+}
+
+.brand-meta {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  white-space: nowrap;
+}
+
+.brand-link {
+  color: #6157ff;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  body {
+    display: block;
+  }
+
+  main {
+    padding: 32px 24px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  aside {
+    position: static;
+    height: auto;
+    border-left: 0;
+    border-top: 1px solid #ddd4c5;
+  }
+
+  .brand {
+  margin: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  grid-column: auto;
+}
+
+.brand-name {
+  font-size: 36px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<main>
+<h1>Lekcja 2.1: Terminologia fotografii, kompozycji i analizy obrazu</h1>
+<div class="reader-subtitle">CTXBOOK – text easy to understand</div>
+
+
+    <figure class="reader-hero-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/R%C3%A8gle_du_triangle_d%27or_en_composition_picturale_ou_photographique.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled" alt="Triangle rule in pictural composition">
+      <figcaption>Triangle rule in pictural composition
+Wikimedia Commons · CC BY-SA 4.0 · Opsylac</figcaption>
+    </figure>
+  
+
+
+  <section>
+    
+    <h2>Wprowadzenie do języka fotografii</h2>
+    <p class="reader-paragraph">Celem lekcji jest poprawne posługiwanie się pojęciami z zakresu fotografii, estetyki obrazu i kompozycji oraz świadoma analiza zdjęć pod kątem formy i funkcji.</p>
+    
+  </section>
+
+  <section>
+    
+    <h2>Rozpocznij od świadomego patrzenia</h2>
+    <p class="reader-paragraph">Dobre zdjęcie nie zaczyna się od naciśnięcia spustu migawki, ale od świadomego patrzenia. Żeby opisywać obraz, oceniać go i planować własne kadry, potrzebujesz języka fotografii.</p>
+    
+  </section>
+
+  <section>
+    
+    <h2>Co nauczysz się w tej lekcji?</h2>
+    <p class="reader-paragraph">W tej lekcji uporządkujesz podstawowe pojęcia związane z fotografią i estetyką obrazu. Nauczysz się rozpoznawać elementy kompozycji, rozumieć ich wpływ na odbiór zdjęcia oraz analizować fotografię nie tylko pod kątem tego, co przedstawia, ale także jak to pokazuje i po co zostało wykonane. To podstawa zarówno do fotografowania, jak i do późniejszej obróbki oraz rozmowy z klientem, redakcją lub zespołem.</p>
+    
+  </section>
+
+  <section>
+    
+    <h2>Fotografia jako obraz i komunikat</h2>
+    <p class="reader-paragraph">Fotografia to nie tylko zapis rzeczywistości, ale także sposób komunikowania znaczeń, emocji i informacji. Dlatego warto rozróżniać pojęcia takie jak <span class="term" data-term="kadr">kadr</span>, plan, <span class="term" data-term="perspektywa">perspektywa</span>, <span class="term" data-term="punkt_widzenia">punkt widzenia</span>, <span class="term" data-term="ostrosc">ostrość</span>, <span class="term" data-term="glebia_ostrosci">głębia ostrości</span>, <span class="term" data-term="ekspozycja">ekspozycja</span>, <span class="term" data-term="kontrast">kontrast</span> czy dynamika obrazu. <span class="term" data-term="kadr">Kadr</span> określa, co znajdzie się w granicach zdjęcia, a co zostanie pominięte. <span class="term" data-term="plan_zdjeciowy">Plan zdjęciowy</span> mówi o odległości fotografowanego obiektu względem aparatu, na przykład plan ogólny, pełny, amerykański czy zbliżenie. <span class="term" data-term="perspektywa">Perspektywa</span> wpływa na relacje wielkości i przestrzeni, a <span class="term" data-term="punkt_widzenia">punkt widzenia</span> decyduje o tym, jak odbiorca „wchodzi” w obraz. Już na tym poziomie fotografia przestaje być przypadkiem i staje się świadomą decyzją autora.</p>
+    
+  </section>
+
+  <section>
+    
+    <h2>Podstawowe zasady kompozycji</h2>
+    <p class="reader-paragraph"><span class="term" data-term="kompozycja">Kompozycja</span> to sposób rozmieszczenia elementów w kadrze. Pomaga prowadzić wzrok odbiorcy i budować czytelność zdjęcia. Do najczęściej używanych pojęć należą: rytm, symetria, asymetria, równowaga, <span class="term" data-term="dominanta">dominanta</span>, <span class="term" data-term="linia_prowadzaca">linie prowadzące</span>, podział kadru, tło, pierwszy plan, <span class="term" data-term="przestrzen_negatywna">przestrzeń negatywna</span> i punkt ciężkości obrazu. <span class="term" data-term="zasada_trojpodzialu">Zasada trójpodziału</span> pomaga umieszczać ważne elementy w mocnych punktach kadru, ale nie jest obowiązkiem. Czasem lepszy efekt daje centralna <span class="term" data-term="kompozycja">kompozycja</span>, zaburzenie równowagi lub celowe pozostawienie dużej pustej przestrzeni. Ważne jest, by <span class="term" data-term="kompozycja">kompozycja</span> była podporządkowana intencji zdjęcia, a nie tylko szkolnemu schematowi.</p>
+    
+  </section>
+
+  <section>
+    
+    <h2>Estetyka obrazu i funkcja fotografii</h2>
+    <p class="reader-paragraph">Estetyka obrazu dotyczy tego, jak fotografia oddziałuje wizualnie i emocjonalnie. Znaczenie ma nie tylko temat zdjęcia, ale również światło, kolorystyka, <span class="term" data-term="kontrast">kontrast</span>, faktura, proporcje i sposób przedstawienia obiektu. Inaczej oceniamy fotografię reklamową, inaczej reportażową, a jeszcze inaczej dokumentalną czy artystyczną. W analizie warto więc pytać nie tylko „czy zdjęcie jest ładne”, ale „czy jest skuteczne”. Dobre zdjęcie może być surowe, nieidealne i pozornie nieestetyczne, jeśli właśnie taki efekt wzmacnia jego przekaz. <span class="term" data-term="funkcja_fotografii">Funkcja fotografii</span> zawsze wpływa na sposób jej oceny.</p>
+    
+  </section>
+
+  <section>
+    
+    <h2>Jak analizować fotografię krok po kroku</h2>
+    <p class="reader-paragraph"><span class="term" data-term="swiadoma_analiza">Świadoma analiza zdjęcia</span> powinna obejmować kilka poziomów. Najpierw opisujesz, co znajduje się na obrazie i jakie są jego najważniejsze elementy. Następnie oceniasz formę: <span class="term" data-term="kadr">kadr</span>, kompozycję, światło, kolor, <span class="term" data-term="ostrosc">ostrość</span>, perspektywę i moment. Potem przechodzisz do interpretacji: jaki nastrój tworzy fotografia, jaka może być intencja autora, do kogo skierowano obraz i jaki efekt wywołuje. Na końcu warto ocenić spójność formy z treścią. Taka metoda pomaga nie tylko lepiej rozumieć cudze zdjęcia, ale też wyciągać wnioski do własnej pracy.</p>
+    
+  </section>
+
+</main>
+
+<aside id="sidePanel">
+  <div class="term-box">
+    <h3>Wyjaśnienia</h3>
+    <p>Kliknij podkreślone pojęcie w tekście.</p>
+  </div>
+</aside>
+
+<div class="brand">
+  <div class="brand-logo">
+    <span class="brand-word">
+      <span class="brand-name">contextero</span>
+      <span class="brand-format">CTXBOOK FORMAT</span>
+    </span>
+  </div>
+
+  <div class="brand-meta">
+    Powered by <a class="brand-link" href="https://contextero.com" target="_blank">contextero.com</a>
+  </div>
+</div>
+<script>
+const TERMS = {"kadr":{"title":"Kadr","aliases":["kadr"],"explanation":"Obszar obrazu zawarty w granicach zdjęcia; decyduje o tym, co zostaje uchwycone, a co pominięte.","why":"Kadr definiuje zakres wizualnej informacji i buduje kompozycję obrazu.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/7/73/Lion_waiting_in_Namibia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/7/73/Lion_waiting_in_Namibia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"Lion (Panthera leo) lying down in Namibia. Photographer's comment: \"[I was] standing on a viewing platform about 25m away. He wasn't doing much at all other than looking regal. There where [sic] some lionesses down below growling and pacing but they were in the shade so I didn't get very good pictures of them. [...] They were from Okonjima AfriCat foundation who look after injured or orphaned cats until they can be returned to the wild. They also educate farmers on practices on how to raise stock with large cats.\"","source":"Wikimedia Commons · CC BY 2.0 · Kevin Pluck · AI-ranked: This photograph clearly illustrates the photographic frame with distinct and well-defined edges, focusing on a captive lion. The composition shows the area included within the picture's boundaries, making it a good educational example of 'kadr'. It is a high-quality, real photographic image suitable for understanding the concept of framing.","fileTitle":"Lion waiting in Namibia.jpg","query":"Kadr"}},"plan_zdjeciowy":{"title":"Plan zdjęciowy","aliases":["plan zdjęciowy"],"explanation":"Określa odległość fotograficznego obiektu względem aparatu, np. plan ogólny, pełny, amerykański czy zbliżenie.","why":"Plan wpływa na sposób odbioru wielkości i kontekstu obiektu na zdjęciu.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Ojciec_Mateusz%2C_plan_zdj%C4%99ciowy_odc._226.jpg/1280px-Ojciec_Mateusz%2C_plan_zdj%C4%99ciowy_odc._226.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/a/a7/Ojciec_Mateusz%2C_plan_zdj%C4%99ciowy_odc._226.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"Plan zdjęciowy serialu Ojciec Mateusz","source":"Wikimedia Commons · CC BY-SA 4.0 · Paweł Rosiak · AI-ranked: Obraz jest zatytułowany 'Plan zdjęciowy serialu Ojciec Mateusz' i pochodzi z Wikimedia Commons z licencją CC BY-SA 4.0, co zapewnia legalne wykorzystanie. Zdjęcie pochodzi z planu zdjęciowego, prawdopodobnie ukazując realną scenę z planu filmowego, co jest zgodne z tematem planów zdjęciowych. Może dobrze ilustrować kontekst pracy na planie zdjęciowym. Jednak najlepszym wyborem byłby obraz przedstawiający różne plany zdjęciowe w formie porównawczej ilustracji, by uwidocznić różne typy planów (ogólny, medium, zbliżenie etc.). Niestety, żaden z podanych kandydatów nie jest taką ilustracją porównawczą. Wobec tego spośród kandydatów najbardziej edukacyjnym i adekwatnym jest obraz nr 0, ponieważ pokazuje faktyczny plan zdjęciowy i jest czytelny. Pozostałe obrazy to zdjęcia planów z różnymi ujęciami, ale nie prezentują klarownie pojęcia \"planu zdjęciowego\" jako ilustracji edukacyjnej.","fileTitle":"Ojciec Mateusz, plan zdjęciowy odc. 226.jpg","query":"Plan zdjęciowy"}},"perspektywa":{"title":"Perspektywa","aliases":["perspektywa"],"explanation":"Sposób przedstawienia relacji wielkości i przestrzeni w obrazie, wpływający na wrażenie głębi.","why":"Perspektywa kieruje uwagę i pomaga zrozumieć przestrzenne relacje na zdjęciu.","image":{"url":"https://images.pexels.com/photos/29792630/pexels-photo-29792630.jpeg?auto=compress&cs=tinysrgb&h=650&w=940","originalUrl":"https://www.pexels.com/photo/abandoned-soviet-era-building-in-kutaisi-29792630/","label":"Black and white photo of an abandoned Soviet structure in Kutaisi, Georgia.","source":"Black and white photo of an abandoned Soviet structure in Kutaisi, Georgia.\nPexels · Mesut  Yalçın","caption":"Black and white photo of an abandoned Soviet structure in Kutaisi, Georgia.\nPexels · Mesut  Yalçın"}},"punkt_widzenia":{"title":"Punkt widzenia","aliases":["punkt widzenia"],"explanation":"Miejsce i kąt, z którego wykonano zdjęcie, decydujące o tym, jak odbiorca „wchodzi” w obraz.","why":"Punkt widzenia determinuje perspektywę i emocjonalny odbiór zdjęcia.","image":{"url":"https://pixabay.com/get/g04972734a67cf384dc6998c0ec2ecbe741ca44686d316a5fb0d476deb0c526f7ab21cf48419f59739cbbef8d23bf6422f5f5a9ece41b2c0a2ff34946c82f349d_640.jpg","originalUrl":"https://pixabay.com/photos/barley-field-wheat-agriculture-plow-1684052/","label":"barley field, wheat, agriculture, plow, tillage, farm, harvest, sunrise, morning, landscape, nature, ne young na-young, jeju travel, jeju island, agriculture, agriculture, farm, sunrise, sunrise, sunrise, morning, morning, nature, nature, nature, nature, nature","source":"Pixabay · kangbch"}},"ostrosc":{"title":"Ostrość","aliases":["ostrość"],"explanation":"Stopień wyraźności detali w obrazie, który wpływa na to, co przyciąga uwagę.","why":"Ostrość kieruje oko widza na najważniejsze elementy zdjęcia.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/1/1e/Sharpness_grid.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/1/1e/Sharpness_grid.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"Temp file for discussion This file is licensed under the Creative Commons Attribution-Share Alike 3.0 Unported license. Subject to disclaimers. You are free: to share – to copy, distribute and transmit the work to remix – to adapt the work Under the following conditions: attribution – You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use. share alike – If you remix, transform, or build upon the material, you must distribute your contributions under the same or compatible license as the original. This licensing tag was added to this file as part of the GFDL licensing update.http://creativecommons.org/licenses/by-sa/3.0/CC BY-SA 3.0Creative Commons Attribution-Share Alike 3.0truetrue Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation License, Version 1.2 or any later version published by the Free Software Foundation; with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. A copy of the license is included in the section entitled GNU Free Documentation License. Subject to disclaimers.http://www.gnu.org/copyleft/fdl.htmlGFDLGNU Free Documentation Licensetruetrue Taken or Created by User:Fir0002","source":"Wikimedia Commons · CC BY-SA 3.0 · The original uploader was Fir0002 at English Wikipedia. · AI-ranked: The file 'Sharpness grid.jpg' is an educational and illustrative image directly related to the concept of photographic sharpness. It likely shows different levels or patterns of sharpness, helping to visually explain 'ostrość' as the clarity of image details, which aligns perfectly with the term's definition. Other images, mainly wildlife photos or unrelated subjects, do not serve the educational purpose for explaining photographic sharpness as clearly and effectively.","fileTitle":"Sharpness grid.jpg","query":"Ostrość foto","caption":"Temp file for discussion This file is licensed under the Creative Commons Attribution-Share Alike 3.0 Unported license. Subject to disclaimers. You are free: to share – to copy, distribute and transmit the work to remix – to adapt the work Under the following conditions: attribution – You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use. share alike – If you remix, transform, or build upon the material, you must distribute your contributions under the same or compatible license as the original. This licensing tag was added to this file as part of the GFDL licensing update.http://creativecommons.org/licenses/by-sa/3.0/CC BY-SA 3.0Creative Commons Attribution-Share Alike 3.0truetrue Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation License, Version 1.2 or any later version published by the Free Software Foundation; with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. A copy of the license is included in the section entitled GNU Free Documentation License. Subject to disclaimers.http://www.gnu.org/copyleft/fdl.htmlGFDLGNU Free Documentation Licensetruetrue Taken or Created by User:Fir0002"}},"glebia_ostrosci":{"title":"Głębia ostrości","aliases":["głębia ostrości"],"explanation":"Zakres przestrzeni przed i za punktem ostrości, który jest wyraźny na zdjęciu.","why":"Głębia ostrości pozwala wyróżnić obiekt i oddzielić go od tła.","image":{"url":"https://pixabay.com/get/ga43e2e85902372034188ae6094de2411356ce758873389f7668d9ee87f954577edb6f3c1f0ea2c744d7eab6c39257a1f839f2249905447200b2139d1d17f4de8_640.jpg","originalUrl":"https://pixabay.com/photos/diaframma-photography-fotografia-5120538/","label":"diaframma, photography, fotografia, camera, photographer, lens, fotográfia, diaphragm, aperture, lens part, depth, fotografi, lens repair, apertura, chiuso, blue camera, blue photography","source":"Pixabay · valerioerrani"}},"ekspozycja":{"title":"Ekspozycja","aliases":["ekspozycja"],"explanation":"Ilość światła padająca na matrycę lub film podczas naświetlania zdjęcia, wpływająca na jasność obrazu.","why":"Odpowiednia ekspozycja jest kluczowa dla zachowania szczegółów i nastroju fotografii.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/7/74/Correctly_exposed_histogram.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/7/74/Correctly_exposed_histogram.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"A correctly exposed image histogram.","source":"A correctly exposed image histogram.\nWikimedia Commons · Public domain · Adobe Systems ·","fileTitle":"Correctly exposed histogram.jpg","query":"histogram photoshop","caption":"A correctly exposed image histogram.\nWikimedia Commons · Public domain · Adobe Systems ·"}},"kontrast":{"title":"Kontrast","aliases":["kontrast"],"explanation":"Różnica między najjaśniejszymi i najciemniejszymi partiami obrazu, wpływająca na wyrazistość.","why":"Kontrast podkreśla formę i emocje zawarte w fotografii.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Rosa_%27Kontrast%27_kz02.jpg/1280px-Rosa_%27Kontrast%27_kz02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/0/04/Rosa_%27Kontrast%27_kz02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"Rosa 'Kontrast' (VEG (S) Baumschulen Dresden, 1981), Rosarium Sangerhausen.","source":"Wikimedia Commons · CC BY-SA 4.0 · Krzysztof Ziarnek, Kenraiz · AI-ranked: Zdjęcie nr 7 przedstawia różnorodność tonalną róż 'Kontrast' z dużą wyrazistością światłocienia, co dobrze ilustruje ideę wysokiego i niskiego kontrastu obok siebie. Obraz jest czytelny, estetyczny i dobrze oddaje pojęcie kontrastu, dzięki czemu świetnie pasuje do edukacyjnego kontekstu wyjaśniającego tę cechę wizualną.","fileTitle":"Rosa 'Kontrast' kz02.jpg","query":"Kontrast"}},"kompozycja":{"title":"Kompozycja","aliases":["kompozycja"],"explanation":"Sposób rozmieszczenia elementów w kadrze, mający na celu kierowanie uwagą i tworzenie harmonii.","why":"Kompozycja jest narzędziem budowania czytelnego i emocjonalnego przekazu.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Karol_Hiller_-_Kompozycja_heliograficzna_%28XXIX%29_-_Google_Art_Project.jpg/1280px-Karol_Hiller_-_Kompozycja_heliograficzna_%28XXIX%29_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/7/72/Karol_Hiller_-_Kompozycja_heliograficzna_%28XXIX%29_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"Karol Hiller - Kompozycja heliograficzna (XXIX) - Google Art Project.jpg","source":"Wikimedia Commons · Public domain · Karol Hiller · AI-ranked: Żaden z kandydatów nie przedstawia bezpośrednio diagramu zasad kompozycji w fotografii, ale spośród nich obraz nr 0 to abstrakcyjna kompozycja przestrzenna, co lepiej ilustruje pojęcie 'kompozycja' jako rozmieszczenia elementów niż fotografie rzeźb czy innych form. Obraz jest estetyczny i czytelny, pochodzi od artysty Karola Hillera, co daje wartość edukacyjną. Pozostałe obrazy to głównie rzeźby, malarstwo lub inne formy sztuki niezwiązane z diagramem fotograficznym. Obraz nr 0 jest najbliższy idei kompozycji wizualnej.","fileTitle":"Karol Hiller - Kompozycja heliograficzna (XXIX) - Google Art Project.jpg","query":"Kompozycja"}},"zasada_trojpodzialu":{"title":"Zasada trójpodziału","aliases":["zasada trójpodziału"],"explanation":"Podział kadru na trzy części w pionie i poziomie; mocne punkty są zalecanymi miejscami na ważne elementy.","why":"Pomaga w umieszczeniu elementów w atrakcyjnych wizualnie punktach kadru.","image":{"url":"https://pixabay.com/get/g1e203e09866d8acbcf6ca35b20de6c24120b311918755277a9e07951174d9eed5ae719456fcbf09221d8b3015b646f443b1af56b8822eadc3fdaa34a6d7d3909_640.jpg","originalUrl":"https://pixabay.com/photos/animals-mammal-dolphin-sea-ocean-4679390/","label":"animals, mammal, dolphin, sea, ocean, leap, splash, nature, freedom, image editing, clouds, horizon","source":"Pixabay · garten-gg","caption":"Pixabay · garten-gg"}},"dominanta":{"title":"Dominanta","aliases":["dominanta"],"explanation":"Główny element obrazu, który przyciąga największą uwagę widza.","why":"Dominanta kieruje odbiorcę do kluczowego punktu fotografii.","image":{"url":"https://pixabay.com/get/gbd8f87acec951a25f493fb9fccb699ffed97ec26599925825c6e8c06969ecfeaab260096810f59ecebc9f059538503af47342483acf949f21bb56b81e0b1839e_640.jpg","originalUrl":"https://pixabay.com/photos/walkman-music-sony-xperia-z3-1062998/","label":"walkman, music, sony, xperia z3, smartphone, sony xperia z3, earphone, walkman, sony, earphone, earphone, earphone, earphone, earphone","source":"Pixabay · YS-Park"}},"linia_prowadzaca":{"title":"Linie prowadzące","aliases":["linie prowadzące"],"explanation":"Elementy obrazu, które kierują wzrok odbiorcy w określonym kierunku lub do punktu ciężkości.","why":"Linie prowadzące ułatwiają nawigację wzrokową po zdjęciu.","image":{"url":"https://images.pexels.com/photos/29451972/pexels-photo-29451972.jpeg?auto=compress&cs=tinysrgb&h=650&w=940","originalUrl":"https://www.pexels.com/photo/black-and-white-railway-tracks-in-overcast-weather-29451972/","label":"A moody black and white photo of railway tracks disappearing into the horizon under cloudy skies.","source":"A moody black and white photo of railway tracks disappearing into the horizon under cloudy skies.\nPexels · ervin.fon Trichev","caption":"A moody black and white photo of railway tracks disappearing into the horizon under cloudy skies.\nPexels · ervin.fon Trichev"}},"przestrzen_negatywna":{"title":"Przestrzeń negatywna","aliases":["przestrzeń negatywna"],"explanation":"Pusta przestrzeń w kadrze, która kontrastuje z głównym obiektem i podkreśla go.","why":"Przestrzeń negatywna poprawia czytelność i siłę kompozycji.","image":{"url":"https://pixabay.com/get/gbe99503a21bf121363040975e786f1ac844d70861d4b6cff783fb1de9f97c76aed2695afe8e13fa4914e77441f8d546db0743373560e99af75f64510ff0811f0_640.jpg","originalUrl":"https://pixabay.com/photos/shit-image-bad-image-hide-4300034/","label":"shit image, bad image, hide","source":"Pixabay · 12202549"}},"funkcja_fotografii":{"title":"Funkcja fotografii","aliases":["funkcja fotografii"],"explanation":"Cel i zadanie zdjęcia, wpływające na sposób jego oceny i interpretacji.","why":"Funkcja determinuje dobór środków wyrazu i odbiór obrazu przez widza.","image":{"originalUrl":"https://pixabay.com/photos/trading-analysis-forex-chart-643722/","label":"trading, analysis, forex, chart, diagrams, trading, trading, forex, forex, forex, forex, forex","source":"Pixabay · PIX1861"}},"swiadoma_analiza":{"title":"Świadoma analiza fotografii","aliases":["świadoma analiza zdjęcia"],"explanation":"Metoda oceny obrazu składająca się z opisu, oceny formy, interpretacji i oceny spójności.","why":"Pomaga głębiej zrozumieć zdjęcie i wykorzystać zdobytą wiedzę w praktyce.","image":{"url":"https://pixabay.com/get/ge4a793268e918e364c3dd29523c0ed1810cd64de2b3e2d206bbe48466f592ff2a48d325fac3db17e315d0ae77ada970ce08b47d8b3a93dd6e0047d532ce9d84c_640.jpg","originalUrl":"https://pixabay.com/photos/gallery-picture-collection-photos-2948052/","label":"gallery, picture collection, photos, mix, art, visitors, viewer, photo collection, gigantic, multicoloured, exhibition, gallery, gallery, gallery, gallery, gallery, exhibition, exhibition, exhibition","source":"Pixabay · Alexas_Fotos","caption":"Pixabay · Alexas_Fotos"}}};
+
+document.querySelectorAll('.term').forEach(el => {
+  el.addEventListener('click', () => {
+    const key = el.dataset.term;
+    const term = TERMS[key];
+
+    if (!term) return;
+
+    document.getElementById("sidePanel").innerHTML =
+      '<div class="term-box">' +
+      '<h3>' + term.title + '</h3>' +
+    (term.image && term.image.url
+  ? '<div>' +
+      '<img src="' + term.image.url + '">' +
+      '<div class="img-meta">' + (term.image.source || '') + '</div>' +
+    '</div>'
+  : '') +
+      '<p>' + term.explanation + '</p>' +
+      '<p><em>' + (term.why || '') + '</em></p>' +
+      '</div>';
+  });
+});
+
+document.addEventListener('click', (event) => {
+  const img = event.target.closest('.term-box img');
+  if (!img) return;
+
+  const overlay = document.createElement('div');
+  overlay.style.position = 'fixed';
+  overlay.style.inset = '0';
+  overlay.style.background = 'rgba(0,0,0,.82)';
+  overlay.style.display = 'grid';
+  overlay.style.placeItems = 'center';
+  overlay.style.zIndex = '9999';
+  overlay.style.cursor = 'zoom-out';
+
+  const big = document.createElement('img');
+  big.src = img.src;
+  big.style.maxWidth = '92vw';
+  big.style.maxHeight = '92vh';
+  big.style.objectFit = 'contain';
+  big.style.borderRadius = '14px';
+  big.style.background = '#fff';
+
+  overlay.appendChild(big);
+  overlay.addEventListener('click', () => overlay.remove());
+  document.body.appendChild(overlay);
+});
+</script>
+
+</body>
+</html>
