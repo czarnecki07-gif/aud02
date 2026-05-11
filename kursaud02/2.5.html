@@ -1,0 +1,362 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Lekcja 2.5: Materiały fotograficzne, nośniki pamięci i podłoża do wydruku</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  background: #f6f2ea;
+  color: #171411;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  min-height: 100vh;
+}
+
+main {
+  padding: 54px 64px 90px;
+  max-width: 860px;
+}
+
+h1 {
+  margin: 0 0 10px;
+  font-size: 54px;
+  line-height: 1.02;
+  letter-spacing: -0.04em;
+  font-weight: 800;
+}
+
+h2 {
+  margin: 46px 0 18px;
+  font-size: 30px;
+  line-height: 1.18;
+  font-weight: 800;
+}
+
+.reader-subtitle {
+  margin: 0 0 42px;
+  color: #6f675d;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.reader-paragraph {
+  font-size: 20px;
+  line-height: 1.78;
+  margin: 0 0 28px;
+  white-space: pre-wrap;
+}
+
+.reader-hero-image,
+.reader-section-image {
+  margin: 24px 0 34px;
+}
+
+.reader-hero-image img,
+.reader-section-image img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: contain;
+  border-radius: 18px;
+  background: #f0ece3;
+  box-shadow: 0 14px 34px rgba(30, 25, 18, 0.08);
+}
+
+.reader-section-image img {
+  max-height: 320px;
+}
+
+.reader-hero-image figcaption,
+.reader-section-image figcaption {
+  margin-top: 8px;
+  color: #8a8277;
+  font-size: 12px;
+  line-height: 1.4;
+}
+aside {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+  border-left: 1px solid #ddd4c5;
+  background: #faf7ef;
+  padding: 38px 28px;
+}
+
+aside::before {
+  content: "Wyjaśnienia";
+  display: block;
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+
+.term {
+  background: #fff1b8;
+  border-bottom: 2px solid #d8b429;
+  border-radius: 4px;
+  padding: 0 2px;
+  cursor: pointer;
+}
+
+.term:hover {
+  background: #ffe680;
+}
+
+.term-box {
+  border: 1px solid #ddd4c5;
+  border-radius: 18px;
+  padding: 18px;
+  background: #fffdf8;
+  box-shadow: 0 14px 34px rgba(30, 25, 18, 0.07);
+}
+
+.term-box h3 {
+  margin: 0 0 14px;
+  font-size: 25px;
+  line-height: 1.18;
+  font-weight: 800;
+}
+
+.term-box p {
+  font-size: 18px;
+  line-height: 1.58;
+  margin: 0 0 14px;
+}
+
+.term-box img {
+  width: 100%;
+  max-height: 260px;
+  object-fit: contain;
+  border-radius: 14px;
+  background: #f0ece3;
+  margin: 8px 0 12px;
+  cursor: zoom-in;
+}
+
+.img-meta {
+  margin: -4px 0 12px;
+  font-size: 12px;
+  color: #8a8277;
+  line-height: 1.35;
+}
+
+.brand {
+  grid-column: 1 / 2;
+  margin: 0 64px 34px;
+  padding: 22px 28px;
+  border: 1px solid #ddd4c5;
+  border-radius: 22px;
+  background: #fffdf8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  box-shadow: 0 14px 36px rgba(30, 25, 18, 0.06);
+  position: relative;
+  z-index: 2;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-word {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.brand-name {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 46px;
+  font-weight: 900;
+  letter-spacing: -0.085em;
+  color: #171717;
+}
+
+.brand-format {
+  margin-top: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  color: #6157ff;
+}
+
+.brand-meta {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  white-space: nowrap;
+}
+
+.brand-link {
+  color: #6157ff;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  body {
+    display: block;
+  }
+
+  main {
+    padding: 32px 24px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  aside {
+    position: static;
+    height: auto;
+    border-left: 0;
+    border-top: 1px solid #ddd4c5;
+  }
+
+  .brand {
+  margin: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  grid-column: auto;
+}
+
+.brand-name {
+  font-size: 36px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<main>
+<h1>Lekcja 2.5: Materiały fotograficzne, nośniki pamięci i podłoża do wydruku</h1>
+<div class="reader-subtitle">CTXBOOK – text easy to understand</div>
+
+
+    <figure class="reader-hero-image">
+      <img src="https://images.pexels.com/photos/32833710/pexels-photo-32833710.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="An artistic display of Ilford film and SanDisk card against a vibrant bokeh background.">
+      <figcaption>An artistic display of Ilford film and SanDisk card against a vibrant bokeh background.
+Pexels · Karl Max Fernandes Freire</figcaption>
+    </figure>
+  
+
+
+  <section>
+    
+    <h2>Czym są materiały fotograficzne i ich znaczenie?</h2>
+    <p class="reader-paragraph">Celem lekcji jest rozpoznawanie materiałów światłoczułych, właściwości matryc, parametrów nośników pamięci oraz cech papierów i materiałów eksploatacyjnych do wydruku fotografii.</p><p class="reader-paragraph">Fotografia nie kończy się na aparacie. O jakości i bezpieczeństwie pracy decydują także materiały rejestrujące obraz, sposób zapisu plików oraz to, na czym zdjęcie zostanie wydrukowane.</p><p class="reader-paragraph">W tej lekcji poznasz podstawowe materiały używane w fotografii analogowej i cyfrowej. Dowiesz się, czym różnią się matryce fotograficzne, jakie parametry są ważne przy wyborze kart pamięci oraz jak dobierać papiery i materiały eksploatacyjne do wydruku. Ta wiedza przyda Ci się zarówno podczas rejestracji obrazu, jak i jego archiwizacji oraz publikacji.</p>
+    
+  </section>
+
+  <section>
+    
+    <h2>Materiały fotograficzne: analogowe i cyfrowe</h2>
+    <p class="reader-paragraph">W fotografii tradycyjnej podstawowym materiałem światłoczułym są filmy i <span class="term" data-term="papier_fotograficzny">papiery fotograficzne</span>. Różnią się formatem, czułością, kontrastem i przeznaczeniem.</p><p class="reader-paragraph">Filmy mogą być czarno-białe, barwne negatywowe lub slajdowe, a każdy z tych materiałów daje inny efekt i wymaga innego procesu obróbki.</p><p class="reader-paragraph">W fotografii cyfrowej funkcję materiału rejestrującego pełni <span class="term" data-term="matryca_fotograficzna">matryca aparatu</span>. Choć nie zużywa się w taki sposób jak <span class="term" data-term="film_fotograficzny">film</span>, jej właściwości mają bezpośredni wpływ na jakość obrazu, <span class="term" data-term="rozpietosc_tonalna">zakres tonalny</span>, poziom szumu i odwzorowanie kolorów.</p>
+    
+  </section>
+
+  <section>
+    
+    <h2>Właściwości matryc fotograficznych</h2>
+    <p class="reader-paragraph">Matryce różnią się wielkością, rozdzielczością, technologią wykonania i zachowaniem przy różnych czułościach ISO.</p><p class="reader-paragraph">Większa matryca zazwyczaj pozwala uzyskać lepszą jakość obrazu, większą rozpiętość tonalną i łatwiejsze operowanie małą głębią ostrości.</p><p class="reader-paragraph">Rozdzielczość ma znaczenie zwłaszcza przy dużych wydrukach i kadrowaniu, ale sama liczba megapikseli nie przesądza o jakości.</p><p class="reader-paragraph">Istotne są również zakres dynamiczny, odwzorowanie barw, szybkość odczytu i podatność na <span class="term" data-term="rolling_shutter">rolling shutter</span>.</p><p class="reader-paragraph">Fotograf powinien rozumieć, że parametry matrycy trzeba oceniać w kontekście konkretnego zastosowania.</p>
+    
+  </section>
+
+  <section>
+    
+    <h2>Nośniki pamięci i bezpieczeństwo zapisu</h2>
+    <p class="reader-paragraph">Zdjęcia cyfrowe zapisujesz na nośnikach pamięci, najczęściej <span class="term" data-term="kartach_sd">kartach <span class="term" data-term="kartach_sd">SD</span></span>, <span class="term" data-term="microsd_cfexpress"><span class="term" data-term="karta_pamieci">microSD</span>, <span class="term" data-term="karta_pamieci">CFexpress</span></span> lub innych formatach stosowanych w zależności od aparatu.</p><p class="reader-paragraph">Przy ich wyborze ważne są pojemność, szybkość zapisu i odczytu, trwałość oraz zgodność ze sprzętem.</p><p class="reader-paragraph">Szybka karta jest szczególnie potrzebna przy zdjęciach seryjnych, nagrywaniu wideo i pracy z dużymi plikami RAW.</p><p class="reader-paragraph">W praktyce zawodowej liczy się nie tylko pojemność, ale przede wszystkim niezawodność i dobra organizacja pracy.</p><p class="reader-paragraph">Karty należy odpowiednio opisywać, formatować w aparacie, bezpiecznie wysuwać z czytnika i regularnie kopiować dane do archiwum.</p>
+    
+  </section>
+
+  <section>
+    
+    <h2>Papiery fotograficzne i materiały eksploatacyjne do wydruku</h2>
+    <p class="reader-paragraph">Efekt końcowy wydruku zależy od połączenia drukarki, tuszu lub pigmentu oraz podłoża.</p><p class="reader-paragraph">Papiery błyszczące dają mocny kontrast i nasycenie kolorów, ale łatwiej zbierają odbicia i ślady dotyku.</p><p class="reader-paragraph">Papiery półmatowe i satynowe są bardziej uniwersalne, a matowe dobrze sprawdzają się przy delikatniejszej tonacji i prezentacjach bez refleksów.</p><p class="reader-paragraph">Do zastosowań wystawienniczych wykorzystuje się także papiery barytowe, bawełniane i inne podłoża klasy <span class="term" data-term="materialy_fine_art">fine art</span>.</p><p class="reader-paragraph">Przy wyborze należy uwzględnić gramaturę, biel podłoża, chłonność, trwałość archiwalną oraz zgodność z drukarką i profilem barwnym.</p><p class="reader-paragraph">Materiały eksploatacyjne mają wpływ nie tylko na wygląd, ale też na trwałość gotowej fotografii.</p>
+    
+  </section>
+
+</main>
+
+<aside id="sidePanel">
+  <div class="term-box">
+    <h3>Wyjaśnienia</h3>
+    <p>Kliknij podkreślone pojęcie w tekście.</p>
+  </div>
+</aside>
+
+<div class="brand">
+  <div class="brand-logo">
+    <span class="brand-word">
+      <span class="brand-name">contextero</span>
+      <span class="brand-format">CTXBOOK FORMAT</span>
+    </span>
+  </div>
+
+  <div class="brand-meta">
+    Powered by <a class="brand-link" href="https://contextero.com" target="_blank">contextero.com</a>
+  </div>
+</div>
+<script>
+const TERMS = {"materialy_swiatloczule":{"title":"Materiały światłoczułe","aliases":["materiały światłoczułe"],"explanation":"Substraty wykorzystywane do rejestracji obrazu w fotografii, które reagują na światło, takie jak filmy i papiery w tradycyjnej fotografii lub matryce w fotografii cyfrowej.","why":"Znajomość materiałów światłoczułych jest podstawą do zrozumienia procesu tworzenia fotografii zarówno analogowej, jak i cyfrowej.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/OJ_L_396_of_2021_-_PL_Polish.pdf/page1-960px-OJ_L_396_of_2021_-_PL_Polish.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/f/f9/OJ_L_396_of_2021_-_PL_Polish.pdf?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"Official Journal of the European Union - L 396 of 10 November 2021 - Polish edition","source":"Wikimedia Commons · Public domain · Publications Office of the European Union · AI-ranked: Oba dostępne pliki to dokumenty PDF z Dzienników Urzędowych Unii Europejskiej, które nie przedstawiają ilustracji dotyczących filmów fotograficznych ani matryc cyfrowych. Nie ma więc odpowiedniego obrazu wśród podanych kandydatów. Potrzebny jest obraz fotograficzny lub ilustracja edukacyjna pokazująca film fotograficzny i matrycę cyfrową jako materiały światłoczułe.","fileTitle":"OJ L 396 of 2021 - PL Polish.pdf","query":"Materiały światłoczułe"}},"matryca_fotograficzna":{"title":"Matryca fotograficzna","aliases":["matryca aparatu"],"explanation":"Część aparatu cyfrowego, która rejestruje obraz, przetwarzając światło na sygnały elektroniczne. Ma różne parametry, wpływające na jakość zdjęcia.","why":"Matryca zastępuje w fotografii cyfrowej tradycyjny materiał światłoczuły, a jej właściwości decydują o jakości finalnego obrazu.","image":{"url":"https://images.pexels.com/photos/1906151/pexels-photo-1906151.jpeg?auto=compress&cs=tinysrgb&h=650&w=940","originalUrl":"https://www.pexels.com/photo/black-canon-camera-on-left-hand-1906151/","label":"A person extends their hand, holding a camera against lush green leaves in an outdoor setting.","source":"A person extends their hand, holding a camera against lush green leaves in an outdoor setting.\nPexels · Matheus Bertelli","caption":"A person extends their hand, holding a camera against lush green leaves in an outdoor setting.\nPexels · Matheus Bertelli"}},"film_fotograficzny":{"title":"Film fotograficzny","aliases":["filmy fotograficzne","film"],"explanation":"Tradycyjny materiał światłoczuły w fotografii analogowej, dostępny w wersjach czarno-białej, kolorowej negatywowej i slajdowej.","why":"Pozwala na rejestrację obrazu światłoczułego w tradycyjnej fotografii i wymaga odpowiedniej obróbki chemicznej.","image":{"url":"https://images.pexels.com/photos/17077864/pexels-photo-17077864.jpeg?auto=compress&cs=tinysrgb&h=650&w=940","originalUrl":"https://www.pexels.com/photo/top-view-of-colorful-analog-photo-film-cassettes-from-various-producers-17077864/","label":"A vibrant assortment of analog film rolls on a white background, showcasing variety and nostalgia.","source":"A vibrant assortment of analog film rolls on a white background, showcasing variety and nostalgia.\nPexels · Beyzaa Yurtkuran","caption":"A vibrant assortment of analog film rolls on a white background, showcasing variety and nostalgia.\nPexels · Beyzaa Yurtkuran"}},"czulosc_iso":{"title":"Czułość ISO","aliases":["czułość ISO"],"explanation":"Parametr określający, jak matryca lub film reaguje na światło – wyższe ISO oznacza większą czułość, ale także większy szum lub ziarnistość.","why":"Reguluje ekspozycję i jakość obrazu; kluczowy przy wyborze ustawień aparatu i materiałów.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/OJ_L_292_of_2021_-_PL_Polish.pdf/page1-960px-OJ_L_292_of_2021_-_PL_Polish.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/a/a9/OJ_L_292_of_2021_-_PL_Polish.pdf?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"Official Journal of the European Union - L 292 of 16 August 2021 - Polish edition","source":"Wikimedia Commons · Public domain · Publications Office of the European Union · AI-ranked: Brak odpowiednich obrazów związanych bezpośrednio z pojęciem 'czułość ISO' wśród kandydatów; dostępny plik to dokument PDF urzędowy, który nie obrazuje tematu. Zalecane jest znalezienie bardziej adekwatnej ilustracji lub diagramu obrazującego skalę ISO, np. graficzną skalę wartości ISO lub porównanie zdjęć przy różnych ustawieniach ISO. W obecnej sytuacji jednakże jedyny kandydat jest technicznie najsensowniejszym wyborem, choć nie idealnym.","fileTitle":"OJ L 292 of 2021 - PL Polish.pdf","query":"Skala czułości ISO"}},"rozpietosc_tonalna":{"title":"Rozpiętość tonalna","aliases":["zakres tonalny","dynamiczny zakres"],"explanation":"Zakres jasności, jakie matryca lub film są w stanie zarejestrować od najciemniejszych cieni do najjaśniejszych świateł.","why":"Wpływa na szczegółowość i jakość obrazu, zwłaszcza w trudnych warunkach oświetleniowych.","image":{"url":"https://images.pexels.com/photos/27033493/pexels-photo-27033493.jpeg?auto=compress&cs=tinysrgb&h=650&w=940","originalUrl":"https://www.pexels.com/photo/a-colorful-bird-sitting-on-a-branch-27033493/","label":"Colorful rainbow lorikeet with vivid feathers perched in a natural outdoor setting.","source":"Colorful rainbow lorikeet with vivid feathers perched in a natural outdoor setting.\nPexels · Ivan Vi","caption":"Colorful rainbow lorikeet with vivid feathers perched in a natural outdoor setting.\nPexels · Ivan Vi"}},"rolling_shutter":{"title":"Rolling shutter","aliases":["rolling shutter"],"explanation":"Efekt zniekształcenia obrazu wynikający z kolejnego odczytu linii matrycy zamiast całego obrazu naraz, szczególnie widoczny przy szybkich ruchach.","why":"Znajomość tego zjawiska pomaga w doborze matrycy i technik fotografowania ruchu.","image":{"originalUrl":"https://pixabay.com/photos/architecture-brown-building-3824660/","label":"architecture, brown, building, decorated, design, detail, exterior, facade, flower, folding, nature, frame, glass, house, old, open, orange, flower wallpaper, outdoor, red, shutter, beautiful flowers, vintage, wall, flower background, window, windows, wood, wooden","source":"Pixabay · boaphotostudio"}},"karta_pamieci":{"title":"Karta pamięci","aliases":["nośnik pamięci","karta SD","microSD","CFexpress"],"explanation":"Urządzenie służące do zapisu i przechowywania plików zdjęć i wideo w aparatach cyfrowych, dostępne w różnych formatach i zróżnicowanych parametrach.","why":"Wybór odpowiedniej karty jest kluczowy dla wydajności i bezpieczeństwa pracy fotografa.","image":{"url":"https://pixabay.com/get/g3c22ef65f3f62c1ad338f448906f4c8063b5f6d29c587d0d9043cb5f6b2759a163b5c539c1d955936575a4c320437d483eb64f799eb22f5444465ba5b69041a2_640.jpg","originalUrl":"https://pixabay.com/photos/hand-nail-art-polish-microsd-2605908/","label":"hand, nail, art, polish, microsd, cards, sandisk, kingston, study, microsd, microsd, microsd, microsd, sandisk, sandisk, sandisk, sandisk, sandisk","source":"Pixabay · StockSnap"}},"papier_fotograficzny":{"title":"Papier fotograficzny","aliases":["papiery fotograficzne","papier do wydruku"],"explanation":"Materiał używany do wydruków zdjęć, dostępny w różnych rodzajach wykończenia i cechach fizycznych, które wpływają na ostateczny efekt wizualny i trwałość.","why":"Dobór papieru ma wpływ na estetykę i trwałość fotografii wydrukowanej.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Black_and_white_photo_album%2C_Pages%2C_Rostov-on-Don%2C_Russia.jpg/1280px-Black_and_white_photo_album%2C_Pages%2C_Rostov-on-Don%2C_Russia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/e/e1/Black_and_white_photo_album%2C_Pages%2C_Rostov-on-Don%2C_Russia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"Black and white photo album. Rostov-on-Don, Russia.","source":"Black and white photo album. Rostov-on-Don, Russia.\nWikimedia Commons · CC BY 4.0 · Vyacheslav Argenberg","fileTitle":"Black and white photo album, Pages, Rostov-on-Don, Russia.jpg","query":"Papier foto","caption":"Black and white photo album. Rostov-on-Don, Russia.\nWikimedia Commons · CC BY 4.0 · Vyacheslav Argenberg"}},"gramatura_papieru":{"title":"Gramatura papieru","aliases":["gramatura"],"explanation":"Waga papieru wyrażona w gramach na metr kwadratowy (g/m²), która decyduje o jego wytrzymałości, sztywności i jakości użytkowej.","why":"Istotny parametr przy wyborze papieru do druku, wpływający na jego użytkowanie i trwałość wydruków.","image":{"url":"https://pixabay.com/get/g1c94a30c0a3349cd4dc16aa7c1eaf862a05a8e9aa107e0a84a89c3f29cbee217872692b758fc8d81255f15388999df4cf3b83fbdb9bcb4d02ca0ea7ad6b6f288_640.jpg","originalUrl":"https://pixabay.com/photos/paper-boat-sunset-sea-dawn-ship-3361172/","label":"paper boat, sunset, sea, dawn, ship, dusk, sundown, nature, twilight, sunset, sea, sea, ship, ship, ship, ship, ship, nature","source":"Pixabay · NoName_13"}},"materialy_fine_art":{"title":"Materiały klasy Fine Art","aliases":["fine art"],"explanation":"Specjalistyczne podłoża do druku fotograficznego o wysokiej jakości, charakteryzujące się trwałością i wyjątkowymi właściwościami estetycznymi, często używane do wystaw i archiwizacji.","why":"Służą do tworzenia wydruków najwyższej jakości, które spełniają wymagania artystyczne i muzealne.","image":{"originalUrl":"https://pixabay.com/photos/paint-acrylic-paint-art-supplies-2940513/","label":"paint, acrylic paint, art supplies, paintbrush, hobby, creative, oil painting, paint tubes, paint, paint, paint, paint, paint, acrylic paint, art supplies, art supplies, hobby, hobby, hobby, oil painting, oil painting","source":"Pixabay · Ylanite"}},"kartach_sd":{"title":"Karty SD","aliases":["Karty SD","kartach SD","Secure Digital","karta Secure Digital","SD"],"explanation":"Karty SD to popularne, niewielkie nośniki pamięci używane do zapisywania zdjęć i danych w aparatach cyfrowych oraz innych urządzeniach.","why":"Ważne są w lekcji, ponieważ umożliwiają przechowywanie i przenoszenie zdjęć cyfrowych, co jest kluczowe w fotografii i pracy z materiałami fotograficznymi.","image":{"url":"https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/2014_Karta_pami%C4%99ci_Sandisk_SDHC.jpg/1280px-2014_Karta_pami%C4%99ci_Sandisk_SDHC.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail","originalUrl":"https://upload.wikimedia.org/wikipedia/commons/9/91/2014_Karta_pami%C4%99ci_Sandisk_SDHC.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original","label":"Sandisk SDHC memory card, 16GB","source":"Sandisk SDHC memory card, 16GB\nWikimedia Commons · CC BY-SA 4.0 · Jacek Halicki ·","fileTitle":"2014 Karta pamięci Sandisk SDHC.jpg","query":"karta SD","caption":"Sandisk SDHC memory card, 16GB\nWikimedia Commons · CC BY-SA 4.0 · Jacek Halicki ·"}},"microsd_cfexpress":{"title":"microSD i CFexpress","aliases":["microSD i CFexpress","microSD, CFexpress","karta microSD","karta CFexpress"],"explanation":"microSD i CFexpress to dwa rodzaje kart pamięci używanych do zapisywania zdjęć w aparatach cyfrowych. microSD jest mniejsza i popularna w urządzeniach mobilnych, natomiast CFexpress oferuje bardzo szybki transfer danych, co jest ważne w profesjonalnej fotografii.","why":"Znajomość rodzajów kart pamięci jest ważna, ponieważ różne aparaty wymagają różnych nośników, a wybór odpowiedniej karty wpływa na szybkość zapisu zdjęć i bezpieczeństwo danych.","image":{"url":"https://images.pexels.com/photos/175449/pexels-photo-175449.jpeg?auto=compress&cs=tinysrgb&h=650&w=940","originalUrl":"https://www.pexels.com/photo/selective-focus-photography-of-3-kingston-sandisk-adapter-175449/","label":"A close-up image of a woman's hand holding multiple microSD memory cards with red nails.","source":"A close-up image of a woman's hand holding multiple microSD memory cards with red nails.\nPexels · Lisa from Pexels","caption":"A close-up image of a woman's hand holding multiple microSD memory cards with red nails.\nPexels · Lisa from Pexels"}}};
+
+document.querySelectorAll('.term').forEach(el => {
+  el.addEventListener('click', () => {
+    const key = el.dataset.term;
+    const term = TERMS[key];
+
+    if (!term) return;
+
+    document.getElementById("sidePanel").innerHTML =
+      '<div class="term-box">' +
+      '<h3>' + term.title + '</h3>' +
+    (term.image && term.image.url
+  ? '<div>' +
+      '<img src="' + term.image.url + '">' +
+      '<div class="img-meta">' + (term.image.source || '') + '</div>' +
+    '</div>'
+  : '') +
+      '<p>' + term.explanation + '</p>' +
+      '<p><em>' + (term.why || '') + '</em></p>' +
+      '</div>';
+  });
+});
+
+document.addEventListener('click', (event) => {
+  const img = event.target.closest('.term-box img');
+  if (!img) return;
+
+  const overlay = document.createElement('div');
+  overlay.style.position = 'fixed';
+  overlay.style.inset = '0';
+  overlay.style.background = 'rgba(0,0,0,.82)';
+  overlay.style.display = 'grid';
+  overlay.style.placeItems = 'center';
+  overlay.style.zIndex = '9999';
+  overlay.style.cursor = 'zoom-out';
+
+  const big = document.createElement('img');
+  big.src = img.src;
+  big.style.maxWidth = '92vw';
+  big.style.maxHeight = '92vh';
+  big.style.objectFit = 'contain';
+  big.style.borderRadius = '14px';
+  big.style.background = '#fff';
+
+  overlay.appendChild(big);
+  overlay.addEventListener('click', () => overlay.remove());
+  document.body.appendChild(overlay);
+});
+</script>
+
+</body>
+</html>
