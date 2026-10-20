@@ -1,0 +1,105 @@
+===== 1. ZESTAW WIEDZY — Printing and ICC profiles =====
+
+Druk fotograficzny to osobny etap. Żeby wydruk wyglądał tak samo
+jak na ekranie, potrzebna jest kalibracja i profile ICC.
+
+PODSTAWOWE POJĘCIA
+
+• printing /ˈprɪn.tɪŋ/ – druk
+• printer /ˈprɪn.tər/ – drukarka
+• print /prɪnt/ – odbitka, wydruk
+• paper type – rodzaj papieru
+• photo paper – papier fotograficzny
+• fine art paper – papier artystyczny (bawełniany)
+• glossy /ˈɡlɒs.i/ – błyszczący
+• matte /mæt/ – matowy
+• satin /ˈsæt.ɪn/ – satynowy (półmat)
+
+PROFILE I KOLOR
+
+• ICC profile (International Color Consortium) – profil ICC
+• colour space /ˈkʌl.ər speɪs/ – przestrzeń barwna
+• sRGB – standard dla ekranów i internetu
+• Adobe RGB – szersza przestrzeń, do druku
+• ProPhoto RGB – najszersza, do archiwizacji
+• gamut /ˈɡæm.ət/ – zakres kolorów (paleta)
+• colour cast – zabarwienie (np. niebieskie, zielone)
+• colour proof /kʌl.ər pruːf/ – wydruk próbny
+
+PARAMETRY DRUKU
+
+• DPI (dots per inch) – punkty na cal
+• PPI (pixels per inch) – piksele na cal
+• bleed /bliːd/ – spad (zapas na obcięcie)
+• margin /ˈmɑː.dʒɪn/ – margines
+• crop marks – znaczniki cięcia
+• calibration /ˌkæl.ɪˈbreɪ.ʃən/ – kalibracja (monitora)
+• soft proofing – miękka próba (symulacja druku na ekranie)
+
+ZDANIA PRZYDATNE W PRACY
+
+• The colours are different from the screen — check the ICC profile.
+• Convert the file to the printer's ICC profile.
+• 300 DPI is the minimum for a good print.
+• Add 3 mm bleed on each side.
+• Calibrate your monitor before printing.
+• This paper is too glossy — try matte instead.
+
+PYTANIA DO ZAPAMIĘTANIA
+
+• What is an ICC profile?
+• Which colour space is best for printing?
+• Why do we add bleed?
+
+===== 2. KARTA PRACY — Printing and ICC profiles =====
+
+Imię i nazwisko: ____________________  Data: __________
+
+Zadanie 1 — Dopasuj angielskie słowo do polskiego tłumaczenia.
+
+1. ICC profile       A. spad (zapas na obcięcie)
+2. bleed             B. zakres kolorów
+3. gamut             C. profil ICC
+4. glossy            D. kalibracja
+5. calibration       E. błyszczący
+
+Zadanie 2 — Uzupełnij luki słowami z ramki.
+[ sRGB | Adobe RGB | bleed | proof | paper ]
+
+1. Use ______ for images on the web.
+2. Use ______ for printing — it has a wider gamut.
+3. Add 3 mm ______ around the design.
+4. A colour ______ shows how the print will look.
+5. The ______ type affects the colours.
+
+Zadanie 3 — Zakreśl poprawną odpowiedź.
+
+1. Ile DPI minimum do druku?
+   □ 72   □ 150   □ 300
+
+2. Który profil jest najszerszy?
+   □ sRGB   □ Adobe RGB   □ ProPhoto RGB
+
+3. „Matte paper" to papier:
+   □ błyszczący   □ matowy   □ satynowy
+
+Zadanie 4 — Uzupełnij dialog.
+
+Client:      The print looks much more yellow than on my screen.
+Photographer: Did you use the printer's ______ (1) profile?
+Client:      I don't know. I just printed from Photoshop.
+Photographer: You need to convert the file to the correct
+              ______ (2) space and use soft ______ (3)
+              first. Also, calibrate your monitor.
+Client:      OK. And what about the paper? This one is too
+              ______ (4) — I don't like the reflection.
+Photographer: Try matte paper instead.
+
+Zadanie 5 — Krótka odpowiedź po angielsku.
+
+Dlaczego warto kalibrować monitor przed drukiem?
+Podaj dwa powody.
+
+_________________________________________________
+_________________________________________________
+_________________________________________________
