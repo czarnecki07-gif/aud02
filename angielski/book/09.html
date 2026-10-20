@@ -15,230 +15,184 @@
       line-height: 1.55;
     }
 
-    /* Skip link – AUD02 / WCAG 2.4.1 */
     .skip-link {
-      position: absolute;
-      left: -9999px;
-      top: 12px;
-      z-index: 999;
-      background: #171717;
-      color: #fffdf8;
-      padding: 12px 18px;
-      border-radius: 12px;
-      font-family: Arial, Helvetica, sans-serif;
-      font-weight: 700;
-      text-decoration: none;
+      position: absolute; left: -9999px; top: 12px; z-index: 999;
+      background: #171717; color: #fffdf8; padding: 12px 18px;
+      border-radius: 12px; font-family: Arial, sans-serif;
+      font-weight: 700; text-decoration: none;
     }
     .skip-link:focus { left: 12px; }
 
-    /* Widoczny focus – WCAG 2.4.7 */
-    a:focus-visible,
-    button:focus-visible,
-    input:focus-visible,
-    select:focus-visible,
-    [tabindex]:focus-visible {
-      outline: 3px solid #6157ff;
-      outline-offset: 3px;
-      border-radius: 6px;
+    a:focus-visible, button:focus-visible, input:focus-visible,
+    select:focus-visible, textarea:focus-visible, [tabindex]:focus-visible {
+      outline: 3px solid #6157ff; outline-offset: 3px; border-radius: 6px;
     }
 
+    /* ==== Nagłówek ==== */
     header {
-      padding: 40px 20px 34px;
-      background: #171717;
-      color: #fffdf8;
+      padding: 38px 20px 30px; background: #171717; color: #fffdf8;
     }
-    header .wrap { max-width: 900px; margin: 0 auto; }
+    header .wrap { max-width: 960px; margin: 0 auto; }
     header p.breadcrumb {
-      margin: 0 0 10px;
-      font-size: 13px;
-      color: #b8afa0;
-      font-family: Arial, Helvetica, sans-serif;
-      letter-spacing: 0.02em;
+      margin: 0 0 10px; font-size: 13px; color: #b8afa0;
+      font-family: Arial, sans-serif;
     }
     header p.breadcrumb a { color: #d7d0c4; text-decoration: underline; }
     header h1 {
-      margin: 0 0 10px;
-      font-size: clamp(26px, 4.2vw, 38px);
-      line-height: 1.1;
-      letter-spacing: -0.03em;
+      margin: 0 0 10px; font-size: clamp(26px, 4.2vw, 38px);
+      line-height: 1.1; letter-spacing: -0.03em;
     }
     header .level {
-      display: inline-block;
-      padding: 5px 12px;
-      border-radius: 999px;
-      background: #1f8f5f;
-      color: #fff;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 12px;
-      font-weight: 800;
-      letter-spacing: 0.04em;
+      display: inline-block; padding: 5px 12px; border-radius: 999px;
+      background: #1f8f5f; color: #fff;
+      font-family: Arial, sans-serif; font-size: 12px;
+      font-weight: 800; letter-spacing: 0.04em;
+    }
+    header p.sub { margin: 10px 0 0; color: #d7d0c4; max-width: 640px; }
+
+    /* ==== Pasek narzędzi odsłuchu ==== */
+    .toolbar {
+      background: #2b2621; color: #fffdf8;
+      padding: 14px 20px;
+      border-bottom: 1px solid #3a342d;
+      position: sticky; top: 0; z-index: 50;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+    }
+    .toolbar .wrap {
+      max-width: 960px; margin: 0 auto;
+      display: flex; flex-wrap: wrap; gap: 10px 14px; align-items: center;
+    }
+    .toolbar label {
+      display: inline-flex; align-items: center; gap: 6px;
+      color: #e7e0d4;
+    }
+    .toolbar select {
+      font-family: inherit; font-size: 13px; padding: 6px 8px;
+      border-radius: 8px; border: 1px solid #4a443b;
+      background: #1f1b17; color: #fffdf8; max-width: 260px;
+    }
+    .toolbar .btn-tool {
+      font-family: Arial, sans-serif; font-size: 13px; font-weight: 700;
+      padding: 7px 12px; border-radius: 10px;
+      border: 1px solid #6157ff; background: #6157ff; color: #fff;
+      cursor: pointer;
+    }
+    .toolbar .btn-tool.secondary {
+      background: transparent; color: #d7d0c4; border-color: #6b6156;
+    }
+    .toolbar .btn-tool:hover { filter: brightness(1.1); }
+    .toolbar .btn-tool[aria-pressed="true"] {
+      background: #1f8f5f; border-color: #1f8f5f; color: #fff;
+    }
+    .toolbar .speed-val {
+      display: inline-block; min-width: 40px; text-align: right;
+      color: #b8afa0;
     }
 
-    main {
-      max-width: 900px;
-      margin: 30px auto 60px;
-      padding: 0 18px;
+    .speech-warning {
+      display: none; margin: 12px 20px 0;
+      padding: 10px 14px; border-radius: 10px;
+      background: #fff4d6; color: #6b531c;
+      border: 1px solid #ecd9a8; font-size: 14px;
     }
+    .speech-warning.show { display: block; }
+
+    /* ==== Main ==== */
+    main { max-width: 960px; margin: 26px auto 60px; padding: 0 18px; }
 
     section {
-      background: #fffdf8;
-      border: 1px solid #ddd4c5;
-      border-radius: 22px;
-      padding: 26px;
-      margin-bottom: 22px;
+      background: #fffdf8; border: 1px solid #ddd4c5;
+      border-radius: 22px; padding: 26px; margin-bottom: 22px;
       box-shadow: 0 14px 38px rgba(30, 25, 18, 0.06);
     }
 
-    h2 {
-      margin: 0 0 6px;
-      font-size: 24px;
-      letter-spacing: -0.02em;
+    h2 { margin: 0 0 6px; font-size: 24px; letter-spacing: -0.02em; }
+    h3 { margin: 22px 0 10px; font-size: 18px; }
+    .lead { margin: 0 0 18px; color: #6f675d; font-size: 15.5px; }
+
+    .section-read-btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-family: Arial, sans-serif; font-size: 13px; font-weight: 700;
+      padding: 8px 14px; border-radius: 10px;
+      border: 1px solid #c8bda6; background: #fffdf8; color: #171717;
+      cursor: pointer; margin-bottom: 14px;
     }
-    h3 {
-      margin: 22px 0 10px;
-      font-size: 18px;
-      letter-spacing: -0.01em;
-    }
-    .lead {
-      margin: 0 0 18px;
-      color: #6f675d;
-      font-size: 15.5px;
+    .section-read-btn:hover { background: #f1ead8; }
+    .section-read-btn[aria-pressed="true"] {
+      background: #1f8f5f; color: #fff; border-color: #1f8f5f;
     }
 
-    /* ==== Lista słownictwa z odsłuchem ==== */
-    .vocab-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: grid;
-      gap: 10px;
-    }
+    /* ==== Lista słownictwa ==== */
+    .vocab-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
     .vocab-list li {
       display: grid;
-      grid-template-columns: minmax(140px, 1.1fr) 1.2fr 1.2fr auto;
-      gap: 12px;
-      align-items: center;
-      padding: 11px 14px;
-      background: #fbfaf6;
-      border: 1px solid #eee5d8;
-      border-radius: 14px;
+      grid-template-columns: minmax(140px, 1.1fr) 1.2fr 1.2fr auto auto;
+      gap: 10px; align-items: center;
+      padding: 11px 14px; background: #fbfaf6;
+      border: 1px solid #eee5d8; border-radius: 14px;
     }
-    .vocab-word {
-      font-weight: 700;
-      font-size: 16px;
-      color: #171717;
-    }
+    .vocab-word { font-weight: 700; font-size: 16px; color: #171717; }
     .vocab-ipa {
       font-family: "Lucida Sans Unicode", Arial, sans-serif;
-      color: #7a6a4f;
-      font-size: 14px;
+      color: #7a6a4f; font-size: 14px;
     }
-    .vocab-pl {
-      color: #4a443b;
-      font-size: 15px;
-    }
-    .audio-btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 38px;
-      height: 38px;
-      border-radius: 50%;
-      border: 1px solid #d0c6b2;
-      background: #fffdf8;
-      color: #171717;
-      font-size: 18px;
-      cursor: pointer;
-      transition: background 0.15s, transform 0.15s;
-    }
-    .audio-btn:hover { background: #f1ead8; }
-    .audio-btn[aria-pressed="true"] {
-      background: #1f8f5f;
-      border-color: #1f8f5f;
-      color: #fff;
-    }
-    .audio-btn:disabled { opacity: 0.55; cursor: wait; }
+    .vocab-pl { color: #4a443b; font-size: 15px; }
 
-    .speech-warning {
-      display: none;
-      margin-top: 14px;
-      padding: 12px 14px;
-      border-radius: 12px;
-      background: #fff4d6;
-      color: #6b531c;
-      border: 1px solid #ecd9a8;
-      font-size: 14px;
+    .icon-btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 36px; height: 36px; border-radius: 50%;
+      border: 1px solid #d0c6b2; background: #fffdf8; color: #171717;
+      font-size: 16px; cursor: pointer; transition: background 0.15s;
+      text-decoration: none;
     }
-    .speech-warning.show { display: block; }
+    .icon-btn:hover { background: #f1ead8; }
+    .icon-btn[aria-pressed="true"] {
+      background: #1f8f5f; border-color: #1f8f5f; color: #fff;
+    }
+    .icon-btn:disabled { opacity: 0.55; cursor: wait; }
+    .icon-btn.translate { font-size: 14px; }
 
     /* ==== Teoria ==== */
     .theory p { margin: 0 0 12px; }
     .theory strong { color: #171717; }
     .theory .term {
-      font-weight: 700;
-      color: #1f8f5f;
+      font-weight: 700; color: #1f8f5f; cursor: help;
+      text-decoration: underline dotted;
     }
+    .theory .term:hover { background: #eef8f1; }
 
     /* ==== Ćwiczenia ==== */
     fieldset {
-      border: 1px solid #e2d8c4;
-      border-radius: 16px;
-      padding: 16px 18px 20px;
-      margin: 0 0 18px;
-      background: #fbf8ef;
+      border: 1px solid #e2d8c4; border-radius: 16px;
+      padding: 16px 18px 20px; margin: 0 0 18px; background: #fbf8ef;
     }
     legend {
-      font-weight: 800;
-      font-size: 15px;
-      color: #171717;
-      padding: 0 8px;
+      font-weight: 800; font-size: 15px; color: #171717; padding: 0 8px;
     }
     .q {
-      display: grid;
-      grid-template-columns: auto 1fr;
-      gap: 8px 14px;
-      align-items: center;
-      margin: 10px 0;
+      display: grid; grid-template-columns: auto 1fr; gap: 8px 14px;
+      align-items: center; margin: 10px 0;
     }
-    .q-label {
-      font-size: 15px;
-      font-weight: 700;
-      color: #4a443b;
+    .q-label { font-size: 15px; font-weight: 700; color: #4a443b; }
+    .q select, .q input[type="text"] {
+      font-family: inherit; font-size: 15px; padding: 8px 10px;
+      border-radius: 10px; border: 1px solid #c8bda6;
+      background: #fff; min-width: 200px; max-width: 100%;
     }
-    .q select,
-    .q input[type="text"] {
-      font-family: inherit;
-      font-size: 15px;
-      padding: 8px 10px;
-      border-radius: 10px;
-      border: 1px solid #c8bda6;
-      background: #fff;
-      min-width: 200px;
-      max-width: 100%;
-    }
-    .q input[type="text"] { width: 220px; }
+    .q input[type="text"] { width: 240px; }
 
     .radio-group {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px 18px;
-      margin: 6px 0 12px 0;
+      display: flex; flex-wrap: wrap; gap: 10px 18px; margin: 6px 0 12px 0;
     }
     .radio-group label {
-      display: inline-flex;
-      align-items: center;
-      gap: 7px;
-      font-size: 15px;
-      color: #2a2620;
-      cursor: pointer;
+      display: inline-flex; align-items: center; gap: 7px;
+      font-size: 15px; color: #2a2620; cursor: pointer;
     }
     .radio-group input { width: 16px; height: 16px; }
 
     .mark {
-      display: inline-block;
-      font-weight: 800;
-      font-size: 16px;
-      min-width: 24px;
+      display: inline-block; font-weight: 800; font-size: 16px; min-width: 24px;
     }
     .mark.ok { color: #1a7a4c; }
     .mark.bad { color: #b23b3b; }
@@ -247,104 +201,87 @@
     .is-wrong   { border-color: #b23b3b !important; background: #fbecec !important; }
 
     .btn-row {
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-      margin-top: 12px;
+      display: flex; gap: 10px; flex-wrap: wrap; margin-top: 12px;
     }
     .btn {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 14px;
-      font-weight: 800;
-      letter-spacing: 0.03em;
-      padding: 11px 18px;
-      border-radius: 12px;
-      border: 1px solid transparent;
-      cursor: pointer;
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
+      font-family: Arial, sans-serif; font-size: 14px; font-weight: 800;
+      letter-spacing: 0.03em; padding: 11px 18px; border-radius: 12px;
+      border: 1px solid transparent; cursor: pointer; text-decoration: none;
+      display: inline-flex; align-items: center; gap: 8px;
     }
     .btn-primary { background: #171717; color: #fffdf8; }
     .btn-primary:hover { background: #2b2b2b; }
     .btn-secondary {
-      background: #fffdf8;
-      color: #171717;
-      border-color: #c8bda6;
+      background: #fffdf8; color: #171717; border-color: #c8bda6;
     }
     .btn-secondary:hover { background: #f1ead8; }
 
     .feedback {
-      margin-top: 16px;
-      padding: 14px 16px;
-      border-radius: 14px;
-      background: #f4f1ea;
-      color: #4a443b;
-      font-size: 15px;
+      margin-top: 16px; padding: 14px 16px; border-radius: 14px;
+      background: #f4f1ea; color: #4a443b; font-size: 15px;
       border: 1px solid #e2d8c4;
     }
     .feedback.ok { background: #eef8f1; border-color: #b9e0c5; color: #1a5b3a; }
     .feedback.bad { background: #fbecec; border-color: #ecc1c1; color: #7a2b2b; }
 
-    /* ==== Karta pracy (druk) ==== */
+    /* ==== Karta pracy ==== */
     .worksheet {
-      background: #fffdf8;
-      border: 2px dashed #c8bda6;
-      padding: 26px;
-      border-radius: 22px;
-      margin-top: 22px;
+      background: #fffdf8; border: 2px dashed #c8bda6;
+      padding: 26px; border-radius: 22px; margin-top: 22px;
     }
     .worksheet h2 { margin-top: 0; }
     .worksheet ol { padding-left: 22px; }
     .worksheet .answer-line {
-      display: inline-block;
-      width: 100%;
-      border-bottom: 1px solid #8a7f6a;
-      height: 26px;
-      margin: 6px 0;
+      display: inline-block; width: 100%;
+      border-bottom: 1px solid #8a7f6a; height: 26px; margin: 6px 0;
     }
     .worksheet .fields {
-      display: flex;
-      gap: 30px;
-      flex-wrap: wrap;
-      margin-bottom: 18px;
+      display: flex; gap: 30px; flex-wrap: wrap; margin-bottom: 18px;
     }
     .worksheet .field {
-      display: flex;
-      gap: 8px;
-      font-size: 14px;
-      color: #4a443b;
+      display: flex; gap: 8px; font-size: 14px; color: #4a443b;
     }
     .worksheet .field span {
-      display: inline-block;
-      min-width: 180px;
+      display: inline-block; min-width: 180px;
       border-bottom: 1px solid #8a7f6a;
     }
 
-    @media (max-width: 720px) {
+    /* ==== Tłumaczenie inline ==== */
+    .translation-popover {
+      position: fixed; z-index: 1000;
+      max-width: 340px; padding: 14px 16px;
+      background: #fff; border: 1px solid #c8bda6;
+      border-radius: 14px; box-shadow: 0 18px 40px rgba(0,0,0,0.18);
+      font-size: 14px; line-height: 1.5;
+    }
+    .translation-popover strong { display: block; margin-bottom: 6px; color: #171717; }
+    .translation-popover a {
+      color: #1f8f5f; text-decoration: underline; font-weight: 700;
+    }
+    .translation-popover .close {
+      position: absolute; top: 6px; right: 8px;
+      background: none; border: none; font-size: 18px; cursor: pointer;
+      color: #6f675d;
+    }
+
+    @media (max-width: 780px) {
       section { padding: 18px; }
-      .vocab-list li { grid-template-columns: 1fr auto; }
+      .vocab-list li { grid-template-columns: 1fr auto auto; }
       .vocab-list .vocab-ipa,
       .vocab-list .vocab-pl { grid-column: 1 / -1; }
       .q { grid-template-columns: 1fr; }
+      .toolbar .wrap { gap: 8px; }
     }
-
     @media (prefers-reduced-motion: reduce) {
       * { transition: none !important; animation: none !important; }
     }
-
-    /* ==== Druk ==== */
     @media print {
-      header, main > section:not(.worksheet), .skip-link, .btn-row {
-        display: none !important;
-      }
+      header, .toolbar, .speech-warning,
+      main > section:not(.worksheet),
+      .btn-row, .section-read-btn { display: none !important; }
       body { background: #fff; color: #000; }
       .worksheet {
-        border: none;
-        box-shadow: none;
-        padding: 0;
-        margin: 0;
+        border: none; box-shadow: none; padding: 0; margin: 0;
         page-break-after: always;
       }
     }
@@ -357,575 +294,271 @@
   <header>
     <div class="wrap">
       <p class="breadcrumb">
-        <a href="/index.html">AUD.02</a> ›
-        <a href="/index.html#angielski">Język angielski zawodowy</a> ›
+        <a href="../index.html">AUD.02</a> ›
+        <a href="../index.html#eng-title">Język angielski zawodowy</a> ›
         Lekcja 09
       </p>
       <span class="level">A2–B1 · AUD.02</span>
       <h1 style="margin-top:10px">Lekcja 09: <span lang="en">Post-production workflow</span></h1>
-      <p style="margin:0;color:#d7d0c4;max-width:640px">
-        Postprodukcja i obróbka zdjęć. Słownictwo z wymową, teoria i ćwiczenia interaktywne.
-      </p>
+      <p class="sub">Postprodukcja i obróbka zdjęć. Słownictwo z odsłuchem, teoria, ćwiczenia interaktywne i karta pracy do druku.</p>
     </div>
   </header>
 
+  <!-- ============ PASEK NARZĘDZI ODSŁUCHU ============ -->
+  <div class="toolbar" role="region" aria-label="Ustawienia odsłuchu">
+    <div class="wrap">
+      <label for="voice-select">
+        Głos:
+        <select id="voice-select" aria-label="Wybierz głos odsłuchu">
+          <option value="">— domyślny angielski —</option>
+        </select>
+      </label>
+
+      <label for="rate-slider">
+        Tempo:
+        <input type="range" id="rate-slider" min="0.5" max="1.5" step="0.1" value="0.9"
+               aria-label="Tempo odsłuchu" style="width:110px">
+        <span class="speed-val" id="rate-val">0.9×</span>
+      </label>
+
+      <button type="button" class="btn-tool" id="read-selection-btn"
+              aria-pressed="false"
+              title="Zaznacz tekst na stronie i kliknij, aby go przeczytać">
+        🔊 Czytaj zaznaczenie
+      </button>
+
+      <button type="button" class="btn-tool secondary" id="stop-btn">
+        ■ Stop
+      </button>
+
+      <button type="button" class="btn-tool secondary" id="test-translate-btn"
+              title="Otwórz Google Translate z zaznaczonym tekstem">
+        🌐 Tłumacz zaznaczenie
+      </button>
+    </div>
+  </div>
+
+  <p id="speech-warning" class="speech-warning" role="alert">
+    Twoja przeglądarka nie obsługuje syntezy mowy (Web Speech API). Użyj Chrome, Edge, Safari lub Firefox.
+  </p>
+
   <main id="tresc">
 
-    <!-- ==== 1. SŁOWNICTWO Z ODSŁUCHEM ==== -->
+    <!-- ============ 1. SŁOWNICTWO Z ODSŁUCHEM ============ -->
     <section aria-labelledby="vocab-h">
       <h2 id="vocab-h">Słownictwo z wymową</h2>
       <p class="lead">
-        Kliknij przycisk <span aria-hidden="true">🔊</span> przy słowie, aby usłyszeć wymowę.
-        Działa w przeglądarce — nie trzeba instalować niczego.
+        Kliknij 🔊 przy słowie, aby usłyszeć wymowę. Kliknij 🌐, aby otworzyć tłumaczenie w Google Translate.
+        Możesz też zaznaczyć dowolny tekst i użyć przycisku „Czytaj zaznaczenie” na górze.
       </p>
 
-      <p id="speech-warning" class="speech-warning" role="alert">
-        Twoja przeglądarka nie obsługuje syntezy mowy. Użyj Chrome, Edge, Safari lub Firefox.
-      </p>
+      <button type="button" class="section-read-btn" data-read-section="vocab-section" aria-pressed="false">
+        🔊 Przeczytaj wszystkie słowa
+      </button>
 
-      <ul class="vocab-list" id="vocab-list">
+      <ul class="vocab-list" id="vocab-section">
         <li>
           <span class="vocab-word" lang="en">import</span>
           <span class="vocab-ipa">/ˈɪm.pɔːt/</span>
           <span class="vocab-pl">import plików</span>
-          <button type="button" class="audio-btn" data-word="import"
+          <button type="button" class="icon-btn audio-btn" data-word="import"
                   aria-label="Wysłuchaj wymowy: import">🔊</button>
+          <a class="icon-btn translate" href="https://translate.google.com/?sl=en&tl=pl&text=import&op=translate"
+             target="_blank" rel="noopener"
+             aria-label="Otwórz tłumaczenie w Google Translate: import">🌐</a>
         </li>
         <li>
           <span class="vocab-word" lang="en">backup</span>
           <span class="vocab-ipa">/ˈbæk.ʌp/</span>
           <span class="vocab-pl">kopia zapasowa</span>
-          <button type="button" class="audio-btn" data-word="backup"
+          <button type="button" class="icon-btn audio-btn" data-word="backup"
                   aria-label="Wysłuchaj wymowy: backup">🔊</button>
+          <a class="icon-btn translate" href="https://translate.google.com/?sl=en&tl=pl&text=backup&op=translate"
+             target="_blank" rel="noopener"
+             aria-label="Otwórz tłumaczenie w Google Translate: backup">🌐</a>
         </li>
         <li>
           <span class="vocab-word" lang="en">culling</span>
           <span class="vocab-ipa">/ˈkʌl.ɪŋ/</span>
           <span class="vocab-pl">selekcja zdjęć</span>
-          <button type="button" class="audio-btn" data-word="culling"
+          <button type="button" class="icon-btn audio-btn" data-word="culling"
                   aria-label="Wysłuchaj wymowy: culling">🔊</button>
+          <a class="icon-btn translate" href="https://translate.google.com/?sl=en&tl=pl&text=culling&op=translate"
+             target="_blank" rel="noopener"
+             aria-label="Otwórz tłumaczenie w Google Translate: culling">🌐</a>
         </li>
         <li>
           <span class="vocab-word" lang="en">retouching</span>
           <span class="vocab-ipa">/ˌriːˈtʌtʃ.ɪŋ/</span>
           <span class="vocab-pl">retusz</span>
-          <button type="button" class="audio-btn" data-word="retouching"
+          <button type="button" class="icon-btn audio-btn" data-word="retouching"
                   aria-label="Wysłuchaj wymowy: retouching">🔊</button>
+          <a class="icon-btn translate" href="https://translate.google.com/?sl=en&tl=pl&text=retouching&op=translate"
+             target="_blank" rel="noopener"
+             aria-label="Otwórz tłumaczenie w Google Translate: retouching">🌐</a>
         </li>
         <li>
           <span class="vocab-word" lang="en">cropping</span>
           <span class="vocab-ipa">/ˈkrɒp.ɪŋ/</span>
           <span class="vocab-pl">kadrowanie</span>
-          <button type="button" class="audio-btn" data-word="cropping"
+          <button type="button" class="icon-btn audio-btn" data-word="cropping"
                   aria-label="Wysłuchaj wymowy: cropping">🔊</button>
+          <a class="icon-btn translate" href="https://translate.google.com/?sl=en&tl=pl&text=cropping&op=translate"
+             target="_blank" rel="noopener"
+             aria-label="Otwórz tłumaczenie w Google Translate: cropping">🌐</a>
         </li>
         <li>
           <span class="vocab-word" lang="en">colour grading</span>
           <span class="vocab-ipa">/ˈkʌl.ər ˈɡreɪ.dɪŋ/</span>
           <span class="vocab-pl">korekcja kolorystyczna</span>
-          <button type="button" class="audio-btn" data-word="colour grading"
+          <button type="button" class="icon-btn audio-btn" data-word="colour grading"
                   aria-label="Wysłuchaj wymowy: colour grading">🔊</button>
+          <a class="icon-btn translate" href="https://translate.google.com/?sl=en&tl=pl&text=colour%20grading&op=translate"
+             target="_blank" rel="noopener"
+             aria-label="Otwórz tłumaczenie w Google Translate: colour grading">🌐</a>
         </li>
         <li>
           <span class="vocab-word" lang="en">sharpening</span>
           <span class="vocab-ipa">/ˈʃɑː.pən.ɪŋ/</span>
           <span class="vocab-pl">wyostrzanie</span>
-          <button type="button" class="audio-btn" data-word="sharpening"
+          <button type="button" class="icon-btn audio-btn" data-word="sharpening"
                   aria-label="Wysłuchaj wymowy: sharpening">🔊</button>
+          <a class="icon-btn translate" href="https://translate.google.com/?sl=en&tl=pl&text=sharpening&op=translate"
+             target="_blank" rel="noopener"
+             aria-label="Otwórz tłumaczenie w Google Translate: sharpening">🌐</a>
         </li>
         <li>
           <span class="vocab-word" lang="en">noise reduction</span>
           <span class="vocab-ipa">/nɔɪz rɪˈdʌk.ʃən/</span>
           <span class="vocab-pl">redukcja szumów</span>
-          <button type="button" class="audio-btn" data-word="noise reduction"
+          <button type="button" class="icon-btn audio-btn" data-word="noise reduction"
                   aria-label="Wysłuchaj wymowy: noise reduction">🔊</button>
+          <a class="icon-btn translate" href="https://translate.google.com/?sl=en&tl=pl&text=noise%20reduction&op=translate"
+             target="_blank" rel="noopener"
+             aria-label="Otwórz tłumaczenie w Google Translate: noise reduction">🌐</a>
         </li>
         <li>
           <span class="vocab-word" lang="en">export</span>
           <span class="vocab-ipa">/ˈek.spɔːt/</span>
           <span class="vocab-pl">eksport</span>
-          <button type="button" class="audio-btn" data-word="export"
+          <button type="button" class="icon-btn audio-btn" data-word="export"
                   aria-label="Wysłuchaj wymowy: export">🔊</button>
+          <a class="icon-btn translate" href="https://translate.google.com/?sl=en&tl=pl&text=export&op=translate"
+             target="_blank" rel="noopener"
+             aria-label="Otwórz tłumaczenie w Google Translate: export">🌐</a>
         </li>
         <li>
           <span class="vocab-word" lang="en">batch processing</span>
           <span class="vocab-ipa">/bætʃ ˈprəʊ.ses.ɪŋ/</span>
           <span class="vocab-pl">przetwarzanie wsadowe</span>
-          <button type="button" class="audio-btn" data-word="batch processing"
+          <button type="button" class="icon-btn audio-btn" data-word="batch processing"
                   aria-label="Wysłuchaj wymowy: batch processing">🔊</button>
+          <a class="icon-btn translate" href="https://translate.google.com/?sl=en&tl=pl&text=batch%20processing&op=translate"
+             target="_blank" rel="noopener"
+             aria-label="Otwórz tłumaczenie w Google Translate: batch processing">🌐</a>
         </li>
         <li>
           <span class="vocab-word" lang="en">preset</span>
           <span class="vocab-ipa">/ˈpriː.set/</span>
           <span class="vocab-pl">preset</span>
-          <button type="button" class="audio-btn" data-word="preset"
+          <button type="button" class="icon-btn audio-btn" data-word="preset"
                   aria-label="Wysłuchaj wymowy: preset">🔊</button>
+          <a class="icon-btn translate" href="https://translate.google.com/?sl=en&tl=pl&text=preset&op=translate"
+             target="_blank" rel="noopener"
+             aria-label="Otwórz tłumaczenie w Google Translate: preset">🌐</a>
         </li>
         <li>
           <span class="vocab-word" lang="en">layer</span>
           <span class="vocab-ipa">/ˈleɪ.ər/</span>
           <span class="vocab-pl">warstwa</span>
-          <button type="button" class="audio-btn" data-word="layer"
+          <button type="button" class="icon-btn audio-btn" data-word="layer"
                   aria-label="Wysłuchaj wymowy: layer">🔊</button>
+          <a class="icon-btn translate" href="https://translate.google.com/?sl=en&tl=pl&text=layer&op=translate"
+             target="_blank" rel="noopener"
+             aria-label="Otwórz tłumaczenie w Google Translate: layer">🌐</a>
         </li>
         <li>
           <span class="vocab-word" lang="en">mask</span>
           <span class="vocab-ipa">/mɑːsk/</span>
           <span class="vocab-pl">maska</span>
-          <button type="button" class="audio-btn" data-word="mask"
+          <button type="button" class="icon-btn audio-btn" data-word="mask"
                   aria-label="Wysłuchaj wymowy: mask">🔊</button>
+          <a class="icon-btn translate" href="https://translate.google.com/?sl=en&tl=pl&text=mask&op=translate"
+             target="_blank" rel="noopener"
+             aria-label="Otwórz tłumaczenie w Google Translate: mask">🌐</a>
         </li>
         <li>
           <span class="vocab-word" lang="en">histogram</span>
           <span class="vocab-ipa">/ˈhɪs.tə.ɡræm/</span>
           <span class="vocab-pl">histogram</span>
-          <button type="button" class="audio-btn" data-word="histogram"
+          <button type="button" class="icon-btn audio-btn" data-word="histogram"
                   aria-label="Wysłuchaj wymowy: histogram">🔊</button>
+          <a class="icon-btn translate" href="https://translate.google.com/?sl=en&tl=pl&text=histogram&op=translate"
+             target="_blank" rel="noopener"
+             aria-label="Otwórz tłumaczenie w Google Translate: histogram">🌐</a>
         </li>
         <li>
           <span class="vocab-word" lang="en">highlights</span>
           <span class="vocab-ipa">/ˈhaɪ.laɪts/</span>
           <span class="vocab-pl">światła</span>
-          <button type="button" class="audio-btn" data-word="highlights"
+          <button type="button" class="icon-btn audio-btn" data-word="highlights"
                   aria-label="Wysłuchaj wymowy: highlights">🔊</button>
+          <a class="icon-btn translate" href="https://translate.google.com/?sl=en&tl=pl&text=highlights&op=translate"
+             target="_blank" rel="noopener"
+             aria-label="Otwórz tłumaczenie w Google Translate: highlights">🌐</a>
         </li>
         <li>
           <span class="vocab-word" lang="en">shadows</span>
           <span class="vocab-ipa">/ˈʃæd.əʊz/</span>
           <span class="vocab-pl">cienie</span>
-          <button type="button" class="audio-btn" data-word="shadows"
+          <button type="button" class="icon-btn audio-btn" data-word="shadows"
                   aria-label="Wysłuchaj wymowy: shadows">🔊</button>
+          <a class="icon-btn translate" href="https://translate.google.com/?sl=en&tl=pl&text=shadows&op=translate"
+             target="_blank" rel="noopener"
+             aria-label="Otwórz tłumaczenie w Google Translate: shadows">🌐</a>
         </li>
       </ul>
     </section>
 
-    <!-- ==== 2. TEORIA ==== -->
-    <section class="theory" aria-labelledby="theory-h">
+    <!-- ============ 2. TEORIA ============ -->
+    <section class="theory" aria-labelledby="theory-h" id="theory-section">
       <h2 id="theory-h">Zestaw wiedzy</h2>
-      <p class="lead">Krótkie wprowadzenie po polsku z angielskimi terminami.</p>
+      <p class="lead">Krótkie wprowadzenie po polsku z angielskimi terminami. Kliknij 🔊, aby przeczytać całą sekcję.</p>
 
-      <h3>Etapy workflow</h3>
-      <p><strong>Import</strong> — skopiowanie plików z karty pamięci do komputera. Zawsze rób <strong>backup</strong> (kopię zapasową) przed edycją.</p>
-      <p><strong>Culling</strong> — selekcja: odrzucanie słabych zdjęć, wybór najlepszych kadrów. To pierwszy etap po imporcie.</p>
-      <p><strong>Editing</strong> — edycja: kadrowanie (<strong>cropping</strong>), korekcja tonalna, <strong>colour grading</strong>, wyostrzanie (<strong>sharpening</strong>), redukcja szumów (<strong>noise reduction</strong>).</p>
-      <p><strong>Retouching</strong> — retusz: usuwanie niedoskonałości skóry, plam, niechcianych elementów.</p>
-      <p><strong>Export</strong> — zapis w wybranym formacie (JPEG, TIFF), z odpowiednią rozdzielczością i profilem kolorów.</p>
+      <button type="button" class="section-read-btn" data-read-section="theory-text" aria-pressed="false">
+        🔊 Przeczytaj całą teorię
+      </button>
 
-      <h3>Narzędzia i pojęcia</h3>
-      <p><strong>Layer</strong> (warstwa), <strong>mask</strong> (maska), <strong>adjustment layer</strong> (warstwa korekcyjna) — praca niezniszczeniowa, bez utraty oryginału.</p>
-      <p><strong>Histogram</strong> pokazuje rozkład jasności: <strong>highlights</strong> (światła), <strong>shadows</strong> (cienie), <strong>midtones</strong> (półcienie).</p>
-      <p><strong>Preset</strong> — zapisane ustawienia edycji. <strong>Batch processing</strong> pozwala zastosować preset do wielu zdjęć naraz.</p>
+      <div id="theory-text">
+        <h3>Etapy workflow</h3>
+        <p><strong>Import</strong> — skopiowanie plików z karty pamięci do komputera. Zawsze rób <strong>backup</strong> (kopię zapasową) przed edycją.</p>
+        <p><strong>Culling</strong> — selekcja: odrzucanie słabych zdjęć, wybór najlepszych kadrów. To pierwszy etap po imporcie.</p>
+        <p><strong>Editing</strong> — edycja: kadrowanie (<strong>cropping</strong>), korekcja tonalna, <strong>colour grading</strong>, wyostrzanie (<strong>sharpening</strong>), redukcja szumów (<strong>noise reduction</strong>).</p>
+        <p><strong>Retouching</strong> — retusz: usuwanie niedoskonałości skóry, plam, niechcianych elementów.</p>
+        <p><strong>Export</strong> — zapis w wybranym formacie (JPEG, TIFF), z odpowiednią rozdzielczością i profilem kolorów.</p>
 
-      <h3>Zdania przydatne w pracy</h3>
-      <p style="font-style:italic">
-        Import the files and make a backup first.<br>
-        I'll send you a preview after culling.<br>
-        Can you retouch the skin and remove the spots?<br>
-        Apply the same preset to the whole batch.<br>
-        Export as JPEG at 3000 px on the long side.<br>
-        The shadows are too dark — lift them a bit.
-      </p>
+        <h3>Narzędzia i pojęcia</h3>
+        <p><strong>Layer</strong> (warstwa), <strong>mask</strong> (maska), <strong>adjustment layer</strong> (warstwa korekcyjna) — praca niezniszczeniowa, bez utraty oryginału.</p>
+        <p><strong>Histogram</strong> pokazuje rozkład jasności: <strong>highlights</strong> (światła), <strong>shadows</strong> (cienie), <strong>midtones</strong> (półcienie).</p>
+        <p><strong>Preset</strong> — zapisane ustawienia edycji. <strong>Batch processing</strong> pozwala zastosować preset do wielu zdjęć naraz.</p>
+
+        <h3>Zdania przydatne w pracy</h3>
+        <p style="font-style:italic">
+          Import the files and make a backup first.<br>
+          I'll send you a preview after culling.<br>
+          Can you retouch the skin and remove the spots?<br>
+          Apply the same preset to the whole batch.<br>
+          Export as JPEG at 3000 px on the long side.<br>
+          The shadows are too dark — lift them a bit.
+        </p>
+      </div>
     </section>
 
-    <!-- ==== 3. ĆWICZENIA ==== -->
+    <!-- ============ 3. ĆWICZENIA ============ -->
     <section aria-labelledby="ex-h">
       <h2 id="ex-h">Ćwiczenia interaktywne</h2>
       <p class="lead">Wypełnij pola i kliknij <strong>„Sprawdź odpowiedzi”</strong>. Wynik pojawi się pod ćwiczeniami.</p>
 
       <form id="exercises-form" novalidate>
 
-        <!-- ZADANIE 1 -->
-        <fieldset>
-          <legend>Zadanie 1 — Dopasuj etap do opisu</legend>
-
-          <div class="q">
-            <label class="q-label" for="q1-1">1. import</label>
-            <select id="q1-1" name="q1-1">
-              <option value="">— wybierz —</option>
-              <option value="A">A. wybór najlepszych zdjęć</option>
-              <option value="B">B. kopiowanie plików z karty do komputera</option>
-              <option value="C">C. zapis gotowych plików</option>
-              <option value="D">D. usuwanie niedoskonałości skóry</option>
-              <option value="E">E. kopia zapasowa</option>
-            </select>
-            <span class="mark" id="m1-1" aria-hidden="true"></span>
-          </div>
-
-          <div class="q">
-            <label class="q-label" for="q1-2">2. culling</label>
-            <select id="q1-2" name="q1-2">
-              <option value="">— wybierz —</option>
-              <option value="A">A. wybór najlepszych zdjęć</option>
-              <option value="B">B. kopiowanie plików z karty do komputera</option>
-              <option value="C">C. zapis gotowych plików</option>
-              <option value="D">D. usuwanie niedoskonałości skóry</option>
-              <option value="E">E. kopia zapasowa</option>
-            </select>
-            <span class="mark" id="m1-2" aria-hidden="true"></span>
-          </div>
-
-          <div class="q">
-            <label class="q-label" for="q1-3">3. retouching</label>
-            <select id="q1-3" name="q1-3">
-              <option value="">— wybierz —</option>
-              <option value="A">A. wybór najlepszych zdjęć</option>
-              <option value="B">B. kopiowanie plików z karty do komputera</option>
-              <option value="C">C. zapis gotowych plików</option>
-              <option value="D">D. usuwanie niedoskonałości skóry</option>
-              <option value="E">E. kopia zapasowa</option>
-            </select>
-            <span class="mark" id="m1-3" aria-hidden="true"></span>
-          </div>
-
-          <div class="q">
-            <label class="q-label" for="q1-4">4. export</label>
-            <select id="q1-4" name="q1-4">
-              <option value="">— wybierz —</option>
-              <option value="A">A. wybór najlepszych zdjęć</option>
-              <option value="B">B. kopiowanie plików z karty do komputera</option>
-              <option value="C">C. zapis gotowych plików</option>
-              <option value="D">D. usuwanie niedoskonałości skóry</option>
-              <option value="E">E. kopia zapasowa</option>
-            </select>
-            <span class="mark" id="m1-4" aria-hidden="true"></span>
-          </div>
-
-          <div class="q">
-            <label class="q-label" for="q1-5">5. backup</label>
-            <select id="q1-5" name="q1-5">
-              <option value="">— wybierz —</option>
-              <option value="A">A. wybór najlepszych zdjęć</option>
-              <option value="B">B. kopiowanie plików z karty do komputera</option>
-              <option value="C">C. zapis gotowych plików</option>
-              <option value="D">D. usuwanie niedoskonałości skóry</option>
-              <option value="E">E. kopia zapasowa</option>
-            </select>
-            <span class="mark" id="m1-5" aria-hidden="true"></span>
-          </div>
-        </fieldset>
-
-        <!-- ZADANIE 2 -->
-        <fieldset>
-          <legend>Zadanie 2 — Uzupełnij luki</legend>
-          <p style="margin:0 0 8px;font-size:14px;color:#6f675d">
-            Słowa: <strong>preset, layers, shadows, histogram, batch</strong>
-          </p>
-
-          <div class="q">
-            <label class="q-label" for="q2-1">1. Apply the same ______ to all photos.</label>
-            <input type="text" id="q2-1" name="q2-1" autocomplete="off" spellcheck="false">
-            <span class="mark" id="m2-1" aria-hidden="true"></span>
-          </div>
-          <div class="q">
-            <label class="q-label" for="q2-2">2. Use a ______ to check exposure.</label>
-            <input type="text" id="q2-2" name="q2-2" autocomplete="off" spellcheck="false">
-            <span class="mark" id="m2-2" aria-hidden="true"></span>
-          </div>
-          <div class="q">
-            <label class="q-label" for="q2-3">3. The ______ are too dark — lift them.</label>
-            <input type="text" id="q2-3" name="q2-3" autocomplete="off" spellcheck="false">
-            <span class="mark" id="m2-3" aria-hidden="true"></span>
-          </div>
-          <div class="q">
-            <label class="q-label" for="q2-4">4. Photoshop uses ______ for non-destructive editing.</label>
-            <input type="text" id="q2-4" name="q2-4" autocomplete="off" spellcheck="false">
-            <span class="mark" id="m2-4" aria-hidden="true"></span>
-          </div>
-          <div class="q">
-            <label class="q-label" for="q2-5">5. ______ processing saves a lot of time.</label>
-            <input type="text" id="q2-5" name="q2-5" autocomplete="off" spellcheck="false">
-            <span class="mark" id="m2-5" aria-hidden="true"></span>
-          </div>
-        </fieldset>
-
-        <!-- ZADANIE 3 -->
-        <fieldset>
-          <legend>Zadanie 3 — Zakreśl poprawną odpowiedź</legend>
-
-          <p class="q-label" style="margin:10px 0 4px">1. „Culling” to:</p>
-          <div class="radio-group" role="radiogroup" aria-labelledby="q3-1-label">
-            <label><input type="radio" name="q3-1" value="a"> edycja</label>
-            <label><input type="radio" name="q3-1" value="b"> selekcja zdjęć</label>
-            <label><input type="radio" name="q3-1" value="c"> eksport</label>
-            <span class="mark" id="m3-1" aria-hidden="true"></span>
-          </div>
-
-          <p class="q-label" style="margin:10px 0 4px">2. Który element odpowiada za jasne partie zdjęcia?</p>
-          <div class="radio-group">
-            <label><input type="radio" name="q3-2" value="a"> shadows</label>
-            <label><input type="radio" name="q3-2" value="b"> highlights</label>
-            <label><input type="radio" name="q3-2" value="c"> midtones</label>
-            <span class="mark" id="m3-2" aria-hidden="true"></span>
-          </div>
-
-          <p class="q-label" style="margin:10px 0 4px">3. „Noise reduction” znaczy:</p>
-          <div class="radio-group">
-            <label><input type="radio" name="q3-3" value="a"> wyostrzanie</label>
-            <label><input type="radio" name="q3-3" value="b"> redukcja szumów</label>
-            <label><input type="radio" name="q3-3" value="c"> kadrowanie</label>
-            <span class="mark" id="m3-3" aria-hidden="true"></span>
-          </div>
-        </fieldset>
-
-        <!-- ZADANIE 4 -->
-        <fieldset>
-          <legend>Zadanie 4 — Ułóż kroki we właściwej kolejności</legend>
-          <p style="margin:0 0 8px;font-size:14px;color:#6f675d">
-            Wpisz numer 1–5 przy każdym kroku (1 = pierwszy).
-          </p>
-          <div class="q">
-            <label class="q-label" for="q4-1">_____ export</label>
-            <input type="text" id="q4-1" name="q4-1" inputmode="numeric" maxlength="1" style="width:60px" autocomplete="off">
-            <span class="mark" id="m4-1" aria-hidden="true"></span>
-          </div>
-          <div class="q">
-            <label class="q-label" for="q4-2">_____ import</label>
-            <input type="text" id="q4-2" name="q4-2" inputmode="numeric" maxlength="1" style="width:60px" autocomplete="off">
-            <span class="mark" id="m4-2" aria-hidden="true"></span>
-          </div>
-          <div class="q">
-            <label class="q-label" for="q4-3">_____ editing</label>
-            <input type="text" id="q4-3" name="q4-3" inputmode="numeric" maxlength="1" style="width:60px" autocomplete="off">
-            <span class="mark" id="m4-3" aria-hidden="true"></span>
-          </div>
-          <div class="q">
-            <label class="q-label" for="q4-4">_____ backup</label>
-            <input type="text" id="q4-4" name="q4-4" inputmode="numeric" maxlength="1" style="width:60px" autocomplete="off">
-            <span class="mark" id="m4-4" aria-hidden="true"></span>
-          </div>
-          <div class="q">
-            <label class="q-label" for="q4-5">_____ culling</label>
-            <input type="text" id="q4-5" name="q4-5" inputmode="numeric" maxlength="1" style="width:60px" autocomplete="off">
-            <span class="mark" id="m4-5" aria-hidden="true"></span>
-          </div>
-        </fieldset>
-
-        <div class="btn-row">
-          <button type="button" class="btn btn-primary" id="check-btn">Sprawdź odpowiedzi</button>
-          <button type="button" class="btn btn-secondary" id="reset-btn">Wyczyść</button>
-          <button type="button" class="btn btn-secondary" onclick="window.print()">Drukuj kartę pracy</button>
-        </div>
-
-        <div id="feedback" class="feedback" role="status" aria-live="polite">
-          Tu pojawi się wynik po sprawdzeniu.
-        </div>
-      </form>
-    </section>
-
-    <!-- ==== 4. KARTA PRACY DO DRUKU ==== -->
-    <section class="worksheet" aria-labelledby="ws-h">
-      <h2 id="ws-h">Karta pracy — do druku</h2>
-      <p class="lead" style="margin-bottom:16px">
-        Kliknij „Drukuj kartę pracy” powyżej. Drukuje tylko tę sekcję (bez nagłówka strony i ćwiczeń interaktywnych).
-      </p>
-
-      <div class="fields">
-        <div class="field">Imię i nazwisko: <span></span></div>
-        <div class="field">Data: <span></span></div>
-      </div>
-
-      <h3>Zadanie 1 — Dopasuj etap do opisu</h3>
-      <ol type="1">
-        <li>import — ______________________________________</li>
-        <li>culling — _____________________________________</li>
-        <li>retouching — __________________________________</li>
-        <li>export — ______________________________________</li>
-        <li>backup — ______________________________________</li>
-      </ol>
-
-      <h3>Zadanie 2 — Uzupełnij luki</h3>
-      <ol type="1">
-        <li>Apply the same ______________ to all photos.</li>
-        <li>Use a ______________ to check exposure.</li>
-        <li>The ______________ are too dark — lift them.</li>
-        <li>Photoshop uses ______________ for non-destructive editing.</li>
-        <li>______________ processing saves a lot of time.</li>
-      </ol>
-
-      <h3>Zadanie 3 — Zakreśl poprawną odpowiedź</h3>
-      <ol type="1">
-        <li>„Culling” to: &nbsp; □ edycja &nbsp; □ selekcja zdjęć &nbsp; □ eksport</li>
-        <li>Jasne partie zdjęcia to: &nbsp; □ shadows &nbsp; □ highlights &nbsp; □ midtones</li>
-        <li>„Noise reduction” znaczy: &nbsp; □ wyostrzanie &nbsp; □ redukcja szumów &nbsp; □ kadrowanie</li>
-      </ol>
-
-      <h3>Zadanie 4 — Ułóż kroki we właściwej kolejności</h3>
-      <p style="margin:0 0 8px">Wpisz numer 1–5 przy każdym kroku.</p>
-      <ol type="1">
-        <li>_____ export</li>
-        <li>_____ import</li>
-        <li>_____ editing</li>
-        <li>_____ backup</li>
-        <li>_____ culling</li>
-      </ol>
-
-      <h3>Zadanie 5 — Krótka odpowiedź po angielsku</h3>
-      <p>Opisz swój workflow po sesji zdjęciowej w 3–4 krokach.</p>
-      <div class="answer-line"></div>
-      <div class="answer-line"></div>
-      <div class="answer-line"></div>
-      <div class="answer-line"></div>
-    </section>
-
-  </main>
-
-  <footer style="max-width:900px;margin:0 auto 40px;padding:0 18px;color:#7b7368;font-size:13px;text-align:center">
-    AUD.02 · Angielski zawodowy · Lekcja 09 — <span lang="en">Post-production workflow</span>
-    <br>Materiał zgodny z WCAG 2.2 AA (AUD02).
-  </footer>
-
-  <script>
-    /* ==================== 1. ODSŁUCH (Web Speech API) ==================== */
-    const speechSupported = 'speechSynthesis' in window;
-    const warningEl = document.getElementById('speech-warning');
-    if (!speechSupported) {
-      warningEl.classList.add('show');
-    }
-
-    let enVoice = null;
-    function pickVoice() {
-      if (!speechSupported) return;
-      const voices = window.speechSynthesis.getVoices();
-      // preferuj en-GB, potem en-US, potem dowolny angielski
-      enVoice =
-        voices.find(v => v.lang === 'en-GB') ||
-        voices.find(v => v.lang === 'en-US') ||
-        voices.find(v => v.lang && v.lang.startsWith('en')) ||
-        null;
-    }
-    if (speechSupported) {
-      pickVoice();
-      window.speechSynthesis.onvoiceschanged = pickVoice;
-    }
-
-    function speak(text, btn) {
-      if (!speechSupported) return;
-      window.speechSynthesis.cancel();
-      const u = new SpeechSynthesisUtterance(text);
-      u.lang = 'en-GB';
-      u.rate = 0.85;
-      u.pitch = 1;
-      if (enVoice) u.voice = enVoice;
-
-      if (btn) {
-        btn.setAttribute('aria-pressed', 'true');
-        btn.disabled = true;
-        u.onend = u.onerror = () => {
-          btn.setAttribute('aria-pressed', 'false');
-          btn.disabled = false;
-        };
-      }
-      window.speechSynthesis.speak(u);
-    }
-
-    document.querySelectorAll('.audio-btn').forEach(btn => {
-      btn.setAttribute('aria-pressed', 'false');
-      btn.addEventListener('click', () => speak(btn.dataset.word, btn));
-    });
-
-    /* ==================== 2. SPRAWDZANIE ĆWICZEŃ ==================== */
-
-    const answers = {
-      // Zadanie 1 – dopasowanie (B, A, D, C, E)
-      'q1-1': 'B',
-      'q1-2': 'A',
-      'q1-3': 'D',
-      'q1-4': 'C',
-      'q1-5': 'E',
-      // Zadanie 2 – uzupełnij (case-insensitive, trim)
-      'q2-1': 'preset',
-      'q2-2': 'histogram',
-      'q2-3': 'shadows',
-      'q2-4': 'layers',
-      'q2-5': 'batch',
-      // Zadanie 3 – radio
-      'q3-1': 'b',
-      'q3-2': 'b',
-      'q3-3': 'b',
-      // Zadanie 4 – kolejność (export=5, import=1, editing=4, backup=2, culling=3)
-      'q4-1': '5',
-      'q4-2': '1',
-      'q4-3': '4',
-      'q4-4': '2',
-      'q4-5': '3',
-    };
-
-    const feedbackEl = document.getElementById('feedback');
-
-    function getValue(key) {
-      const el = document.getElementById(key);
-      if (!el) {
-        // radio
-        const r = document.querySelector(`input[name="${key}"]:checked`);
-        return r ? r.value : '';
-      }
-      return (el.value || '').trim();
-    }
-
-    function clearMarks() {
-      Object.keys(answers).forEach(key => {
-        const mark = document.getElementById('m' + key.replace('q', ''));
-        if (mark) { mark.textContent = ''; mark.className = 'mark'; }
-        const el = document.getElementById(key);
-        if (el) el.classList.remove('is-correct', 'is-wrong');
-        document.querySelectorAll(`input[name="${key}"]`).forEach(r => {
-          r.closest('.radio-group')?.classList.remove('is-correct', 'is-wrong');
-        });
-      });
-    }
-
-    document.getElementById('check-btn').addEventListener('click', () => {
-      clearMarks();
-      let correct = 0;
-      const total = Object.keys(answers).length;
-
-      Object.entries(answers).forEach(([key, expected]) => {
-        const value = getValue(key);
-        const markId = 'm' + key.replace('q', '');
-        const mark = document.getElementById(markId);
-        const isCorrect = String(value).toLowerCase() === String(expected).toLowerCase();
-
-        const el = document.getElementById(key);
-        if (el) {
-          el.classList.add(isCorrect ? 'is-correct' : 'is-wrong');
-        } else {
-          // radio
-          document.querySelectorAll(`input[name="${key}"]`).forEach(r => {
-            const group = r.closest('.radio-group');
-            if (group) {
-              group.classList.remove('is-correct', 'is-wrong');
-              group.classList.add(isCorrect ? 'is-correct' : 'is-wrong');
-            }
-          });
-        }
-
-        if (mark) {
-          mark.textContent = isCorrect ? '✔' : '✘';
-          mark.className = 'mark ' + (isCorrect ? 'ok' : 'bad');
-        }
-        if (isCorrect) correct++;
-      });
-
-      const pct = Math.round((correct / total) * 100);
-      feedbackEl.classList.remove('ok', 'bad');
-      if (pct === 100) {
-        feedbackEl.classList.add('ok');
-        feedbackEl.textContent = `Świetnie! ${correct}/${total} poprawnych (100%).`;
-      } else if (pct >= 60) {
-        feedbackEl.classList.add('ok');
-        feedbackEl.textContent = `Dobry wynik: ${correct}/${total} (${pct}%). Popraw błędne odpowiedzi — pola na czerwono.`;
-      } else {
-        feedbackEl.classList.add('bad');
-        feedbackEl.textContent = `Wynik: ${correct}/${total} (${pct}%). Przeczytaj jeszcze raz „Zestaw wiedzy” i spróbuj ponownie.`;
-      }
-    });
-
-    document.getElementById('reset-btn').addEventListener('click', () => {
-      document.getElementById('exercises-form').reset();
-      clearMarks();
-      feedbackEl.className = 'feedback';
-      feedbackEl.textContent = 'Formularz wyczyszczony.';
-    });
-  </script>
-</body>
-</html>
+        <field
